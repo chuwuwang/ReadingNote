@@ -33,3 +33,6 @@
 *.su
 Algorithm/Algorithms.si4project/
 Algorithm/Algorithm.si4project/
+Algorithm/java/.metadata/
+Algorithm/java/.recommenders/
+Algorithm/java/algorithm/.settings/
