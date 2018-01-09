@@ -1,0 +1,1102 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>2017年书单</title></head><body><article class="markdown-body"><div class="toc">
+<ul>
+<li><a href="#_1">实体书</a><ul>
+<li><a href="#-">《第一行代码-第二版》</a></li>
+<li><a href="#-kk-">《必然》-KK三部曲-展望</a></li>
+<li><a href="#_2">《执行一定有办法（白金版）》</a></li>
+<li><a href="#android">《Android多媒体开发高级编程》</a></li>
+<li><a href="#android_1">《深入解析Android虚拟机》</a></li>
+<li><a href="#_3">《各自的朝圣路》周国平</a></li>
+<li><a href="#7-13">《远方不远》殷宏超 7-13</a></li>
+<li><a href="#7-26">《挪威的森林》 村上春树 7-26</a></li>
+</ul>
+</li>
+<li><a href="#_4">电子书</a><ul>
+<li><a href="#_5">《周鸿祎自述：我的互联网方法论》</a></li>
+<li><a href="#_6">《虎部队：国名党抗日王牌七十四军》</a></li>
+<li><a href="#_7">《逻辑思维：我懂你的知识焦虑》</a></li>
+<li><a href="#_8">《沸騰十五年》林军</a></li>
+<li><a href="#_9">《萧十一郎》</a></li>
+<li><a href="#9-12">《风雨张居正》 郦波 9-12</a></li>
+</ul>
+</li>
+<li><a href="#_10">杂书</a><ul>
+<li><a href="#08-12">《滚滚红尘》 三毛 08-12</a></li>
+<li><a href="#9-7">《一只特立独行的猪》 王小波 9-7</a></li>
+<li><a href="#1-10-28">《魔鬼经济学1》 列维特 10-28</a></li>
+<li><a href="#11-7">《那时的某人》 东野圭吾 11-7</a></li>
+</ul>
+</li>
+<li><a href="#_11">语录</a></li>
+</ul>
+</div>
+<h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>实体书</h2>
+<h3 id="-"><a name="user-content--" href="#-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《第一行代码-第二版》</h3>
+<p>这是Android大牛郭霖的第二本书了，买的还是郭神的签名版。对于我这种Android开发来说，可以收藏了(&lsquo;_&rsquo;)。相比较与《第一行代码》，本书增加了一些Android 6.0的新特性，像动态申请权限，低功耗，包括一些Material Design设计原则，开发工具由Eclipse切换为Android Studio，其中的许多知识点还是值得一览的。</p>
+<p>当然，如果要看一些深入点的知识，还是可以去读一读郭神的博客的，里面的讲的比较深。这本书只是介绍了Android的整个开发体系，以及对于新手来说，介绍了怎么快速开发一个App的流程，包括最后的打包签名，上架AppStore。甚至集成一些第三方sdk，像百度地图sdk这些。不过相对于我来说，比较喜欢其中介绍的一些开发小技巧，比如LogUtils的封装，一些请求框架的简单封装，对于RecyclerView的使用技巧。当然，还有郭神强行推广他的LitePal，是一个轻便的操作数据库的库，不过用起来是真的简单易用。最后，书中有两个小项目，一个是基于Material Design的设计，还有一个是以前老版本的CoolWeather，进行了一次新版本的迭代，当然也遵循了Material的设计原则。说实话，跑起来的效果还真的不错。相对于《第一行代码》，唯一让我感觉有成长的可能就是对Material Design的了解又深入了点吧。</p>
+<ul>
+<li>郭神博客：<a href="http://blog.csdn.net/guolin_blog">http://blog.csdn.net/guolin_blog</a></li>
+<li>源码地址：<a href="https://github.com/guolindev/booksource">https://github.com/guolindev/booksource</a></li>
+</ul>
+<h3 id="-kk-"><a name="user-content--kk-" href="#-kk-" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《必然》-KK三部曲-展望</h3>
+<p>去年双十一买的一套，一直没有看，最近才拿出来读一读，内容有点晦涩，不是很好理解，所以读的有点慢，感觉翻译的也不是很好。本书主要讲的就是这些年来互联网的趋势，比如共享经济（ofo、膜拜、滴滴），虚拟现实，基础服务平台的搭建（亚马逊、google、阿里、腾讯），我们的社会正在被科技所改变着。</p>
+<p>我们正在享受科技所带来的益处。减物质化，用越少的材料产生更高的价值是后面的必然需求；按需使用的及时性已经深入了我们的生活，打车我们用优步、滴滴，叫外卖我们用美团、饿了么；去中心化：区块链的衍生、扁平化的协作；基础平台的搭建、协同：第三方平台的不断发展，apple、微信、facebook、google；云端的快速发展，数据库的迁移，数据的生产分析。共享经济的出现，社会主义的重要性开始体现出来。共享、合作、协作、开放、免费、透明，这些共享力量开始发挥作用。从google、脸谱网、推特，他们开始用共享、免费来实现盈利。点对点的服务，p2p借贷、众筹&hellip;开始产生了新一轮的共享，新的模式也开始被运营。社会的结构开始发生变革，产销者越来越多（既是生产者又是消费者），自下而上的变革开始出现，但是只需少量的自上而下管控就可以实现大团体的组织变革。当所有的东西都共享过后，一切东西的获取都变得很简单，如知识、书籍、资料，但如何去选择却至关重要。这时候，我们需要借助别人帮我们做出过滤筛选。大数据时代已经来临，推荐的算法越来越精确。通过大数据的分析，个性化的定制已成为常态，服务质量也会有了质的飞跃。新观念：阅读别人发来的邮件是否要索取报酬？是否征收观看广告的费用？在信息丰富的世界里，唯一稀缺的资源就是人类的注意力。注意力就是价值，就像今天的流量，注意力投放越多的领域，它产生的价值就会越高&hellip;新的思维冲击太多，好书，强烈推荐。</p>
+<h3 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《执行一定有办法（白金版）》</h3>
+<p>一本关于团队管理的书籍，当然，也有个人在工作中的执行方法。看了它，也许你会对工作态度有了一个很大的转变。毕竟，在工作中，我们是团队协作的，互相沟通的，人与人之间的交流、沟通是很重要的，既要说话有分寸，也要行为有规范。我很喜欢其中的有些观点，&rdquo;问题就是潜在的机会&rdquo;、&rdquo;以创业者的心态去工作&rdquo;、&rdquo;用补位给自己创造机会&rdquo;、&rdquo;坚持，没有什么比这个更重要的了&rdquo;、&rdquo;养成生活习惯，才能远离拖延症&rdquo;。好像有点鸡汤的味道哦，不过说真的，工作久了，难免会有厌倦的情绪，偶尔的看一点这样的书，会让你重新燃起斗志。我感觉自己身上的缺点太多了，如果不通过外力来给自己施压，很容易会放弃自己。也许，看书，或者看一些牛人的书籍，是我前进的动力吧。</p>
+<h3 id="android"><a name="user-content-android" href="#android" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《Android多媒体开发高级编程》</h3>
+<p>这是一本比较老的书了，12年出版的，那时候Android才兴起不久，可现在，已经是17年了，Android都已经是7.0，前几天的Google I/O大会刚刚过。书中的技术虽然有些老旧，但是学习<br />
+一下也是好的，比较欣赏的是第三章和第四章，主要介绍对图片的处理，这个还是比较好的一块。全书主要是对Android的图片处理、相机拍摄、音频处理（MP3）、视频处理做了一些介绍，仅限于Android API的调用，并没有深入研究，这是比较不足的地方。毕竟出来这么多年了，现在市面上好的Android书籍确实不少，但是没有专门针对某一部分进行讲解的，大多都<br />
+是大而全的东西，不是很推荐，所介绍的技术有点老。全书的代码我也敲了一边，放在了git上，可以参考。</p>
+<ul>
+<li>代码地址：<a href="https://git.oschina.net/nszKnife/AndroidMultiMediaBook">https://git.oschina.net/nszKnife/AndroidMultiMediaBook</a></li>
+</ul>
+<h3 id="android_1"><a name="user-content-android_1" href="#android_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《深入解析Android虚拟机》</h3>
+<p>一本介绍Android虚拟机的书籍，感觉大部分内容和《深入理解Java虚拟机》类似，书中的Demo都以剖析底层C来讲解的，我C方面比较渣，看起来比较吃力了（基本上涉及到C的代码示例都没看），这本书看的比较浅，没什么深的感受。</p>
+<h3 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《各自的朝圣路》周国平</h3>
+<p>这本书是他以往的一些散文集合，他的散文半是散文，半是哲学，是一个学者，也是一位哲人。还好，这本书的大部分并没有深入去研究哲学，只是偶尔谈及一些哲学问题和作者自己的生活感受。个人比较喜欢他文字中的那种质朴，但同样遇到一些哲学的东西，读起来很晦涩难懂。因为，确实，我对哲学不太懂，有些地方感觉就在扯皮条，或者说是诡辩。哲学是什么？或者是说哲学在研究什么？看来有时间一定得看看苏格拉底、柏拉图、黑格尔这些人的著作，看看他们的精神世界是什么样的。我一直在怀疑，我们感到孤独，是不是因为精神上的空虚，所以才会拼命去寻找肉体上的融合。也许，一个精神丰富的人，他是不会感受到孤独的，他沉浸在自己的世界里，干着外人不理解的事情。但是，这会不会是自闭症的产生来源？如果你把自己的想象无限延伸，你会发现很多有趣的问题，也是会是庸人自扰，这肯定是别人对你的评价。自己的心境如何才是最为重要的，别人的意见只是参考。守住底线，心存敬畏，别开生面，走向自己的朝圣路。</p>
+<h3 id="7-13"><a name="user-content-7-13" href="#7-13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《远方不远》殷宏超 7-13</h3>
+<p>一个记者两万公里的西行游记，穿越大漠去中东。其实我关注超哥是2015年从贴吧开始的，那也是我的好朋友程前推荐我关注他的。一个放弃工作的记者，骑摩托车从中国的滁州一直到波斯湾的历程，历经8月多余，两万多公里，路上的见闻还是蛮多的。不过感觉可惜的是，书籍因为出版的原因，删减了不少宗教、名族等敏感的信息，没有公共号的文章看的爽。老哥，有机会一起睡觉，超哥最喜欢的一句话。</p>
+<p>通过这本书，其实我们可以看到我们现在的生活是多么美好。在罗布泊的无人区，你能想象生活在那里人们的孤独；在巴基斯坦，你知道每天生活在爆炸、抢劫生活的感受；在阿富汗，成片的吸毒者让人感到恐慌。突然感觉，生活在伟大的中国是多么的幸运。超哥说他经历过一次生死，那就是在塔利班的枪口下逃离，书中的任何措词也许都写不出他当时的感受，也许人只有那种环境中才能感受到生命的特别。不推荐你看书，推荐你去关注他的公众号，老哥，稳。</p>
+<p>人生的路上，愿我们都能不负时光，不负远方。</p>
+<h3 id="7-26"><a name="user-content-7-26" href="#7-26" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《挪威的森林》 村上春树 7-26</h3>
+<p>第一次看村上春树的作品，文笔很清晰自然，看来起蛮舒服的。单纯就《挪威的森林》这部作品来说，还是蛮耐读的，前前后后读了有2周，主要都是晚上下班回来的时间，一般会在9点半到12点之间，加上去北京出差耽误了几天，读的不是很快，但感受倒是不少。听说这好像也是村上春树最受争议的一部小说，因为描述了性爱，也有人猜测这是村上春树年轻时的缩影。本就是一本小说，想这么多干嘛。况且村上春树现在还在世，人家不想说，就随它去吧。</p>
+<p>个人感觉挺好看，未满十八岁别看，虽然现在你们都早熟。你说爱情是怎样的？渡边君到底爱的是谁？有人认为是绿子，因为最后他去找绿子了。也是，他和绿子相处的时间是最长的，和直子虽然认识的早，但中间一直由木月，况且直子一直说她是爱着木月的，最后确实兄弟上了自己的女人，估计木月是这样想的。还是木月一早就想到了直子其实爱的不是他，而是渡边。绿子这个女孩确实是全书的一个亮点，一个活波、搞怪、缺爱的女孩，但同是带有少女的傲娇，对爱情的冲动，很难让和他生活在一起的人不喜欢她。其实，我不太喜欢渡边，不是男人之间的嫉妒，就单纯的感觉他是一个自私的男人，自私我指的是感情上，他只对自己的感情加以呵护，别人投射过来的情感，全部被抛诸脑后。还有一个女角色，如果是女生看这本书的话，估计都不会忘记她的。初美，喜欢永泽的女孩，书中对她的描述不说，只交代最后结局是她同另一个男人结婚，2年后割腕自杀了。只有看了这本书，也许你才能想象出这本书。暂时就写这么多吧，上海这天气，太热了。  &ndash;写自2017.07.26 00：20</p>
+<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>电子书</h2>
+<h3 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《周鸿祎自述：我的互联网方法论》</h3>
+<p>这本书讲述了周教主创业过程中所萌发出的种种想法，有些观点在当年还是比较新奇的。网上评论说，产品经理这个职业就是周鸿祎和马化腾他们鼓吹出来的，不过在当下，产品经理在互联网公司确实是一个必不可少的职位了。但是，水平么~就不知可否了（主要是思维和想法）突破性思维很重要，也就是本书反复强调的颠覆性创新。但是作者也说了，在中国，创新是件很难的事情，因为思维的局限性，没有碰撞，哪来的火花。好在我们年轻一代，想法很多，乱造的更多，也许真能弄点不一样的东西出来。但是前提，我们能忍受新奇想法所带来的孤独。</p>
+<p>细节上的极致。一款产品，一个服务体系，细节很重要，每个人都知道，但是往往我们还是会忽略了。为什么呢？因为我们不是老板，只是一个打工仔而已。因为老板不会深入到基层去体验。所以，如果你是老板该怎么做？如果是员工呢？眼光要高，着手要小。大布局，小起点。也许在中途你的布局和眼光都会发生改变，但是，如果之前，你连这些想法都没有，谁会跟着你混呢？分享周鸿祎的一句话：所有的布局，都只不过是马后炮而已。做好当下，足矣。</p>
+<h3 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《虎部队：国名党抗日王牌七十四军》</h3>
+<p>讲述国名党抗日的事情，七十四军一步一步的打出了名号，前后参加过淞沪会战、兰封会战、万家岭大捷、南昌战役、上高会战、长沙会战、浙赣会战、鄂西会战、衡阳保卫战、常德会战、湘西会战，基本上抗日战场上的大战都参加过，被称为抗日铁军，享誉国内外。军长王耀武也一步一步的走上了抗日的舞台，涌现了一批流弊的抗日将领，像邱维达、张灵甫、周志道、余程万、施忠诚&hellip;挺好看的一本书。</p>
+<h3 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《逻辑思维：我懂你的知识焦虑》</h3>
+<p>罗胖的知识整合，脑洞大开。用经济学的方法来看待世界，其实我们这些工作者多多少少都应该懂一点经济学，从另一个角度来分析当今的世界格局，也许会产生新的观点，从而进军某个新的领域。用罗胖的观点来说，这个时代唯一限制我们的是什么？是认知。你对世界的认知度，决定了你的格局。经济学思维确实很有意思，让你对社会产生了不一样的看法。比方说书中的一个观点，为什么说将来的贫富差距会也来越大？不是说穷人的生活越来越惨，其实是穷人的生活会越来越好，只不过跟那些精英的差距会拉大，这正是因为认知差距。而认知差距的本质就是我们能不能顺应这个时代的发展，完成这次思维方式的切换。推荐《上帝的跳骚》这本书，以医学的角度来分析人类社会的成长史，当然，准备近期阅读。以创始人的心态去工作。不管你要不要创业，都得有创始人的心态。你得觉得我做这件事，是在做一项伟大的创造，不是为了养家糊口，坐在这里混日子。最后来说一下王东岳的哲学理论，递弱代偿。就是说，随着宇宙万物的演化，所有的物系都会越来越弱。但是，有一种方法叫替代性补偿，可以用其他权宜之计来维持它们的存在度。这个应该可以称作颠覆性理论，很有意思的一本书。</p>
+<h3 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《沸騰十五年》林军</h3>
+<p>这是一本介绍中国互联网历史的书，从1995年到2010年之间中国互联网上所发生的事情，涌现了一批批的互联网从业者，在中国的高速发展上做出了重要贡献。通过这本书，我们可以了解到中国互联网的发家史，海归龟、本土化的创业者们前赴后继的投身互联网行业。为自己身在互联网感到幸运，非常喜欢书中的一句话：我们出发的太远，以至于忘记了当初出发的目的。多说一句，关于互联网方面的书籍，推荐两个人林军和吴晓波。如果你是投身互联网行业的，你应该需要读一读它。</p>
+<h3 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《萧十一郎》</h3>
+<p>记得以前看过吴奇隆、朱茵演的《萧十一郎》电视剧，回过头来看看小说，发现原来改动的剧情还是蛮大的。最让人欣赏的估计就是风四娘了，喝最烈的酒，起最快的马，风一样的女子，却也逃不过一个情字。我一直以为她和萧十一郎应该是最匹配的，可惜爱情就是这样，永远是你意料之外的结果。如果你是萧十一郎，遇到了风四娘、沈璧君、冰冰这样的女子，你会怎么选择？</p>
+<h3 id="9-12"><a name="user-content-9-12" href="#9-12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《风雨张居正》 郦波 9-12</h3>
+<p>这本书是百家讲坛郦波老师的讲课手稿整理的书籍，讲述了张居正的一生浮沉。张居正从嘉靖、隆庆、万历，可谓是三朝元老，都说嘉靖是明朝最聪明的皇帝，可惜就是喜欢炼丹，最后把自己炼挂了。从张居正为官的一生中，我们可以看到明朝这将近一百年的历史变迁，从首辅严嵩霸朝二十余年，到被徐阶给扳倒了。张居正可以说是徐阶的学生了，对自己的老师还是很敬爱的，可以说在倒严嵩的这场斗争中，张居正至少是起了作用的，所以在严嵩倒台过后，徐阶把张居正也提拔到了内阁，年纪轻轻就可以参与国家大事了，不科学。等嘉靖死了过后，隆庆做皇帝了，隆庆偏爱高拱，高拱就把徐阶给搞离职了，自己做起了内阁首辅。但是对张居正反而挺好，两个人经常讨论国家大事。不科学，照理说敌人的学生，不应该往死里整么。等隆庆贪花好色，得花柳死了，小万历当皇帝了。高拱却被小太监冯保给搞下台了，可见太监得能力还是很大的，然后就是张居正上台了，做了皇帝的老师，开始了万历新政的发展历程。听说野史上，举报张居正跟万历他娘还有点暧昧了，到此就差不多了。哦，最后被万历抄家了，学生抄了老师的家，这在那个年代也就是皇帝能最这样的事情。</p>
+<h2 id="_10"><a name="user-content-_10" href="#_10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>杂书</h2>
+<h3 id="08-12"><a name="user-content-08-12" href="#08-12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《滚滚红尘》 三毛 08-12</h3>
+<h3 id="9-7"><a name="user-content-9-7" href="#9-7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《一只特立独行的猪》 王小波 9-7</h3>
+<h3 id="1-10-28"><a name="user-content-1-10-28" href="#1-10-28" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《魔鬼经济学1》 列维特 10-28</h3>
+<h3 id="11-7"><a name="user-content-11-7" href="#11-7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>《那时的某人》 东野圭吾 11-7</h3>
+<h2 id="_11"><a name="user-content-_11" href="#_11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语录</h2>
+<p>世间一切书中，我偏爱以血写成者。<br />
+老子英雄儿好汉，老子反动儿混蛋。<br />
+知识另有一个作用，它可以使你生活在过去、未来和现在，使你的生活变得更充实、更有趣。这其中另有一个境界，非无知的人可解。</p></article></body></html>

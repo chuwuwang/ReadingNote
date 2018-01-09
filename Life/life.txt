@@ -36,5 +36,3 @@ In this life I wait for you, not because of, not so.
 
 If we do what is necessary, all the odds are in our favor.
 如果我们做该做的事，所有的胜算都会高一点。
-
-白话深度学习与TensorFlow
