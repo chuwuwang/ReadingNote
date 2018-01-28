@@ -47,4 +47,7 @@ adb version 在adb shell下进入设备，通过getprop查看所有的系统属�
 设备芯片代号：ro.hardware
 来电铃声文件：ro.config.ringtone
 可以通过使用setprop命令来设置系统属性值 setprop persist.sys.root.access z
+
+查看手机cpu类型是x86还是arm
+adb shell cat /proc/cpuinfo
 ```
