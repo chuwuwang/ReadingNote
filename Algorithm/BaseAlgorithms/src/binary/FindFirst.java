@@ -12,7 +12,6 @@ public class FindFirst {
 
     public int findFirst(int[] array, int target) { // O(Log2N) O(1)
         if (array == null || array.length == 0) return -1;
-
         int left = 0;
         int right = array.length - 1;
         while (left < right - 1) {

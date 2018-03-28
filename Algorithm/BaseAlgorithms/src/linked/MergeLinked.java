@@ -9,9 +9,30 @@ package linked;
 public class MergeLinked {
 
     public static void main(String[] args) {
+        ListNode first = new ListNode(1);
+        ListNode node2 = new ListNode(4);
+        ListNode node3 = new ListNode(6);
+        first.next = node2;
+        node2.next = node3;
+
+        ListNode second = new ListNode(1);
+        ListNode node4 = new ListNode(2);
+        ListNode node5 = new ListNode(5);
+        second.next = node4;
+        node4.next = node5;
+
+        ListNode merge = new MergeLinked().merge(first, second);
+        while (merge.next != null) {
+            System.out.print(merge.value + " ");
+            merge = merge.next;
+        }
+        System.out.print(merge.value + " ");
 
     }
 
+    /**
+     * 合并链表
+     */
     public ListNode merge(ListNode first, ListNode second) { // O(m+n) O(1)
         ListNode curr1 = first;
         ListNode curr2 = second;
@@ -35,5 +56,6 @@ public class MergeLinked {
         }
         return dummy.next;
     }
+
 
 }
