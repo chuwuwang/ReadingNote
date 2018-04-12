@@ -34,4 +34,18 @@ public class BinarySearch {
         return -1;
     }
 
+    public int binarySearchRecur(int[] array, int target, int left, int right) {
+        // base case
+        if (left > right) return left;
+
+        int mid = left + (right - left) / 2;
+        if (array[mid] < target) {
+            return binarySearchRecur(array, target, mid + 1, right);
+        } else if (array[mid] > target) {
+            return binarySearchRecur(array, target, mid, right - 1);
+        } else {
+            return mid;
+        }
+    }
+
 }

@@ -26,7 +26,7 @@ public class FindClosest {
             }
         }
         // post processing
-        if (Math.abs(target - array[left]) <= Math.abs(target - array[right])) {
+        if ( Math.abs( target - array[left] ) <= Math.abs( target - array[right] ) ) {
             return left;
         } else {
             return right;
