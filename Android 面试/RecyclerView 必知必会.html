@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://zhuanlan.zhihu.com/p/24807254 -->
+<html lang="zh" data-hairline="true" data-theme="light" data-focus-method="keyboard"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>RecyclerView 必知必会</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="google-site-verification" content="FTeR0c8arOPKh8c5DYh_9uu98_zJbaWw53J-Sch9MTg"><meta data-react-helmet="true" property="description" content="本文来自于腾讯Bugly公众号（weixinBugly），未经作者同意，请勿转载，原文地址：RecyclerView 必知必会导语 RecyclerView是Android 5.0提出的新UI控件，可以用来代替传统的ListView。 Bugly之前也发过一篇相关文…"><meta data-react-helmet="true" property="og:title" content="RecyclerView 必知必会"><meta data-react-helmet="true" property="og:url" content="http://zhuanlan.zhihu.com/p/24807254"><meta data-react-helmet="true" property="og:description" content="本文来自于腾讯Bugly公众号（weixinBugly），未经作者同意，请勿转载，原文地址：RecyclerView 必知必会导语 RecyclerView是Android 5.0提出的新UI控件，可以用来代替传统的ListView。 Bugly之前也发过一篇相关文…"><meta data-react-helmet="true" property="og:image" content=""><meta data-react-helmet="true" property="og:type" content="article"><meta data-react-helmet="true" property="og:site_name" content="知乎专栏"><link rel="shortcut icon" type="image/x-icon" href="https://static.zhihu.com/static/favicon.ico"><link rel="search" type="application/opensearchdescription+xml" href="https://static.zhihu.com/static/search.xml" title="知乎"><link rel="dns-prefetch" href="https://static.zhimg.com/"><link rel="dns-prefetch" href="https://pic1.zhimg.com/"><link rel="dns-prefetch" href="https://pic2.zhimg.com/"><link rel="dns-prefetch" href="https://pic3.zhimg.com/"><link rel="dns-prefetch" href="https://pic4.zhimg.com/"><link href="./RecyclerView 必知必会_files/column.app.b135e894c9bee1f30d77.css" rel="stylesheet"><style type="text/css" abt="234"></style><script type="text/javascript" charset="utf-8" async="" src="./RecyclerView 必知必会_files/column.modals.e29ea3aab47b431063fe.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./RecyclerView 必知必会_files/column.signflow.51b2ced6040d64affc74.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./RecyclerView 必知必会_files/column.richinput.d6473ef647574d98c584.js.下载"></script></head><body class=""><div id="root"><div class="App" data-reactroot=""><div class="LoadingBar"></div><main role="main" class="App-main"><div class="Post-content" data-zop-usertoken="{&quot;userToken&quot;:&quot;chuzizhou&quot;}" data-zop="{&quot;authorName&quot;:&quot;腾讯Bugly&quot;,&quot;itemId&quot;:24807254,&quot;title&quot;:&quot;RecyclerView 必知必会&quot;,&quot;type&quot;:&quot;article&quot;}" data-za-detail-view-path-module="PostItem" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Post&quot;,&quot;token&quot;:&quot;24807254&quot;}}}"><div class="ColumnPageHeader-Wrapper"><div><div class="Sticky ColumnPageHeader"><div class="ColumnPageHeader-content"><a href="https://www.zhihu.com/" aria-label="知乎"><svg viewBox="0 0 200 91" class="Icon ZhihuLogo Icon--logo" style="height:30px;width:64px" width="64" height="30" aria-hidden="true"><title></title><g><path d="M53.29 80.035l7.32.002 2.41 8.24 13.128-8.24h15.477v-67.98H53.29v67.978zm7.79-60.598h22.756v53.22h-8.73l-8.718 5.473-1.587-5.46-3.72-.012v-53.22zM46.818 43.162h-16.35c.545-8.467.687-16.12.687-22.955h15.987s.615-7.05-2.68-6.97H16.807c1.09-4.1 2.46-8.332 4.1-12.708 0 0-7.523 0-10.085 6.74-1.06 2.78-4.128 13.48-9.592 24.41 1.84-.2 7.927-.37 11.512-6.94.66-1.84.785-2.08 1.605-4.54h9.02c0 3.28-.374 20.9-.526 22.95H6.51c-3.67 0-4.863 7.38-4.863 7.38H22.14C20.765 66.11 13.385 79.24 0 89.62c6.403 1.828 12.784-.29 15.937-3.094 0 0 7.182-6.53 11.12-21.64L43.92 85.18s2.473-8.402-.388-12.496c-2.37-2.788-8.768-10.33-11.496-13.064l-4.57 3.627c1.363-4.368 2.183-8.61 2.46-12.71H49.19s-.027-7.38-2.372-7.38zm128.752-.502c6.51-8.013 14.054-18.302 14.054-18.302s-5.827-4.625-8.556-1.27c-1.874 2.548-11.51 15.063-11.51 15.063l6.012 4.51zm-46.903-18.462c-2.814-2.577-8.096.667-8.096.667s12.35 17.2 12.85 17.953l6.08-4.29s-8.02-11.752-10.83-14.33zM199.99 46.5c-6.18 0-40.908.292-40.953.292v-31.56c1.503 0 3.882-.124 7.14-.376 12.773-.753 21.914-1.25 27.427-1.504 0 0 3.817-8.496-.185-10.45-.96-.37-7.24 1.43-7.24 1.43s-51.63 5.153-72.61 5.64c.5 2.756 2.38 5.336 4.93 6.11 4.16 1.087 7.09.53 15.36.277 7.76-.5 13.65-.76 17.66-.76v31.19h-41.71s.88 6.97 7.97 7.14h33.73v22.16c0 4.364-3.498 6.87-7.65 6.6-4.4.034-8.15-.36-13.027-.566.623 1.24 1.977 4.496 6.035 6.824 3.087 1.502 5.054 2.053 8.13 2.053 9.237 0 14.27-5.4 14.027-14.16V53.93h38.235c3.026 0 2.72-7.432 2.72-7.432z" fill-rule="evenodd"></path></g></svg></a><i class="ColumnPageHeader-Line"></i><div class="ColumnPageHeader-Title"><a class="ColumnLink ColumnPageHeader-Link" href="https://zhuanlan.zhihu.com/bugly"><img class="Avatar Avatar--round" width="30" height="30" src="./RecyclerView 必知必会_files/e1ff32e9e1114d0ceba728a65623eed8_is.jpg" srcset="https://pic1.zhimg.com/e1ff32e9e1114d0ceba728a65623eed8_im.jpg 2x" alt="遇见"></a><div class="ColumnPageHeader-TitleName"><span class="ColumnPageHeader-TitleMeta">首发于</span><a class="ColumnLink ColumnPageHeader-TitleColumn" href="https://zhuanlan.zhihu.com/bugly">遇见</a></div></div><div class="ColumnPageHeader-Button"><button type="button" class="Button FollowButton ColumnPageHeader-FollowButton Button--primary Button--grey">已关注</button><button type="button" class="Button ColumnPageHeader-WriteButton Button--blue"><svg class="Zi Zi--EditSurround" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M18.453 7.992l-1.833-1.65.964-.978a1.223 1.223 0 0 1 1.73-.012l.005.006a1.24 1.24 0 0 1 .007 1.748l-.873.886zm-1.178 1.194l-5.578 5.66-1.935.697a.393.393 0 0 1-.504-.504l.697-1.935 5.488-5.567 1.832 1.65zM7.58 5.848l5.654.006-1.539 1.991-3.666.012A1.02 1.02 0 0 0 7 8.868v7.993c0 .558.46 1.01 1.029 1.01l7.941-.01c.568 0 1.03-.453 1.03-1.012v-4.061l2-1.442v6.002c0 1.397-1.2 2.501-2.62 2.501H7.574C6.153 19.85 5 18.717 5 17.32V8.35c0-1.397 1.16-2.502 2.58-2.502z"></path></svg>写文章</button><div class="Popover"><button title="更多" type="button" id="Popover-77043-9923-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77043-9923-content" class="Button ColumnPageHeader-MenuToggler Button--plain"><svg class="Zi Zi--Dots" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill-rule="evenodd"></path></svg></button></div></div></div></div></div></div><article class="Post-Main Post-NormalMain"><header class="Post-Header"><h1 class="Post-Title">RecyclerView 必知必会</h1><div class="Post-Author"><div class="AuthorInfo" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="name" content="腾讯Bugly"><meta itemprop="image" content="https://pic4.zhimg.com/70a08c690f7313464792663ea399d656_is.jpg"><meta itemprop="url" content="https://www.zhihu.com/people/teng-xun-bugly"><meta itemprop="zhihu:followerCount"><span class="UserLink AuthorInfo-avatarWrapper"><div class="Popover"><div id="Popover-77048-15176-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77048-15176-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/org/teng-xun-bugly"><img class="Avatar Avatar--round AuthorInfo-avatar" width="38" height="38" src="./RecyclerView 必知必会_files/70a08c690f7313464792663ea399d656_xs.jpg" srcset="https://pic4.zhimg.com/70a08c690f7313464792663ea399d656_l.jpg 2x" alt="腾讯Bugly"></a></div></div></span><div class="AuthorInfo-content"><div class="AuthorInfo-head"><span class="UserLink AuthorInfo-name"><div class="Popover"><div id="Popover-77048-10311-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77048-10311-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/org/teng-xun-bugly">腾讯Bugly</a></div></div><a class="UserLink-badge" data-tooltip="已认证的官方帐号" href="https://www.zhihu.com/question/48510028" target="_blank"><svg viewBox="0 0 20 20" class="Icon Icon--badgeCert" style="height:16px;width:16px" width="16" height="16" aria-hidden="true"><title>用户标识</title><g><g fill="none" fill-rule="evenodd">     <path d="M.64 11.39c1.068.895 1.808 2.733 1.66 4.113l.022-.196c-.147 1.384.856 2.4 2.24 2.278l-.198.016c1.387-.12 3.21.656 4.083 1.735l-.125-.154c.876 1.085 2.304 1.093 3.195.028l-.127.152c.895-1.068 2.733-1.808 4.113-1.66l-.198-.022c1.386.147 2.402-.856 2.28-2.238l.016.197c-.12-1.388.656-3.212 1.735-4.084l-.154.125c1.084-.876 1.093-2.304.028-3.195l.152.127c-1.068-.895-1.808-2.732-1.66-4.113l-.022.198c.147-1.386-.856-2.4-2.24-2.28l.198-.016c-1.387.122-3.21-.655-4.083-1.734l.125.153C10.802-.265 9.374-.274 8.483.79L8.61.64c-.895 1.068-2.733 1.808-4.113 1.662l.198.02c-1.386-.147-2.4.857-2.28 2.24L2.4 4.363c.12 1.387-.656 3.21-1.735 4.084l.154-.126C-.265 9.2-.274 10.626.79 11.517L.64 11.39z" fill="#0F88EB"></path>     <path d="M7.78 13.728l-2.633-3s-.458-.704.242-1.36c.7-.658 1.327-.22 1.327-.22L8.67 11.28l4.696-4.93s.663-.35 1.3.197c.635.545.27 1.382.27 1.382s-3.467 3.857-5.377 5.78c-.98.93-1.78.018-1.78.018z" fill="#FFF"></path>1   </g></g></svg></a></span></div><div class="AuthorInfo-detail"><div class="AuthorInfo-badge"><div class="AuthorInfo-badgeText">已认证的官方帐号</div></div></div></div></div><button type="button" class="Button FollowButton Button--primary Button--blue"><span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M13.491 10.488s-.012-5.387 0-5.998c-.037-1.987-3.035-1.987-2.997 0-.038 1.912 0 5.998 0 5.998H4.499c-1.999.01-1.999 3.009 0 3.009s5.995-.01 5.995-.01v5.999c0 2.019 3.006 2.019 2.997 0-.01-2.019 0-5.998 0-5.998s3.996.009 6.004.009c2.008 0 2.008-3-.01-3.009h-5.994z" fill-rule="evenodd"></path></svg></span>关注</button></div><div><span class="Voters"><span><span class="UserLink"><div class="Popover"><div id="Popover-77048-65061-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77048-65061-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/gong-ze-long">才华横溢的小龙包</a></div></div></span></span>等<!-- --> <button type="button" class="Button Button--plain">162 人赞了该文章</button></span></div></header><div><div class="RichText ztext Post-RichText"><p> 本文来自于<strong>腾讯Bugly</strong>公众号（<strong>weixinBugly</strong>），未经作者同意，请勿转载，原文地址：<a href="https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s/CzrKotyupXbYY6EY2HP_dA" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">RecyclerView 必知必会</a></p><h2>导语</h2><p> RecyclerView是Android 5.0提出的新UI控件，可以用来代替传统的ListView。</p><p> Bugly之前也发过一篇相关文章，讲解了 RecyclerView 与 ListView 在缓存机制上的一些区别：</p><blockquote><p><a href="https://zhuanlan.zhihu.com/p/23339185" class="internal" data-za-detail-view-id="1043">Android ListView 与 RecyclerView 对比浅析—缓存机制</a></p></blockquote><p> 今天精神哥来给大家详细介绍关于 RecyclerView，你需要了解的方方面面。</p><blockquote><p>本文来自腾讯 天天P图团队——damonxia(夏正冬)，Android工程师</p></blockquote><h2>前言</h2><p> 下文中Demo的源代码地址：<a href="https://link.zhihu.com/?target=https%3A//github.com/xiazdong/RecyclerViewDemo" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">RecyclerViewDemo</a>。</p><ul><li>Demo1: RecyclerView添加HeaderView和FooterView，ItemDecoration范例。</li><li>Demo2: ListView实现局部刷新。</li><li>Demo3: RecyclerView实现拖拽、侧滑删除。</li><li>Demo4: RecyclerView闪屏问题。</li><li>Demo5: RecyclerView实现setEmptyView()。</li><li>Demo6: RecyclerView实现万能适配器，瀑布流布局，嵌套滑动机制。</li></ul><h2>基本概念</h2><p> RecyclerView是Android 5.0提出的新UI控件，位于support-v7包中，可以通过在build.gradle中添加compile 'com.android.support:recyclerview-v7:24.2.1'导入。</p><p> RecyclerView的官方定义如下：</p><blockquote><p>A flexible view for providing a limited window into a large data set.</p></blockquote><p> 从定义可以看出，flexible（可扩展性）是RecyclerView的特点。不过我们发现和ListView有点像，本文后面会介绍RecyclerView和ListView的区别。</p><h2>为什么会出现RecyclerView？</h2><p> RecyclerView并不会完全替代ListView（这点从ListView没有被标记为@Deprecated可以看出），两者的使用场景不一样。但是RecyclerView的出现会让很多开源项目被废弃，例如<a href="https://link.zhihu.com/?target=https%3A//github.com/MeetMe/Android-HorizontalListView" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">横向滚动的ListView</a>, <a href="https://link.zhihu.com/?target=https%3A//github.com/jess-anders/two-way-gridview" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">横向滚动的GridView</a>, <a href="https://link.zhihu.com/?target=https%3A//github.com/maurycyw/StaggeredGridView" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">瀑布流控件</a>，因为RecyclerView能够实现所有这些功能。</p><p> 比如有一个需求是屏幕竖着的时候的显示形式是ListView，屏幕横着的时候的显示形式是2列的GridView，此时如果用RecyclerView，则通过设置LayoutManager一行代码实现替换。</p><h2>ListView vs RecyclerView</h2><p> ListView相比RecyclerView，有一些优点：</p><ul><li>addHeaderView(), addFooterView()添加头视图和尾视图。</li><li>通过”android:divider”设置自定义分割线。</li><li>setOnItemClickListener()和setOnItemLongClickListener()设置点击事件和长按事件。</li></ul><p> 这些功能在RecyclerView中都没有直接的接口，要自己实现（虽然实现起来很简单），因此如果只是实现简单的显示功能，ListView无疑更简单。</p><p> RecyclerView相比ListView，有一些明显的优点：</p><ul><li>默认已经实现了View的复用，不需要类似if(convertView == null)的实现，而且回收机制更加完善。</li><li>默认支持局部刷新。</li><li>容易实现添加item、删除item的动画效果。</li><li>容易实现拖拽、侧滑删除等功能。</li></ul><p> RecyclerView是一个插件式的实现，对各个功能进行解耦，从而扩展性比较好。</p><h2>ListView实现局部刷新</h2><p> 我们都知道ListView通过adapter.notifyDataSetChanged()实现ListView的更新，这种更新方法的缺点是全局更新，即对每个Item View都进行重绘。但事实上很多时候，我们只是更新了其中一个Item的数据，其他Item其实可以不需要重绘。</p><p> 这里给出ListView实现局部更新的方法：</p><div class="highlight"><pre><code class="language-text"><span></span> public void updateItemView(ListView listview, int position, Data data){
+     int firstPos = listview.getFirstVisiblePosition();
+     int lastPos = listview.getLastVisiblePosition();
+     if(position &gt;= firstPos &amp;&amp; position &lt;= lastPos){  //可见才更新，不可见则在getView()时更新
+         //listview.getChildAt(i)获得的是当前可见的第i个item的view
+         View view = listview.getChildAt(position - firstPos);
+         VH vh = (VH)view.getTag();
+         vh.text.setText(data.text);
+     }
+ }
+</code></pre></div><p> 可以看出，我们通过ListView的getChildAt()来获得需要更新的View，然后通过getTag()获得ViewHolder，从而实现更新。</p><h2>标准用法</h2><p> RecyclerView的标准实现步骤如下：</p><ul><li>创建Adapter：创建一个继承RecyclerView.Adapter&lt;VH&gt;的Adapter类（VH是ViewHolder的类名），记为NormalAdapter。</li><li>创建ViewHolder：在NormalAdapter中创建一个继承RecyclerView.ViewHolder的静态内部类，记为VH。ViewHolder的实现和ListView的ViewHolder实现几乎一样。</li><li>在NormalAdapter中实现：<ul><li>VH onCreateViewHolder(ViewGroup parent, int viewType): 映射Item Layout Id，创建VH并返回。</li><li>void onBindViewHolder(VH holder, int position): 为holder设置指定数据。</li><li>int getItemCount(): 返回Item的个数。</li></ul></li></ul><p> 可以看出，RecyclerView将ListView中getView()的功能拆分成了onCreateViewHolder()和onBindViewHolder()。</p><p> 基本的Adapter实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public class NormalAdapter extends RecyclerView.Adapter&lt;NormalAdapter.VH&gt;{
+
+     private List&lt;String&gt; mDatas;
+     public NormalAdapter(List&lt;String&gt; data) {
+         this.mDatas = data;
+     }
+
+     @Override
+     public void onBindViewHolder(VH holder, int position) {
+         holder.title.setText(mDatas.get(position));
+         holder.itemView.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 //item 点击事件
+             }
+         });
+     }
+
+     @Override
+     public int getItemCount() {
+         return mDatas.size();
+     }
+
+     @Override
+     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
+         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_1, parent, false);
+         return new VH(v);
+     }
+
+     public static class VH extends RecyclerView.ViewHolder{
+         public final TextView title;
+         public VH(View v) {
+             super(v);
+             title = (TextView) v.findViewById(R.id.title);
+         }
+     }
+ }
+</code></pre></div><p> 创建完Adapter，接着对RecyclerView进行设置，一般来说，需要为RecyclerView进行四大设置，也就是后文说的四大组成：Adapter(必选),Layout Manager(必选),Item Decoration(可选，默认为空), Item Animator(可选，默认为DefaultItemAnimator)。</p><p> 需要注意的是在onCreateViewHolder()中，映射Layout必须为</p><div class="highlight"><pre><code class="language-text"><span></span> View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_1, parent, false);
+</code></pre></div><p> 而不能是：</p><div class="highlight"><pre><code class="language-text"><span></span> View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_1, null);
+</code></pre></div><p> 如果要实现ListView的效果，只需要设置Adapter和Layout Manager，如下：</p><div class="highlight"><pre><code class="language-text"><span></span> List&lt;String&gt; data = initData();
+ RecyclerView rv = (RecyclerView) findViewById(R.id.rv);
+ rv.setLayoutManager(new LinearLayoutManager(this));
+ rv.setAdapter(new NormalAdapter(data));
+</code></pre></div><p> ListView只提供了notifyDataSetChanged()更新整个视图，这是很不合理的。RecyclerView提供了notifyItemInserted(),notifyItemRemoved(),notifyItemChanged()等API更新单个或某个范围的Item视图。</p><h2>四大组成</h2><p> RecyclerView的四大组成是：</p><ul><li>Adapter：为Item提供数据。</li><li>Layout Manager：Item的布局。</li><li>Item Animator：添加、删除Item动画。</li><li>Item Decoration：Item之间的Divider。</li></ul><h3>Adapter</h3><p> Adapter的使用方式前面已经介绍了，功能就是为RecyclerView提供数据，这里主要介绍万能适配器的实现。其实万能适配器的概念在ListView就已经存在了，即<a href="https://link.zhihu.com/?target=https%3A//github.com/JoanZapata/base-adapter-helper" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">base-adapter-helper</a>。</p><p> 这里我们只针对RecyclerView，聊聊万能适配器出现的原因。为了创建一个RecyclerView的Adapter，每次我们都需要去做重复劳动，包括重写onCreateViewHolder(),getItemCount()、创建ViewHolder，并且实现过程大同小异，因此万能适配器出现了，他能通过以下方式快捷地创建一个Adapter：</p><div class="highlight"><pre><code class="language-text"><span></span> mAdapter = new QuickAdapter&lt;String&gt;(data) {
+     @Override
+     public int getLayoutId(int viewType) {
+         return R.layout.item;
+     }
+
+     @Override
+     public void convert(VH holder, String data, int position) {
+         holder.setText(R.id.text, data);
+         //holder.itemView.setOnClickListener(); 此处还可以添加点击事件
+     }
+ };
+</code></pre></div><p> 是不是很方便。当然复杂情况也可以轻松解决。</p><div class="highlight"><pre><code class="language-text"><span></span> mAdapter = new QuickAdapter&lt;Model&gt;(data) {
+     @Override
+     public int getLayoutId(int viewType) {
+         switch(viewType){
+             case TYPE_1:
+                 return R.layout.item_1;
+             case TYPE_2:
+                 return R.layout.item_2;
+         }
+     }
+
+     public int getItemViewType(int position) {
+         if(position % 2 == 0){
+             return TYPE_1;
+         } else{
+             return TYPE_2;
+         }
+     }
+
+     @Override
+     public void convert(VH holder, Model data, int position) {
+         int type = getItemViewType(position);
+         switch(type){
+             case TYPE_1:
+                 holder.setText(R.id.text, data.text);
+                 break;
+             case TYPE_2:
+                 holder.setImage(R.id.image, data.image);
+                 break;
+         }
+     }
+ };
+</code></pre></div><p> 这里讲解下万能适配器的实现思路。</p><p> 我们通过public abstract class QuickAdapter&lt;T&gt; extends RecyclerView.Adapter&lt;QuickAdapter.VH&gt;定义万能适配器QuickAdapter类，T是列表数据中每个元素的类型，QuickAdapter.VH是QuickAdapter的ViewHolder实现类，称为万能ViewHolder。</p><p> 首先介绍QuickAdapter.VH的实现：</p><div class="highlight"><pre><code class="language-text"><span></span> static class VH extends RecyclerView.ViewHolder{
+     private SparseArray&lt;View&gt; mViews;
+     private View mConvertView;
+
+     private VH(View v){
+         super(v);
+         mConvertView = v;
+         mViews = new SparseArray&lt;&gt;();
+     }
+
+     public static VH get(ViewGroup parent, int layoutId){
+         View convertView = LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false);
+         return new VH(convertView);
+     }
+
+     public &lt;T extends View&gt; T getView(int id){
+         View v = mViews.get(id);
+         if(v == null){
+             v = mConvertView.findViewById(id);
+             mViews.put(id, v);
+         }
+         return (T)v;
+     }
+
+     public void setText(int id, String value){
+         TextView view = getView(id);
+         view.setText(value);
+     }
+ }
+</code></pre></div><p> 其中的关键点在于通过SparseArray&lt;View&gt;存储item view的控件，getView(int id)的功能就是通过id获得对应的View（首先在mViews中查询是否存在，如果没有，那么findViewById()并放入mViews中，避免下次再执行findViewById()）。</p><p> QuickAdapter的实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public abstract class QuickAdapter&lt;T&gt; extends RecyclerView.Adapter&lt;QuickAdapter.VH&gt;{
+
+     private List&lt;T&gt; mDatas;
+
+     public QuickAdapter(List&lt;T&gt; datas){
+         this.mDatas = datas;
+     }
+
+     public abstract int getLayoutId(int viewType);
+
+     @Override
+     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
+         return VH.get(parent,getLayoutId(viewType));
+     }
+
+     @Override
+     public void onBindViewHolder(VH holder, int position) {
+         convert(holder, mDatas.get(position), position);
+     }
+
+     @Override
+     public int getItemCount() {
+         return mDatas.size();
+     }
+
+     public abstract void convert(VH holder, T data, int position);
+
+     static class VH extends RecyclerView.ViewHolder{...}
+ }
+</code></pre></div><p> 其中：</p><ul><li>getLayoutId(int viewType)是根据viewType返回布局ID。</li><li>convert()做具体的bind操作。</li></ul><p> 就这样，万能适配器实现完成了。</p><h3>Item Decoration</h3><p> RecyclerView通过addItemDecoration()方法添加item之间的分割线。Android并没有提供实现好的Divider，因此任何分割线样式都需要自己实现。</p><p> 方法是：创建一个类并继承RecyclerView.ItemDecoration，重写以下两个方法：</p><ul><li>onDraw(): 绘制分割线。</li><li>getItemOffsets(): 设置分割线的宽、高。</li></ul><p> Google在sample中给了一个参考的实现类：<a href="https://link.zhihu.com/?target=https%3A//android.googlesource.com/platform/development/%252B/master/samples/Support7Demos/src/com/example/android/supportv7/widget/decorator/DividerItemDecoration.java" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">DividerItemDecoration</a>，这里我们通过分析这个例子来看如何自定义Item Decoration。</p><p> 首先看构造函数，构造函数中获得系统属性android:listDivider，该属性是一个Drawable对象。</p><p> 因此如果要设置，则需要在value/styles.xml中设置：</p><div class="highlight"><pre><code class="language-text"><span></span> &lt;style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"&gt;
+     &lt;item name="android:listDivider"&gt;@drawable/item_divider&lt;/item&gt;
+ &lt;/style&gt;
+</code></pre></div><p> 接着来看getItemOffsets()的实现：</p><div class="highlight"><pre><code class="language-text"><span></span> public void getItemOffsets(Rect outRect, int position, RecyclerView parent) {
+     if (mOrientation == VERTICAL_LIST) {
+         outRect.set(0, 0, 0, mDivider.getIntrinsicHeight());
+     } else {
+         outRect.set(0, 0, mDivider.getIntrinsicWidth(), 0);
+     }
+ }
+</code></pre></div><p> 这里只看mOrientation == VERTICAL_LIST的情况，outRect是当前item四周的间距，类似margin属性，现在设置了该item下间距为mDivider.getIntrinsicHeight()。</p><p> 那么getItemOffsets()是怎么被调用的呢？</p><p> RecyclerView继承了ViewGroup，并重写了measureChild()，该方法在onMeasure()中被调用，用来计算每个child的大小，计算每个child大小的时候就需要加上getItemOffsets()设置的外间距：</p><div class="highlight"><pre><code class="language-text"><span></span> public void measureChild(View child, int widthUsed, int heightUsed){
+     final Rect insets = mRecyclerView.getItemDecorInsetsForChild(child);//调用getItemOffsets()获得Rect对象
+     widthUsed += insets.left + insets.right;
+     heightUsed += insets.top + insets.bottom;
+     //...
+ }
+</code></pre></div><p> 这里我们只考虑mOrientation == VERTICAL_LIST的情况，DividerItemDecoration的onDraw()实际上调用了drawVertical()：</p><div class="highlight"><pre><code class="language-text"><span></span> public void drawVertical(Canvas c, RecyclerView parent) {
+     final int left = parent.getPaddingLeft();
+     final int right = parent.getWidth() - parent.getPaddingRight();
+     final int childCount = parent.getChildCount();
+     /**
+      * 画每个item的分割线
+      */
+     for (int i = 0; i &lt; childCount; i++) {
+         final View child = parent.getChildAt(i);
+         final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
+                 .getLayoutParams();
+         final int top = child.getBottom() + params.bottomMargin + Math.round(ViewCompat.getTranslationY(child));
+         final int bottom = top + mDivider.getIntrinsicHeight();
+         mDivider.setBounds(left, top, right, bottom);/*规定好左上角和右下角*/
+         mDivider.draw(c);
+     }
+ }
+</code></pre></div><p> 那么onDraw()是怎么被调用的呢？还有ItemDecoration还有一个方法onDrawOver()，该方法也可以被重写，那么onDraw()和onDrawOver()之间有什么关系呢？</p><p> 我们来看下面的代码：</p><div class="highlight"><pre><code class="language-text"><span></span> class RecyclerView extends ViewGroup{
+     public void draw(Canvas c) {
+         super.draw(c); //调用View的draw()，该方法会先调用onDraw()，再调用dispatchDraw()绘制children
+
+         final int count = mItemDecorations.size();
+         for (int i = 0; i &lt; count; i++) {
+             mItemDecorations.get(i).onDrawOver(c, this, mState);
+         }
+         ...
+     }
+     public void onDraw(Canvas c) {
+         super.onDraw(c);
+         final int count = mItemDecorations.size();
+         for (int i = 0; i &lt; count; i++) {
+             mItemDecorations.get(i).onDraw(c, this, mState);
+         }
+     }
+ }
+</code></pre></div><p> 根据<a href="https://link.zhihu.com/?target=http%3A//a.codekk.com/detail/Android/lightSky/%25E5%2585%25AC%25E5%2585%25B1%25E6%258A%2580%25E6%259C%25AF%25E7%2582%25B9%25E4%25B9%258B%2520View%2520%25E7%25BB%2598%25E5%2588%25B6%25E6%25B5%2581%25E7%25A8%258B" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">View的绘制流程</a>，首先调用RecyclerView重写的draw()方法，随后super.draw()即调用View的draw()，该方法会先调用onDraw()（这个方法在RecyclerView重写了），再调用dispatchDraw()绘制children。因此：ItemDecoration的onDraw()在绘制Item之前调用，ItemDecoration的onDrawOver()在绘制Item之后调用。</p><p> 当然，如果只需要实现Item之间相隔一定距离，那么只需要为Item的布局设置margin即可，没必要自己实现ItemDecoration这么麻烦。</p><h3>Layout Manager</h3><p> LayoutManager负责RecyclerView的布局，其中包含了Item View的获取与回收。这里我们简单分析LinearLayoutManager的实现。</p><p> 对于LinearLayoutManager来说，比较重要的几个方法有：</p><ul><li>onLayoutChildren(): 对RecyclerView进行布局的入口方法。</li><li>fill(): 负责填充RecyclerView。</li><li>scrollVerticallyBy():根据手指的移动滑动一定距离，并调用fill()填充。</li><li>canScrollVertically()或canScrollHorizontally(): 判断是否支持纵向滑动或横向滑动。</li></ul><p> onLayoutChildren()的核心实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
+     detachAndScrapAttachedViews(recycler); //将原来所有的Item View全部放到Recycler的Scrap Heap或Recycle Pool
+     fill(recycler, mLayoutState, state, false); //填充现在所有的Item View
+ }
+</code></pre></div><p> RecyclerView的回收机制有个重要的概念，即将回收站分为Scrap Heap和Recycle Pool，其中Scrap Heap的元素可以被直接复用，而不需要调用onBindViewHolder()。detachAndScrapAttachedViews()会根据情况，将原来的Item View放入Scrap Heap或Recycle Pool，从而在复用时提升效率。</p><p> fill()是对剩余空间不断地调用layoutChunk()，直到填充完为止。layoutChunk()的核心实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public void layoutChunk() {
+     View view = layoutState.next(recycler); //调用了getViewForPosition()
+     addView(view);  //加入View
+     measureChildWithMargins(view, 0, 0); //计算View的大小
+     layoutDecoratedWithMargins(view, left, top, right, bottom); //布局View
+ }
+</code></pre></div><p> 其中next()调用了getViewForPosition(currentPosition)，该方法是从RecyclerView的回收机制实现类Recycler中获取合适的View，在后文的回收机制中会介绍该方法的具体实现。</p><p> 如果要自定义LayoutManager，可以参考：</p><ul><li><a href="https://link.zhihu.com/?target=https%3A//github.com/hehonghui/android-tech-frontier/blob/master/issue-9/%25E5%2588%259B%25E5%25BB%25BA-RecyclerView-LayoutManager-Part-1.md" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">创建一个 RecyclerView LayoutManager – Part 1</a></li><li><a href="https://link.zhihu.com/?target=https%3A//github.com/hehonghui/android-tech-frontier/blob/master/issue-13/%25E5%2588%259B%25E5%25BB%25BA-RecyclerView-LayoutManager-Part-2.md" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">创建一个 RecyclerView LayoutManager – Part 2</a></li><li><a href="https://link.zhihu.com/?target=https%3A//github.com/hehonghui/android-tech-frontier/blob/master/issue-13/%25E5%2588%259B%25E5%25BB%25BA-RecyclerView-LayoutManager-Part-3.md" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">创建一个 RecyclerView LayoutManager – Part 3</a></li></ul><h3>Item Animator</h3><p> RecyclerView能够通过mRecyclerView.setItemAnimator(ItemAnimator animator)设置添加、删除、移动、改变的动画效果。RecyclerView提供了默认的ItemAnimator实现类：DefaultItemAnimator。这里我们通过分析DefaultItemAnimator的源码来介绍如何自定义Item Animator。</p><p> DefaultItemAnimator继承自SimpleItemAnimator，SimpleItemAnimator继承自ItemAnimator。</p><p> 首先我们介绍ItemAnimator类的几个重要方法：</p><ul><li><em>animateAppearance()</em>: 当ViewHolder出现在屏幕上时被调用（可能是add或move）。</li><li><em>animateDisappearance()</em>: 当ViewHolder消失在屏幕上时被调用（可能是remove或move）。</li><li><em>animatePersistence()</em>: 在没调用notifyItemChanged()和notifyDataSetChanged()的情况下布局发生改变时被调用。</li><li><em>animateChange()</em>: 在显式调用notifyItemChanged()或notifyDataSetChanged()时被调用。</li><li>runPendingAnimations(): RecyclerView动画的执行方式并不是立即执行，而是每帧执行一次，比如两帧之间添加了多个Item，则会将这些将要执行的动画Pending住，保存在成员变量中，等到下一帧一起执行。该方法执行的前提是前面animateXxx()返回true。</li><li>isRunning(): 是否有动画要执行或正在执行。</li><li>dispatchAnimationsFinished(): 当全部动画执行完毕时被调用。</li></ul><p> 上面用斜体字标识的方法比较难懂，不过没关系，因为Android提供了SimpleItemAnimator类（继承自ItemAnimator），该类提供了一系列更易懂的API，在自定义Item Animator时只需要继承SimpleItemAnimator即可：</p><ul><li>animateAdd(ViewHolder holder): 当Item添加时被调用。</li><li>animateMove(ViewHolder holder, int fromX, int fromY, int toX, int toY): 当Item移动时被调用。</li><li>animateRemove(ViewHolder holder): 当Item删除时被调用。</li><li>animateChange(ViewHolder oldHolder, ViewHolder newHolder, int fromLeft, int fromTop, int toLeft, int toTop): 当显式调用notifyItemChanged()或notifyDataSetChanged()时被调用。</li></ul><p> 对于以上四个方法，注意两点：</p><ul><li>当Xxx动画开始执行前（在runPendingAnimations()中）需要调用dispatchXxxStarting(holder)，执行完后需要调用dispatchXxxFinished(holder)。</li><li>这些方法的内部实际上并不是书写执行动画的代码，而是将需要执行动画的Item全部存入成员变量中，并且返回值为true，然后在runPendingAnimations()中一并执行。</li></ul><p> DefaultItemAnimator类是RecyclerView提供的默认动画类。我们通过阅读该类源码学习如何自定义Item Animator。我们先看DefaultItemAnimator的成员变量：</p><div class="highlight"><pre><code class="language-text"><span></span> private ArrayList&lt;ViewHolder&gt; mPendingAdditions = new ArrayList&lt;&gt;();//存放下一帧要执行的一系列add动画
+ ArrayList&lt;ArrayList&lt;ViewHolder&gt;&gt; mAdditionsList = new ArrayList&lt;&gt;();//存放正在执行的一批add动画
+ ArrayList&lt;ViewHolder&gt; mAddAnimations = new ArrayList&lt;&gt;(); //存放当前正在执行的add动画
+
+ private ArrayList&lt;ViewHolder&gt; mPendingRemovals = new ArrayList&lt;&gt;();
+ ArrayList&lt;ViewHolder&gt; mRemoveAnimations = new ArrayList&lt;&gt;();
+
+ private ArrayList&lt;MoveInfo&gt; mPendingMoves = new ArrayList&lt;&gt;();
+ ArrayList&lt;ArrayList&lt;MoveInfo&gt;&gt; mMovesList = new ArrayList&lt;&gt;();
+ ArrayList&lt;ViewHolder&gt; mMoveAnimations = new ArrayList&lt;&gt;();
+
+ private ArrayList&lt;ChangeInfo&gt; mPendingChanges = new ArrayList&lt;&gt;();
+ ArrayList&lt;ArrayList&lt;ChangeInfo&gt;&gt; mChangesList = new ArrayList&lt;&gt;();
+ ArrayList&lt;ViewHolder&gt; mChangeAnimations = new ArrayList&lt;&gt;();
+</code></pre></div><p> DefaultItemAnimator实现了SimpleItemAnimator的animateAdd()方法，该方法只是将该item添加到mPendingAdditions中，等到runPendingAnimations()中执行。</p><div class="highlight"><pre><code class="language-text"><span></span> public boolean animateAdd(final ViewHolder holder) {
+     resetAnimation(holder);  //重置清空所有动画
+     ViewCompat.setAlpha(holder.itemView, 0); //将要做动画的View先变成透明
+     mPendingAdditions.add(holder);
+     return true;
+ }
+</code></pre></div><p> 接着看runPendingAnimations()的实现，该方法是执行remove,move,change,add动画，执行顺序为：remove动画最先执行，随后move和change并行执行，最后是add动画。为了简化，我们将remove,move,change动画执行过程省略，只看执行add动画的过程，如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public void runPendingAnimations() {
+     //1、判断是否有动画要执行，即各个动画的成员变量里是否有值。
+     //2、执行remove动画
+     //3、执行move动画
+     //4、执行change动画，与move动画并行执行
+     //5、执行add动画
+     if (additionsPending) {
+         final ArrayList&lt;ViewHolder&gt; additions = new ArrayList&lt;&gt;();
+         additions.addAll(mPendingAdditions);
+         mAdditionsList.add(additions);
+         mPendingAdditions.clear();
+         Runnable adder = new Runnable() {
+             @Override
+             public void run() {
+                 for (ViewHolder holder : additions) {
+                     animateAddImpl(holder);  //***** 执行动画的方法 *****
+                 }
+                 additions.clear();
+                 mAdditionsList.remove(additions);
+             }
+         };
+         if (removalsPending || movesPending || changesPending) {
+             long removeDuration = removalsPending ? getRemoveDuration() : 0;
+             long moveDuration = movesPending ? getMoveDuration() : 0;
+             long changeDuration = changesPending ? getChangeDuration() : 0;
+             long totalDelay = removeDuration + Math.max(moveDuration, changeDuration);
+             View view = additions.get(0).itemView;
+             ViewCompat.postOnAnimationDelayed(view, adder, totalDelay); //等remove，move，change动画全部做完后，开始执行add动画
+         }
+     }
+ }
+</code></pre></div><p> 为了防止在执行add动画时外面有新的add动画添加到mPendingAdditions中，从而导致执行add动画错乱，这里将mPendingAdditions的内容移动到局部变量additions中，然后遍历additions执行动画。</p><p> 在runPendingAnimations()中，animateAddImpl()是执行add动画的具体方法，其实就是将itemView的透明度从0变到1（在animateAdd()中已经将view的透明度变为0），实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> void animateAddImpl(final ViewHolder holder) {
+     final View view = holder.itemView;
+     final ViewPropertyAnimatorCompat animation = ViewCompat.animate(view);
+     mAddAnimations.add(holder);
+     animation.alpha(1).setDuration(getAddDuration()).
+             setListener(new VpaListenerAdapter() {
+                 @Override
+                 public void onAnimationStart(View view) {
+                     dispatchAddStarting(holder);  //在开始add动画前调用
+                 }
+                 @Override
+                 public void onAnimationCancel(View view) {
+                     ViewCompat.setAlpha(view, 1);
+                 }
+
+                 @Override
+                 public void onAnimationEnd(View view) {
+                     animation.setListener(null);
+                     dispatchAddFinished(holder); //在结束add动画后调用
+                     mAddAnimations.remove(holder);
+                     if (!isRunning()) {
+                         dispatchAnimationsFinished(); //结束所有动画后调用
+                     }
+                 }
+             }).start();
+ }
+</code></pre></div><p> 从DefaultItemAnimator类的实现来看，发现自定义Item Animator好麻烦，需要继承SimpleItemAnimator类，然后实现一堆方法。别急，<a href="https://link.zhihu.com/?target=https%3A//github.com/wasabeef/recyclerview-animators" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">recyclerview-animators</a>解救你，原因如下：</p><p> 首先，<a href="https://link.zhihu.com/?target=https%3A//github.com/wasabeef/recyclerview-animators" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">recyclerview-animators</a>提供了一系列的Animator，比如FadeInAnimator,ScaleInAnimator。其次，如果该库中没有你满意的动画，该库提供了BaseItemAnimator类，该类继承自SimpleItemAnimator，进一步封装了自定义Item Animator的代码，使得自定义Item Animator更方便，你只需要关注动画本身。如果要实现DefaultItemAnimator的代码，只需要以下实现：</p><div class="highlight"><pre><code class="language-text"><span></span> public class DefaultItemAnimator extends BaseItemAnimator {
+
+   public DefaultItemAnimator() {
+   }
+
+   public DefaultItemAnimator(Interpolator interpolator) {
+     mInterpolator = interpolator;
+   }
+
+   @Override protected void animateRemoveImpl(final RecyclerView.ViewHolder holder) {
+     ViewCompat.animate(holder.itemView)
+         .alpha(0)
+         .setDuration(getRemoveDuration())
+         .setListener(new DefaultRemoveVpaListener(holder))
+         .setStartDelay(getRemoveDelay(holder))
+         .start();
+   }
+
+   @Override protected void preAnimateAddImpl(RecyclerView.ViewHolder holder) {
+     ViewCompat.setAlpha(holder.itemView, 0); //透明度先变为0
+   }
+
+   @Override protected void animateAddImpl(final RecyclerView.ViewHolder holder) {
+     ViewCompat.animate(holder.itemView)
+         .alpha(1)
+         .setDuration(getAddDuration())
+         .setListener(new DefaultAddVpaListener(holder))
+         .setStartDelay(getAddDelay(holder))
+         .start();
+   }
+ }
+</code></pre></div><p> 是不是比继承SimpleItemAnimator方便多了。</p><p> 对于RecyclerView的Item Animator，有一个常见的坑就是”闪屏问题”。这个问题的描述是：当Item视图中有图片和文字，当更新文字并调用notifyItemChanged()时，文字改变的同时图片会闪一下。这个问题的原因是当调用notifyItemChanged()时，会调用DefaultItemAnimator的animateChangeImpl()执行change动画，该动画会使得Item的透明度从0变为1，从而造成闪屏。</p><p> 解决办法很简单，在rv.setAdapter()之前调用((SimpleItemAnimator)rv.getItemAnimator()).setSupportsChangeAnimations(false)禁用change动画。</p><h2>拓展RecyclerView</h2><h3>添加setOnItemClickListener接口</h3><p> RecyclerView默认没有像ListView一样提供setOnItemClickListener()接口，而<a href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/liaoinstan/article/details/51200600" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">RecyclerView无法添加onItemClickListener最佳的高效解决方案</a>这篇文章给出了通过recyclerView.addOnItemTouchListener(...)添加点击事件的方法，但我认为根本没有必要费这么大劲对外暴露这个接口，因为我们完全可以把点击事件的实现写在Adapter的onBindViewHolder()中，不暴露出来。具体方法就是通过：</p><div class="highlight"><pre><code class="language-text"><span></span> public void onBindViewHolder(VH holder, int position) {
+     holder.itemView.setOnClickListener(...);
+ }
+</code></pre></div><h3>添加HeaderView和FooterView</h3><p> RecyclerView默认没有提供类似addHeaderView()和addFooterView()的API，因此这里介绍如何优雅地实现这两个接口。</p><p> 如果你已经实现了一个Adapter，现在想为这个Adapter添加addHeaderView()和addFooterView()接口，则需要在Adapter中添加几个Item Type，然后修改getItemViewType(),onCreateViewHolder(),onBindViewHolder(),getItemCount()等方法，并添加switch语句进行判断。那么如何在不破坏原有Adapter实现的情况下完成呢？</p><p> 这里引入装饰器（Decorator）设计模式，该设计模式通过组合的方式，在不破话原有类代码的情况下，对原有类的功能进行扩展。</p><p> 这恰恰满足了我们的需求。我们只需要通过以下方式为原有的Adapter（这里命名为NormalAdapter）添加addHeaderView()和addFooterView()接口：</p><div class="highlight"><pre><code class="language-text"><span></span> NormalAdapter adapter = new NormalAdapter(data);
+ NormalAdapterWrapper newAdapter = new NormalAdapterWrapper(adapter);
+ View headerView = LayoutInflater.from(this).inflate(R.layout.item_header, mRecyclerView, false);
+ View footerView = LayoutInflater.from(this).inflate(R.layout.item_footer, mRecyclerView, false);
+ newAdapter.addFooterView(footerView);
+ newAdapter.addHeaderView(headerView);
+ mRecyclerView.setAdapter(newAdapter);
+</code></pre></div><p> 是不是看起来特别优雅。具体实现思路其实很简单，创建一个继承RecyclerView.Adapter&lt;RecyclerView.ViewHolder&gt;的类，并重写常见的方法，然后通过引入ITEM TYPE的方式实现：</p><div class="highlight"><pre><code class="language-text"><span></span> public class NormalAdapterWrapper extends RecyclerView.Adapter&lt;RecyclerView.ViewHolder&gt;{
+
+     enum ITEM_TYPE{
+         HEADER,
+         FOOTER,
+         NORMAL
+     }
+
+     private NormalAdapter mAdapter;
+     private View mHeaderView;
+     private View mFooterView;
+
+     public NormalAdapterWrapper(NormalAdapter adapter){
+         mAdapter = adapter;
+     }
+
+     @Override
+     public int getItemViewType(int position) {
+         if(position == 0){
+             return ITEM_TYPE.HEADER.ordinal();
+         } else if(position == mAdapter.getItemCount() + 1){
+             return ITEM_TYPE.FOOTER.ordinal();
+         } else{
+             return ITEM_TYPE.NORMAL.ordinal();
+         }
+     }
+
+     @Override
+     public int getItemCount() {
+         return mAdapter.getItemCount() + 2;
+     }
+
+     @Override
+     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+         if(position == 0){
+             return;
+         } else if(position == mAdapter.getItemCount() + 1){
+             return;
+         } else{
+             mAdapter.onBindViewHolder(((NormalAdapter.VH)holder), position - 1);
+         }
+     }
+
+     @Override
+     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+         if(viewType == ITEM_TYPE.HEADER.ordinal()){
+             return new RecyclerView.ViewHolder(mHeaderView) {};
+         } else if(viewType == ITEM_TYPE.FOOTER.ordinal()){
+             return new RecyclerView.ViewHolder(mFooterView) {};
+         } else{
+             return mAdapter.onCreateViewHolder(parent,viewType);
+         }
+     }
+
+     public void addHeaderView(View view){
+         this.mHeaderView = view;
+     }
+     public void addFooterView(View view){
+         this.mFooterView = view;
+     }
+ }
+</code></pre></div><h3>添加setEmptyView</h3><p> ListView提供了setEmptyView()设置Adapter数据为空时的View视图。RecyclerView虽然没提供直接的API，但是也可以很简单地实现。</p><ul><li>创建一个继承RecyclerView的类，记为EmptyRecyclerView。</li><li>通过getRootView().addView(emptyView)将空数据时显示的View添加到当前View的层次结构中。</li><li>通过AdapterDataObserver监听RecyclerView的数据变化，如果adapter为空，那么隐藏RecyclerView，显示EmptyView。</li></ul><p> 具体实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public class EmptyRecyclerView extends RecyclerView{
+
+     private View mEmptyView;
+
+     private AdapterDataObserver mObserver = new AdapterDataObserver() {
+         @Override
+         public void onChanged() {
+             Adapter adapter = getAdapter();
+             if(adapter.getItemCount() == 0){
+                 mEmptyView.setVisibility(VISIBLE);
+                 EmptyRecyclerView.this.setVisibility(GONE);
+             } else{
+                 mEmptyView.setVisibility(GONE);
+                 EmptyRecyclerView.this.setVisibility(VISIBLE);
+             }
+         }
+
+         public void onItemRangeChanged(int positionStart, int itemCount) {onChanged();}
+         public void onItemRangeMoved(int fromPosition, int toPosition, int itemCount) {onChanged();}
+         public void onItemRangeRemoved(int positionStart, int itemCount) {onChanged();}
+         public void onItemRangeInserted(int positionStart, int itemCount) {onChanged();}
+         public void onItemRangeChanged(int positionStart, int itemCount, Object payload) {onChanged();}
+     };
+
+     public EmptyRecyclerView(Context context, @Nullable AttributeSet attrs) {
+         super(context, attrs);
+     }
+
+     public void setEmptyView(View view){
+         this.mEmptyView = view;
+         ((ViewGroup)this.getRootView()).addView(mEmptyView); //加入主界面布局
+     }
+
+     public void setAdapter(RecyclerView.Adapter adapter){
+         super.setAdapter(adapter);
+         adapter.registerAdapterDataObserver(mObserver);
+         mObserver.onChanged();
+     }
+ }    
+</code></pre></div><h3>拖拽、侧滑删除</h3><p> Android提供了ItemTouchHelper类，使得RecyclerView能够轻易地实现滑动和拖拽，此处我们要实现上下拖拽和侧滑删除。首先创建一个继承自ItemTouchHelper.Callback的类，并重写以下方法：</p><ul><li>getMovementFlags(): 设置支持的拖拽和滑动的方向，此处我们支持的拖拽方向为上下，滑动方向为从左到右和从右到左，内部通过makeMovementFlags()设置。</li><li>onMove(): 拖拽时回调。</li><li>onSwiped(): 滑动时回调。</li><li>onSelectedChanged(): 状态变化时回调，一共有三个状态，分别是ACTION_STATE_IDLE(空闲状态)，ACTION_STATE_SWIPE(滑动状态)，ACTION_STATE_DRAG(拖拽状态)。此方法中可以做一些状态变化时的处理，比如拖拽的时候修改背景色。</li><li>clearView(): 用户交互结束时回调。此方法可以做一些状态的清空，比如拖拽结束后还原背景色。</li><li>isLongPressDragEnabled(): 是否支持长按拖拽，默认为true。如果不想支持长按拖拽，则重写并返回false。</li></ul><p> 具体实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> public class SimpleItemTouchCallback extends ItemTouchHelper.Callback {
+
+     private NormalAdapter mAdapter;
+     private List&lt;ObjectModel&gt; mData;
+     public SimpleItemTouchCallback(NormalAdapter adapter, List&lt;ObjectModel&gt; data){
+         mAdapter = adapter;
+         mData = data;
+     }
+
+     @Override
+     public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+         int dragFlag = ItemTouchHelper.UP | ItemTouchHelper.DOWN; //s上下拖拽
+         int swipeFlag = ItemTouchHelper.START | ItemTouchHelper.END; //左-&gt;右和右-&gt;左滑动
+         return makeMovementFlags(dragFlag,swipeFlag);
+     }
+
+     @Override
+     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+         int from = viewHolder.getAdapterPosition();
+         int to = target.getAdapterPosition();
+         Collections.swap(mData, from, to);
+         mAdapter.notifyItemMoved(from, to);
+         return true;
+     }
+
+     @Override
+     public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+         int pos = viewHolder.getAdapterPosition();
+         mData.remove(pos);
+         mAdapter.notifyItemRemoved(pos);
+     }
+
+     @Override
+     public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
+         super.onSelectedChanged(viewHolder, actionState);
+         if(actionState != ItemTouchHelper.ACTION_STATE_IDLE){
+             NormalAdapter.VH holder = (NormalAdapter.VH)viewHolder;
+             holder.itemView.setBackgroundColor(0xffbcbcbc); //设置拖拽和侧滑时的背景色
+         }
+     }
+
+     @Override
+     public void clearView(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+         super.clearView(recyclerView, viewHolder);
+         NormalAdapter.VH holder = (NormalAdapter.VH)viewHolder;
+         holder.itemView.setBackgroundColor(0xffeeeeee); //背景色还原
+     }
+ }
+</code></pre></div><p> 然后通过以下代码为RecyclerView设置该滑动、拖拽功能：</p><div class="highlight"><pre><code class="language-text"><span></span> ItemTouchHelper helper = new ItemTouchHelper(new SimpleItemTouchCallback(adapter, data));
+ helper.attachToRecyclerView(recyclerview);
+</code></pre></div><p> 前面拖拽的触发方式只有长按，如果想支持触摸Item中的某个View实现拖拽，则核心方法为helper.startDrag(holder)。首先定义接口：</p><div class="highlight"><pre><code class="language-text"><span></span> interface OnStartDragListener{
+     void startDrag(RecyclerView.ViewHolder holder);
+ }
+</code></pre></div><p> 然后让Activity实现该接口：</p><div class="highlight"><pre><code class="language-text"><span></span> public MainActivity extends Activity implements OnStartDragListener{
+     ...
+     public void startDrag(RecyclerView.ViewHolder holder) {
+         mHelper.startDrag(holder);
+     }
+ }
+</code></pre></div><p> 如果要对ViewHolder的text对象支持触摸拖拽，则在Adapter中的onBindViewHolder()中添加：</p><div class="highlight"><pre><code class="language-text"><span></span> holder.text.setOnTouchListener(new View.OnTouchListener() {
+     @Override
+     public boolean onTouch(View v, MotionEvent event) {
+         if(event.getAction() == MotionEvent.ACTION_DOWN){
+             mListener.startDrag(holder);
+         }
+         return false;
+     }
+ });
+</code></pre></div><p> 其中mListener是在创建Adapter时将实现OnStartDragListener接口的Activity对象作为参数传进来。</p><h2>回收机制</h2><h3>ListView回收机制</h3><p> ListView为了保证Item View的复用，实现了一套回收机制，该回收机制的实现类是RecycleBin，他实现了两级缓存：</p><ul><li>View[] mActiveViews: 缓存屏幕上的View，在该缓存里的View不需要调用getView()。</li><li>ArrayList&lt;View&gt;[] mScrapViews;: 每个Item Type对应一个列表作为回收站，缓存由于滚动而消失的View，此处的View如果被复用，会以参数的形式传给getView()。</li></ul><p> 接下来我们通过源码分析ListView是如何与RecycleBin交互的。其实ListView和RecyclerView的layout过程大同小异，ListView的布局函数是layoutChildren()，实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> void layoutChildren(){
+     //1. 如果数据被改变了，则将所有Item View回收至scrapView  
+   //（而RecyclerView会根据情况放入Scrap Heap或RecyclePool）；否则回收至mActiveViews
+     if (dataChanged) {
+         for (int i = 0; i &lt; childCount; i++) {
+             recycleBin.addScrapView(getChildAt(i), firstPosition+i);
+         }
+     } else {
+         recycleBin.fillActiveViews(childCount, firstPosition);
+     }
+     //2. 填充
+     switch(){
+         case LAYOUT_XXX:
+             fillXxx();
+             break;
+         case LAYOUT_XXX:
+             fillXxx();
+             break;
+     }
+     //3. 回收多余的activeView
+     mRecycler.scrapActiveViews();
+ }
+</code></pre></div><p> 其中fillXxx()实现了对Item View进行填充，该方法内部调用了makeAndAddView()，实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> View makeAndAddView(){
+     if (!mDataChanged) {
+         child = mRecycler.getActiveView(position);
+         if (child != null) {
+             return child;
+         }
+     }
+     child = obtainView(position, mIsScrap);
+     return child;
+ }
+</code></pre></div><p> 其中，getActiveView()是从mActiveViews中获取合适的View，如果获取到了，则直接返回，而不调用obtainView()，这也印证了如果从mActiveViews获取到了可复用的View，则不需要调用getView()。</p><p> obtainView()是从mScrapViews中获取合适的View，然后以参数形式传给了getView()，实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> View obtainView(int position){
+     final View scrapView = mRecycler.getScrapView(position);  //从RecycleBin中获取复用的View
+     final View child = mAdapter.getView(position, scrapView, this);
+ }
+</code></pre></div><p> 接下去我们介绍getScrapView(position)的实现，该方法通过position得到Item Type，然后根据Item Type从mScrapViews获取可复用的View，如果获取不到，则返回null，具体实现如下：</p><div class="highlight"><pre><code class="language-text"><span></span> class RecycleBin{
+     private View[] mActiveViews;    //存储屏幕上的View
+     private ArrayList&lt;View&gt;[] mScrapViews;  //每个item type对应一个ArrayList
+     private int mViewTypeCount;            //item type的个数
+     private ArrayList&lt;View&gt; mCurrentScrap;  //mScrapViews[0]
+
+     View getScrapView(int position) {
+         final int whichScrap = mAdapter.getItemViewType(position);
+         if (whichScrap &lt; 0) {
+             return null;
+         }
+         if (mViewTypeCount == 1) {
+             return retrieveFromScrap(mCurrentScrap, position);
+         } else if (whichScrap &lt; mScrapViews.length) {
+             return retrieveFromScrap(mScrapViews[whichScrap], position);
+         }
+         return null;
+     }
+     private View retrieveFromScrap(ArrayList&lt;View&gt; scrapViews, int position){
+         int size = scrapViews.size();
+         if(size &gt; 0){
+             return scrapView.remove(scrapViews.size() - 1);  //从回收列表中取出最后一个元素复用
+         } else{
+             return null;
+         }
+     }
+ }
+</code></pre></div><h3>RecyclerView回收机制</h3><p> RecyclerView和ListView的回收机制非常相似，但是ListView是以View作为单位进行回收，RecyclerView是以ViewHolder作为单位进行回收。Recycler是RecyclerView回收机制的实现类，他实现了四级缓存：</p><ul><li>mAttachedScrap: 缓存在屏幕上的ViewHolder。</li><li>mCachedViews: 缓存屏幕外的ViewHolder，默认为2个。ListView对于屏幕外的缓存都会调用getView()。</li><li>mViewCacheExtensions: 需要用户定制，默认不实现。</li><li>mRecyclerPool: 缓存池，多个RecyclerView共用。</li></ul><p> 在上文Layout Manager中已经介绍了RecyclerView的layout过程，但是一笔带过了getViewForPosition()，因此此处介绍该方法的实现。</p><div class="highlight"><pre><code class="language-text"><span></span> View getViewForPosition(int position, boolean dryRun){
+     if(holder == null){
+         //从mAttachedScrap,mCachedViews获取ViewHolder
+         holder = getScrapViewForPosition(position,INVALID,dryRun); //此处获得的View不需要bind
+     }
+     final int type = mAdapter.getItemViewType(offsetPosition);
+     if (mAdapter.hasStableIds()) { //默认为false
+         holder = getScrapViewForId(mAdapter.getItemId(offsetPosition), type, dryRun);
+     }
+     if(holder == null &amp;&amp; mViewCacheExtension != null){
+         final View view = mViewCacheExtension.getViewForPositionAndType(this, position, type); //从
+         if(view != null){
+             holder = getChildViewHolder(view);
+         }
+     }
+     if(holder == null){
+         holder = getRecycledViewPool().getRecycledView(type);
+     }
+     if(holder == null){  //没有缓存，则创建
+         holder = mAdapter.createViewHolder(RecyclerView.this, type); //调用onCreateViewHolder()
+     }
+     if(!holder.isBound() || holder.needsUpdate() || holder.isInvalid()){
+         mAdapter.bindViewHolder(holder, offsetPosition);
+     }
+     return holder.itemView;
+ }
+</code></pre></div><p> 从上述实现可以看出，依次从mAttachedScrap, mCachedViews, mViewCacheExtension, mRecyclerPool寻找可复用的ViewHolder，如果是从mAttachedScrap或mCachedViews中获取的ViewHolder，则不会调用onBindViewHolder()，mAttachedScrap和mCachedViews也就是我们所说的Scrap Heap；而如果从mViewCacheExtension或mRecyclerPool中获取的ViewHolder，则会调用onBindViewHolder()。</p><p> RecyclerView局部刷新的实现原理也是基于RecyclerView的回收机制，即能直接复用的ViewHolder就不调用onBindViewHolder()。</p><h2>嵌套滑动机制</h2><p> Android 5.0推出了嵌套滑动机制，在之前，一旦子View处理了触摸事件，父View就没有机会再处理这次的触摸事件，而嵌套滑动机制解决了这个问题，能够实现如下效果：</p><figure><noscript>&lt;img src="https://pic3.zhimg.com/v2-711c0c889bd9c425d0eff956f33db807_b.jpg" data-rawwidth="283" data-rawheight="482" class="content_image" width="283"&gt;</noscript><img src="./RecyclerView 必知必会_files/v2-711c0c889bd9c425d0eff956f33db807_hd.jpg" data-rawwidth="283" data-rawheight="482" class="content_image lazy" width="283" data-actualsrc="https://pic3.zhimg.com/v2-711c0c889bd9c425d0eff956f33db807_b.jpg"></figure><p> 为了支持嵌套滑动，子View必须实现NestedScrollingChild接口，父View必须实现NestedScrollingParent接口，而RecyclerView实现了NestedScrollingChild接口，而CoordinatorLayout实现了NestedScrollingParent接口，上图是实现CoordinatorLayout嵌套RecyclerView的效果。</p><p> 为了实现上图的效果，需要用到的组件有：</p><ul><li>CoordinatorLayout: 布局根元素。</li><li>AppBarLayout: 包裹的内容作为应用的Bar。</li><li>CollapsingToolbarLayout: 实现可折叠的ToolBar。</li><li>ToolBar: 代替ActionBar。</li></ul><p> 实现中需要注意的点有：</p><ul><li>我们为ToolBar的app:layout_collapseMode设置为pin，表示折叠之后固定在顶端，而为ImageView的app:layout_collapseMode设置为parallax，表示视差模式，即渐变的效果。</li><li>为了让RecyclerView支持嵌套滑动，还需要为它设置app:layout_behavior="@string/appbar_scrolling_view_behavior"。</li><li>为CollapsingToolbarLayout设置app:layout_scrollFlags="scroll|exitUntilCollapsed"，其中scroll表示滚动出屏幕，exitUntilCollapsed表示退出后折叠。</li></ul><p> 具体实现参见Demo6。</p><h2>回顾</h2><p> 回顾整篇文章，发现我们已经实现了RecyclerView的很多扩展功能，包括：打造万能适配器、添加Item事件、添加头视图和尾视图、设置空布局、侧滑拖拽。<a href="https://link.zhihu.com/?target=http%3A//www.recyclerview.org/" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">BaseRecyclerViewAdapterHelper</a>是一个比较火的RecyclerView扩展库，仔细一看发现，这里面80%的功能在我们这篇文章中都实现了。</p><h2>扩展阅读</h2><ul><li><a href="https://link.zhihu.com/?target=http%3A//v.youku.com/v_show/id_XMTU4MTQ1ODg2NA%3D%3D.html%3Ff%3D27314446" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">Google I/O 2016: RecyclerView Ins and Outs</a></li><li><a href="https://link.zhihu.com/?target=https%3A//github.com/CymChad/CymChad.github.io" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">RecyclerView优秀文章集</a></li></ul><p> 更多精彩内容欢迎关注<a href="https://link.zhihu.com/?target=https%3A//bugly.qq.com/v2/" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">腾讯 Bugly</a>的微信公众账号： </p><figure><noscript>&lt;img src="https://pic2.zhimg.com/3f2c1b1ff77f19100358cedf3fb54616_b.jpg" class="content_image"&gt;</noscript><img src="./RecyclerView 必知必会_files/3f2c1b1ff77f19100358cedf3fb54616_hd.jpg" class="content_image lazy" data-actualsrc="https://pic2.zhimg.com/3f2c1b1ff77f19100358cedf3fb54616_b.jpg"></figure><p><a href="https://link.zhihu.com/?target=https%3A//bugly.qq.com/v2/" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">腾讯 Bugly</a>是一款专为移动开发者打造的质量监控工具，帮助开发者快速，便捷的定位线上应用崩溃的情况以及解决方案。智能合并功能帮助开发同学把每天上报的数千条 <a href="https://link.zhihu.com/?target=https%3A//bugly.qq.com/v2/" class=" wrap external" target="_blank" rel="nofollow noreferrer" data-za-detail-view-id="1043">Crash</a> 根据根因合并分类，每日日报会列出影响用户数最多的崩溃，精准定位功能帮助开发同学定位到出问题的代码行，实时上报可以在发布后快速的了解应用的质量情况，适配最新的 iOS, Android 官方操作系统，鹅厂的工程师都在使用，快来加入我们吧！</p><br>​</div></div><div class="ContentItem-time"><a target="_blank" href="http://zhuanlan.zhihu.com/p/24807254"><span data-tooltip="发布于 2017-01-10 12:07">编辑于 2017-01-10</span></a></div><div class="Post-topicsAndReviewer"><div class="TopicList Post-Topics"><div class="Tag Topic" data-za-detail-view-path-module="TopicItem" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Topic&quot;,&quot;token&quot;:&quot;19555634&quot;}}}"><span class="Tag-content"><a class="TopicLink" href="https://www.zhihu.com/topic/19555634" target="_blank"><div class="Popover"><div id="Popover-77050-74119-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77050-74119-content">Android 开发</div></div></a></span></div><div class="Tag Topic" data-za-detail-view-path-module="TopicItem" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Topic&quot;,&quot;token&quot;:&quot;19737349&quot;}}}"><span class="Tag-content"><a class="TopicLink" href="https://www.zhihu.com/topic/19737349" target="_blank"><div class="Popover"><div id="Popover-77051-92841-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77051-92841-content">ListView</div></div></a></span></div><div class="Tag Topic" data-za-detail-view-path-module="TopicItem" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Topic&quot;,&quot;token&quot;:&quot;19785817&quot;}}}"><span class="Tag-content"><a class="TopicLink" href="https://www.zhihu.com/topic/19785817" target="_blank"><div class="Popover"><div id="Popover-77051-31109-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77051-31109-content">安卓 UI</div></div></a></span></div></div></div><div><div class="Sticky RichContent-actions is-fixed is-bottom" style="width: 690px; bottom: 0px; left: 606.5px;"><div class="ContentItem-actions" data-za-detail-view-path-module="BottomBar" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Post&quot;,&quot;id&quot;:&quot;24807254&quot;}}}"><button type="button" class="Button LikeButton ContentItem-action"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like" style="height:16px;width:13px" width="13" height="16" aria-hidden="true"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>162</button><button type="button" class="Button ContentItem-action Button--plain Button--withIcon Button--withLabel"><span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Comment Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M10.241 19.313a.97.97 0 0 0-.77.2 7.908 7.908 0 0 1-3.772 1.482.409.409 0 0 1-.38-.637 5.825 5.825 0 0 0 1.11-2.237.605.605 0 0 0-.227-.59A7.935 7.935 0 0 1 3 11.25C3 6.7 7.03 3 12 3s9 3.7 9 8.25-4.373 9.108-10.759 8.063z" fill-rule="evenodd"></path></svg></span>10 条评论</button><div class="Popover ShareMenu ContentItem-action"><div class="" id="Popover-77051-82585-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77051-82585-content"><button type="button" class="Button Button--plain Button--withIcon Button--withLabel"><span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Share Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M2.931 7.89c-1.067.24-1.275 1.669-.318 2.207l5.277 2.908 8.168-4.776c.25-.127.477.198.273.39L9.05 14.66l.927 5.953c.18 1.084 1.593 1.376 2.182.456l9.644-15.242c.584-.892-.212-2.029-1.234-1.796L2.93 7.89z" fill-rule="evenodd"></path></svg></span>分享</button></div></div><button type="button" class="Button ContentItem-action Button--plain Button--withIcon Button--withLabel"><span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Star Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M5.515 19.64l.918-5.355-3.89-3.792c-.926-.902-.639-1.784.64-1.97L8.56 7.74l2.404-4.871c.572-1.16 1.5-1.16 2.072 0L15.44 7.74l5.377.782c1.28.186 1.566 1.068.64 1.97l-3.89 3.793.918 5.354c.219 1.274-.532 1.82-1.676 1.218L12 18.33l-4.808 2.528c-1.145.602-1.896.056-1.677-1.218z" fill-rule="evenodd"></path></svg></span>收藏</button><div class="Post-ActionMenuButton"><div class="Popover"><div id="Popover-77051-97732-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77051-97732-content"><button type="button" class="Button Button--plain Button--withIcon Button--iconOnly"><span style="display:inline-flex;align-items:center">​<svg class="Zi Zi--Dots Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill-rule="evenodd"></path></svg></span></button></div></div></div><div class="NextArticle"><span class="NextArticle-Next">下一篇</span><span class="NextArticle-Title">你为什么需要 Kotlin</span></div></div><div data-za-detail-view-path-module="LeftTabBar" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:{&quot;type&quot;:&quot;Post&quot;,&quot;id&quot;:&quot;24807254&quot;}}}"></div></div><div class="Sticky--holder" style="position: static; top: auto; right: auto; bottom: 0px; left: 0px; display: block; float: none; margin: 0px 0px 10px; height: 54px;"></div></div><div class="PostIndex-Contributes" data-za-detail-view-path-module="ColumnList" data-za-detail-view-path-module_name="文章被以下专栏收录" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:null}}"><h3 class="BlockTitle">文章被以下专栏收录</h3><ul><div class="ContentItem Column-ColumnItem"><div class="ContentItem-main"><div class="ContentItem-image"><a class="ColumnLink" href="https://zhuanlan.zhihu.com/bugly"><div class="Popover"><div id="Popover-77052-67404-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77052-67404-content"><img class="Avatar Avatar--medium Avatar--round" width="40" height="40" src="./RecyclerView 必知必会_files/e1ff32e9e1114d0ceba728a65623eed8_xs.jpg" srcset="https://pic1.zhimg.com/e1ff32e9e1114d0ceba728a65623eed8_l.jpg 2x" alt="遇见"></div></div></a></div><div class="ContentItem-head"><h2 class="ContentItem-title"><a class="ColumnLink ColumnItem-Title" href="https://zhuanlan.zhihu.com/bugly"><div class="Popover"><div id="Popover-77052-48051-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77052-48051-content">遇见</div></div></a></h2><div class="ContentItem-meta">腾讯工程师，定期Android / iOS 技术分享</div></div><div class="ContentItem-extra"><button type="button" class="Button FollowButton Button--primary Button--grey">已关注</button></div></div></div></ul></div><div class="Recommendations-Main" style="width: 1903px;"><h3 class="BlockTitle Recommendations-BlockTitle">推荐阅读</h3><ul class="Recommendations-List"><button class="PagingButton PagingButton-Previous" disabled=""><svg class="Zi Zi--ArrowLeft" fill="#d3d3d3" viewBox="0 0 24 24" width="40" height="40"><path d="M14.782 16.78a.737.737 0 0 1-1.052 0L9.218 12.53a.758.758 0 0 1 0-1.063L13.73 7.22a.737.737 0 0 1 1.052 0c.29.294.29.77.001 1.063L11 12l3.782 3.716c.29.294.29.77 0 1.063z" fill-rule="evenodd"></path></svg></button><a href="http://zhuanlan.zhihu.com/p/23051455" class="PostItem"><div><img src="./RecyclerView 必知必会_files/v2-60e82fdcc65be7e6c39fa0fca5466c95_250x0.jpg" srcset="https://pic2.zhimg.com/v2-60e82fdcc65be7e6c39fa0fca5466c95_qhd.jpg 2x" class="PostItem-TitleImage" alt="Android开发：ListView、AdapterView、RecyclerView全面解析"><h1 class="PostItem-Title">Android开发：ListView、AdapterView、RecyclerView全面解析</h1><div class="PostItem-Footer"><span>ITGeGe</span><span class="PostItem-FooterTitle"></span></div></div></a><a href="http://zhuanlan.zhihu.com/p/21676013" class="PostItem"><div><img src="./RecyclerView 必知必会_files/cdea51152675084655772372a9a0f668_250x0.jpg" srcset="https://pic4.zhimg.com/cdea51152675084655772372a9a0f668_qhd.jpg 2x" class="PostItem-TitleImage" alt="如何绘制 RecyclerView 的分隔线"><h1 class="PostItem-Title">如何绘制 RecyclerView 的分隔线</h1><div class="PostItem-Footer"><span>葛小葛</span><span class="PostItem-FooterTitle">发表于Droid...</span></div></div></a><a href="http://zhuanlan.zhihu.com/p/29173895" class="PostItem"><div><img src="./RecyclerView 必知必会_files/v2-aecacb22dc7185443a508abed508ca73_250x0.jpg" srcset="https://pic1.zhimg.com/v2-aecacb22dc7185443a508abed508ca73_qhd.jpg 2x" class="PostItem-TitleImage" alt="RecyclerView 实现快速滚动"><h1 class="PostItem-Title">RecyclerView 实现快速滚动</h1><div class="PostItem-Footer"><span>Hevin</span><span class="PostItem-FooterTitle">发表于极光日报</span></div></div></a><a href="http://zhuanlan.zhihu.com/p/25993295" class="PostItem"><div><img src="./RecyclerView 必知必会_files/v2-74aaa9590bf91506794c397e40a2bf29_250x0.jpg" srcset="https://pic4.zhimg.com/v2-74aaa9590bf91506794c397e40a2bf29_qhd.jpg 2x" class="PostItem-TitleImage" alt="快速生成 RecyclerView Adapter"><h1 class="PostItem-Title">快速生成 RecyclerView Adapter</h1><div class="PostItem-Footer"><span>Hevin</span><span class="PostItem-FooterTitle">发表于极光日报</span></div></div></a><button class="PagingButton PagingButton-Next"><svg class="Zi Zi--ArrowRight" fill="#d3d3d3" viewBox="0 0 24 24" width="40" height="40"><path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd"></path></svg></button></ul></div><div class="Comments-container" data-za-detail-view-path-module="CommentList" data-za-extra-module="{&quot;card&quot;:{&quot;content&quot;:null}}"><div class="Comments Comments--withEditor Comments-withPagination"><div class="Topbar CommentTopbar"><div class="Topbar-title"><h2 class="CommentTopbar-title">10 条评论</h2></div><div class="Topbar-options"><button type="button" class="Button Button--plain Button--withIcon Button--withLabel"><span style="display: inline-flex; align-items: center;">​<svg class="Zi Zi--Switch Button-zi" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M13.004 7V4.232c0-.405.35-.733.781-.733.183 0 .36.06.501.17l6.437 5.033c.331.26.376.722.1 1.033a.803.803 0 0 1-.601.264H2.75a.75.75 0 0 1-.75-.75V7.75A.75.75 0 0 1 2.75 7h10.254zm-1.997 9.999v2.768c0 .405-.35.733-.782.733a.814.814 0 0 1-.5-.17l-6.437-5.034a.702.702 0 0 1-.1-1.032.803.803 0 0 1 .6-.264H21.25a.75.75 0 0 1 .75.75v1.499a.75.75 0 0 1-.75.75H11.007z" fill-rule="evenodd"></path></svg></span>切换为时间排序</button></div></div><div class="Comments-footer CommentEditor--normal"><div class="CommentEditor-input Input-wrapper Input-wrapper--spread Input-wrapper--large Input-wrapper--noPadding"><div class="Input Editable"><div class="Dropzone RichText ztext" style="min-height: 198px;"><div class="DraftEditor-root"><div class="public-DraftEditorPlaceholder-root"><div class="public-DraftEditorPlaceholder-inner" id="placeholder-36voh">写下你的评论...</div></div><div class="DraftEditor-editorContainer"><div aria-describedby="placeholder-36voh" class="notranslate public-DraftEditor-content" contenteditable="true" role="textbox" spellcheck="true" tabindex="0" style="outline: none; white-space: pre-wrap; word-wrap: break-word;"><div data-contents="true"><div class="Editable-unstyled" data-block="true" data-editor="36voh" data-offset-key="dkqc9-0-0"><div data-offset-key="dkqc9-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="dkqc9-0-0"><br data-text="true"></span></div></div></div></div></div></div></div><input multiple="" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" style="display: none;"><div></div></div></div><button disabled="" type="button" class="Button CommentEditor-singleButton Button--primary Button--blue">评论</button></div><div><div class="CommentList"><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77779-17534-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77779-17534-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/wang-bi-cheng-58"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/v2-c406fa7d5af0521977748b39f00a0f60_s.jpg" srcset="https://pic4.zhimg.com/v2-c406fa7d5af0521977748b39f00a0f60_xs.jpg 2x" alt="王必成"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/wang-bi-cheng-58">王必成</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">真是非常基础又实用的干货呀</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-28384-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-28384-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/oddcn"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/v2-d63397184eb47dd3c64f45e03192a287_s.jpg" srcset="https://pic3.zhimg.com/v2-d63397184eb47dd3c64f45e03192a287_xs.jpg 2x" alt="OddCN"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/oddcn">OddCN</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">66666</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-87050-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-87050-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhao_ruifeng"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/482a6675141a1efbdf2387fd86a15c91_s.jpg" srcset="https://pic2.zhimg.com/482a6675141a1efbdf2387fd86a15c91_xs.jpg 2x" alt="Rick"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhao_ruifeng">Rick</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">写得很用心，初学者受用。</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-43264-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-43264-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/lenk1111"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/028770cb6c3aa812f2ed552df61ac0e2_s.jpg" srcset="https://pic2.zhimg.com/028770cb6c3aa812f2ed552df61ac0e2_xs.jpg 2x" alt="陌上初寒"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/lenk1111">陌上初寒</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">赞一个</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-55983-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-55983-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhang-wei-kun-45"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/b5c6d16013a954319549de8cc8d22338_s.jpg" srcset="https://pic2.zhimg.com/b5c6d16013a954319549de8cc8d22338_xs.jpg 2x" alt="Wilson zhang"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhang-wei-kun-45">Wilson zhang</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">多些动图好理解些</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-36897-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-36897-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/ruive.com"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/d792c2d9fd8edc0767f2661634029ed7_s.jpg" srcset="https://pic1.zhimg.com/d792c2d9fd8edc0767f2661634029ed7_xs.jpg 2x" alt="花谢花飞花满天"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/ruive.com">花谢花飞花满天</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">老哥相当稳，学习了</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-96159-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-96159-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/gaiiiiiiii"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/v2-c8f0630f750effbf55dfb8231225423d_s.jpg" srcset="https://pic4.zhimg.com/v2-c8f0630f750effbf55dfb8231225423d_xs.jpg 2x" alt="盖小同学"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/gaiiiiiiii">盖小同学</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">holder.itemView.setOnClickListener(...);这个方法设置点击事件貌似并不能实现，楼主亲测了么。。</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-49418-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-49418-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/sun-jun-qing-48"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/da8e974dc_s.jpg" srcset="https://pic4.zhimg.com/da8e974dc_xs.jpg 2x" alt="子曰"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/sun-jun-qing-48">子曰</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">详细详细</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-7439-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-7439-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhu-li-ze-41"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/6239c2b670b41530811a135027d75788_s.jpg" srcset="https://pic3.zhimg.com/6239c2b670b41530811a135027d75788_xs.jpg 2x" alt="朱丽啦"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/zhu-li-ze-41">朱丽啦</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">没耐心看完，不过确实写得很好，浅显易懂。</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div><div class="CommentItem"><div><div class="CommentItem-meta"><span class="UserLink CommentItem-avatar"><div class="Popover"><div id="Popover-77780-28839-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover-77780-28839-content"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/mei-chuan-qiu-ku-leng-44"><img class="Avatar UserLink-avatar" width="24" height="24" src="./RecyclerView 必知必会_files/ab2bb067cea2b39c8e8bc92965fcfc13_s.jpg" srcset="https://pic3.zhimg.com/ab2bb067cea2b39c8e8bc92965fcfc13_xs.jpg 2x" alt="梅川秋酷冷"></a></div></div></span><span class="UserLink"><a class="UserLink-link" data-za-detail-view-element_name="User" target="_blank" href="https://www.zhihu.com/people/mei-chuan-qiu-ku-leng-44">梅川秋酷冷</a></span><span class="CommentItem-time">1 年前</span></div><div class="RichText ztext CommentItem-content">学习了</div><div class="CommentItem-footer"><button type="button" class="Button CommentItem-likeBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>赞</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 22 16" class="Icon Icon--reply Icon--left" width="13" height="16" aria-hidden="true" style="height: 16px; width: 13px;"><title></title><g><path d="M21.96 13.22c-1.687-3.552-5.13-8.062-11.637-8.65-.54-.053-1.376-.436-1.376-1.56V.677c0-.52-.635-.915-1.116-.52L.47 6.67C.18 6.947 0 7.334 0 7.763c0 .376.14.722.37.987 0 0 6.99 6.818 7.442 7.114.453.295 1.136.124 1.135-.5V13c.027-.814.703-1.466 1.532-1.466 1.185-.14 7.596-.077 10.33 2.396 0 0 .395.257.535.257.892 0 .614-.967.614-.967z"></path></g></svg>回复</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--like Icon--left" width="13" height="16" aria-hidden="true" style="transform: rotate(180deg); height: 16px; width: 13px;"><title></title><g><path d="M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z"></path></g></svg>踩</button><button type="button" class="Button CommentItem-hoverBtn Button--plain"><svg viewBox="0 0 18 20" class="Icon Icon--report Icon--left" width="11" height="16" aria-hidden="true" style="height: 16px; width: 11px;"><title></title><g><path d="M16.947 1.13c-.633.135-3.927.638-5.697.384-3.133-.45-4.776-2.54-9.95-.888C.305 1.04.025 1.664.025 2.646L0 18.807c0 .3.1.54.304.718.195.202.438.304.73.304.275 0 .52-.102.73-.304.202-.18.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V1.964c0-.6-.42-.972-1.053-.835z"></path></g></svg>举报</button></div></div></div></div><span></span></div></div></div></article></div></main><div class="CornerButtons"><div class="CornerAnimayedFlex CornerAnimayedFlex--hidden"><button data-tooltip="回到顶部" data-tooltip-position="left" aria-label="回到顶部" type="button" class="Button CornerButton Button--plain"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></button></div></div></div></div><script src="./RecyclerView 必知必会_files/vendor.c1ed8d16a6988c3797dd.js.下载"></script><script src="./RecyclerView 必知必会_files/column.raven.43187d3e7b4f1a19a5fc.js.下载" async=""></script><script src="./RecyclerView 必知必会_files/column.app.e5934a8571a959ca53ec.js.下载"></script><script></script><div><div style="display: none;">想来知乎工作？请发送邮件到 jobs@zhihu.com</div></div><div><div><div class="Editable-languageSuggestions" style="left: -1179px; top: -999px;"><div><div class="Popover"><div class="Editable-languageSuggestionsInput Input-wrapper"><input autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplet-77316-70592-0" id="Popover-77315-59713-toggle" aria-haspopup="true" aria-owns="Popover-77315-59713-content" class="Input" placeholder="选择语言" value=""><div class="Input-after"><svg class="Zi Zi--Select" fill="#afbdcf" viewBox="0 0 24 24" width="24" height="24"><path d="M12 16.183l2.716-2.966a.757.757 0 0 1 1.064.001.738.738 0 0 1 0 1.052l-3.247 3.512a.758.758 0 0 1-1.064 0L8.22 14.27a.738.738 0 0 1 0-1.052.758.758 0 0 1 1.063 0L12 16.183zm0-9.365L9.284 9.782a.758.758 0 0 1-1.064 0 .738.738 0 0 1 0-1.052l3.248-3.512a.758.758 0 0 1 1.065 0L15.78 8.73a.738.738 0 0 1 0 1.052.757.757 0 0 1-1.063.001L12 6.818z" fill-rule="evenodd"></path></svg></div></div></div></div></div></div></div></body></html>
