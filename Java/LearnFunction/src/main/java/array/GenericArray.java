@@ -1,3 +1,5 @@
+package array;
+
 import java.lang.reflect.Array;
 
 public class GenericArray<T> {
