@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/radar"
+        android:title="@string/widget_radar"/>
+    <item
+        android:id="@+id/quad"
+        android:title="@string/widget_quad"/>
+    <item
+        android:id="@+id/cubic"
+        android:title="@string/widget_cubic"/>
+    <item
+        android:id="@+id/heart"
+        android:title="@string/widget_heart"/>
+
+</menu>

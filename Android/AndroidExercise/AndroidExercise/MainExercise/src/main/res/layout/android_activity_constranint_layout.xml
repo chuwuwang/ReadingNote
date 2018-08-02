@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintStart_toEndOf="@id/button_ok"
+        app:layout_constraintTop_toTopOf="@+id/button_ok" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星星"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_ok" />
+
+    <Button
+        android:id="@+id/button_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摘要"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_summary" />
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="本篇文章的主题是ConstraintLayout。其实ConstraintLayout是Android Studio 2.2中主要的新增功能之一，也是Google在去年的I/O大会上重点宣传的一个功能。我们都知道，在传统的Android开发当中，界面基本都是靠编写XML代码完成的，虽然Android Studio也支持可视化的方式来编写界面，但是操作起来并不方便，我也一直都不推荐使用可视化的方式来编写Android应用程序的界面。"
+        app:layout_constraintEnd_toStartOf="@id/button_summary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_ok" />
+
+    <TextView
+        android:id="@+id/tv_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_600"
+        android:gravity="center"
+        android:text="Banner"
+        app:layout_constraintDimensionRatio="H,10:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary" />
+
+    <TextView
+        android:id="@+id/tab_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="one"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tab_two"
+        app:layout_constraintTop_toBottomOf="@+id/tv_banner" />
+
+    <TextView
+        android:id="@+id/tab_two"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="two"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tab_one"
+        app:layout_constraintRight_toLeftOf="@+id/tab_three"
+        app:layout_constraintTop_toTopOf="@+id/tab_one" />
+
+    <TextView
+        android:id="@+id/tab_three"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="three"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tab_two"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab_one" />
+
+    <TextView
+        android:id="@+id/tab_four"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="four"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tab_five"
+        app:layout_constraintTop_toBottomOf="@+id/tab_one" />
+
+    <TextView
+        android:id="@+id/tab_five"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="five"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/tab_four"
+        app:layout_constraintRight_toLeftOf="@+id/tab_six"
+        app:layout_constraintTop_toTopOf="@+id/tab_four" />
+
+    <TextView
+        android:id="@+id/tab_six"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="six"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/tab_five"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab_four" />
+
+    <TextView
+        android:id="@+id/tab_seven"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="seven"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tab_eight"
+        app:layout_constraintTop_toBottomOf="@+id/tab_four" />
+
+    <TextView
+        android:id="@+id/tab_eight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="eight"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@id/tab_seven"
+        app:layout_constraintRight_toLeftOf="@+id/tab_nine"
+        app:layout_constraintTop_toTopOf="@+id/tab_seven" />
+
+    <TextView
+        android:id="@+id/tab_nine"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="nine"
+        app:layout_constraintLeft_toRightOf="@id/tab_eight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab_seven" />
+
+
+    <TextView
+        android:id="@+id/tab_ten"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="ten"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tab_eleven"
+        app:layout_constraintTop_toBottomOf="@+id/tab_seven" />
+
+    <TextView
+        android:id="@+id/tab_eleven"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="eleven"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/tab_ten"
+        app:layout_constraintRight_toLeftOf="@+id/tab_twelve"
+        app:layout_constraintTop_toTopOf="@+id/tab_ten" />
+
+    <TextView
+        android:id="@+id/tab_twelve"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="twelve"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/tab_eleven"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab_ten" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#00ff00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        app:layout_constraintRight_toLeftOf="@+id/guide_line_login"
+        app:layout_constraintTop_toBottomOf="@+id/tab_ten" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        app:layout_constraintStart_toEndOf="@+id/guide_line_login"
+        app:layout_constraintTop_toBottomOf="@+id/tab_ten" />
+
+
+</android.support.constraint.ConstraintLayout>

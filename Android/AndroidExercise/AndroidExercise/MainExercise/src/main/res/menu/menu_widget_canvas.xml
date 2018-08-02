@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/scale"
+        android:title="@string/widget_scale"/>
+    
+    <item
+        android:id="@+id/rotate"
+        android:title="@string/widget_rotate"/>
+    
+    <item android:id="@+id/clock"
+        android:title="@string/widget_clock"/>
+    
+    <item android:id="@+id/bitmap"
+        android:title="@string/widget_bitmap"/>
+
+</menu>

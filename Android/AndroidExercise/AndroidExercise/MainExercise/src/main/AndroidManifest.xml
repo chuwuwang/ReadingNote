@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nsz.android">
+
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompat.NoActionBar">
+
+        <activity android:name="home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- custom widget -->
+        <activity android:name="widget.sample.MainWidgetActivity" />
+        <activity android:name="widget.sample.TaiChiActivity" />
+        <activity android:name="widget.sample.PieChartActivity" />
+        <activity android:name="widget.sample.GoodsCarActivity" />
+        <activity android:name="widget.sample.AdhesionActivity" />
+        <activity android:name="widget.sample.RefreshLVActivity" />
+        <activity android:name="widget.sample.WaveBezierActivity" />
+        <activity android:name="widget.sample.BaiDuLoadingActivity" />
+        <activity android:name="widget.sample.ColorMatrixOperateActivity" />
+        <activity android:name="widget.sample.PropertyAnimatorAddNumberActivity" />
+        <activity
+            android:name="widget.sample.CanvasActivity"
+            android:theme="@style/AppCompat.ActionBar" />
+        <activity
+            android:name="widget.sample.PathActivity"
+            android:theme="@style/AppCompat.ActionBar" />
+        <activity
+            android:name="widget.sample.PathMeasureActivity"
+            android:theme="@style/AppCompat.ActionBar" />
+        <activity
+            android:name="widget.sample.MatrixCameraActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name="widget.sample.MatrixOperateActivity"
+            android:hardwareAccelerated="false"
+            android:theme="@style/AppCompat.ActionBar" />
+        <activity android:name="widget.sample.UpDownLoadAnimateActivity" />
+
+
+        <!-- HenCoder paint -->
+        <activity android:name="paint.MainHenCoderPaintActivity" />
+
+
+        <!-- transition -->
+        <activity android:name="transition.MainTransitionActivity" />
+        <activity android:name="transition.BasicTransitionActivity" />
+        <activity android:name="transition.FruitTransitionActivity" />
+        <activity android:name="transition.CustomTransitionActivity" />
+        <activity android:name="transition.CircularRevealFragmentActivity" />
+        <activity android:name="transition.SharedElementTransitionActivity" />
+        <activity android:name="transition.CircularRevealTransitionActivity" />
+        <activity android:name="transition.CircularRevealTransitionEnterActivity" />
+
+
+        <!--android widget -->
+        <activity android:name="android.widget.MainAndroidWidgetActivity" />
+        <activity android:name="android.widget.ViewFlipperActivity" />
+        <activity android:name="android.widget.ConstraintLayoutActivity" />
+
+
+        <!--google demo-->
+        <activity android:name="google.MainGoogleActivity" />
+        <activity android:name="google.NetworkConnectActivity" />
+
+    </application>
+
+</manifest>

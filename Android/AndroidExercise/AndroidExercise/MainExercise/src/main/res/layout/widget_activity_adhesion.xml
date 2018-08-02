@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_deepen_700"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <widget.AdhesionLayout
+        android:id="@+id/layout_adhesion"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/widget_zero"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </widget.AdhesionLayout>
+
+    <widget.AdhesionCircleLoadView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" />
+
+    <widget.AdhesionHorizontalLoadView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" />
+
+</LinearLayout>

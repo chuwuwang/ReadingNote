@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Widget View -->
+    <string name="widget_tai_chi">太极圈</string>
+    <string name="widget_bai_loading">百度加载动画</string>
+    <string name="widget_pull_refresh">最原始的下拉刷新</string>
+    <string name="widget_pie_chart">饼状图</string>
+    <string name="widget_canvas_operate">画布操作</string>
+    <string name="widget_path_operate">Path操作</string>
+    <string name="widget_path_measure_operate">PathMeasure操作</string>
+    <string name="widget_property_animation_add">属性动画-数字动态增加</string>
+    <string name="widget_e_good_car">仿饿了么购物车动画</string>
+    <string name="widget_wave_bezier">波浪效果</string>
+    <string name="widget_operate_adhesion">粘性动画操作</string>
+    <string name="widget_operate_color_matrix">ColorMatrix操作</string>
+    <string name="widget_operate_matrix">Matrix的相关操作</string>
+    <string name="widget_matrix_camera">Matrix Camera的相关操作</string>
+    <string name="widget_pull_to_refresh">下拉刷新</string>
+    <string name="widget_refresh_time">最新更新：12:30</string>
+    <string name="widget_refresh_load_more">加载更多&#8230;</string>
+    <string name="widget_scale">scale</string>
+    <string name="widget_rotate">rotate</string>
+    <string name="widget_clock">clock</string>
+    <string name="widget_bitmap">bitmap</string>
+    <string name="widget_radar">蜘蛛网</string>
+    <string name="widget_quad">二阶贝塞尔</string>
+    <string name="widget_cubic">三阶贝塞尔</string>
+    <string name="widget_heart">心形贝塞尔</string>
+    <string name="widget_arrow">箭头旋转</string>
+    <string name="widget_love">爱心点赞</string>
+    <string name="widget_confirm">确定</string>
+    <string name="widget_zero">1</string>
+    <string name="widget_price">0.0元</string>
+    <string name="widget_polygon">多边形</string>
+    <string name="widget_polygon_point">Point</string>
+    <string name="widget_polygon_center">center</string>
+    <string name="widget_up_down_load">跳动的加载动画</string>
+
+</resources>

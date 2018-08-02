@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <TextView
+            android:id="@+id/tv_tai_chi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/amber_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_tai_chi"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bai_loading"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_bai_loading"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pull_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/brown_900"
+            android:gravity="center"
+            android:text="@string/widget_pull_refresh"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pie_chat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/yellow_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_pie_chart"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_start_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/teal_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_canvas_operate"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_path"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/red_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_path_operate"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_path_measure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/purple_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_path_measure_operate"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_property_animation_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pink_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_property_animation_add"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_e_good_car"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cyan_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_e_good_car"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_wave_bezier"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/indigo_deepen_700"
+            android:gravity="center"
+            android:text="@string/widget_wave_bezier"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_adhesion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/brown_900"
+            android:gravity="center"
+            android:text="@string/widget_operate_adhesion"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_color_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/deep_purple_a700"
+            android:gravity="center"
+            android:text="@string/widget_operate_color_matrix"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey_500"
+            android:gravity="center"
+            android:text="@string/widget_operate_matrix"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_operate_matrix_camera"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey_500"
+            android:gravity="center"
+            android:text="@string/widget_matrix_camera"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_widget_up_down_load"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey_500"
+            android:gravity="center"
+            android:text="@string/widget_up_down_load"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+
+    <path
+        android:pathData="M1,50
+        A49,49 0 1 0 49,0"
+        android:strokeColor="#91b329"
+        android:strokeWidth="2" />
+
+    <!--A/a(rx,ry x-axis-rotation large-arc-flag,sweep-flag x,y)-->
+    <!--rx,ry	椭圆的两个半径-->
+    <!--x-axis-rotation	x轴方向旋转的角度-->
+    <!--large-arc-flag	最否取大弧, 1取大弧, 0取小弧(在rx,ry确定的情况下两点之间能画出两段圆弧)-->
+    <!--sweep-flag	绘制的方向, 1顺时针, 0逆时针-->
+    <!--x,y	弧线的结束点-->
+
+</vector>

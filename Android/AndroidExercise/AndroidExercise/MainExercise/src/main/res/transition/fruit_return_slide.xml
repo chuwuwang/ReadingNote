@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+
+    <fade>
+        <targets>
+            <target android:targetId="@id/toolbar" />
+            <target android:targetId="@android:id/statusBarBackground" />
+            <target android:targetId="@id/card_view" />
+        </targets>
+    </fade>
+
+</transitionSet>
+
+
+
