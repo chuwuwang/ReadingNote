@@ -37,7 +37,7 @@ public class MainWidgetActivity extends BaseAppCompatActivity {
 
     @Override
     public void onClick(View v) {
-        int id = v.getId();
+        final int id = v.getId();
         switch (id) {
             case R.id.tv_tai_chi:
                 openActivity(TaiChiActivity.class);

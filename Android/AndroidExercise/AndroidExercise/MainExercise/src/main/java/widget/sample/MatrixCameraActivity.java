@@ -32,7 +32,9 @@ public class MatrixCameraActivity extends BaseAppCompatActivity {
 
                     rotation.setDuration(3000);                         // 设置动画时长
                     rotation.setFillAfter(true);                        // 保持旋转后效果
-                    rotation.setInterpolator(new LinearInterpolator());    // 设置插值器
+                    // 设置插值器
+                    LinearInterpolator linearInterpolator = new LinearInterpolator();
+                    rotation.setInterpolator(linearInterpolator);
                     v.startAnimation(rotation);
 
                 }

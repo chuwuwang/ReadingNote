@@ -14,8 +14,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import home.BaseAppCompatActivity;
 import com.nsz.android.R;
+
+import home.BaseAppCompatActivity;
 
 public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
 
@@ -123,7 +124,8 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         // 设置饱和度
         colorMatrix.setSaturation(val);
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -132,14 +134,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setBrightness(float val) {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                1, 0, 0, 0, val, // - red vector
-                0, 1, 0, 0, val, // - green vector
-                0, 0, 1, 0, val, // - blue vector
-                0, 0, 0, 1, 0     // - alpha vector
-        });
+        colorMatrix.set(
+                new float[] {
+                        1, 0, 0, 0, val, // - red vector
+                        0, 1, 0, 0, val, // - green vector
+                        0, 0, 1, 0, val, // - blue vector
+                        0, 0, 0, 1, 0    // - alpha vector
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -148,14 +153,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setContrast(float val) {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                val, 0, 0, 0, 0, // - red vector
-                0, val, 0, 0, 0, // - green vector
-                0, 0, val, 0, 0, // - blue vector
-                0, 0, 0, 1, 0     // - alpha vector
-        });
+        colorMatrix.set(
+                new float[] {
+                        val, 0, 0, 0, 0, // - red vector
+                        0, val, 0, 0, 0, // - green vector
+                        0, 0, val, 0, 0, // - blue vector
+                        0, 0, 0, 1, 0    // - alpha vector
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -165,14 +173,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setNostalgia() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                0.393F, 0.769F, 0.189F, 0, 0,
-                0.349F, 0.686F, 0.168F, 0, 0,
-                0.272F, 0.534F, 0.131F, 0, 0,
-                0, 0, 0, 1, 0,
-        });
+        colorMatrix.set(
+                new float[] {
+                        0.393F, 0.769F, 0.189F, 0, 0,
+                        0.349F, 0.686F, 0.168F, 0, 0,
+                        0.272F, 0.534F, 0.131F, 0, 0,
+                        0, 0, 0, 1, 0,
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -180,14 +191,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
 
     private void setDisColor() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
-        ColorMatrix colorMatrix = new ColorMatrix(new float[]{
-                1.5F, 1.5F, 1.5F, 0, -1,
-                1.5F, 1.5F, 1.5F, 0, -1,
-                1.5F, 1.5F, 1.5F, 0, -1,
-                0, 0, 0, 1, 0,
-        });
+        ColorMatrix colorMatrix = new ColorMatrix(
+                new float[] {
+                        1.5F, 1.5F, 1.5F, 0, -1,
+                        1.5F, 1.5F, 1.5F, 0, -1,
+                        1.5F, 1.5F, 1.5F, 0, -1,
+                        0, 0, 0, 1, 0,
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -196,14 +210,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setEffect3() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                1, 0, 0, 0, 0,
-                0, 1, 0, 0, 0,
-                0, 0, 0, 0, 0,
-                0, 0, 0, 1, 0
-        });
+        colorMatrix.set(
+                new float[] {
+                        1, 0, 0, 0, 0,
+                        0, 1, 0, 0, 0,
+                        0, 0, 0, 0, 0,
+                        0, 0, 0, 1, 0
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -212,14 +229,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setEffect4() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                1, 0, 11, 0, 0,
-                0, 1, 0, 0, 0,
-                0, 100, 1, 0, 0,
-                0, 0, 0, 1, 0
-        });
+        colorMatrix.set(
+                new float[] {
+                        1, 0, 11, 0, 0,
+                        0, 1, 0, 0, 0,
+                        0, 100, 1, 0, 0,
+                        0, 0, 0, 1, 0
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -228,14 +248,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setEffect5() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                1, 0, 0, 0, 0,
-                0, 3, 0, 0, 0,
-                0, 0, 1, 0, 0,
-                0, 0, 0, 1, 0
-        });
+        colorMatrix.set(
+                new float[] {
+                        1, 0, 0, 0, 0,
+                        0, 3, 0, 0, 0,
+                        0, 0, 1, 0, 0,
+                        0, 0, 0, 1, 0
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -245,7 +268,8 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         Matrix matrix = new Matrix();
         matrix.setScale(-1, 1);
-        matrix.postTranslate(bmp.getWidth(), 0);
+        int width = bmp.getWidth();
+        matrix.postTranslate(width, 0);
         Paint paint = new Paint();
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, matrix, paint);
@@ -256,7 +280,8 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         Matrix matrix = new Matrix();
         matrix.setScale(1, -1);
-        matrix.postTranslate(0, bmp.getHeight());
+        int height = bmp.getHeight();
+        matrix.postTranslate(0, height);
         Paint paint = new Paint();
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, matrix, paint);
@@ -266,14 +291,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setEffect8() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                0.33F, 0.59F, 0.11F, 0, 0,
-                0.33F, 0.59F, 0.11F, 0, 0,
-                0.33F, 0.59F, 0.11F, 0, 0,
-                0, 0, 0, 1, 0,
-        });
+        colorMatrix.set(
+                new float[] {
+                        0.33F, 0.59F, 0.11F, 0, 0,
+                        0.33F, 0.59F, 0.11F, 0, 0,
+                        0.33F, 0.59F, 0.11F, 0, 0,
+                        0, 0, 0, 1, 0,
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);
@@ -282,14 +310,17 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setEffect9() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
-        colorMatrix.set(new float[]{
-                -1, 0, 0, 1, 1,
-                0, -1, 0, 1, 1,
-                0, 0, -1, 1, 1,
-                0, 0, 0, 1, 0,
-        });
+        colorMatrix.set(
+                new float[] {
+                        -1, 0, 0, 1, 1,
+                        0, -1, 0, 1, 1,
+                        0, 0, -1, 1, 1,
+                        0, 0, 0, 1, 0,
+                }
+        );
         Paint paint = new Paint();
-        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        ColorMatrixColorFilter colorMatrixColorFilter = new ColorMatrixColorFilter(colorMatrix);
+        paint.setColorFilter(colorMatrixColorFilter);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(srcBitmap, 0, 0, paint);
         ivPic.setImageBitmap(bmp);

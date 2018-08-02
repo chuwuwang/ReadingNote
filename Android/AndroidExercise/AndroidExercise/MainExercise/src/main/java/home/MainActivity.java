@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import google.MainGoogleActivity;
+import material.design.MainMaterialDesignActivity;
 import paint.MainHenCoderPaintActivity;
 import transition.MainTransitionActivity;
 import widget.sample.MainWidgetActivity;
@@ -137,6 +138,9 @@ public class MainActivity extends BaseAppCompatActivity {
             case 4:
                 openActivity(MainHenCoderPaintActivity.class);
                 break;
+            case 5:
+                openActivity(MainMaterialDesignActivity.class);
+                break;
         }
     }
 
@@ -151,6 +155,8 @@ public class MainActivity extends BaseAppCompatActivity {
         drawer = new Drawer("Transition 过渡动画", 0);
         list.add(drawer);
         drawer = new Drawer("HenCoder Paint 详解", 0);
+        list.add(drawer);
+        drawer = new Drawer("Material Design", 0);
         list.add(drawer);
     }
 

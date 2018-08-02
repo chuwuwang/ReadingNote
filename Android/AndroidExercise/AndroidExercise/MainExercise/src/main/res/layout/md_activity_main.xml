@@ -14,7 +14,7 @@
         app:titleTextAppearance="@style/Toolbar.TitleText" />
 
     <TextView
-        android:id="@+id/tv_view_flipper"
+        android:id="@+id/tv_dialog"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginEnd="24dp"
@@ -22,20 +22,7 @@
         android:layout_marginTop="32dp"
         android:background="@color/grey_500"
         android:gravity="center"
-        android:text="ViewFlipper"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/tv_constraint_layout"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="ConstraintLayout"
+        android:text="提示框 Dialogs"
         android:textColor="#ffffff"
         android:textSize="14sp" />
 

@@ -1,4 +1,4 @@
-package android.widget;
+package material.design;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,34 +8,26 @@ import com.nsz.android.R;
 
 import home.BaseAppCompatActivity;
 
-/**
- * @author Created by Lee64 on 2017/10/17.
- */
-
-public class MainAndroidWidgetActivity extends BaseAppCompatActivity {
+public class MainMaterialDesignActivity extends BaseAppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.android_activity);
+        setContentView(R.layout.md_activity_main);
         initView();
         initToolbarBringBack();
     }
 
     private void initView() {
-        findViewById(R.id.tv_view_flipper).setOnClickListener(this);
-        findViewById(R.id.tv_constraint_layout).setOnClickListener(this);
+        findViewById(R.id.tv_dialog).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         final int id = v.getId();
         switch (id) {
-            case R.id.tv_view_flipper:
-                openActivity(ViewFlipperActivity.class);
-                break;
-            case R.id.tv_constraint_layout:
-                openActivity(ConstraintLayoutActivity.class);
+            case R.id.tv_dialog:
+                openActivity(DialogsActivity.class);
                 break;
             default:
                 break;

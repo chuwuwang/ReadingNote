@@ -77,6 +77,11 @@
         <activity android:name="google.MainGoogleActivity" />
         <activity android:name="google.NetworkConnectActivity" />
 
+
+        <!--material design-->
+        <activity android:name="material.design.MainMaterialDesignActivity" />
+        <activity android:name="material.design.DialogsActivity" />
+
     </application>
 
 </manifest>

@@ -47,13 +47,15 @@ public class GoodsCarActivity extends BaseAppCompatActivity {
                     v.getLocationInWindow(startPos);
 
                     MoveAddBezierView bezierView = new MoveAddBezierView(GoodsCarActivity.this);
-                    bezierView.setStartPosition(new PointF(startPos[0], startPos[1]));
+                    PointF pointF = new PointF(startPos[0], startPos[1]);
+                    bezierView.setStartPosition(pointF);
                     ViewGroup viewGroup = (ViewGroup) getWindow().getDecorView();
                     viewGroup.addView(bezierView);
 
                     int endPos[] = new int[2];
                     tvGoodsNumber.getLocationInWindow(endPos);
-                    bezierView.setEndPosition(new PointF(endPos[0], endPos[1]));
+                    pointF = new PointF(endPos[0], endPos[1]);
+                    bezierView.setEndPosition(pointF);
                     bezierView.startMoveAddAnimation();
                 }
         );
@@ -66,7 +68,7 @@ public class GoodsCarActivity extends BaseAppCompatActivity {
         private List<GoodModel> models;
         private GoodActionListener listener;
 
-        public GoodAdapter(Context context, List<GoodModel> models, GoodActionListener listener) {
+        private GoodAdapter(Context context, List<GoodModel> models, GoodActionListener listener) {
             super();
             this.context = context;
             this.models = models;

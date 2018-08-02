@@ -4,8 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import home.BaseAppCompatActivity;
 import com.nsz.android.R;
+
+import home.BaseAppCompatActivity;
 
 /**
  * Transition Framework 过渡动画主界面
@@ -33,7 +34,8 @@ public class MainTransitionActivity extends BaseAppCompatActivity {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        int id = v.getId();
+        switch (id) {
             case R.id.tv_basic_transition:
                 openActivity(BasicTransitionActivity.class);
                 break;

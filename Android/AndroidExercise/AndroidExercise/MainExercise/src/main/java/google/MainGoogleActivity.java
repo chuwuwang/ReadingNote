@@ -28,7 +28,7 @@ public class MainGoogleActivity extends BaseAppCompatActivity {
 
     @Override
     public void onClick(View v) {
-        int id = v.getId();
+        final int id = v.getId();
         switch (id) {
             case R.id.cv_network_connect:
                 openActivity(NetworkConnectActivity.class);
@@ -37,5 +37,6 @@ public class MainGoogleActivity extends BaseAppCompatActivity {
                 break;
         }
     }
+
 
 }

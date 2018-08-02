@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.nsz.android.R;
+
 import home.BaseAppCompatActivity;
 import widget.TaiChiView;
 
@@ -33,6 +34,7 @@ public class TaiChiActivity extends BaseAppCompatActivity {
                 taiChiView.setRotate(degrees += 5);
                 this.sendEmptyMessageDelayed(0, 80);
             }
+
         };
 
         handler.sendEmptyMessageDelayed(0, 20);
