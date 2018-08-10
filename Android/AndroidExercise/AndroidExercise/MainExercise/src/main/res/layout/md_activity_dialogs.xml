@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipChildren="true"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -13,69 +16,69 @@
         android:elevation="4dp"
         app:titleTextAppearance="@style/Toolbar.TitleText" />
 
-    <TextView
-        android:id="@+id/tv_hint"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="提示 Dialog"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="32dp">
 
-    <TextView
-        android:id="@+id/tv_edit"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="编辑 Dialog"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="提示 Dialog"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/tv_multi_choice"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="多选 Dialog"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="编辑 Dialog"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/tv_single_choice"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="单选 Dialog"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_multi_choice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="多选 Dialog"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/tv_list"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/grey_500"
-        android:gravity="center"
-        android:text="列表 Dialog"
-        android:textColor="#ffffff"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_single_choice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="单选 Dialog"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_list"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="列表 Dialog"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

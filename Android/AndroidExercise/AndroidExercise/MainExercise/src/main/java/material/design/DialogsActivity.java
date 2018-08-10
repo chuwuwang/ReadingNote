@@ -17,6 +17,7 @@ public class DialogsActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.md_activity_dialogs);
         initView();
         initToolbarBringBack();
@@ -99,5 +100,6 @@ public class DialogsActivity extends BaseAppCompatActivity {
                 break;
         }
     }
+
 
 }
