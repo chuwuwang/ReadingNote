@@ -8,6 +8,11 @@ import com.nsz.android.R;
 
 import home.BaseAppCompatActivity;
 
+/*
+
+    Android Material Design
+
+ */
 public class MainMaterialDesignActivity extends BaseAppCompatActivity {
 
     @Override
@@ -24,6 +29,7 @@ public class MainMaterialDesignActivity extends BaseAppCompatActivity {
         findViewById(R.id.cv_material_button).setOnClickListener(this);
         findViewById(R.id.cv_chip_group).setOnClickListener(this);
         findViewById(R.id.cv_bab).setOnClickListener(this);
+        findViewById(R.id.cv_til).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +47,9 @@ public class MainMaterialDesignActivity extends BaseAppCompatActivity {
                 break;
             case R.id.cv_bab:
                 openActivity(BottomAppBarActivity.class);
+                break;
+            case R.id.cv_til:
+                openActivity(TextInputLayoutActivity.class);
                 break;
             default:
                 break;

@@ -84,6 +84,7 @@
         <activity android:name="material.design.MaterialButtonActivity" />
         <activity android:name="material.design.ChipGroupAndChipActivity" />
         <activity android:name="material.design.BottomAppBarActivity" />
+        <activity android:name="material.design.TextInputLayoutActivity" />
 
     </application>
 
