@@ -12,6 +12,7 @@ public class ConstraintLayoutActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.android_activity_constranint_layout);
         initToolbarBringBack();
     }

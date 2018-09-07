@@ -71,6 +71,7 @@
         <activity android:name="android.widget.MainAndroidWidgetActivity" />
         <activity android:name="android.widget.ViewFlipperActivity" />
         <activity android:name="android.widget.ConstraintLayoutActivity" />
+        <activity android:name="android.widget.ChronometerActivity" />
 
 
         <!--google demo-->

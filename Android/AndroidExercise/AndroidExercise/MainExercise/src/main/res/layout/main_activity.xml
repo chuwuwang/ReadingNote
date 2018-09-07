@@ -3,6 +3,9 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -20,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/base_footer"
-            android:layout_below="@+id/base_title" />
+            android:layout_below="@+id/base_title"
+            android:background="@color/white" />
 
         <include
             android:id="@+id/base_footer"

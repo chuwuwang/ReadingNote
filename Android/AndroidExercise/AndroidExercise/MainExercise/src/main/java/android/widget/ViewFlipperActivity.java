@@ -10,7 +10,6 @@ import android.view.MotionEvent;
 
 import com.nsz.android.R;
 
-
 /**
  * ViewFlipper的使用
  *
@@ -22,7 +21,6 @@ public class ViewFlipperActivity extends AppCompatActivity {
     private static final String TAG = "ViewFlipperActivity";
 
     private ViewFlipper viewFlipper;
-
     private GestureDetector gestureDetector;
 
     @Override
@@ -34,7 +32,7 @@ public class ViewFlipperActivity extends AppCompatActivity {
 
     @SuppressLint("ClickableViewAccessibility")
     private void initView() {
-        viewFlipper = (ViewFlipper) findViewById(R.id.view_flipper);
+        viewFlipper = findViewById(R.id.view_flipper);
         viewFlipper.setOnTouchListener(
                 (v, event) -> gestureDetector.onTouchEvent(event)
         );

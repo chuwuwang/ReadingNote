@@ -1,7 +1,5 @@
 package com.loader.utils;
 
-import android.support.annotation.NonNull;
-
 import java.util.concurrent.Executor;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
@@ -25,8 +23,9 @@ public class ThreadPollExecutorUtil {
         private final AtomicInteger mCount = new AtomicInteger();
 
         @Override
-        public Thread newThread(@NonNull Runnable r) {
-            return new Thread(r, "ImageLoader##" + mCount.getAndIncrement());
+        public Thread newThread(Runnable runnable) {
+            int andIncrement = mCount.getAndIncrement();
+            return new Thread(runnable, "ImageLoader##" + andIncrement);
         }
 
     };

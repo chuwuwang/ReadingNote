@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:background="@color/grey_100"
+    android:background="#f5f5f5"
     android:orientation="vertical">
 
     <View
@@ -41,6 +41,7 @@
                 android:text="@string/home_index"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -67,6 +68,7 @@
                 android:text="@string/home_news"
                 android:textColor="#000000"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -93,6 +95,7 @@
                 android:text="@string/home_asset"
                 android:textColor="#000000"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -119,6 +122,7 @@
                 android:text="@string/home_person"
                 android:textColor="#000000"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
     </LinearLayout>

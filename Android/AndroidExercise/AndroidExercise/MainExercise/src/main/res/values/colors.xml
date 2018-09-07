@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    
+    <color name="colorAccent">#FF4081</color>
+
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="shadow">#88000000</color>
@@ -24,7 +24,7 @@
     <color name="red_deepen_200">#ff5177</color>
     <color name="red_deepen_400">#ff2d6f</color>
     <color name="red_deepen_700">#e00032</color>
-    
+
     <color name="pink_50">#fce4ec</color>
     <color name="pink_100">#f8bbd0</color>
     <color name="pink_200">#f48fb1</color>
@@ -39,7 +39,7 @@
     <color name="pink_deepen_200">#ff4081</color>
     <color name="pink_deepen_400">#f50057</color>
     <color name="pink_deepen_700">#c51162</color>
-    
+
     <color name="purple_50">#f3e5f5</color>
     <color name="purple_100">#e1bee7</color>
     <color name="purple_200">#ce93d8</color>
@@ -54,7 +54,7 @@
     <color name="purple_deepen_200">#e040fb</color>
     <color name="purple_deepen_400">#d500f9</color>
     <color name="purple_deepen_700">#aa00ff</color>
-    
+
     <color name="deep_purple_50">#ede7f6</color>
     <color name="deep_purple_100">#d1c4e9</color>
     <color name="deep_purple_200">#b39ddb</color>
@@ -69,7 +69,7 @@
     <color name="deep_purple_a200">#7c4dff</color>
     <color name="deep_purple_a400">#651fff</color>
     <color name="deep_purple_a700">#6200ea</color>
-    
+
     <color name="indigo_50">#e8eaf6</color>
     <color name="indigo_100">#c5cae9</color>
     <color name="indigo_200">#9fa8da</color>
@@ -84,7 +84,7 @@
     <color name="indigo_deepen_200">#536dfe</color>
     <color name="indigo_deepen_400">#3d5afe</color>
     <color name="indigo_deepen_700">#304ffe</color>
-    
+
     <color name="blue_50">#e7e9fd</color>
     <color name="blue_100">#d0d9ff</color>
     <color name="blue_200">#afbfff</color>
@@ -99,7 +99,7 @@
     <color name="blue_deepen_200">#6889ff</color>
     <color name="blue_deepen_400">#4d73ff</color>
     <color name="blue_deepen_700">#4d69ff</color>
-    
+
     <color name="light_blue_50">#e1f5fe</color>
     <color name="light_blue_100">#b3e5fc</color>
     <color name="light_blue_200">#81d4fa</color>
@@ -114,7 +114,7 @@
     <color name="light_blue_deepen_200">#40c4ff</color>
     <color name="light_blue_deepen_400">#00b0ff</color>
     <color name="light_blue_deepen_700">#0091ea</color>
-    
+
     <color name="cyan_50">#e0f7fa</color>
     <color name="cyan_100">#b2ebf2</color>
     <color name="cyan_200">#80deea</color>
@@ -129,7 +129,7 @@
     <color name="cyan_deepen_200">#18ffff</color>
     <color name="cyan_deepen_400">#00e5ff</color>
     <color name="cyan_deepen_700">#00b8d4</color>
-    
+
     <color name="teal_50">#e0f2f1</color>
     <color name="teal_100">#b2dfdb</color>
     <color name="teal_200">#80cbc4</color>
@@ -144,7 +144,7 @@
     <color name="teal_deepen_200">#64ffda</color>
     <color name="teal_deepen_400">#1de9b6</color>
     <color name="teal_deepen_700">#00bfa5</color>
-    
+
     <color name="green_50">#d0f8ce</color>
     <color name="green_100">#a3e9a4</color>
     <color name="green_200">#72d572</color>
@@ -159,7 +159,7 @@
     <color name="green_deepen_200">#5af158</color>
     <color name="green_deepen_400">#14e715</color>
     <color name="green_deepen_700">#12c700</color>
-    
+
     <color name="light_green_50">#f1f8e9</color>
     <color name="light_green_100">#dcedc8</color>
     <color name="light_green_200">#c5e1a5</color>
@@ -174,7 +174,7 @@
     <color name="light_green_deepen_200">#b2ff59</color>
     <color name="light_green_deepen_400">#76ff03</color>
     <color name="light_green_deepen_700">#64dd17</color>
-    
+
     <color name="lime_50">#f9fbe7</color>
     <color name="lime_100">#f0f4c3</color>
     <color name="lime_200">#e6ee9c</color>
@@ -189,7 +189,7 @@
     <color name="lime_deepen_200">#eeff41</color>
     <color name="lime_deepen_400">#c6ff00</color>
     <color name="lime_deepen_700">#aeea00</color>
-    
+
     <color name="yellow_50">#fffde7</color>
     <color name="yellow_100">#fff9c4</color>
     <color name="yellow_200">#fff59d</color>
@@ -204,7 +204,7 @@
     <color name="yellow_deepen_200">#ffff00</color>
     <color name="yellow_deepen_400">#ffea00</color>
     <color name="yellow_deepen_700">#ffd600</color>
-    
+
     <color name="amber_50">#fff8e1</color>
     <color name="amber_100">#ffecb3</color>
     <color name="amber_200">#ffe082</color>
@@ -219,7 +219,7 @@
     <color name="amber_deepen_200">#ffd740</color>
     <color name="amber_deepen_400">#ffc400</color>
     <color name="amber_deepen_700">#ffab00</color>
-    
+
     <color name="orange_50">#fff3e0</color>
     <color name="orange_100">#ffe0b2</color>
     <color name="orange_200">#ffcc80</color>
@@ -234,7 +234,7 @@
     <color name="orange_deepen_200">#ffab40</color>
     <color name="orange_deepen_400">#ff9100</color>
     <color name="orange_deepen_700">#ff6d00</color>
-    
+
     <color name="deep_orange_50">#fbe9e7</color>
     <color name="deep_orange_100">#ffccbc</color>
     <color name="deep_orange_200">#ffab91</color>
@@ -249,7 +249,7 @@
     <color name="deep_orange_deepen_200">#ff6e40</color>
     <color name="deep_orange_deepen_400">#ff3d00</color>
     <color name="deep_orange_deepen_700">#dd2c00</color>
-    
+
     <color name="brown_50">#efebe9</color>
     <color name="brown_100">#d7ccc8</color>
     <color name="brown_200">#bcaaa4</color>
@@ -260,7 +260,7 @@
     <color name="brown_700">#5d4037</color>
     <color name="brown_800">#4e342e</color>
     <color name="brown_900">#3e2723</color>
-    
+
     <color name="grey_50">#fafafa</color>
     <color name="grey_100">#f5f5f5</color>
     <color name="grey_200">#eeeeee</color>
@@ -271,7 +271,7 @@
     <color name="grey_700">#616161</color>
     <color name="grey_800">#424242</color>
     <color name="grey_900">#212121</color>
-    
+
     <color name="blue_grey_50">#eceff1</color>
     <color name="blue_grey_100">#cfd8dc</color>
     <color name="blue_grey_200">#b0bec5</color>

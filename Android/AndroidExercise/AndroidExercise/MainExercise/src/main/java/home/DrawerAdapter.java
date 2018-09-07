@@ -15,7 +15,7 @@ public class DrawerAdapter extends BaseAdapter {
     private Context context;
     private List<Drawer> list;
 
-    public DrawerAdapter(Context context, List<Drawer> list) {
+    DrawerAdapter(Context context, List<Drawer> list) {
         this.context = context;
         this.list = list;
     }
@@ -55,7 +55,7 @@ public class DrawerAdapter extends BaseAdapter {
             holder = new ViewHolder();
             convertView = View.inflate(context, R.layout.main_item_drawer, null);
             holder.state = convertView.findViewById(R.id.iv_state);
-            holder.name = (TextView) convertView.findViewById(R.id.tv_name);
+            holder.name = convertView.findViewById(R.id.tv_name);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();

@@ -26,7 +26,6 @@ import paint.MainHenCoderPaintActivity;
 import transition.MainTransitionActivity;
 import widget.sample.MainWidgetActivity;
 
-
 /**
  * @author Created by Lee64 on 2017/10/3.
  */
@@ -61,6 +60,7 @@ public class MainActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.main_activity);
         initDrawerData();
         initView();
@@ -77,31 +77,31 @@ public class MainActivity extends BaseAppCompatActivity {
         normalColor = Color.parseColor("#969696");
         selectColor = Color.parseColor("#3F51B5");
 
-        drawerListView = (ListView) findViewById(R.id.drawer_list_view);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ivMenu = (ImageView) findViewById(R.id.iv_back);
-        ivSearch = (ImageView) findViewById(R.id.iv_search);
+        drawerListView = findViewById(R.id.drawer_list_view);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        ivMenu = findViewById(R.id.iv_back);
+        ivSearch = findViewById(R.id.iv_search);
         ivMenu.setOnClickListener(this);
         ivSearch.setOnClickListener(this);
 
         View index = findViewById(R.id.index);
-        ivIndex = (ImageView) findViewById(R.id.iv_index);
-        tvIndex = (TextView) findViewById(R.id.tv_index);
+        ivIndex = findViewById(R.id.iv_index);
+        tvIndex = findViewById(R.id.tv_index);
         index.setOnClickListener(this);
 
         View news = findViewById(R.id.news);
-        ivNews = (ImageView) findViewById(R.id.iv_news);
-        tvNews = (TextView) findViewById(R.id.tv_news);
+        ivNews = findViewById(R.id.iv_news);
+        tvNews = findViewById(R.id.tv_news);
         news.setOnClickListener(this);
 
         View asset = findViewById(R.id.asset);
-        ivAsset = (ImageView) findViewById(R.id.iv_asset);
-        tvAsset = (TextView) findViewById(R.id.tv_asset);
+        ivAsset = findViewById(R.id.iv_asset);
+        tvAsset = findViewById(R.id.tv_asset);
         asset.setOnClickListener(this);
 
         View person = findViewById(R.id.person);
-        ivPerson = (ImageView) findViewById(R.id.iv_person);
-        tvPerson = (TextView) findViewById(R.id.tv_person);
+        ivPerson = findViewById(R.id.iv_person);
+        tvPerson = findViewById(R.id.tv_person);
         person.setOnClickListener(this);
 
 

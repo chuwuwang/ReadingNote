@@ -2,7 +2,9 @@
 <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/view_flipper"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
 
     <ImageView
         android:layout_width="match_parent"
