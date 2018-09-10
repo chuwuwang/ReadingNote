@@ -50,6 +50,7 @@
             android:hardwareAccelerated="false"
             android:theme="@style/AppCompat.ActionBar" />
         <activity android:name="widget.sample.UpDownLoadAnimateActivity" />
+        <activity android:name="widget.sample.AliXiuXiuViewActivity" />
 
 
         <!-- HenCoder paint -->

@@ -20,7 +20,7 @@ public class AliXiuXiuView extends View {
 
     private float mInitRadius;      // 初始波纹半径
     private float mMaxRadius;       // 最大波纹半径
-    private float mMaxRadiusRate;
+    private float mMaxRadiusRate = 0.85f;
 
     private long mDuration = 2000;   // 一个波纹从创建到消失的持续时间
     private int mSpeed = 500;       // 波纹的创建速度，每500ms创建一个
@@ -132,6 +132,13 @@ public class AliXiuXiuView extends View {
 
     public void setMaxRadiusRate(float maxRadiusRate) {
         this.mMaxRadiusRate = maxRadiusRate;
+    }
+
+    public void setInterpolator(Interpolator interpolator) {
+        mInterpolator = interpolator;
+        if (mInterpolator == null) {
+            mInterpolator = new LinearInterpolator();
+        }
     }
 
     public void setColor(int color) {

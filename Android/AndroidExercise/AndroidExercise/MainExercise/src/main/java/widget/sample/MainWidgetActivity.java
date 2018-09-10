@@ -34,6 +34,7 @@ public class MainWidgetActivity extends BaseAppCompatActivity {
         findViewById(R.id.mb_matrix_color).setOnClickListener(this);
         findViewById(R.id.mb_matrix_camera).setOnClickListener(this);
         findViewById(R.id.mb_loading_up_down).setOnClickListener(this);
+        findViewById(R.id.mb_xiu_xiu).setOnClickListener(this);
     }
 
     @Override
@@ -84,6 +85,9 @@ public class MainWidgetActivity extends BaseAppCompatActivity {
                 break;
             case R.id.mb_loading_up_down:
                 openActivity(UpDownLoadAnimateActivity.class);
+                break;
+            case R.id.mb_xiu_xiu:
+                openActivity(AliXiuXiuViewActivity.class);
                 break;
             default:
                 break;

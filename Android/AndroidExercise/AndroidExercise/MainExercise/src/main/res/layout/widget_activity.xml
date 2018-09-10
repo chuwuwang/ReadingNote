@@ -223,6 +223,19 @@
                 app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="4dp" />
 
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mb_xiu_xiu"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="支付宝咻咻咻式"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="4dp" />
+
         </LinearLayout>
 
     </ScrollView>
