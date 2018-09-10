@@ -25,7 +25,6 @@ public class PathMeasureActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setBackgroundDrawableResource(R.color.pink_100);
         view = new FrameLayout(this);
         setContentView(view);
         arrowPathMeasureView = new ArrowPathMeasureView(this);
@@ -41,7 +40,7 @@ public class PathMeasureActivity extends BaseAppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
+        final int itemId = item.getItemId();
         switch (itemId) {
             case R.id.arrow:
                 view.removeAllViews();

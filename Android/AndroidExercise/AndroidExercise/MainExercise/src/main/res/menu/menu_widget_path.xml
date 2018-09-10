@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/radar"
-        android:title="@string/widget_radar"/>
+        android:title="蜘蛛网" />
+
     <item
         android:id="@+id/quad"
-        android:title="@string/widget_quad"/>
+        android:title="二阶贝塞尔" />
+
     <item
         android:id="@+id/cubic"
-        android:title="@string/widget_cubic"/>
+        android:title="三阶贝塞尔" />
+
     <item
         android:id="@+id/heart"
-        android:title="@string/widget_heart"/>
+        android:title="心形贝塞尔" />
 
 </menu>

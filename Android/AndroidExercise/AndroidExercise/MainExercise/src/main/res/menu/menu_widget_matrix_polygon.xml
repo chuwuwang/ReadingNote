@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/polygon"
-        android:title="@string/widget_polygon" />
-    
+        android:title="多边形" />
+
     <item
         android:id="@+id/point"
-        android:title="@string/widget_polygon_point" />
-    
+        android:title="Point" />
+
     <item
         android:id="@+id/center"
-        android:title="@string/widget_polygon_center" />
+        android:title="center" />
 
 </menu>

@@ -1,6 +1,5 @@
 package widget.sample;
 
-
 import android.os.Bundle;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
@@ -15,11 +14,11 @@ public class MatrixCameraActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_matrix_camer);
-
         initToolbarBringBack();
 
-        ImageView view = (ImageView) findViewById(R.id.image_view);
+        ImageView view = findViewById(R.id.image_view);
         view.setImageResource(R.drawable.quadratic_element);
         view.setOnClickListener(
                 v -> {

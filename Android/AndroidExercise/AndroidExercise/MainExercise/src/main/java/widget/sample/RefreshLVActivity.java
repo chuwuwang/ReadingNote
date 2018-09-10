@@ -28,11 +28,11 @@ public class RefreshLVActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_pull_to_refresh_list_view);
-
         initToolbarBringBack();
 
-        mListView = (PullToRefreshListView) findViewById(R.id.refresh_list_view);
+        mListView = findViewById(R.id.refresh_list_view);
 
         mList = new ArrayList<>();
         for (int i = 0; i < 25; i++) {
@@ -46,7 +46,6 @@ public class RefreshLVActivity extends BaseAppCompatActivity {
                     Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
                 }
         );
-
         mListView.setOnRefreshListener(
                 new PullToRefreshListView.OnRefreshListener() {
 
@@ -106,5 +105,6 @@ public class RefreshLVActivity extends BaseAppCompatActivity {
         }
 
     }
+
 
 }

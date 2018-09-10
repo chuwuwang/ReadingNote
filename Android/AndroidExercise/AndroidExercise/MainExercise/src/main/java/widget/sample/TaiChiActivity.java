@@ -18,11 +18,11 @@ public class TaiChiActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_taichi);
-
         initToolbarBringBack();
 
-        taiChiView = (TaiChiView) findViewById(R.id.TaiChiView);
+        taiChiView = findViewById(R.id.TaiChiView);
 
         Handler handler = new Handler() {
 
@@ -36,9 +36,8 @@ public class TaiChiActivity extends BaseAppCompatActivity {
             }
 
         };
-
         handler.sendEmptyMessageDelayed(0, 20);
-
     }
+
 
 }

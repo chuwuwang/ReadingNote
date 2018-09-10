@@ -15,13 +15,14 @@ import widget.UpDownLoadView;
 
 public class UpDownLoadAnimateActivity extends BaseAppCompatActivity {
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_up_down_load);
         initToolbarBringBack();
-        UpDownLoadView loadView = (UpDownLoadView) findViewById(R.id.load_view);
+
+        UpDownLoadView loadView =  findViewById(R.id.load_view);
         loadView.startLoading();
 
     }

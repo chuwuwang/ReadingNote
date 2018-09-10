@@ -26,12 +26,12 @@ public class GoodsCarActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_goods);
-
         initToolbarBringBack();
 
-        ListView listView = (ListView) findViewById(R.id.lv_main);
-        tvGoodsNumber = (TextView) findViewById(R.id.tv_good_fitting_num);
+        ListView listView = findViewById(R.id.lv_main);
+        tvGoodsNumber = findViewById(R.id.tv_good_fitting_num);
 
         List<GoodModel> list = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
@@ -96,9 +96,9 @@ public class GoodsCarActivity extends BaseAppCompatActivity {
             if (convertView == null) {
                 holder = new ViewHolder();
                 convertView = View.inflate(context, R.layout.widget_item_goods_car, null);
-                holder.tvName = (TextView) convertView.findViewById(R.id.tv_goods_fits_name);
-                holder.tvPrice = (TextView) convertView.findViewById(R.id.tv_goods_fits_price);
-                holder.imgAdd = (ImageView) convertView.findViewById(R.id.iv_goods_fits_add);
+                holder.tvName = convertView.findViewById(R.id.tv_goods_fits_name);
+                holder.tvPrice = convertView.findViewById(R.id.tv_goods_fits_price);
+                holder.imgAdd = convertView.findViewById(R.id.iv_goods_fits_add);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();

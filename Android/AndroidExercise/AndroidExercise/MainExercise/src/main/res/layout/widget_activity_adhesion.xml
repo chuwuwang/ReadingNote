@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_deepen_700"
-    android:orientation="vertical">
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -17,25 +23,31 @@
     <widget.AdhesionLayout
         android:id="@+id/layout_adhesion"
         android:layout_width="50dp"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:layout_centerInParent="true">
 
         <TextView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:gravity="center"
-            android:text="@string/widget_zero"
+            android:text="34"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
+
     </widget.AdhesionLayout>
 
     <widget.AdhesionCircleLoadView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/layout_adhesion"
         android:layout_margin="30dp" />
 
     <widget.AdhesionHorizontalLoadView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_adhesion"
         android:layout_margin="30dp" />
 
-</LinearLayout>
+</RelativeLayout>

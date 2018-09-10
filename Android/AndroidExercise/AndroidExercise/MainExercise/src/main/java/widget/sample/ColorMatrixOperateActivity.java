@@ -33,46 +33,45 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_color_matrix);
-
         initToolbarBringBack();
 
-        ivPic = (ImageView) findViewById(R.id.iv_pic);
-
-        btnSaturation1 = (Button) findViewById(R.id.btn_saturation_1);
-        btnSaturation2 = (Button) findViewById(R.id.btn_saturation_2);
-        btnSaturation0 = (Button) findViewById(R.id.btn_saturation_0);
+        ivPic = findViewById(R.id.iv_pic);
+        btnSaturation1 = findViewById(R.id.btn_saturation_1);
+        btnSaturation2 = findViewById(R.id.btn_saturation_2);
+        btnSaturation0 = findViewById(R.id.btn_saturation_0);
         btnSaturation1.setOnClickListener(this);
         btnSaturation2.setOnClickListener(this);
         btnSaturation0.setOnClickListener(this);
 
-        btnContrastHigh = (Button) findViewById(R.id.btn_high_contrast);
-        btnContrastLow = (Button) findViewById(R.id.btn_low_contrast);
+        btnContrastHigh = findViewById(R.id.btn_high_contrast);
+        btnContrastLow = findViewById(R.id.btn_low_contrast);
         btnContrastHigh.setOnClickListener(this);
         btnContrastLow.setOnClickListener(this);
 
-        btnBrightnessHigh = (Button) findViewById(R.id.btn_high_brightness);
-        btnBrightnessLow = (Button) findViewById(R.id.btn_low_brightness);
+        btnBrightnessHigh = findViewById(R.id.btn_high_brightness);
+        btnBrightnessLow = findViewById(R.id.btn_low_brightness);
         btnBrightnessHigh.setOnClickListener(this);
         btnBrightnessLow.setOnClickListener(this);
 
-        btnEffect1 = (Button) findViewById(R.id.btn_effect1);
+        btnEffect1 = findViewById(R.id.btn_effect1);
         btnEffect1.setOnClickListener(this);
-        btnEffect2 = (Button) findViewById(R.id.btn_effect2);
+        btnEffect2 = findViewById(R.id.btn_effect2);
         btnEffect2.setOnClickListener(this);
-        btnEffect3 = (Button) findViewById(R.id.btn_effect3);
+        btnEffect3 = findViewById(R.id.btn_effect3);
         btnEffect3.setOnClickListener(this);
-        btnEffect4 = (Button) findViewById(R.id.btn_effect4);
+        btnEffect4 = findViewById(R.id.btn_effect4);
         btnEffect4.setOnClickListener(this);
-        btnEffect5 = (Button) findViewById(R.id.btn_effect5);
+        btnEffect5 = findViewById(R.id.btn_effect5);
         btnEffect5.setOnClickListener(this);
-        btnEffect6 = (Button) findViewById(R.id.btn_effect6);
+        btnEffect6 = findViewById(R.id.btn_effect6);
         btnEffect6.setOnClickListener(this);
-        btnEffect7 = (Button) findViewById(R.id.btn_effect7);
+        btnEffect7 = findViewById(R.id.btn_effect7);
         btnEffect7.setOnClickListener(this);
-        btnEffect8 = (Button) findViewById(R.id.btn_effect8);
+        btnEffect8 = findViewById(R.id.btn_effect8);
         btnEffect8.setOnClickListener(this);
-        btnEffect9 = (Button) findViewById(R.id.btn_effect9);
+        btnEffect9 = findViewById(R.id.btn_effect9);
         btnEffect9.setOnClickListener(this);
 
         srcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.matrix_camera);
@@ -135,7 +134,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         1, 0, 0, 0, val, // - red vector
                         0, 1, 0, 0, val, // - green vector
                         0, 0, 1, 0, val, // - blue vector
@@ -154,7 +153,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         val, 0, 0, 0, 0, // - red vector
                         0, val, 0, 0, 0, // - green vector
                         0, 0, val, 0, 0, // - blue vector
@@ -174,7 +173,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         0.393F, 0.769F, 0.189F, 0, 0,
                         0.349F, 0.686F, 0.168F, 0, 0,
                         0.272F, 0.534F, 0.131F, 0, 0,
@@ -192,7 +191,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
     private void setDisColor() {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix(
-                new float[] {
+                new float[]{
                         1.5F, 1.5F, 1.5F, 0, -1,
                         1.5F, 1.5F, 1.5F, 0, -1,
                         1.5F, 1.5F, 1.5F, 0, -1,
@@ -211,7 +210,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         1, 0, 0, 0, 0,
                         0, 1, 0, 0, 0,
                         0, 0, 0, 0, 0,
@@ -230,7 +229,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         1, 0, 11, 0, 0,
                         0, 1, 0, 0, 0,
                         0, 100, 1, 0, 0,
@@ -249,7 +248,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         1, 0, 0, 0, 0,
                         0, 3, 0, 0, 0,
                         0, 0, 1, 0, 0,
@@ -292,7 +291,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         0.33F, 0.59F, 0.11F, 0, 0,
                         0.33F, 0.59F, 0.11F, 0, 0,
                         0.33F, 0.59F, 0.11F, 0, 0,
@@ -311,7 +310,7 @@ public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(width, height, Config.ARGB_8888);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(
-                new float[] {
+                new float[]{
                         -1, 0, 0, 1, 1,
                         0, -1, 0, 1, 1,
                         0, 0, -1, 1, 1,

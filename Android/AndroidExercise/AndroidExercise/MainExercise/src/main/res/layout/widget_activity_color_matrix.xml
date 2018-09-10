@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -15,13 +18,16 @@
 
     <ImageView
         android:id="@+id/iv_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@null" />
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:contentDescription="@null"
+        android:scaleType="centerInside" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"

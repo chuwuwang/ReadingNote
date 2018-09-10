@@ -16,7 +16,6 @@ import widget.ScaleRect;
 public class CanvasActivity extends BaseAppCompatActivity {
 
     private FrameLayout view;
-
     private ScaleRect scaleRect;
     private RotateCircle rotateCircle;
     private RotateClockView rotateClockView;
@@ -39,7 +38,7 @@ public class CanvasActivity extends BaseAppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
+        final int itemId = item.getItemId();
         switch (itemId) {
             case R.id.scale:
                 scaleRect = new ScaleRect(this);
@@ -65,5 +64,6 @@ public class CanvasActivity extends BaseAppCompatActivity {
         }
         return true;
     }
+
 
 }

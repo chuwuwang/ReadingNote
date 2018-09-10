@@ -15,73 +15,74 @@ public class MainWidgetActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity);
         initToolbarBringBack();
 
-        findViewById(R.id.tv_tai_chi).setOnClickListener(this);
-        findViewById(R.id.tv_bai_loading).setOnClickListener(this);
-        findViewById(R.id.tv_pull_refresh).setOnClickListener(this);
-        findViewById(R.id.tv_pie_chat).setOnClickListener(this);
-        findViewById(R.id.tv_start_canvas).setOnClickListener(this);
-        findViewById(R.id.tv_operate_path).setOnClickListener(this);
-        findViewById(R.id.tv_operate_path_measure).setOnClickListener(this);
-        findViewById(R.id.tv_property_animation_add).setOnClickListener(this);
-        findViewById(R.id.tv_e_good_car).setOnClickListener(this);
-        findViewById(R.id.tv_wave_bezier).setOnClickListener(this);
-        findViewById(R.id.tv_operate_adhesion).setOnClickListener(this);
-        findViewById(R.id.tv_operate_color_matrix).setOnClickListener(this);
-        findViewById(R.id.tv_operate_matrix).setOnClickListener(this);
-        findViewById(R.id.tv_operate_matrix_camera).setOnClickListener(this);
-        findViewById(R.id.tv_widget_up_down_load).setOnClickListener(this);
+        findViewById(R.id.mb_tai_chi).setOnClickListener(this);
+        findViewById(R.id.mb_loading_dot).setOnClickListener(this);
+        findViewById(R.id.mb_pull_refresh).setOnClickListener(this);
+        findViewById(R.id.mb_pie_chat).setOnClickListener(this);
+        findViewById(R.id.mb_canvas).setOnClickListener(this);
+        findViewById(R.id.mb_path).setOnClickListener(this);
+        findViewById(R.id.mb_path_measure).setOnClickListener(this);
+        findViewById(R.id.mb_add_number).setOnClickListener(this);
+        findViewById(R.id.mb_ele_good_car).setOnClickListener(this);
+        findViewById(R.id.mb_wave).setOnClickListener(this);
+        findViewById(R.id.mb_adhesion).setOnClickListener(this);
+        findViewById(R.id.mb_matrix).setOnClickListener(this);
+        findViewById(R.id.mb_matrix_color).setOnClickListener(this);
+        findViewById(R.id.mb_matrix_camera).setOnClickListener(this);
+        findViewById(R.id.mb_loading_up_down).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         final int id = v.getId();
         switch (id) {
-            case R.id.tv_tai_chi:
+            case R.id.mb_tai_chi:
                 openActivity(TaiChiActivity.class);
                 break;
-            case R.id.tv_bai_loading:
+            case R.id.mb_loading_dot:
                 openActivity(BaiDuLoadingActivity.class);
                 break;
-            case R.id.tv_pull_refresh:
+            case R.id.mb_pull_refresh:
                 openActivity(RefreshLVActivity.class);
                 break;
-            case R.id.tv_pie_chat:
+            case R.id.mb_pie_chat:
                 openActivity(PieChartActivity.class);
                 break;
-            case R.id.tv_start_canvas:
+            case R.id.mb_canvas:
                 openActivity(CanvasActivity.class);
                 break;
-            case R.id.tv_operate_path:
+            case R.id.mb_path:
                 openActivity(PathActivity.class);
                 break;
-            case R.id.tv_operate_path_measure:
+            case R.id.mb_path_measure:
                 openActivity(PathMeasureActivity.class);
                 break;
-            case R.id.tv_property_animation_add:
+            case R.id.mb_add_number:
                 openActivity(PropertyAnimatorAddNumberActivity.class);
                 break;
-            case R.id.tv_e_good_car:
+            case R.id.mb_ele_good_car:
                 openActivity(GoodsCarActivity.class);
                 break;
-            case R.id.tv_wave_bezier:
+            case R.id.mb_wave:
                 openActivity(WaveBezierActivity.class);
                 break;
-            case R.id.tv_operate_adhesion:
+            case R.id.mb_adhesion:
                 openActivity(AdhesionActivity.class);
                 break;
-            case R.id.tv_operate_color_matrix:
+            case R.id.mb_matrix:
                 openActivity(ColorMatrixOperateActivity.class);
                 break;
-            case R.id.tv_operate_matrix:
+            case R.id.mb_matrix_color:
                 openActivity(MatrixOperateActivity.class);
                 break;
-            case R.id.tv_operate_matrix_camera:
+            case R.id.mb_matrix_camera:
                 openActivity(MatrixCameraActivity.class);
                 break;
-            case R.id.tv_widget_up_down_load:
+            case R.id.mb_loading_up_down:
                 openActivity(UpDownLoadAnimateActivity.class);
                 break;
             default:

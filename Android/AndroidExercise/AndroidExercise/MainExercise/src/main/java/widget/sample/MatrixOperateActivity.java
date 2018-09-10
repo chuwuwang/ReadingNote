@@ -20,9 +20,10 @@ public class MatrixOperateActivity extends BaseAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
         setContentView(R.layout.widget_activity_matrix_polygon);
-        polyMatrixView = (MatrixSetPolyToPoly) findViewById(R.id.view_set_polygon);
-        rectMatrixView = (MatrixSetRectToRect) findViewById(R.id.view_set_rect);
+        polyMatrixView = findViewById(R.id.view_set_polygon);
+        rectMatrixView = findViewById(R.id.view_set_rect);
     }
 
     @Override
@@ -33,7 +34,7 @@ public class MatrixOperateActivity extends BaseAppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
+        final int itemId = item.getItemId();
         switch (itemId) {
             case R.id.polygon:
                 polyMatrixView.setVisibility(View.VISIBLE);
@@ -51,5 +52,6 @@ public class MatrixOperateActivity extends BaseAppCompatActivity {
         }
         return false;
     }
+
 
 }

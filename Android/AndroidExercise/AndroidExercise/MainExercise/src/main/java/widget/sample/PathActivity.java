@@ -19,7 +19,6 @@ import widget.RadarView;
 public class PathActivity extends BaseAppCompatActivity {
 
     private FrameLayout view;
-
     private RadarView radarView;
     private QuadBezierView quadBezierView;
     private CubicBezierView cubicBezierView;
@@ -44,7 +43,7 @@ public class PathActivity extends BaseAppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
+        final int itemId = item.getItemId();
         switch (itemId) {
             case R.id.radar:
                 view.removeAllViews();
@@ -74,5 +73,6 @@ public class PathActivity extends BaseAppCompatActivity {
         }
         return false;
     }
+
 
 }
