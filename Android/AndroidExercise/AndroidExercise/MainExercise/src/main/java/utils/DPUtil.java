@@ -7,8 +7,7 @@ public class DPUtil {
 
     public static float dp2px(Context context, float dp) {
         DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        float px = dp * (displayMetrics.densityDpi / 160f);
-        return px;
+        return dp * (displayMetrics.densityDpi / 160f);
     }
 
     public static int dip2px(Context context, float dipValue) {

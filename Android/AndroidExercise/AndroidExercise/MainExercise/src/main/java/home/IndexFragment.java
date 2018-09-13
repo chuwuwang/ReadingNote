@@ -1,6 +1,11 @@
 package home;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+
 import com.nsz.android.R;
+
+import utils.FileHelperUtil;
 
 /**
  * 首页
@@ -18,6 +23,12 @@ public class IndexFragment extends BaseFragment {
     @Override
     protected int getLayoutId() {
         return R.layout.main_fragment_index;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        FileHelperUtil.getCacheDir(mContext);
     }
 
 

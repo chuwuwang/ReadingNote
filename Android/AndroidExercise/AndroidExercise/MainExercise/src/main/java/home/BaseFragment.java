@@ -1,5 +1,6 @@
 package home;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 
 public abstract class BaseFragment extends Fragment {
 
+    public Context mContext;
+
     protected abstract int getLayoutId();
 
     @Nullable
@@ -22,5 +25,10 @@ public abstract class BaseFragment extends Fragment {
         return root;
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mContext = getContext();
+    }
 
 }
