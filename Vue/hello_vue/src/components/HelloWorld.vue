@@ -4,11 +4,7 @@
 
       <el-aside style="width: 240px">
 
-        <el-menu
-          default-active="2"
-          text-color="#969696"
-          background-color="#2E3748"
-          active-text-color="#fff">
+        <el-menu default-active="2" text-color="#969696" background-color="#2E3748" active-text-color="#fff">
 
           <el-menu-item index="1" class="left-menu-item">
             <i class="el-icon-menu"></i>
@@ -21,7 +17,8 @@
           </el-menu-item>
 
           <el-submenu index="3" class="left-menu-item">
-            <template slot="title"><i class="el-icon-location"></i>导航二</template>
+            <template slot="title">
+              <i class="el-icon-location"></i>导航二</template>
             <el-menu-item index="2-1">选项1</el-menu-item>
             <el-menu-item index="2-2">选项2</el-menu-item>
             <el-menu-item index="2-3">选项3</el-menu-item>
@@ -68,39 +65,36 @@
 </template>
 
 <script>
-  export default {
-    name: 'HelloWorld',
-    data() {
-      const item = {
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
-      };
-      return {
-        tableData: Array(20).fill(item)
-      }
+export default {
+  name: 'HelloWorld',
+  data () {
+    const item = {
+      date: '2016-05-02',
+      name: '王小虎',
+      address: '上海市普陀区金沙江路 1518 弄'
+    };
+    return {
+      tableData: Array(20).fill(item)
     }
   }
+}
 </script>
 
 <style>
+.el-header {
+  background-color: #b3c0d1;
+  color: #333;
+  text-align: center;
+  line-height: 56px;
+}
 
-  .el-header {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 56px;
-  }
+.el-aside {
+  background-color: #2e3748;
+}
 
-  .el-aside {
-    background-color: #2E3748;
-  }
-
-  .left-menu-item {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-
-
+.left-menu-item {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
 </style>
