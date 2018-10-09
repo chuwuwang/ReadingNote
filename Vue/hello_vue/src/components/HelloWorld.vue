@@ -36,6 +36,7 @@
 
       <el-container>
         <el-header style="text-align: right; font-size: 12px">
+          <el-button type="primary" @click="goto">主要按钮</el-button>
           <el-dropdown>
             <i class="el-icon-setting" style="margin-right: 15px"></i>
             <el-dropdown-menu slot="dropdown">
@@ -66,7 +67,9 @@
 
 <script>
 export default {
+
   name: 'HelloWorld',
+
   data () {
     const item = {
       date: '2016-05-02',
@@ -76,7 +79,16 @@ export default {
     return {
       tableData: Array(20).fill(item)
     }
-  }
+  },
+
+  methods: {
+
+    goto () {
+      this.$router.push('/login')
+    }
+
+  },
+
 }
 </script>
 
