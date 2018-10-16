@@ -31,21 +31,27 @@
 # Debug files
 *.dSYM/
 *.su
-Algorithm/Algorithms.si4project/
+
 Algorithm/Algorithm.si4project/
+Algorithm/Algorithms.si4project/
+Algorithm/Aha_Algorithms/Aha.si4project/
+
 Algorithm/java/.metadata/
 Algorithm/java/.recommenders/
 Algorithm/java/algorithm/.settings/
-Algorithm/Aha_Algorithms/Aha.si4project/
-Algorithm/BaseAlgorithms/.idea/
+
 Algorithm/BaseAlgorithms/out/
-Java/LearnFunction/.idea/
-Java/LearnFunction/out/
-Java/LearnFunction/.gradle/
-Kotlin 面试/LearnKotlin/.idea/
-Kotlin 面试/LearnKotlin/out/
-Kotlin/LearnKotlin/.idea/
-Kotlin/LearnKotlin/out/
+Algorithm/BaseAlgorithms/.idea/
+
 Java/chat/out/
 Java/chat/.idea/
-Vue/hello_vue/build/
+Java/LearnFunction/out/
+Java/LearnFunction/.idea/
+Java/LearnFunction/.gradle/
+
+Kotlin 面试/LearnKotlin/out/
+Kotlin 面试/LearnKotlin/.idea/
+
+Kotlin/LearnKotlin/out/
+Kotlin/LearnKotlin/.idea/
+
