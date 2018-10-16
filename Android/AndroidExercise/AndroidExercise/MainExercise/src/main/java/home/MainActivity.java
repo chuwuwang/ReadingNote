@@ -26,10 +26,6 @@ import paint.MainHenCoderPaintActivity;
 import transition.MainTransitionActivity;
 import widget.sample.MainWidgetActivity;
 
-/**
- * @author Created by Lee64 on 2017/10/3.
- */
-
 public class MainActivity extends BaseAppCompatActivity {
 
     private static final String TAG = "MainActivity";

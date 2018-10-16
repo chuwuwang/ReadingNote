@@ -8,10 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * @author Created by Lee64 on 2017/10/9.
- */
-
 public abstract class BaseFragment extends Fragment {
 
     public Context mContext;
