@@ -1,5 +1,7 @@
 package home;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -12,15 +14,18 @@ import android.view.WindowManager;
 
 import com.nsz.android.R;
 
-/**
- * @author Created by Lee64 on 2017/9/26.
- */
-
 public class BaseAppCompatActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Context mContext;
+    private Activity mActivity;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setImmerseStatus();
+
+        mActivity = this;
+        mContext = getApplicationContext();
     }
 
     /**
@@ -83,5 +88,6 @@ public class BaseAppCompatActivity extends AppCompatActivity implements View.OnC
         Intent intent = new Intent(this, clazz);
         startActivity(intent);
     }
+
 
 }

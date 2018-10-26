@@ -21,8 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import google.MainGoogleActivity;
+import hen.coder.HenCoderMainActivity;
 import material.design.MainMaterialDesignActivity;
-import paint.MainHenCoderPaintActivity;
 import transition.MainTransitionActivity;
 import widget.sample.MainWidgetActivity;
 
@@ -132,7 +132,7 @@ public class MainActivity extends BaseAppCompatActivity {
                 openActivity(MainTransitionActivity.class);
                 break;
             case 4:
-                openActivity(MainHenCoderPaintActivity.class);
+                openActivity(HenCoderMainActivity.class);
                 break;
             case 5:
                 openActivity(MainMaterialDesignActivity.class);
@@ -150,7 +150,7 @@ public class MainActivity extends BaseAppCompatActivity {
         list.add(drawer);
         drawer = new Drawer("Transition 过渡动画", 0);
         list.add(drawer);
-        drawer = new Drawer("HenCoder Paint 详解", 0);
+        drawer = new Drawer("Hen Coder", 0);
         list.add(drawer);
         drawer = new Drawer("Material Design", 0);
         list.add(drawer);

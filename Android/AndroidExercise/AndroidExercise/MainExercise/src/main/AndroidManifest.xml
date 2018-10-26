@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nsz.android">
 
     <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
@@ -11,7 +12,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppCompat.NoActionBar">
+        android:theme="@style/AppCompat.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name="home.MainActivity">
             <intent-filter>
@@ -53,8 +55,10 @@
         <activity android:name="widget.sample.AliXiuXiuViewActivity" />
 
 
-        <!-- HenCoder paint -->
+        <!-- Hen Coder -->
         <activity android:name="paint.MainHenCoderPaintActivity" />
+        <activity android:name="hen.coder.HenCoderMainActivity" />
+        <activity android:name="hen.coder.HenCoderDrawOrderActivity" />
 
 
         <!-- transition -->
