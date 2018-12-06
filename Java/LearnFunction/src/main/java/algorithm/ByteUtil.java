@@ -6,6 +6,10 @@ import java.util.List;
 
 public class ByteUtil {
 
+    public static void main(String[] args) {
+        
+    }
+
     public static String bytes2HexStr(byte[] bytes) {
         StringBuilder sb = new StringBuilder();
         String temp;
