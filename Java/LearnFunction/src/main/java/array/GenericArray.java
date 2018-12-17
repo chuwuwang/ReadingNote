@@ -6,9 +6,8 @@ public class GenericArray<T> {
 
     private T[] array;
 
-    @SuppressWarnings("unchecked")
     public GenericArray(Class<T> type, int size) {
-        array = (T[]) Array.newInstance(type, size);
+        array = ( T[] ) Array.newInstance(type, size);
     }
 
     public void put(int index, T item) {
