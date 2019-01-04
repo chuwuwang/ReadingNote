@@ -10,7 +10,7 @@ import com.nsz.android.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.ArrowPathMeasureView;
 import widget.LoveBezierLayout;
 

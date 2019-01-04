@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 
-import utils.Adhesion;
+import com.nsz.android.utils.Adhesion;
 
 /**
  * 粘合体进度条(水平)

@@ -1,4 +1,4 @@
-package utils;
+package com.nsz.android.utils;
 
 import android.graphics.Path;
 

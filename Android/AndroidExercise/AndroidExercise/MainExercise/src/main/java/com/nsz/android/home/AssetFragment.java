@@ -1,4 +1,4 @@
-package home;
+package com.nsz.android.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

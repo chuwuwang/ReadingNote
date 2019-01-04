@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.MatrixSetPolyToPoly;
 import widget.MatrixSetRectToRect;
 

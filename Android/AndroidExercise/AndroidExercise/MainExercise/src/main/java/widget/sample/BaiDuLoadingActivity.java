@@ -2,7 +2,7 @@ package widget.sample;
 
 import android.os.Bundle;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import com.nsz.android.R;
 
 public class BaiDuLoadingActivity extends BaseAppCompatActivity {

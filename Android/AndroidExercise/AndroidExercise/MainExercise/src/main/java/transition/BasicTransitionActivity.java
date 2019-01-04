@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import com.nsz.android.R;
 
 /**

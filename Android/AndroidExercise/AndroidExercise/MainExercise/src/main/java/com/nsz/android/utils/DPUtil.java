@@ -1,4 +1,4 @@
-package utils;
+package com.nsz.android.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

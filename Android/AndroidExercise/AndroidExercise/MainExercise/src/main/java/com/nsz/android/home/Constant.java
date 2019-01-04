@@ -1,4 +1,4 @@
-package home;
+package com.nsz.android.home;
 
 public class Constant {
 

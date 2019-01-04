@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 public class PropertyAnimatorAddNumberActivity extends BaseAppCompatActivity {
 

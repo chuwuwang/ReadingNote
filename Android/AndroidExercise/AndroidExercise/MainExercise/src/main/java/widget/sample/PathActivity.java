@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.CubicBezierView;
 import widget.HeartBezierView;
 import widget.QuadBezierView;

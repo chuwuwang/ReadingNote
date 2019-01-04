@@ -8,7 +8,7 @@ import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import com.nsz.android.R;
 
 /**

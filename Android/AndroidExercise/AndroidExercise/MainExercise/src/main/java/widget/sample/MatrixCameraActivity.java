@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.Rotate3dAnimation;
 
 public class MatrixCameraActivity extends BaseAppCompatActivity {

@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 public class ColorMatrixOperateActivity extends BaseAppCompatActivity {
 

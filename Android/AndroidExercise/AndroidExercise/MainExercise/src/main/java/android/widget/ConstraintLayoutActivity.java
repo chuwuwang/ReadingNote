@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 public class ConstraintLayoutActivity extends BaseAppCompatActivity {
 

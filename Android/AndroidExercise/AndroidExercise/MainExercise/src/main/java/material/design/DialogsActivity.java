@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 public class DialogsActivity extends BaseAppCompatActivity {
 

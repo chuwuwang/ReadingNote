@@ -1,4 +1,4 @@
-package home;
+package com.nsz.android.home;
 
 import android.app.Activity;
 import android.content.Context;

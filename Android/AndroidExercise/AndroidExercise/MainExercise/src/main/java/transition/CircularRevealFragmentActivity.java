@@ -12,7 +12,7 @@ import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
 import android.widget.TextView;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import com.nsz.android.R;
 
 import java.util.List;

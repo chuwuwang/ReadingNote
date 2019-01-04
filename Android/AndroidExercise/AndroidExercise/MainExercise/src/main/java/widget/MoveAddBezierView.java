@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.TextView;
 
-import utils.DPUtil;
+import com.nsz.android.utils.DPUtil;
 
 
 public class MoveAddBezierView extends TextView {

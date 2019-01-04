@@ -6,7 +6,7 @@ import com.nsz.android.R;
 
 import java.util.ArrayList;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.PieView;
 import widget.PieView.Pie;
 

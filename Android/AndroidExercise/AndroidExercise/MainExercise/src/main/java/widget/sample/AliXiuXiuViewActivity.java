@@ -8,7 +8,7 @@ import android.view.animation.AccelerateInterpolator;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.AliXiuXiuView;
 
 public class AliXiuXiuViewActivity extends BaseAppCompatActivity {

@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.WaveView;
 
 public class WaveBezierActivity extends BaseAppCompatActivity {

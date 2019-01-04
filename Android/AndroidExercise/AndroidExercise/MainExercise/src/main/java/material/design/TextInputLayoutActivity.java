@@ -9,7 +9,7 @@ import android.text.TextWatcher;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /*
 

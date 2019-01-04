@@ -3,7 +3,7 @@ package widget.sample;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import com.nsz.android.R;
 import widget.UpDownLoadView;
 

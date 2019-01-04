@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /**
  * @author Created by Lee64 on 2018/1/24.

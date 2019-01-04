@@ -1,4 +1,4 @@
-package home;
+package com.nsz.android.home;
 
 import android.content.Context;
 import android.view.View;

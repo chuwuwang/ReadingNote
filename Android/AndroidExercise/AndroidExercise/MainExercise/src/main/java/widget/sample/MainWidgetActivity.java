@@ -5,7 +5,7 @@ import android.view.View;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /**
  * 自定义View主界面

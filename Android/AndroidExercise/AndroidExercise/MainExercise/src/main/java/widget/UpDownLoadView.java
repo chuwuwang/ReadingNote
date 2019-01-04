@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.nsz.android.R;
-import utils.DPUtil;
+import com.nsz.android.utils.DPUtil;
 
 /**
  * @author Created by Lee64 on 2017/10/10.

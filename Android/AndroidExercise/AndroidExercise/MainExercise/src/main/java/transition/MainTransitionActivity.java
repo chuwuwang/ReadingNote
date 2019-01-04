@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /**
  * Transition Framework 过渡动画主界面

@@ -1,5 +1,4 @@
-package home;
-
+package com.nsz.android.home;
 
 import com.nsz.android.R;
 
@@ -8,7 +7,6 @@ import com.nsz.android.R;
  *
  * @author Created by Lee64 on 2017/10/3.
  */
-
 public class NewsFragment extends BaseFragment {
 
     public static NewsFragment newInstance() {

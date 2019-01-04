@@ -7,7 +7,7 @@ import android.os.Message;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 import widget.TaiChiView;
 
 public class TaiChiActivity extends BaseAppCompatActivity {

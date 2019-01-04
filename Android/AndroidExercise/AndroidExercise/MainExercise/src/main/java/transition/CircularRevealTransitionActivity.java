@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 
 import com.nsz.android.R;
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /**
  * Circular Reveal 官方将这一动画称为揭露效果，它在官网中的描述是这样的：

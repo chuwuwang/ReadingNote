@@ -15,7 +15,7 @@ import com.nsz.android.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /**
  * 对Paint操作的主界面

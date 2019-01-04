@@ -1,4 +1,4 @@
-package home;
+package com.nsz.android.home;
 
 import android.graphics.Color;
 import android.os.Bundle;

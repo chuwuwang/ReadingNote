@@ -6,7 +6,7 @@ import android.support.design.bottomappbar.BottomAppBar;
 
 import com.nsz.android.R;
 
-import home.BaseAppCompatActivity;
+import com.nsz.android.home.BaseAppCompatActivity;
 
 /*
     底部标题栏
