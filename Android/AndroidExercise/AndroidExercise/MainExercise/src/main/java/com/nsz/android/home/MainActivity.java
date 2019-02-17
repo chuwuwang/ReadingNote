@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.MainAndroidWidgetActivity;
 import android.widget.TextView;
 
+import com.jet.pack.JetPackActivity;
 import com.nsz.android.R;
 
 import java.util.ArrayList;
@@ -120,40 +121,46 @@ public class MainActivity extends BaseAppCompatActivity {
     private void clickDrawer(int position) {
         switch (position) {
             case 0:
-                openActivity(MainWidgetActivity.class);
-                break;
-            case 1:
-                openActivity(MainGoogleActivity.class);
-                break;
-            case 2:
-                openActivity(MainAndroidWidgetActivity.class);
-                break;
-            case 3:
-                openActivity(MainTransitionActivity.class);
-                break;
-            case 4:
                 openActivity(HenCoderMainActivity.class);
                 break;
-            case 5:
+            case 1:
+                openActivity(MainTransitionActivity.class);
+                break;
+            case 2:
+                openActivity(MainWidgetActivity.class);
+                break;
+            case 3:
+                openActivity(MainGoogleActivity.class);
+                break;
+            case 4:
                 openActivity(MainMaterialDesignActivity.class);
+                break;
+            case 5:
+                openActivity(JetPackActivity.class);
+                break;
+            case 6:
+                openActivity(MainAndroidWidgetActivity.class);
                 break;
         }
     }
 
     private void initDrawerData() {
         list = new ArrayList<>();
-        Drawer drawer = new Drawer("View 绘制", 0);
+        Drawer drawer = new Drawer("Hen Coder", 0);
+        list.add(drawer);
+        drawer = new Drawer("过渡动画", 0);
+        list.add(drawer);
+        drawer = new Drawer("View 绘制", 0);
         list.add(drawer);
         drawer = new Drawer("Google 官方示例", 0);
         list.add(drawer);
-        drawer = new Drawer("Android 官方控件", 0);
-        list.add(drawer);
-        drawer = new Drawer("Transition 过渡动画", 0);
-        list.add(drawer);
-        drawer = new Drawer("Hen Coder", 0);
-        list.add(drawer);
         drawer = new Drawer("Material Design", 0);
         list.add(drawer);
+        drawer = new Drawer("Android JetPack", 0);
+        list.add(drawer);
+        drawer = new Drawer("Android 官方控件", 0);
+        list.add(drawer);
+
     }
 
     private void initFragment() {

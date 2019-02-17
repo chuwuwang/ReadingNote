@@ -8,11 +8,6 @@ import com.nsz.android.R;
 
 import com.nsz.android.home.BaseAppCompatActivity;
 
-/*
-
-    Android Material Design
-
- */
 public class MainMaterialDesignActivity extends BaseAppCompatActivity {
 
     @Override
