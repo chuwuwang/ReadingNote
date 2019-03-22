@@ -1,4 +1,4 @@
-package com.jet.pack;
+package com.base.core;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
 
-public class BaseJetPackActivity extends AppCompatActivity implements View.OnClickListener {
+public class BaseAppCompatActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Context mContext;
     private Activity mActivity;
@@ -37,6 +37,16 @@ public class BaseJetPackActivity extends AppCompatActivity implements View.OnCli
         }
     }
 
+    public void initToolbarBringBack() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        // Navigation Icon 要设定在 setSupportActionBar 才有作用 否则会出現 back button
+        toolbar.setNavigationIcon(R.drawable.ic_back_white);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationOnClickListener(
+                v -> finish()
+        );
+    }
+
     public void initToolbarBringBack(String title) {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(title);
@@ -47,14 +57,14 @@ public class BaseJetPackActivity extends AppCompatActivity implements View.OnCli
         );
     }
 
-    public void openActivity(Class clazz) {
-        Intent intent = new Intent(this, clazz);
-        startActivity(intent);
-    }
-
     @Override
     public void onClick(View v) {
 
+    }
+
+    public void openActivity(Class clazz) {
+        Intent intent = new Intent(this, clazz);
+        startActivity(intent);
     }
 
 

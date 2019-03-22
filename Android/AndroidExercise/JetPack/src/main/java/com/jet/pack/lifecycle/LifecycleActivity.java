@@ -3,10 +3,10 @@ package com.jet.pack.lifecycle;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.jet.pack.BaseJetPackActivity;
+import com.base.core.BaseAppCompatActivity;
 import com.jet.pack.R;
 
-public class LifecycleActivity extends BaseJetPackActivity {
+public class LifecycleActivity extends BaseAppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

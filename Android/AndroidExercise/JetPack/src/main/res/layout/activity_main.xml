@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:background="@color/colorPrimary"
@@ -31,6 +31,20 @@
             android:background="@color/colorAccent"
             android:gravity="center"
             android:text="Lifecycle"
+            android:textAppearance="?android:attr/textAppearanceInverse"
+            android:textColor="@color/white"
+            app:cornerRadius="4dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/mb_data_binding"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="DataBinding"
             android:textAppearance="?android:attr/textAppearanceInverse"
             android:textColor="@color/white"
             app:cornerRadius="4dp" />

@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.base.core.BaseAppCompatActivity;
+import com.jet.pack.data.binding.DataBindingActivity;
 import com.jet.pack.lifecycle.LifecycleActivity;
 
-public class JetPackActivity extends BaseJetPackActivity {
+public class JetPackActivity extends BaseAppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class JetPackActivity extends BaseJetPackActivity {
 
     private void initView() {
         findViewById(R.id.mb_lifecycle).setOnClickListener(this);
+        findViewById(R.id.mb_data_binding).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +28,8 @@ public class JetPackActivity extends BaseJetPackActivity {
         final int id = v.getId();
         if (id == R.id.mb_lifecycle) {
             openActivity(LifecycleActivity.class);
+        } else if (id == R.id.mb_data_binding) {
+            openActivity(DataBindingActivity.class);
         }
     }
 

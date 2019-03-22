@@ -1,1 +1,1 @@
-include ':MainExercise', ':ImageLoader', ':MVP', ':HenCoder', ':JetPack'
+include ':MainExercise', ':ImageLoader', ':MVP', ':HenCoder', ':JetPack', ':BaseCore'
