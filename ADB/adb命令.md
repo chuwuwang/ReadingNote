@@ -30,7 +30,7 @@ adb logcat | grep "geek" >log.txt
 adb shell pm list packages
 
 查看系统中某个应用的信息
-adb shell dumpsysy meminfo 应用包名 -d
+adb shell dumpsys meminfo 应用包名 -d
 
 清除安装包数据与缓存
 adb shell pm clear <PACKAGE>
