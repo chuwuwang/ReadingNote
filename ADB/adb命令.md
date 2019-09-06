@@ -7,7 +7,7 @@ adb shell am start 应用包名
 
 发送广播
 adb shell am broadcast -a com.android.test --es test_string "this is test string" --ei test_int 100 --ez test_boolean true
-说明：test_string为key，this is test string为value，分别为String类型，int类型，boolean类型
+说明：test_string为key。this is test string为value。分别为String类型。int类型。boolean类型
 
 启动service
 adb shell am startservice -n package名/service)名
@@ -37,6 +37,9 @@ adb shell pm clear <PACKAGE>
 
 输出安装包的APK路径
 adb shell pm path <PACKAGE>
+
+关闭应用程序
+adb shell am force-stop <PACKAGE>
 ```
 
 ### 查看系统信息相关
