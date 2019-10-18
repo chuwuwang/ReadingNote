@@ -8,11 +8,6 @@ import com.nsz.android.R;
 import com.nsz.android.utils.FileHelperUtil;
 import com.tencent.mmkv.MMKV;
 
-/**
- * 首页
- *
- * @author Created by Lee64 on 2017/10/3.
- */
 public class IndexFragment extends BaseFragment {
 
     public static IndexFragment newInstance() {
@@ -40,7 +35,6 @@ public class IndexFragment extends BaseFragment {
         kv.encode("bool", true);
         boolean bool = kv.decodeBool("bool");
         Log.e(Constant.TAG, "bool:" + bool);
-
     }
 
 

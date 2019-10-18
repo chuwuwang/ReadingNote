@@ -50,6 +50,10 @@ android {
         enabled = true
     }
 
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
 }
 
 dependencies {
@@ -66,6 +70,9 @@ dependencies {
 
     implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
 
-    implementation 'com.tencent:mmkv:1.0.17'
+    implementation 'com.tencent:mmkv:1.0.23'
+
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+    implementation 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3'
 
 }
