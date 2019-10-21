@@ -91,19 +91,17 @@ public class SideBar extends View {
                 break;
             default:
                 // setBackgroundResource(R.drawable.bg_sidebar);
-                if (oldChoose != c) {
-                    if (c >= 0 && c < b.length) {
-                        String value = b[c];
-                        if (listener != null) {
-                            listener.onTouchingLetterChanged(value);
-                        }
-                        if (textDialog != null) {
-                            textDialog.setText(value);
-                            textDialog.setVisibility(View.VISIBLE);
-                        }
-                        choose = c;
-                        invalidate();
+                if (oldChoose != c && c >= 0 && c < b.length) {
+                    String value = b[c];
+                    if (listener != null) {
+                        listener.onTouchingLetterChanged(value);
                     }
+                    if (textDialog != null) {
+                        textDialog.setText(value);
+                        textDialog.setVisibility(View.VISIBLE);
+                    }
+                    choose = c;
+                    invalidate();
                 }
                 break;
         }

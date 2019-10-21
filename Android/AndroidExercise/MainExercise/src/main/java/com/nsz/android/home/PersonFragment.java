@@ -34,6 +34,7 @@ public class PersonFragment extends BaseFragment {
     private SortAdapter adapter;
 
     private List<SortModel> sourceData;
+    private List<SortModel> oriSourceData;
 
     private PinyinComparator pinyinComparator;
 
@@ -83,9 +84,11 @@ public class PersonFragment extends BaseFragment {
                 }
         );
 
-        sourceData = filledData();
+        oriSourceData = filledData();
+        Collections.sort(oriSourceData, pinyinComparator);
 
-        Collections.sort(sourceData, pinyinComparator);
+        sourceData = new ArrayList<>();
+        sourceData.addAll(oriSourceData);
 
         adapter = new SortAdapter(mContext, sourceData);
         listView.setAdapter(adapter);
@@ -108,7 +111,7 @@ public class PersonFragment extends BaseFragment {
                     public void afterTextChanged(Editable s) {
                         int length = s.length();
                         if (length <= 0) {
-                            adapter.updateListView(sourceData);
+                            adapter.updateListView(oriSourceData);
                         } else {
                             String filterStr = s.toString();
                             filterData(filterStr);
@@ -124,7 +127,7 @@ public class PersonFragment extends BaseFragment {
 
         List<SortModel> list = new ArrayList<>();
 
-        for (SortModel item : sourceData) {
+        for (SortModel item : oriSourceData) {
             String pinyin = Pinyin.toPinyin(item.name, "");
             boolean bool = item.name.contains(filterStr) || pinyin.contains(filterStr);
             if (bool) {
@@ -147,7 +150,7 @@ public class PersonFragment extends BaseFragment {
             @Override
             public Map<String, String[]> mapping() {
                 HashMap<String, String[]> map = new HashMap<>();
-                map.put("重庆", new String[] { "CHONG", "QING" });
+                map.put( "盖聂", new String[] { "GE", "NIE" } );
                 return map;
             }
 
@@ -159,7 +162,8 @@ public class PersonFragment extends BaseFragment {
     private List<SortModel> filledData() {
         List<String> temp = new ArrayList<>();
         temp.add("张三");
-        temp.add("重庆");
+        temp.add("盖聂");
+        temp.add("盖世英雄");
         temp.add("王五");
         temp.add("倪十");
         temp.add("靳二");
