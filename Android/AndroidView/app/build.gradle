@@ -10,7 +10,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.1.1"
     }
 
     buildTypes {
@@ -37,4 +37,7 @@ dependencies {
     implementation "org.jetbrains.anko:anko-design:$anko_version"
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+
+    // xCrash
+    implementation 'com.iqiyi.xcrash:xcrash-android-lib:2.4.9'
 }
