@@ -1,4 +1,5 @@
-APDU指令示例
+### APDU指令示例
+```
 public void selectPPSE() throws Exception {
 	byte CLA    = (byte) 0x00;
 	byte INS    = (byte) 0xA4;
@@ -23,3 +24,4 @@ public void selectPPSE() throws Exception {
 		LogUtil.e(Constant.TAG, "outData: " + hexStr);
 	}
 }
+```

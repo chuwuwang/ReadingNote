@@ -1,6 +1,6 @@
-##adb命令相关
+## adb命令相关
 
-###启动系统组件相关
+### 启动系统组件相关
 ```
 打开某个应用
 adbshellamstart应用包名
@@ -14,7 +14,9 @@ adbshellamstartservice-npackage名/service)名
 说明：adbshellamstartservice-nwoyou.system.api/woyou.system.service.SystemAPIService
 ```
 
-###测试相关
+***
+
+### 测试相关
 ```
 monkey测试
 adbshellmonkey-p应用包名-s500-v-v-v300000>E:\monkey_log.txt
@@ -24,7 +26,9 @@ adblogcat-s过滤条件
 adblogcat|grep"geek">log.txt
 ```
 
-###查看应用信息相关
+***
+
+### 查看应用信息相关
 ```
 列出系统内应用的包名
 adbshellpmlistpackages
@@ -42,7 +46,9 @@ adbshellpmpath<PACKAGE>
 adbshellamforce-stop<PACKAGE>
 ```
 
-###查看系统信息相关
+***
+
+### 查看系统信息相关
 ```
 查看屏幕大小
 adbshellwmsize
