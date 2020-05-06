@@ -4,7 +4,7 @@
 // xxx + xxx = xxx x为1~9 每个数字只能填写一次 不重复
 #include <stdio.h>
 
-#include "inc/log_loc.h"
+#include "common/logs.h"
 
 int add() {
     int a, b, c, d, e, f, g, h, i, total = 0;

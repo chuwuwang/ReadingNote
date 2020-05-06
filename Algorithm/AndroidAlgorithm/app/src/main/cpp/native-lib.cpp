@@ -2,7 +2,7 @@
 #include <string>
 
 #include "inc/add.h"
-#include "inc/log_loc.h"
+#include "common/logs.h"
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_sea_algorithm_MainActivity_stringFromJNI(

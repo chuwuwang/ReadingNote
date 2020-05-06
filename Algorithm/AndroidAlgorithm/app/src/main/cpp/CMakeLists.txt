@@ -10,6 +10,18 @@ cmake_minimum_required(VERSION 3.4.1)
 # You can define multiple libraries, and CMake builds them for you.
 # Gradle automatically packages shared libraries with your APK.
 
+project(AndroidAlgorithm)
+
+# 单个添加
+# list( APPEND SRC_LIST
+#      native-lib.cpp
+#      add.c
+#      sort/bucket_sort.c/ )
+# 通配符添加
+file( GLOB SRC_LIST
+        *.c
+        *.cpp
+        sort/*.c/ )
 add_library( # Sets the name of the library.
              native-lib
 
@@ -17,7 +29,7 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             native-lib.cpp add.c )
+             ${SRC_LIST} )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
