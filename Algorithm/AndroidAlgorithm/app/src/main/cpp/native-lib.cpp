@@ -1,21 +1,25 @@
 #include <jni.h>
 #include <string>
 
-#include "inc/add.h"
 #include "common/logs.h"
+#include "sort/bucket_sort.h"
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_sea_algorithm_MainActivity_stringFromJNI(
-        JNIEnv *env,
-        jobject /* this */) {
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_sea_algorithm_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */) {
+    std::string hello = "Hello from C++";
+    const char *ptr = hello.c_str();
 
-    add();
+    LOG_E("Hello world JNI");
 
-    std::string hello = "Hello from C++ XXX";
-    const char *p = hello.c_str();
-    p = "123456";
+    return env->NewStringUTF(ptr);
+}
 
-    LOG_E("Hello world");
-
-    return env->NewStringUTF(p);
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_sea_algorithm_sort_BucketSort_bucketSort(JNIEnv *env, jobject, jint num, jint size) {
+    int c_num = num;
+    int c_size = size;
+    char *ptr = bucket_sort(c_num, c_size);
+    return env->NewStringUTF(ptr);
 }

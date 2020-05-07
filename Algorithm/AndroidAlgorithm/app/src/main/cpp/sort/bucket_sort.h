@@ -5,4 +5,7 @@
 #ifndef ANDROID_ALGORITHM_BUCKET_SORT_H
 #define ANDROID_ALGORITHM_BUCKET_SORT_H
 
+extern "C"
+extern char *bucket_sort(int num, int size);
+
 #endif
