@@ -1,0 +1,3 @@
+rootProject.name='AndroidRepository'
+include ':app'
+include ':repository'
