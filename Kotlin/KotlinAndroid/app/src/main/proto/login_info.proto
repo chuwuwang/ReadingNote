@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.kotlin.demo.proto";
+option java_outer_classname = "LoginInfo";
+
+message Login {
+    string account = 1;
+    string password = 2;
+}
