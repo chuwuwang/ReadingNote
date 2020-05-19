@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.nsz.kotlin.R
 import com.nsz.kotlin.aac.ui.animation.AnimationActivity
+import com.nsz.kotlin.aac.ui.view.pager2.ViewPager2Activity
 import kotlinx.android.synthetic.main.activity_aac_ui.*
 import org.jetbrains.anko.startActivity
 
@@ -26,7 +27,7 @@ class UIActivity : AppCompatActivity() {
 
         }
         mb_view_pager2.setOnClickListener {
-
+            startActivity<ViewPager2Activity>()
         }
     }
 

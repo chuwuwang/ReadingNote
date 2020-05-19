@@ -55,6 +55,10 @@
         <activity android:name=".aac.ui.animation.AnimationActivity" />
         <activity android:name=".aac.ui.animation.interpolator.BounceInterpolatorActivity" />
 
+        <!-- ViewPager2 -->
+        <activity android:name=".aac.ui.view.pager2.ViewPager2Activity" />
+        <activity android:name=".aac.ui.view.pager2.ViewPager2VerticalActivity" />
+
     </application>
 
 </manifest>
