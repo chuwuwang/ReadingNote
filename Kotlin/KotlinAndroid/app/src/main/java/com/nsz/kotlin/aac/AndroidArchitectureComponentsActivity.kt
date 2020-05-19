@@ -3,9 +3,8 @@ package com.nsz.kotlin.aac
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.nsz.kotlin.R
-import com.nsz.kotlin.aac.data.binding.DataBindingActivity
-import com.nsz.kotlin.aac.data.binding.DataBindingRecyclerViewActivity
-import com.nsz.kotlin.aac.live.data.LiveDataActivity
+import com.nsz.kotlin.aac.architecture.ArchitectureActivity
+import com.nsz.kotlin.aac.ui.UIActivity
 import kotlinx.android.synthetic.main.activity_aac.*
 import org.jetbrains.anko.startActivity
 
@@ -18,14 +17,17 @@ class AndroidArchitectureComponentsActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        mb_live_data.setOnClickListener {
-            startActivity<LiveDataActivity>()
+        mb_ui.setOnClickListener {
+            startActivity<UIActivity>()
         }
-        mb_data_binding.setOnClickListener {
-            startActivity<DataBindingActivity>()
+        mb_behavior.setOnClickListener {
+
         }
-        mb_data_binding_recycler_view.setOnClickListener {
-            startActivity<DataBindingRecyclerViewActivity>()
+        mb_architecture.setOnClickListener {
+            startActivity<ArchitectureActivity>()
+        }
+        mb_foundation.setOnClickListener {
+
         }
     }
 

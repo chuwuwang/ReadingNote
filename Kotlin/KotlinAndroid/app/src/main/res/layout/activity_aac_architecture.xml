@@ -5,53 +5,53 @@
     android:orientation="vertical">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_ui"
+        android:id="@+id/mb_live_data"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="UI"
+        android:text="LiveData"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_behavior"
+        android:id="@+id/mb_data_binding"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="Behavior"
+        android:text="DataBinding"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_architecture"
+        android:id="@+id/mb_data_binding_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="Architecture"
+        android:text="DataBinding RecyclerView"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_foundation"
+        android:id="@+id/mb_view_model"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="Foundation"
+        android:text="ViewModel"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />

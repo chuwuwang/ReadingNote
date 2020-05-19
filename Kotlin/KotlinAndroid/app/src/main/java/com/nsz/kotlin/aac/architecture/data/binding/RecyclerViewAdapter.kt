@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.data.binding
+package com.nsz.kotlin.aac.architecture.data.binding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -13,7 +13,7 @@ class RecyclerViewAdapter(var data: MutableList<ObservableBean>) : RecyclerView.
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val binding = DataBindingUtil.inflate<RecyclerViewAdapterDataBinding>(layoutInflater, R.layout.item_data_binding_rv, parent, false)
+        val binding = DataBindingUtil.inflate<RecyclerViewAdapterDataBinding>(layoutInflater, R.layout.item_architecture_data_binding_rv, parent, false)
         return ViewHolder(binding)
     }
 

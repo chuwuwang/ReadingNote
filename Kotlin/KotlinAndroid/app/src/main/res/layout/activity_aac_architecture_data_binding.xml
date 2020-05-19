@@ -16,23 +16,23 @@
 
         <import
             alias="Hello"
-            type="com.nsz.kotlin.aac.live.data.Student" />
+            type="com.nsz.kotlin.aac.architecture.live.data.Student" />
 
         <variable
             name="student"
-            type="com.nsz.kotlin.aac.live.data.Student" />
+            type="com.nsz.kotlin.aac.architecture.live.data.Student" />
 
         <variable
             name="user"
-            type="com.nsz.kotlin.aac.data.binding.User" />
+            type="com.nsz.kotlin.aac.architecture.data.binding.User" />
 
         <variable
             name="observableBean"
-            type="com.nsz.kotlin.aac.data.binding.ObservableBean" />
+            type="com.nsz.kotlin.aac.architecture.data.binding.ObservableBean" />
 
         <variable
             name="activity"
-            type="com.nsz.kotlin.aac.data.binding.DataBindingActivity" />
+            type="com.nsz.kotlin.aac.architecture.data.binding.DataBindingActivity" />
 
     </data>
 
@@ -81,7 +81,7 @@
             android:textColor="@android:color/black"
             android:textSize="14sp" />
 
-        <com.nsz.kotlin.aac.data.binding.MyTextView
+        <com.nsz.kotlin.aac.architecture.data.binding.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -118,9 +118,9 @@
             android:layout_height="48dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
             android:numStars="6"
-            android:weak="@={ fx }"
-            android:layout_marginEnd="32dp" />
+            android:weak="@={ fx }" />
 
     </LinearLayout>
 

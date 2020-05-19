@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.live.data
+package com.nsz.kotlin.aac.architecture.live.data
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.nsz.kotlin.R
-import kotlinx.android.synthetic.main.activity_aac_live_data.*
+import kotlinx.android.synthetic.main.activity_aac_architecture_live_data.*
 
 class LiveDataActivity : AppCompatActivity() {
 
@@ -18,7 +18,7 @@ class LiveDataActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_aac_live_data)
+        setContentView(R.layout.activity_aac_architecture_live_data)
         initView()
         loopData()
     }

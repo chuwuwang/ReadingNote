@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.data.binding;
+package com.nsz.kotlin.aac.architecture.data.binding;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;

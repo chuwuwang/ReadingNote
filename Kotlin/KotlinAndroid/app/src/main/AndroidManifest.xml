@@ -28,14 +28,28 @@
 
         <activity android:name=".spannable.SpannableStringActivity" />
 
+        <!-- Android Architecture Components -->
         <activity android:name=".aac.AndroidArchitectureComponentsActivity" />
 
-        <activity android:name=".aac.live.data.LiveDataActivity" />
+        <!-- Architecture -->
+        <activity android:name=".aac.architecture.ArchitectureActivity" />
 
-        <activity android:name=".aac.data.binding.DataBindingActivity" />
-        <activity android:name=".aac.data.binding.DataBindingRecyclerViewActivity" />
+        <!-- LiveData -->
+        <activity android:name=".aac.architecture.live.data.LiveDataActivity" />
 
-        <activity android:name=".aac.view.model.ViewModelActivity" />
+        <!-- DataBinding -->
+        <activity android:name=".aac.architecture.data.binding.DataBindingActivity" />
+        <activity android:name=".aac.architecture.data.binding.DataBindingRecyclerViewActivity" />
+
+        <!-- ViewMode -->
+        <activity android:name=".aac.architecture.view_model.ViewModelActivity" />
+
+        <!-- UI -->
+        <activity android:name=".aac.ui.UIActivity" />
+
+        <!-- Animation -->
+        <activity android:name=".aac.ui.animation.AnimationActivity" />
+        <activity android:name=".aac.ui.animation.interpolator.BounceInterpolatorActivity" />
 
     </application>
 

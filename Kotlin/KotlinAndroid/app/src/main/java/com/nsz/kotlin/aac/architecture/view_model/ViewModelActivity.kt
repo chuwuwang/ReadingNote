@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.view.model
+package com.nsz.kotlin.aac.architecture.view_model
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

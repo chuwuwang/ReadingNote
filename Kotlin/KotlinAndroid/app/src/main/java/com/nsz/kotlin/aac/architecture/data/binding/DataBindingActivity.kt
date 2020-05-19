@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.data.binding
+package com.nsz.kotlin.aac.architecture.data.binding
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.nsz.kotlin.R
-import com.nsz.kotlin.aac.live.data.Student
-import com.nsz.kotlin.databinding.ActivityAacDataBindingBinding
+import com.nsz.kotlin.aac.architecture.live.data.Student
+import com.nsz.kotlin.databinding.ActivityAacArchitectureDataBindingBinding
 
 class DataBindingActivity : AppCompatActivity() {
 
@@ -22,10 +22,7 @@ class DataBindingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<ActivityAacDataBindingBinding>(
-            this,
-            R.layout.activity_aac_data_binding
-        )
+        val binding = DataBindingUtil.setContentView<ActivityAacArchitectureDataBindingBinding>(this, R.layout.activity_aac_architecture_data_binding)
         binding.user = user
         binding.student = student
         binding.observableBean = observableBean
