@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -43,6 +44,9 @@
 
         <!-- ViewMode -->
         <activity android:name=".aac.architecture.view_model.ViewModelActivity" />
+
+        <!-- Lifecycle -->
+        <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />
 
         <!-- UI -->
         <activity android:name=".aac.ui.UIActivity" />
