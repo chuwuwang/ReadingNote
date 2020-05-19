@@ -2,11 +2,11 @@ package com.nsz.kotlin.aac.architecture.lifecycle
 
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
+import com.nsz.kotlin.common.CommonLog
 import kotlin.properties.Delegates
 
 class LifecycleHandler : Handler, LifecycleObserver {
@@ -46,7 +46,7 @@ class LifecycleHandler : Handler, LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     private fun onDestroy() {
-        Log.d(TAG, "LifecycleHandler onDestroy")
+        CommonLog.e("LifecycleHandler onDestroy")
         removeCallbacksAndMessages(null)
         lifecycleOwner.lifecycle.removeObserver(this)
     }

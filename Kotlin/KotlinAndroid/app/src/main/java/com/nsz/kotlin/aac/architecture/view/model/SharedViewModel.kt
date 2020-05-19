@@ -1,4 +1,4 @@
-package com.nsz.kotlin.aac.architecture.view_model
+package com.nsz.kotlin.aac.architecture.view.model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

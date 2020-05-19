@@ -3,7 +3,7 @@ package com.nsz.kotlin.aac.architecture.lifecycle
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
-import android.util.Log
+import com.nsz.kotlin.common.CommonLog
 
 class LifecycleCallback : Application.ActivityLifecycleCallbacks {
 
@@ -13,39 +13,39 @@ class LifecycleCallback : Application.ActivityLifecycleCallbacks {
 
     override fun onActivityCreated(activity: Activity, bundle: Bundle?) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityCreated $clazz")
+        CommonLog.e("onActivityCreated $clazz")
         ActivityManager.pushActivity(activity)
     }
 
     override fun onActivityStarted(activity: Activity) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityStarted $clazz")
+        CommonLog.e("onActivityStarted $clazz")
     }
 
     override fun onActivityResumed(activity: Activity) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityResumed $clazz")
+        CommonLog.e("onActivityResumed $clazz")
     }
 
     override fun onActivityPaused(activity: Activity) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityPaused $clazz")
+        CommonLog.e("onActivityPaused $clazz")
     }
 
     override fun onActivityStopped(activity: Activity) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityStopped $clazz")
+        CommonLog.e("onActivityStopped $clazz")
     }
 
     override fun onActivityDestroyed(activity: Activity) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivityDestroyed $clazz")
+        CommonLog.e("onActivityDestroyed $clazz")
         ActivityManager.popActivity(activity)
     }
 
     override fun onActivitySaveInstanceState(activity: Activity, bundle: Bundle) {
         val clazz = activity.javaClass.name
-        Log.d(TAG, "onActivitySaveInstanceState $clazz")
+        CommonLog.e("onActivitySaveInstanceState $clazz")
     }
 
 }

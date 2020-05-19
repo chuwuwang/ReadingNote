@@ -43,7 +43,7 @@
         <activity android:name=".aac.architecture.data.binding.DataBindingRecyclerViewActivity" />
 
         <!-- ViewMode -->
-        <activity android:name=".aac.architecture.view_model.ViewModelActivity" />
+        <activity android:name=".aac.architecture.view.model.ViewModelActivity" />
 
         <!-- Lifecycle -->
         <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />

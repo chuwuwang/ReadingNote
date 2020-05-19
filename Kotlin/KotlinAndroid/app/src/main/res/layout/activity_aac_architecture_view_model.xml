@@ -4,14 +4,43 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bt_one"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:text="改变SharedViewModel的值"
+        android:text="TEST"
         android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_message_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="TEST"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_message_mutable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="TEST"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="获取数据" />
 
 </LinearLayout>
