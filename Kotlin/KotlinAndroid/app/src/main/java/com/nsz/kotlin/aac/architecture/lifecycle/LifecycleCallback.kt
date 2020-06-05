@@ -24,17 +24,17 @@ class LifecycleCallback : Application.ActivityLifecycleCallbacks {
 
     override fun onActivityResumed(activity: Activity) {
         val clazz = activity.javaClass.name
-        CommonLog.e("onActivityResumed $clazz")
+        // CommonLog.e("onActivityResumed $clazz")
     }
 
     override fun onActivityPaused(activity: Activity) {
         val clazz = activity.javaClass.name
-        CommonLog.e("onActivityPaused $clazz")
+        // CommonLog.e("onActivityPaused $clazz")
     }
 
     override fun onActivityStopped(activity: Activity) {
         val clazz = activity.javaClass.name
-        CommonLog.e("onActivityStopped $clazz")
+        // CommonLog.e("onActivityStopped $clazz")
     }
 
     override fun onActivityDestroyed(activity: Activity) {
