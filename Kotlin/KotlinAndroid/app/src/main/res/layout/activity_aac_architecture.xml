@@ -5,14 +5,53 @@
     android:orientation="vertical">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_live_data"
+        android:id="@+id/mb_room"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
+        android:text="Room"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_live_data"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
         android:text="LiveData"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_lifecycle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Lifecycle"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_view_model"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="ViewModel"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
@@ -39,32 +78,6 @@
         android:layout_marginEnd="32dp"
         android:gravity="center"
         android:text="DataBinding RecyclerView"
-        android:textAppearance="?android:attr/textAppearance"
-        android:textColor="@android:color/white"
-        android:textSize="14sp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_view_model"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center"
-        android:text="ViewModel"
-        android:textAppearance="?android:attr/textAppearance"
-        android:textColor="@android:color/white"
-        android:textSize="14sp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_lifecycle"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center"
-        android:text="Lifecycle"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@android:color/white"
         android:textSize="14sp" />

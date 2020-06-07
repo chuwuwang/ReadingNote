@@ -56,6 +56,9 @@
         <!-- Lifecycle -->
         <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />
 
+        <!-- Room -->
+        <activity android:name=".aac.architecture.room.RoomActivity" />
+
         <!-- UI -->
         <activity android:name=".aac.ui.UIActivity" />
 
