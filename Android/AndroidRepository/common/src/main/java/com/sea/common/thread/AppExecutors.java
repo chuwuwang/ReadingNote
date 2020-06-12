@@ -1,4 +1,4 @@
-package com.weak.repository.common.thread;
+package com.sea.common.thread;
 
 import android.os.Handler;
 import android.os.Looper;

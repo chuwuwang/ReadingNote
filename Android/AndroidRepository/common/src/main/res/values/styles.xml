@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Tab_TextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HttpHeader_TextAppearance">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+</resources>
