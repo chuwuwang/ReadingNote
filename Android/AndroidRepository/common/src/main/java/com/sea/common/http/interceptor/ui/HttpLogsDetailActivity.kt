@@ -2,17 +2,17 @@ package com.sea.common.http.interceptor.ui
 
 import android.content.Context
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
 import com.sea.common.R
 import com.sea.common.http.interceptor.HttpEntity
+import com.sea.common.ui.activity.ImmersiveStatusBarActivity
 import kotlinx.android.synthetic.main.http_activity_logs.*
 import org.jetbrains.anko.startActivity
 
-class HttpLogsDetailActivity : AppCompatActivity() {
+class HttpLogsDetailActivity : ImmersiveStatusBarActivity() {
 
     private val entry: HttpEntity by lazy {
         intent.getSerializableExtra("extra_entry") as HttpEntity
