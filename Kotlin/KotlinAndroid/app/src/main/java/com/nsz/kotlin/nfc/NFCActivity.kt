@@ -9,8 +9,8 @@ import android.nfc.Tag
 import android.nfc.tech.*
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.nsz.kotlin.common.ByteHelper
-import com.nsz.kotlin.common.CommonLog
+import com.nsz.kotlin.ux.common.ByteHelper
+import com.nsz.kotlin.ux.common.CommonLog
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope

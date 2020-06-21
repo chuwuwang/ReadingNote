@@ -1,4 +1,4 @@
-package com.nsz.kotlin.common
+package com.nsz.kotlin.ux.common
 
 import org.bouncycastle.util.encoders.Hex
 import java.nio.charset.StandardCharsets

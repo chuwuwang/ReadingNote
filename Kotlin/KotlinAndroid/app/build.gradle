@@ -39,12 +39,15 @@ android {
     dataBinding {
         enabled = true
     }
+    kapt {
+        generateStubs = true
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kapt {
-        generateStubs = true
     }
 }
 
@@ -81,6 +84,14 @@ dependencies {
 
     // ViewPager2
     implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    // paging
+    def paging_version = "2.1.2"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    // activity
+    def activity_version = "1.1.0"
+    implementation "androidx.activity:activity-ktx:$activity_version"
 
     implementation "org.jetbrains.anko:anko-design:0.10.8"
     implementation "org.jetbrains.anko:anko-commons:0.10.8"

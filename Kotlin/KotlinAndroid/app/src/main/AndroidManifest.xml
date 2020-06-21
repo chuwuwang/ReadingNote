@@ -40,27 +40,36 @@
         <!-- Android Architecture Components -->
         <activity android:name=".aac.AndroidArchitectureComponentsActivity" />
 
-        <!-- Architecture -->
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <!--//////////////////////////////// Architecture ///////////////////////////////////////-->
         <activity android:name=".aac.architecture.ArchitectureActivity" />
-
-        <!-- LiveData -->
-        <activity android:name=".aac.architecture.live.data.LiveDataActivity" />
-
-        <!-- DataBinding -->
-        <activity android:name=".aac.architecture.data.binding.DataBindingActivity" />
-        <activity android:name=".aac.architecture.data.binding.DataBindingRecyclerViewActivity" />
-
-        <!-- ViewMode -->
-        <activity android:name=".aac.architecture.view.model.ViewModelActivity" />
-
-        <!-- Lifecycle -->
-        <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />
 
         <!-- Room -->
         <activity android:name=".aac.architecture.room.RoomActivity" />
 
-        <!-- UI -->
+        <!-- Paging -->
+        <activity android:name=".aac.architecture.paging.PagingActivity" />
+
+        <!-- LiveData -->
+        <activity android:name=".aac.architecture.live.data.LiveDataActivity" />
+
+        <!-- Lifecycle -->
+        <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />
+
+        <!-- ViewMode -->
+        <activity android:name=".aac.architecture.view.model.ViewModelActivity" />
+
+        <!-- DataBinding -->
+        <activity android:name=".aac.architecture.data.binding.DataBindingActivity" />
+        <activity android:name=".aac.architecture.data.binding.DataBindingRecyclerViewActivity" />
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <!--////////////////////////////////// UI ///////////////////////////////////////////////-->
         <activity android:name=".aac.ui.UIActivity" />
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
 
         <!-- Animation -->
         <activity android:name=".aac.ui.animation.AnimationActivity" />

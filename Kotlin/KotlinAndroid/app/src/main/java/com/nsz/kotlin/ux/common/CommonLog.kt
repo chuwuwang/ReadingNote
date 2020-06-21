@@ -1,4 +1,4 @@
-package com.nsz.kotlin.common
+package com.nsz.kotlin.ux.common
 
 import android.util.Log
 

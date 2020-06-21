@@ -6,7 +6,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModelProvider
 import com.nsz.kotlin.R
-import com.nsz.kotlin.common.CommonLog
+import com.nsz.kotlin.ux.common.CommonLog
 import kotlinx.android.synthetic.main.activity_aac_architecture_view_model.*
 
 class ViewModelActivity : AppCompatActivity() {

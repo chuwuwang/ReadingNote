@@ -7,6 +7,7 @@ import com.nsz.kotlin.aac.architecture.data.binding.DataBindingActivity
 import com.nsz.kotlin.aac.architecture.data.binding.DataBindingRecyclerViewActivity
 import com.nsz.kotlin.aac.architecture.lifecycle.LifecycleActivity
 import com.nsz.kotlin.aac.architecture.live.data.LiveDataActivity
+import com.nsz.kotlin.aac.architecture.paging.PagingActivity
 import com.nsz.kotlin.aac.architecture.room.RoomActivity
 import com.nsz.kotlin.aac.architecture.view.model.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_aac_architecture.*
@@ -23,6 +24,9 @@ class ArchitectureActivity : AppCompatActivity() {
     private fun initView() {
         mb_room.setOnClickListener {
             startActivity<RoomActivity>()
+        }
+        mb_paging.setOnClickListener {
+            startActivity<PagingActivity>()
         }
         mb_live_data.setOnClickListener {
             startActivity<LiveDataActivity>()

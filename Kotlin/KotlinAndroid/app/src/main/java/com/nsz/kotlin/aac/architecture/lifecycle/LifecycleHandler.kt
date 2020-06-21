@@ -6,7 +6,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
-import com.nsz.kotlin.common.CommonLog
+import com.nsz.kotlin.ux.common.CommonLog
 import kotlin.properties.Delegates
 
 class LifecycleHandler : Handler, LifecycleObserver {

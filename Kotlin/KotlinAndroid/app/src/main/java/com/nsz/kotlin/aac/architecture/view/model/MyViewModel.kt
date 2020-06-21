@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nsz.kotlin.common.CommonLog
+import com.nsz.kotlin.ux.common.CommonLog
 
 class MyViewModel : ViewModel() {
 

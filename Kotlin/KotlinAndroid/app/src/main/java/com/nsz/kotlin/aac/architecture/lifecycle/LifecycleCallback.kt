@@ -3,7 +3,7 @@ package com.nsz.kotlin.aac.architecture.lifecycle
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
-import com.nsz.kotlin.common.CommonLog
+import com.nsz.kotlin.ux.common.CommonLog
 
 class LifecycleCallback : Application.ActivityLifecycleCallbacks {
 
