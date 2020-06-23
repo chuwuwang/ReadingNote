@@ -19,7 +19,19 @@ object HttpLogsHelper {
     @JvmStatic
     fun saveHttpLog(context: Context, entry: HttpEntity) {
         val httpLogList = getHttpLogList(context)
-        httpLogList.add(entry)
+        httpLogList.add(0, entry)
+        SharedPreferencesHelper.writeObject(context, "sp_http_logs", "key_http_logs", httpLogList)
+    }
+
+    @JvmStatic
+    fun saveHttpLogList(context: Context, httpLogList: ArrayList<HttpEntity>) {
+        SharedPreferencesHelper.writeObject(context, "sp_http_logs", "key_http_logs", httpLogList)
+    }
+
+    @JvmStatic
+    fun removeHttpLog(context: Context, entry: HttpEntity) {
+        val httpLogList = getHttpLogList(context)
+        httpLogList.remove(entry)
         SharedPreferencesHelper.writeObject(context, "sp_http_logs", "key_http_logs", httpLogList)
     }
 
@@ -55,7 +67,7 @@ object HttpLogsHelper {
                 val value = headers[key] as String
                 mutableList.add(key)
                 builder.append(key)
-                builder.append(": ")
+                builder.append(" : ")
                 builder.append(value)
                 builder.append("\n")
             }

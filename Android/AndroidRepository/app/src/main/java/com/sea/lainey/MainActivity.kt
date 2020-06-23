@@ -3,8 +3,6 @@ package com.sea.lainey
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sea.common.http.interceptor.CaptureOkHttpInterceptor
-import com.sea.common.http.interceptor.ui.HttpLogsDetailActivity
-import com.sea.common.http.interceptor.ui.HttpLogsHelper
 import okhttp3.*
 import java.io.IOException
 
@@ -17,10 +15,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        val okHttpInterceptor =
-            CaptureOkHttpInterceptor(this)
+        val okHttpInterceptor = CaptureOkHttpInterceptor(this)
         val okHttpClient = OkHttpClient.Builder()
-            // .addInterceptor(httpLoggingInterceptor)
             .addInterceptor(okHttpInterceptor)
             .build()
         val request = Request.Builder()
@@ -39,10 +35,7 @@ class MainActivity : AppCompatActivity() {
 
                 @Throws(IOException::class)
                 override fun onResponse(call: Call, response: Response) {
-                    runOnUiThread {
-                        val httpEntity = HttpLogsHelper.getHttpLogList(this@MainActivity)[0]
-                        HttpLogsDetailActivity.startActivity(this@MainActivity, httpEntity)
-                    }
+
                 }
 
             }

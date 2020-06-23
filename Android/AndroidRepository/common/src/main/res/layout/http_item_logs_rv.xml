@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.sea.common.http.interceptor.ui.HttpLogsHelper" />
+
+        <variable
+            name="entity"
+            type="com.sea.common.http.interceptor.HttpEntity" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/http_response_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text='@{ entity.responseCode + "" }'
+                android:textColor="@{ entity.responseCode == 200 ? @color/colorTextTitle : @color/colorLittleRed }"
+                android:textSize="14sp"
+                tools:text="200" />
+
+            <TextView
+                android:id="@+id/http_request_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="16dp"
+                android:text='@{ HttpLogsHelper.converterSystemTimeMillis(entity.requestTime) }'
+                android:textColor="@color/colorTextContent"
+                android:textSize="12sp"
+                tools:text="2020-11-12 22:11:11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/http_request_time"
+                android:gravity="end"
+                android:text='@{ entity.tookMillis + " ms" }'
+                android:textColor="@color/colorTextContent"
+                android:textSize="12sp"
+                tools:text="10000 ms" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/http_request_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text='@{ entity.requestMethod }'
+                android:textColor="#2FC751"
+                android:textSize="14sp"
+                tools:text="POST" />
+
+            <TextView
+                android:id="@+id/http_request_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="48dp"
+                android:text='@{ entity.requestUrl }'
+                android:textColor="@color/colorTextContent"
+                android:textSize="12sp"
+                tools:text="https//www.google.com" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorLineColor" />
+
+    </LinearLayout>
+
+</layout>

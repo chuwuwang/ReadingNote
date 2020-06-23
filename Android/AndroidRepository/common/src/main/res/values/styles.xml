@@ -5,7 +5,7 @@
     </style>
 
     <style name="HttpHeader_TextAppearance">
-        <item name="android:textColor">#FF0000</item>
+        <item name="android:textColor">@color/colorLittleRed</item>
     </style>
 
 </resources>

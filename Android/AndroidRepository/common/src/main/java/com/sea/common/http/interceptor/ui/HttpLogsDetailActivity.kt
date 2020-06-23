@@ -9,7 +9,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.sea.common.R
 import com.sea.common.http.interceptor.HttpEntity
 import com.sea.common.ui.activity.ImmersiveStatusBarActivity
-import kotlinx.android.synthetic.main.http_activity_logs.*
+import kotlinx.android.synthetic.main.http_activity_logs_detail.*
 import org.jetbrains.anko.startActivity
 
 class HttpLogsDetailActivity : ImmersiveStatusBarActivity() {
@@ -30,11 +30,13 @@ class HttpLogsDetailActivity : ImmersiveStatusBarActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.http_activity_logs)
+        setContentView(R.layout.http_activity_logs_detail)
         initView()
     }
 
     private fun initView() {
+        http_detail_title.text = entry.requestHost
+
         view_pager2.adapter = fragmentStateAdapter
         view_pager2.registerOnPageChangeCallback(onPageChangeCallback)
 

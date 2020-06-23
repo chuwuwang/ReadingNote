@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Header"
-                android:textColor="#444444"
+                android:textColor="@color/colorTextTitle"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -42,16 +42,16 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:lineSpacingExtra="4dp"
-                android:textColor="#666666"
+                android:textColor="@color/colorTextContent"
                 android:textSize="14sp"
-                android:visibility="@{ entity.responseHeaders == null || entity.responseHeaders.size() ==0 ? View.INVISIBLE : View.VISIBLE }"
+                android:visibility="@{ entity.responseHeaders == null || entity.responseHeaders.size() == 0 ? View.INVISIBLE : View.VISIBLE }"
                 app:header="@{ entity.responseHeaders }" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Body"
-                android:textColor="#444444"
+                android:textColor="@color/colorTextTitle"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -63,7 +63,7 @@
                 android:layout_marginBottom="16dp"
                 android:lineSpacingExtra="4dp"
                 android:text="@{ entity.responseBody }"
-                android:textColor="#666666"
+                android:textColor="@color/colorTextContent"
                 android:textSize="14sp"
                 tools:text="" />
 

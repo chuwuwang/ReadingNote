@@ -184,4 +184,26 @@ class HttpEntity : BaseObservable(), Serializable {
             notifyPropertyChanged(BR.responseContentType)
         }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other == null) return false
+        if (javaClass != other.javaClass) return false
+
+        other as HttpEntity
+
+        if (requestUrl != other.requestUrl) return false
+        if (requestTime != other.requestTime) return false
+        if (responseTime != other.responseTime) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        val qt = requestTime ushr 32
+        val st = responseTime ushr 32
+        var result: Int = requestUrl.hashCode()
+        result = 31 * result + (requestTime xor qt) as Int + (responseTime xor st) as Int
+        return result
+    }
+
 }

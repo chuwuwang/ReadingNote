@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Header"
-                android:textColor="#444444"
+                android:textColor="@color/colorTextTitle"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:lineSpacingExtra="4dp"
-                android:textColor="#666666"
+                android:textColor="@color/colorTextContent"
                 android:textSize="14sp"
                 android:visibility="@{ entity.requestHeaders == null || entity.requestHeaders.size() ==0 ? View.INVISIBLE : View.VISIBLE }"
                 app:header="@{ entity.requestHeaders }" />
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Body"
-                android:textColor="#444444"
+                android:textColor="@color/colorTextTitle"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -62,9 +62,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:lineSpacingExtra="4dp"
-                android:textColor="#666666"
+                android:textColor="@color/colorTextContent"
                 android:textSize="14sp"
-                android:visibility="@{ entity.requestInquireParameterMap == null || entity.requestInquireParameterMap.size() ==0 ? View.GONE : View.VISIBLE }"
+                android:visibility="@{ entity.requestInquireParameterMap == null || entity.requestInquireParameterMap.size() == 0 ? View.GONE : View.VISIBLE }"
                 app:header="@{ entity.requestInquireParameterMap }" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:layout_marginBottom="16dp"
                 android:lineSpacingExtra="4dp"
                 android:text="@{ entity.requestBody }"
-                android:textColor="#666666"
+                android:textColor="@color/colorTextContent"
                 android:textSize="14sp"
                 android:visibility="@{ TextUtils.isEmpty(entity.requestBody) ? View.GONE : View.VISIBLE }" />
 

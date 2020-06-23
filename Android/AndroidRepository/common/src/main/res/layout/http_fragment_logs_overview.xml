@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scheme"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.requestScheme }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Host"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.requestHost }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -83,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Path"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -93,7 +93,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.requestPath }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="URL"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -118,7 +118,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.requestUrl }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Method"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -143,7 +143,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.requestMethod }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -158,7 +158,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Protocol"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.protocol }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -183,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TLSVersion"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -193,7 +193,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.tlsVersion }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -208,7 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CipherSuite"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -218,7 +218,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.cipherSuite }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -233,7 +233,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Status"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -243,7 +243,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ "" + entity.responseCode }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -258,7 +258,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Message"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -268,7 +268,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@{ entity.responseMessage }"
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -283,7 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Duration"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -293,7 +293,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ entity.tookMillis + " ms" }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -308,7 +308,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request Time"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -318,7 +318,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ HttpLogsHelper.converterSystemTimeMillis(entity.requestTime) }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -333,7 +333,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Response Time"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -343,7 +343,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ HttpLogsHelper.converterSystemTimeMillis(entity.responseTime) }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="--" />
 
@@ -358,7 +358,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request size"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -368,7 +368,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ entity.requestContentLength + " byte" }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="0 byte" />
 
@@ -383,7 +383,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Response size"
-                    android:textColor="#444444"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -393,7 +393,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text='@{ entity.responseContentLength + " byte" }'
-                    android:textColor="#666666"
+                    android:textColor="@color/colorTextContent"
                     android:textSize="14sp"
                     tools:text="0 byte" />
 

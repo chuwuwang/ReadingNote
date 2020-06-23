@@ -33,7 +33,26 @@
 
     <application>
 
-        <activity android:name="com.sea.common.http.interceptor.ui.HttpLogsDetailActivity" />
+        <activity
+            android:name=".http.interceptor.ui.HttpLogsActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity-alias
+            android:name="HttpLogsActivity"
+            android:label="HTTPLogs"
+            android:targetActivity=".http.interceptor.ui.HttpLogsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".http.interceptor.ui.HttpLogsDetailActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
 
     </application>
 
