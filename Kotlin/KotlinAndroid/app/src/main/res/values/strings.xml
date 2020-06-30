@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">JetPack</string>
+
+    <string name="app_name">Android Architecture Components</string>
 
     <string name="gray">#E6E6E6</string>
     <string name="blue">#00008B</string>
+
 </resources>
