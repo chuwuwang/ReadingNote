@@ -7,7 +7,12 @@ object ByteHelper {
 
     @JvmStatic
     fun bytes2HexString(bytes: ByteArray): String {
-        return Hex.toHexString(bytes).toUpperCase()
+        try {
+            return Hex.toHexString(bytes).toUpperCase()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return ""
     }
 
     @JvmStatic
@@ -17,19 +22,18 @@ object ByteHelper {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        return ByteArray(16)
+        return ByteArray(0)
     }
 
     @JvmStatic
     fun hexString2String(hexString: String): String {
-        var result = ""
         try {
             val bytes = hexString2Bytes(hexString)
-            result = String(bytes, StandardCharsets.UTF_8)
+            return String(bytes, StandardCharsets.UTF_8)
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        return result
+        return ""
     }
 
 }

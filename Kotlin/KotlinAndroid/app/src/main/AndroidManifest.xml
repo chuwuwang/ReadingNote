@@ -5,6 +5,9 @@
     <uses-feature
         android:name="android.hardware.nfc"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc.hce"
+        android:required="true" />
 
     <uses-permission android:name="android.permission.NFC" />
 
@@ -100,6 +103,18 @@
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
         </activity>
+        <activity android:name=".nfc.HCEActivity" />
+        <service
+            android:name=".nfc.HCEService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/nfc_hce_aid_group" />
+        </service>
         <!--/////////////////////////////////////////////////////////////////////////////////////-->
         <!--/////////////////////////////////////////////////////////////////////////////////////-->
 
