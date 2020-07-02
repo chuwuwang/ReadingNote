@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.nsz.kotlin.R
 import com.nsz.kotlin.aac.architecture.data.binding.DataBindingActivity
 import com.nsz.kotlin.aac.architecture.data.binding.DataBindingRecyclerViewActivity
+import com.nsz.kotlin.aac.architecture.foreground.service.ForegroundServiceActivity
 import com.nsz.kotlin.aac.architecture.lifecycle.LifecycleActivity
 import com.nsz.kotlin.aac.architecture.live.data.LiveDataActivity
 import com.nsz.kotlin.aac.architecture.paging.PagingActivity
@@ -39,6 +40,9 @@ class ArchitectureActivity : AppCompatActivity() {
         }
         mb_data_binding.setOnClickListener {
             startActivity<DataBindingActivity>()
+        }
+        mb_foreground_service.setOnClickListener {
+            startActivity<ForegroundServiceActivity>()
         }
         mb_data_binding_recycler_view.setOnClickListener {
             startActivity<DataBindingRecyclerViewActivity>()

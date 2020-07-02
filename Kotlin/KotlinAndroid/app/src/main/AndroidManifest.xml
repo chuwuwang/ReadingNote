@@ -11,6 +11,8 @@
 
     <uses-permission android:name="android.permission.NFC" />
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -61,6 +63,9 @@
 
         <!-- ViewMode -->
         <activity android:name=".aac.architecture.view.model.ViewModelActivity" />
+
+        <service android:name=".aac.architecture.foreground.service.ForegroundService" />
+        <activity android:name=".aac.architecture.foreground.service.ForegroundServiceActivity" />
 
         <!-- DataBinding -->
         <activity android:name=".aac.architecture.data.binding.DataBindingActivity" />
