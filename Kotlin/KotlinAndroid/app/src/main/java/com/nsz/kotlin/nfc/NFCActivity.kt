@@ -16,7 +16,7 @@ class NFCActivity : AppCompatActivity() {
 
     private fun initView() {
         mb_hce.setOnClickListener {
-
+            startActivity<HCEActivity>()
         }
         mb_read_m1_card.setOnClickListener {
             startActivity<ReaderM1CardActivity>()
