@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_title_size">
+
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_width="@dimen/dp_icon_size"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@null"
+        android:paddingStart="@dimen/dp_padding_start"
+        android:paddingEnd="@dimen/dp_padding_end"
+        android:scaleType="centerInside"
+        android:src="@drawable/common_ic_back_white_72" />
+
+    <TextView
+        android:id="@+id/center_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/view_right"
+        android:layout_toEndOf="@+id/left_image"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_title_size"
+        tools:text="android" />
+
+    <RelativeLayout
+        android:id="@+id/view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="@dimen/dp_icon_size"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@null"
+            android:paddingStart="@dimen/dp_padding_start"
+            android:paddingEnd="@dimen/dp_padding_end"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_ic_right_white_72" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_padding_start"
+            android:paddingEnd="@dimen/dp_padding_end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_title_size"
+            tools:text="android" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

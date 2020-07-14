@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dp_icon_size">48dp</dimen>
+    <dimen name="dp_item_size">48dp</dimen>
+    <dimen name="dp_title_size">48dp</dimen>
+
+    <dimen name="dp_menu_size">64dp</dimen>
+
+    <dimen name="dp_padding_end">16dp</dimen>
+    <dimen name="dp_padding_start">16dp</dimen>
+
+    <dimen name="sp_title_size">16sp</dimen>
+
+</resources>
