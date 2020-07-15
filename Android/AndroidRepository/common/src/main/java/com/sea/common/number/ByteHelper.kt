@@ -9,7 +9,12 @@ object ByteHelper {
 
     @JvmStatic
     fun bytes2HexString(bytes: ByteArray): String {
-        return Hex.toHexString(bytes).toUpperCase()
+        try {
+            return Hex.toHexString(bytes).toUpperCase()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return ""
     }
 
     @JvmStatic

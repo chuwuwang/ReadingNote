@@ -17,7 +17,7 @@ class HttpLogsOverviewFragment : Fragment() {
         fun create(entity: HttpEntity): HttpLogsOverviewFragment {
             val fragment = HttpLogsOverviewFragment()
             val bundle = Bundle()
-            bundle.putSerializable("entity", entity);
+            bundle.putSerializable("entity", entity)
             fragment.arguments = bundle
             return fragment
         }

@@ -17,7 +17,7 @@ class HttpLogsResponseFragment : Fragment() {
         fun create(entity: HttpEntity): HttpLogsResponseFragment {
             val fragment = HttpLogsResponseFragment()
             val bundle = Bundle()
-            bundle.putSerializable("entity", entity);
+            bundle.putSerializable("entity", entity)
             fragment.arguments = bundle
             return fragment
         }
