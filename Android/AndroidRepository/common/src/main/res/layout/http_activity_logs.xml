@@ -15,11 +15,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:gravity="center_vertical"
             android:background="@color/colorLittleBlue"
+            android:gravity="center_vertical"
             android:paddingStart="@dimen/dp_padding_start"
-            android:text="Http/Https Logs"
             android:paddingEnd="@dimen/dp_padding_end"
+            android:text="Http/Https Logs"
             android:textColor="@android:color/white"
             android:textSize="@dimen/sp_title_size" />
 
