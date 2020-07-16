@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/left_image"
-        android:layout_width="@dimen/dp_icon_size"
+        android:layout_width="@dimen/dp_header_size"
         android:layout_height="match_parent"
         android:background="?android:attr/selectableItemBackground"
         android:contentDescription="@null"
@@ -20,8 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:layout_toStartOf="@+id/view_right"
-        android:layout_toEndOf="@+id/left_image"
         android:gravity="center"
         android:maxLines="1"
         android:textColor="@color/white"
@@ -29,7 +27,6 @@
         tools:text="android" />
 
     <RelativeLayout
-        android:id="@+id/view_right"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
@@ -37,7 +34,7 @@
 
         <ImageView
             android:id="@+id/right_image"
-            android:layout_width="@dimen/dp_icon_size"
+            android:layout_width="@dimen/dp_header_size"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:background="?android:attr/selectableItemBackground"

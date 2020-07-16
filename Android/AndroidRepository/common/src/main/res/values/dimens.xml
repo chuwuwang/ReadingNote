@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="dp_icon_size">48dp</dimen>
     <dimen name="dp_item_size">48dp</dimen>
     <dimen name="dp_title_size">48dp</dimen>
 
     <dimen name="dp_menu_size">64dp</dimen>
+    <dimen name="dp_header_size">56dp</dimen>
+
+    <dimen name="dp_icon_size">24dp</dimen>
+
+    <dimen name="dp_margin_End">16dp</dimen>
+    <dimen name="dp_margin_start">16dp</dimen>
 
     <dimen name="dp_padding_end">16dp</dimen>
     <dimen name="dp_padding_start">16dp</dimen>
 
+    <dimen name="dp_button_margin">32dp</dimen>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
     <dimen name="sp_title_size">16sp</dimen>
+    <dimen name="sp_content_size">14sp</dimen>
+    <dimen name="sp_message_size">12sp</dimen>
 
 </resources>
