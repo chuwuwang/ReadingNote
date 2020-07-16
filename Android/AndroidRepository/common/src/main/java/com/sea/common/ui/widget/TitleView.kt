@@ -28,11 +28,11 @@ class TitleView : RelativeLayout {
         view.right_image.visibility = View.GONE
     }
 
-    fun setItemText(@StringRes resId: Int) {
+    fun setTitleText(@StringRes resId: Int) {
         view.center_text.setText(resId)
     }
 
-    fun setItemText(text: CharSequence) {
+    fun setTitleText(text: CharSequence) {
         view.center_text.text = text
     }
 

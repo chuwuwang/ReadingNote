@@ -28,10 +28,16 @@ class HttpLogsDetailActivity : ImmersiveStatusBarActivity() {
         }
     }
 
+    override val layoutId: Int = R.layout.http_activity_logs_detail
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.http_activity_logs_detail)
         initView()
+    }
+
+    override fun initImmersionBar() {
+        super.initImmersionBar()
+        setStatusBarColor(R.color.colorLittleBlue)
     }
 
     private fun initView() {

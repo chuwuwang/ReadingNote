@@ -33,6 +33,11 @@ class HttpLogsActivity : ImmersiveStatusBarActivity() {
         initView()
     }
 
+    override fun initImmersionBar() {
+        super.initImmersionBar()
+        setStatusBarColor(R.color.colorLittleBlue)
+    }
+
     private fun initView() {
         val binding = DataBindingUtil.setContentView<HttpActivityLogsBinding>(this, R.layout.http_activity_logs)
         binding.httpRecyclerView.adapter = adapter

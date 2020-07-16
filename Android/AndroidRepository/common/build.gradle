@@ -65,4 +65,8 @@ dependencies {
     api "com.squareup.okhttp3:logging-interceptor:$ok_http_version"
 
     api 'commons-codec:commons-codec:1.13'
+
+    def immersion_bar_version = "3.0.0"
+    api "com.gyf.immersionbar:immersionbar:$immersion_bar_version"
+    api "com.gyf.immersionbar:immersionbar-ktx:$immersion_bar_version"
 }
