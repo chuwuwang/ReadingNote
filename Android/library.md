@@ -25,3 +25,5 @@
 * https://github.com/zhpanvip/BannerViewPager
 
 > 这是一个基于ViewPager实现的具有强大功能的无限轮播库。腾讯视频、QQ音乐、酷狗音乐、支付宝、天猫、淘宝、优酷视频、喜马拉雅、网易云音乐、哔哩哔哩等APP的Banner样式以及指示器样式都可以通过BannerViewPager实现。
+
+* https://github.com/afollestad/material-dialogs （Dialog工具）
