@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.kotlin.demo.proto.LoginInfo
 import com.nsz.kotlin.aac.AndroidArchitectureComponentsActivity
 import com.nsz.kotlin.nfc.NFCActivity
+import com.nsz.kotlin.open.source.OpenSourceActivity
 import com.nsz.kotlin.spannable.SpannableStringActivity
 import com.nsz.kotlin.storage.ScopedStorageActivity
 import com.nsz.kotlin.thread.LaunchScopeActivity
@@ -38,6 +39,9 @@ class MainActivity : AppCompatActivity() {
         }
         mb_nfc.setOnClickListener {
             startActivity<NFCActivity>()
+        }
+        mb_open_source.setOnClickListener {
+            startActivity<OpenSourceActivity>()
         }
     }
 

@@ -1,4 +1,4 @@
-package com.nsz.kotlin.common.thread;
+package com.nsz.kotlin.ux.common.executors;
 
 import android.os.Handler;
 import android.os.Looper;

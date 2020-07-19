@@ -1,7 +1,7 @@
 package com.nsz.kotlin.aac.architecture.room
 
 import android.content.Context
-import com.nsz.kotlin.common.thread.AppExecutors
+import com.nsz.kotlin.ux.common.executors.AppExecutors
 
 class UserPresenter(var context: Context, var userView: UserView) {
 

@@ -2,7 +2,10 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
 
 apply plugin: 'com.google.protobuf'
 
@@ -72,7 +75,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
     // data binding
-    def data_binding_version = "3.6.3"
+    def data_binding_version = "$gradle_version"
     implementation "androidx.databinding:databinding-common:$data_binding_version"
     implementation "androidx.databinding:databinding-adapters:$data_binding_version"
     kapt "androidx.databinding:databinding-compiler:$data_binding_version"
@@ -105,7 +108,7 @@ dependencies {
 
     implementation 'com.google.protobuf:protobuf-lite:3.0.0'
 
-    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
 }
 
 protobuf {
