@@ -2,7 +2,9 @@
 
 * https://github.com/amitshekhariitbhu/Android-Debug-Database
 
-* https://github.com/facebook/stetho 
+* https://github.com/facebook/stetho （官网：http://facebook.github.io/stetho/）
+
+> Chrome浏览器输入：chrome://inspect/#devices 进行设备相关的调试。
 
 ***
 
