@@ -4,10 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.ImageView
 import android.widget.RelativeLayout
-import android.widget.TextView
-import androidx.annotation.StringRes
 import com.sea.common.R
 import kotlinx.android.synthetic.main.common_view_title.view.*
 
@@ -23,23 +20,16 @@ class TitleView : RelativeLayout {
 
     private val view = LayoutInflater.from(context).inflate(R.layout.common_view_title, this, true)
 
+    val left_image by lazy { view.left_image }
+
+    val center_text by lazy { view.center_text }
+
+    val right_text by lazy { view.right_text }
+    val right_image by lazy { view.right_image }
+
     private fun initView() {
-        view.right_text.visibility = View.GONE
-        view.right_image.visibility = View.GONE
+        right_text.visibility = View.GONE
+        right_image.visibility = View.GONE
     }
-
-    fun setTitleText(@StringRes resId: Int) {
-        view.center_text.setText(resId)
-    }
-
-    fun setTitleText(text: CharSequence) {
-        view.center_text.text = text
-    }
-
-    fun getLeftImageView(): ImageView = view.left_image
-
-    fun getRightImageView(): ImageView = view.right_image
-
-    fun getRightTextView(): TextView = view.right_text
 
 }
