@@ -56,6 +56,10 @@ android {
     }
 }
 
+configurations {
+    ktlint
+}
+
 dependencies {
     implementation fileTree(
             dir: 'libs', include: ['*.jar']
