@@ -98,6 +98,12 @@ dependencies {
     def paging_version = "2.1.2"
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 
+    // navigation
+    def nav_version = "2.3.0"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
     // activity
     def activity_version = "1.1.0"
     implementation "androidx.activity:activity-ktx:$activity_version"

@@ -38,6 +38,9 @@ class ArchitectureActivity : AppCompatActivity() {
         mb_view_model.setOnClickListener {
             startActivity<ViewModelActivity>()
         }
+        mb_navigation.setOnClickListener {
+
+        }
         mb_data_binding.setOnClickListener {
             startActivity<DataBindingActivity>()
         }
