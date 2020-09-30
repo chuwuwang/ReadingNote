@@ -76,6 +76,14 @@
 
 > 该库为NestedScrollView添加了逻辑，使它可以在滚动时，更改对指示器进行动态响应。
 
+### Toast
+
+**1. https://github.com/GrenderG/Toasty**
+
+**2. https://github.com/getActivity/ToastUtils**
+
+> Android 吐司框架，专治 Toast 各种疑难杂症。
+
 ***
 
 ## 图片
@@ -115,6 +123,12 @@
 ### 开发调试
 
 **1. https://github.com/didi/DoraemonKit**
+
+***
+
+## 学习
+
+**1. https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts?utm_source=gold_browser_extension**
 
 ***
 
