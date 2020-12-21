@@ -124,6 +124,10 @@
 
 **1. https://github.com/didi/DoraemonKit**
 
+**2. https://github.com/Genymobile/scrcpy**
+
+> 电脑端调试Android设备
+
 ***
 
 ## 学习
@@ -131,5 +135,3 @@
 **1. https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts?utm_source=gold_browser_extension**
 
 ***
-
-> https://mp.weixin.qq.com/s/yoxVEbvLNA11veIvyrSLXA
