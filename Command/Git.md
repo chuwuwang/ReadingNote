@@ -15,3 +15,6 @@ git push origin test:master
 
 ### 提交本地test分支作为远程的test分支
 $ git push origin test:test
+
+### 通过命令行升级git for windows
+$ git update-git-for-windows
