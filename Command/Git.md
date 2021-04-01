@@ -18,3 +18,9 @@ $ git push origin test:test
 
 ### 通过命令行升级git for windows
 $ git update-git-for-windows
+
+### 去掉代理
+$ git config --global --unset http.proxy
+
+### 去掉SSL校验
+$ git config --global http.sslVerify false

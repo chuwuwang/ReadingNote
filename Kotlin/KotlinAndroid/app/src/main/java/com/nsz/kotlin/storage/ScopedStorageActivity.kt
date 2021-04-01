@@ -26,11 +26,8 @@ class ScopedStorageActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        checkPermission()
-
         internalStorage()
-        externalStoragePrivate()
-        externalStoragePublic()
+        checkPermission()
     }
 
     private fun internalStorage() {
@@ -80,165 +77,184 @@ class ScopedStorageActivity : AppCompatActivity() {
     }
 
     private fun externalStoragePrivate() {
-        val externalFileView = findViewById<TextView>(R.id.tv_external_storage_file)
-        val externalCacheView = findViewById<TextView>(R.id.tv_external_storage_cache)
-        val externalMediaView = findViewById<TextView>(R.id.tv_external_storage_media)
+        try {
+            val externalFileView = findViewById<TextView>(R.id.tv_external_storage_file)
+            val externalCacheView = findViewById<TextView>(R.id.tv_external_storage_cache)
+            val externalMediaView = findViewById<TextView>(R.id.tv_external_storage_media)
 
-        // getExternalFilesDir()
-        var text: String
-        var externalFiles = getExternalFilesDir(null)
-        Log.d(TAG, "getExternalFilesDir: $externalFiles")
-        text = "$externalFiles \n"
+            // getExternalFilesDir()
+            var text: String
+            var externalFiles = getExternalFilesDir(null)
+            Log.d(TAG, "getExternalFilesDir: $externalFiles")
+            text = "$externalFiles \n"
 
-        val externalFilesDirs = getExternalFilesDirs(null)
-        for (i in externalFilesDirs.indices) {
-            val file = externalFilesDirs[i]
-            Log.d(TAG, "getExternalFilesDirs[$i]: $file")
-            text += "$file \n"
-        }
+            val externalFilesDirs = getExternalFilesDirs(null)
+            for (i in externalFilesDirs.indices) {
+                val file = externalFilesDirs[i]
+                Log.d(TAG, "getExternalFilesDirs[$i]: $file")
+                text += "$file \n"
+            }
 
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_MUSIC)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_MUSIC: $externalFiles")
-        text += "$externalFiles \n"
-
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_MOVIES)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_MOVIES: $externalFiles")
-        text += "$externalFiles \n"
-
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_ALARMS)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_ALARMS: $externalFiles")
-        text += "$externalFiles \n"
-
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_PICTURES: $externalFiles")
-        text += "$externalFiles \n"
-
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_RINGTONES)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_RINGS: $externalFiles")
-        text += "$externalFiles \n"
-
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_DOCUMENTS: $externalFiles")
-        text += "$externalFiles \n"
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            externalFiles = getExternalFilesDir(Environment.DIRECTORY_SCREENSHOTS)
-            Log.d(TAG, "getExternalFilesDir_DIRECTORY_SCREENSHOTS: $externalFiles")
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_MUSIC)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_MUSIC: $externalFiles")
             text += "$externalFiles \n"
-        }
 
-        externalFiles = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
-        Log.d(TAG, "getExternalFilesDir_DIRECTORY_DOWNLOADS: $externalFiles")
-        text += "$externalFiles"
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_MOVIES)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_MOVIES: $externalFiles")
+            text += "$externalFiles \n"
 
-        externalFileView.text = text
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_ALARMS)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_ALARMS: $externalFiles")
+            text += "$externalFiles \n"
 
-        // getExternalCacheDir()
-        text = "$externalCacheDir \n"
-        Log.d(TAG, "getExternalCacheDir: $externalCacheDir")
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_PICTURES: $externalFiles")
+            text += "$externalFiles \n"
 
-        for (i in externalCacheDirs.indices) {
-            val file = externalCacheDirs[i]
-            Log.d(TAG, "getExternalCacheDirs[$i]: $file")
-            text += "$file"
-            if (i != externalCacheDirs.size - 1) {
-                text += "\n"
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_RINGTONES)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_RINGS: $externalFiles")
+            text += "$externalFiles \n"
+
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_DOCUMENTS: $externalFiles")
+            text += "$externalFiles \n"
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                externalFiles = getExternalFilesDir(Environment.DIRECTORY_SCREENSHOTS)
+                Log.d(TAG, "getExternalFilesDir_DIRECTORY_SCREENSHOTS: $externalFiles")
+                text += "$externalFiles \n"
             }
-        }
-        externalCacheView.text = text
 
-        // getExternalMediaDirs()
-        text = ""
-        for (i in externalMediaDirs.indices) {
-            val file = externalMediaDirs[i]
-            Log.d(TAG, "getExternalMediaDirs[$i]: $file")
-            text += "$file"
-            if (i != externalMediaDirs.size - 1) {
-                text += "\n"
+            externalFiles = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
+            Log.d(TAG, "getExternalFilesDir_DIRECTORY_DOWNLOADS: $externalFiles")
+            text += "$externalFiles"
+
+            externalFileView.text = text
+
+            // getExternalCacheDir()
+            text = "$externalCacheDir \n"
+            Log.d(TAG, "getExternalCacheDir: $externalCacheDir")
+
+            for (i in externalCacheDirs.indices) {
+                val file = externalCacheDirs[i]
+                Log.d(TAG, "getExternalCacheDirs[$i]: $file")
+                text += "$file"
+                if (i != externalCacheDirs.size - 1) {
+                    text += "\n"
+                }
             }
+            externalCacheView.text = text
+
+            // getExternalMediaDirs()
+            text = ""
+            for (i in externalMediaDirs.indices) {
+                val file = externalMediaDirs[i]
+                Log.d(TAG, "getExternalMediaDirs[$i]: $file")
+                text += "$file"
+                if (i != externalMediaDirs.size - 1) {
+                    text += "\n"
+                }
+            }
+            externalMediaView.text = text
+        } catch (ex: Exception) {
+            ex.printStackTrace()
         }
-        externalMediaView.text = text
     }
 
     private fun externalStoragePublic() {
-        val rootView = findViewById<TextView>(R.id.tv_external_storage_public_root)
-        val dataView = findViewById<TextView>(R.id.tv_external_storage_public_data)
-        val cacheView = findViewById<TextView>(R.id.tv_external_storage_public_cache)
-        val dirView = findViewById<TextView>(R.id.tv_external_storage_public_dir)
-        val dirSpicView = findViewById<TextView>(R.id.tv_external_storage_public_dir_spic)
+        try {
+            val rootView = findViewById<TextView>(R.id.tv_external_storage_public_root)
+            val dataView = findViewById<TextView>(R.id.tv_external_storage_public_data)
+            val cacheView = findViewById<TextView>(R.id.tv_external_storage_public_cache)
+            val dirView = findViewById<TextView>(R.id.tv_external_storage_public_dir)
+            val dirSpicView = findViewById<TextView>(R.id.tv_external_storage_public_dir_spic)
 
-        val rootDirectory = Environment.getRootDirectory()
-        var text = "$rootDirectory"
-        Log.d(TAG, "getRootDirectory: $text")
-        rootView.text = text
+            val rootDirectory = Environment.getRootDirectory()
+            var text = "$rootDirectory"
+            Log.d(TAG, "getRootDirectory: $text")
+            rootView.text = text
 
-        val dataDirectory = Environment.getDataDirectory()
-        text = "$dataDirectory"
-        Log.d(TAG, "getDataDirectory: $text")
-        dataView.text = text
+            val dataDirectory = Environment.getDataDirectory()
+            text = "$dataDirectory"
+            Log.d(TAG, "getDataDirectory: $text")
+            dataView.text = text
 
-        val downloadCacheDirectory = Environment.getDownloadCacheDirectory()
-        text = "$downloadCacheDirectory"
-        Log.d(TAG, "getDownloadCacheDirectory: $text")
-        cacheView.text = text
+            val downloadCacheDirectory = Environment.getDownloadCacheDirectory()
+            text = "$downloadCacheDirectory"
+            Log.d(TAG, "getDownloadCacheDirectory: $text")
+            cacheView.text = text
 
-        val externalStorageState = Environment.getExternalStorageState()
-        Log.d(TAG, "getExternalStorageState: $externalStorageState")
+            val externalStorageState = Environment.getExternalStorageState()
+            Log.d(TAG, "getExternalStorageState: $externalStorageState")
 
-        val externalStorageDirectory = Environment.getExternalStorageDirectory()
-        text = "$externalStorageDirectory"
-        Log.d(TAG, "getExternalStorageDirectory: $text")
-        dirView.text = text
+            val externalStorageDirectory = Environment.getExternalStorageDirectory()
+            text = "$externalStorageDirectory"
+            Log.d(TAG, "getExternalStorageDirectory: $text")
+            dirView.text = text
 
-        val externalStoragePublicDirectoryMusic = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
-        text = "$externalStoragePublicDirectoryMusic \n"
-        Log.d(TAG, "getExternalStoragePublicDirectory_DIRECTORY_MUSIC: $text")
+            val externalStoragePublicDirectoryMusic = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
+            text = "$externalStoragePublicDirectoryMusic \n"
+            Log.d(TAG, "getExternalStoragePublicDirectory_DIRECTORY_MUSIC: $text")
 
-        val externalStoragePublicDirectoryDocuments = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
-        text += "$externalStoragePublicDirectoryDocuments"
-        Log.d(TAG, "getExternalStoragePublicDirectory_DIRECTORY_DOCUMENTS: $externalStoragePublicDirectoryDocuments")
-        dirSpicView.text = text
+            val externalStoragePublicDirectoryDocuments = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
+            text += "$externalStoragePublicDirectoryDocuments"
+            Log.d(TAG, "getExternalStoragePublicDirectory_DIRECTORY_DOCUMENTS: $externalStoragePublicDirectoryDocuments")
+            dirSpicView.text = text
 
-        val cusDir = File(externalStorageDirectory, "Joe")
-        cusDir.mkdirs()
-        Log.d(TAG, "外部共有存储自定义文件夹: $cusDir")
+            val cusDir = File(externalStorageDirectory, "Joe")
+            cusDir.mkdirs()
+            Log.d(TAG, "外部共有存储自定义文件夹: $cusDir")
 
-        val cusFile1 = File(cusDir, "hello.text")
-        cusFile1.createNewFile()
-        Log.d(TAG, "外部共有存储自定义文件: $cusFile1")
+            try {
+                val cusFile1 = File(cusDir, "hello.text")
+                cusFile1.createNewFile()
+                Log.d(TAG, "外部共有存储自定义文件: $cusFile1")
+            } catch (ex: Exception) {
+                ex.printStackTrace()
+            }
+            try {
+                val cusFile2 = File(externalStorageDirectory, "hello.text")
+                cusFile2.createNewFile()
+                Log.d(TAG, "外部共有存储自定义文件: $cusFile2")
 
-        val cusFile2 = File(externalStorageDirectory, "hello.text")
-        cusFile2.createNewFile()
-        Log.d(TAG, "外部共有存储自定义文件: $cusFile2")
-
-        val cusFile3 = File(externalStoragePublicDirectoryMusic, "world.text")
-        cusFile3.createNewFile()
-        Log.d(TAG, "外部共有存储自定义文件: $cusFile3")
+            } catch (ex: Exception) {
+                ex.printStackTrace()
+            }
+            try {
+                val cusFile3 = File(externalStoragePublicDirectoryMusic, "world.text")
+                cusFile3.createNewFile()
+                Log.d(TAG, "外部共有存储自定义文件: $cusFile3")
+            } catch (ex: Exception) {
+                ex.printStackTrace()
+            }
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+        }
     }
 
     private fun checkPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val permissions = arrayOf(
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            )
+            val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
             for (str in permissions) {
                 if (checkCallingOrSelfPermission(str) != PackageManager.PERMISSION_GRANTED) {
                     requestPermissions(permissions, 100)
                     return
                 }
             }
+            externalStoragePrivate()
+            externalStoragePublic()
+        } else {
+            externalStoragePrivate()
+            externalStoragePublic()
         }
     }
 
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         for (it in permissions) {
             Log.d(TAG, "permissions: $it")
+            externalStoragePrivate()
+            externalStoragePublic()
         }
         for (it in grantResults) {
             Log.d(TAG, "grantResults: $it")
@@ -273,10 +289,7 @@ class ScopedStorageActivity : AppCompatActivity() {
 
     /* Checks if external storage is available to at least read */
     fun isExternalStorageReadable(): Boolean {
-        return Environment.getExternalStorageState() in setOf(
-            Environment.MEDIA_MOUNTED,
-            Environment.MEDIA_MOUNTED_READ_ONLY
-        )
+        return Environment.getExternalStorageState() in setOf(Environment.MEDIA_MOUNTED, Environment.MEDIA_MOUNTED_READ_ONLY)
     }
 
 }
