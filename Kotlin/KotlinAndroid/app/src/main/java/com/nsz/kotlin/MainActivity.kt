@@ -8,7 +8,7 @@ import com.nsz.kotlin.aac.AndroidArchitectureComponentsActivity
 import com.nsz.kotlin.nfc.NFCActivity
 import com.nsz.kotlin.open.source.OpenSourceActivity
 import com.nsz.kotlin.spannable.SpannableStringActivity
-import com.nsz.kotlin.storage.ScopedStorageActivity
+import com.nsz.kotlin.storage.StorageActivity
 import com.nsz.kotlin.thread.LaunchScopeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         LoginInfo.Login.newBuilder().setAccount("01").setPassword("123456").build()
 
         mb_scoped_storage.setOnClickListener {
-            val intent = Intent(this@MainActivity, ScopedStorageActivity::class.java)
+            val intent = Intent(this@MainActivity, StorageActivity::class.java)
             startActivity(intent)
         }
         mb_thread.setOnClickListener {

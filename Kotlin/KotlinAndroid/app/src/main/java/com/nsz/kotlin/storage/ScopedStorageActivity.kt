@@ -21,7 +21,7 @@ class ScopedStorageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scope_storage)
+        setContentView(R.layout.activity_storage_scope)
         initView()
     }
 
