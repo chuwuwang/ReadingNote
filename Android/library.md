@@ -97,6 +97,16 @@ ___
 **1. https://github.com/KunMinX/Linkage-RecyclerView**
 > Linkage-RecyclerView 是一款基于 MVP 架构开发的二级联动列表控件。
 
+### ImageView
+
+**1. https://github.com/koral--/android-gif-drawable**
+> Views and Drawable for displaying animated GIFs on Android
+
+### WebView
+
+**1. https://github.com/lzyzsd/JsBridge**
+> android java and javascript bridge, inspired by wechat webview jsbridge.
+
 ___
 
 ## 图片
