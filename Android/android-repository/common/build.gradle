@@ -6,11 +6,11 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 2
         versionName "1.1.2"
         consumerProguardFiles "consumer-rules.pro"
@@ -42,12 +42,12 @@ dependencies {
     implementation fileTree(
             dir: "libs", include: ["*.jar"]
     )
-    implementation 'androidx.core:core-ktx:1.3.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // data binding
-    def data_binding_version = "3.6.3"
+    def data_binding_version = "4.1.3"
     api "androidx.databinding:databinding-common:$data_binding_version"
     api "androidx.databinding:databinding-adapters:$data_binding_version"
     kapt "androidx.databinding:databinding-compiler:$data_binding_version"
@@ -56,14 +56,14 @@ dependencies {
     api "androidx.viewpager2:viewpager2:1.0.0"
 
     // material
-    api "com.google.android.material:material:1.1.0"
+    api "com.google.android.material:material:1.3.0"
 
     def an_ko_version = "0.10.8"
     api "org.jetbrains.anko:anko-design:$an_ko_version"
     api "org.jetbrains.anko:anko-commons:$an_ko_version"
     api "org.jetbrains.anko:anko-appcompat-v7:$an_ko_version"
 
-    def ok_http_version = "4.7.2"
+    def ok_http_version = "4.9.0"
     api "com.squareup.okhttp3:okhttp:$ok_http_version"
     api "com.squareup.okhttp3:logging-interceptor:$ok_http_version"
 
