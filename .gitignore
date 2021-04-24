@@ -85,3 +85,5 @@ Android/AndroidView/local.properties
 *.iml
 Android/AndroidExercise/local.properties
 Android/AndroidRepository/local.properties
+Kotlin/kotlin-android/.idea/
+Android/android-library/.idea/
