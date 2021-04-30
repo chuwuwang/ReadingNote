@@ -24,6 +24,23 @@ adb shell monkey -p 应用包名 -s 500 -v-v-v 300000>E:\monkey_log.txt
 查看log
 adb logcat -s 过滤条件
 adb logcat | grep"geek">log.txt
+
+如何获取启动时间
+adb shell am start -S -W 包名/启动类的全名
+Stopping: xxx
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=xxx/xxx }
+Status: ok
+Activity: xxx/xxx
+ThisTime: 770
+TotalTime: 770
+WaitTime: 848
+Complete
+ThisTime: 表示最后一个 Activity 启动时间
+TotalTime: 表示启动过程中, 所有的 Activity 的启动时间
+WaitTime: 表示应用进程的创建时间 +TotalTime
+一般我们关注TotalTime就好了. 另外, 谷歌在 Android4.4（API 19）上也提供了测量方法, 在 logcat 中过滤 Displayed 字段也可以看到启动时间
+> 2021-04-06 19:25:52.803 2210-2245 I/ActivityManager: Displayed xxx/xxx: +623ms
+> +623ms 就是 Activity 的启动时间
 ```
 
 ***
