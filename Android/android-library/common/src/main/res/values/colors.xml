@@ -4,6 +4,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="bright_foreground_dark_disabled">#80ffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+
     <color name="colorLine">#FFD7D7D7</color>
     <color name="colorTextTitle">#FF333333</color>
     <color name="colorBackground">#FFF5F5F5</color>

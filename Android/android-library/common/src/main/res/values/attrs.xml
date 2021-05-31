@@ -8,4 +8,10 @@
         <attr name="code_cursor_drawable" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="ProgressView">
+        <attr name="progress_color" format="color" />
+        <attr name="progress_stroke_color" format="color" />
+        <attr name="progress_background_color" format="color" />
+    </declare-styleable>
+
 </resources>
