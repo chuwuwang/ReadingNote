@@ -61,6 +61,9 @@
         <!-- LiveData -->
         <activity android:name=".aac.architecture.live.data.LiveDataActivity" />
 
+        <!-- DataStore -->
+        <activity android:name=".aac.architecture.data.store.DataStoreActivity" />
+
         <!-- Lifecycle -->
         <activity android:name=".aac.architecture.lifecycle.LifecycleActivity" />
 

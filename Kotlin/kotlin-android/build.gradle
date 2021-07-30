@@ -2,20 +2,16 @@
 
 buildscript {
     ext {
-        gradle_version = '4.1.1'
-        kotlin_version = '1.4.31'
+        gradle_version = '4.2.2'
+        kotlin_version = '1.5.21'
         kt_lint_version = '0.37.2'
     }
-
     repositories {
         google()
-        jcenter()
         mavenCentral()
     }
-
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_version"
-
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         classpath "io.realm:realm-gradle-plugin:3.1.1"
@@ -31,7 +27,6 @@ plugins {
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
     }
 }
