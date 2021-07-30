@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.kotlin.demo.proto";
+option java_outer_classname = "User";
+option java_multiple_files = true;
+
+message UserInfo {
+  string username = 1;
+}
