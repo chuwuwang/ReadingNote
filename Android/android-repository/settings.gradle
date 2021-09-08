@@ -1,3 +1,0 @@
-include ':app'
-include ':common'
-rootProject.name = 'android-repository'
