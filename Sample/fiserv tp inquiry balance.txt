@@ -7,11 +7,11 @@
 			<msgfctn>AUTQ</msgfctn>
 			<prtcolvrsn>6.0</prtcolvrsn>
 			<xchgid>305</xchgid>
-			<credttm>2023-06-20T17:56:11.137+04:00</credttm>
+			<credttm>2023-07-13T14:40:35.692+04:00</credttm>
 			<initgpty>
-				<id>AD000069</id>
+				<id>AD000056</id>
 				<tp>OPOI</tp>
-				<shrtnm>AD000069</shrtnm>
+				<shrtnm>AD000056</shrtnm>
 			</initgpty>
 			<rcptpty>
 				<id>FDI</id>
@@ -21,22 +21,22 @@
 			<envt>
 				<acqrr>
 					<id>
-						<id>AD000069</id>
+						<id>AD000056</id>
 					</id>
-					<paramsvrsn>100117</paramsvrsn>
+					<paramsvrsn>100119</paramsvrsn>
 				</acqrr>
 				<mrchnt>
 					<id>
-						<id>760076300089</id>
+						<id>760076300072</id>
 					</id>
 				</mrchnt>
 				<poi>
 					<id>
-						<id>AD000069</id>
+						<id>AD000056</id>
 						<tp>OPOI</tp>
-						<shrtnm>AD000069</shrtnm>
+						<shrtnm>AD000056</shrtnm>
 					</id>
-					<grpid>811676300089</grpid>
+					<grpid>811676300072</grpid>
 					<cpblties>
 						<cardrdngcpblties>CICC</cardrdngcpblties>
 						<cardrdngcpblties>PHYS</cardrdngcpblties>
@@ -68,7 +68,7 @@
 						<id>
 							<prvdrid>SUNMI Technology Co., Ltd.</prvdrid>
 							<id>P2-EU</id>
-							<srlnb>PB1620AD61536</srlnb>
+							<srlnb>PB1620AD61995</srlnb>
 						</id>
 					</cmpnt>
 					<cmpnt>
@@ -78,7 +78,7 @@
 							<id>PAYBY SMART POS PAYMENT APPLICATION</id>
 						</id>
 						<sts>
-							<vrsnnb>1.0.117</vrsnnb>
+							<vrsnnb>1.0.119</vrsnnb>
 						</sts>
 						<stdcmplc>
 							<id>nexo-IS</id>
@@ -106,7 +106,7 @@
 									<keyncrptnalgo>
 										<algo>DKP9</algo>
 									</keyncrptnalgo>
-									<ncrptdkey>TfAAAnw=</ncrptdkey>
+									<ncrptdkey>TilgAJ4=</ncrptdkey>
 								</kek>
 							</rcpt>
 							<ncrptdcntt>
@@ -114,13 +114,14 @@
 								<cnttncrptnalgo>
 									<algo>E3DC</algo>
 								</cnttncrptnalgo>
-								<ncrptddata>zTKb4J0W29uh+Q7PJ7HVLUnhVzFnCva4Q+Oj6DWCCc/rXRsEId0Fy383fr6LB5MzbO8NHObD5Mb/EhFj/2uRCA0IOgKWUoBKOb21ay2Z0LM/VB5KXYHB0qqS8ovzo5UhJHvrjV0ot2kEQKEBgM5YmAfsPCBDw60pv5EAYRPOMsm9Y54WrVTLdrZH5ZZyBM4LwO6/FOy3KVd7p5xdpvIiTQ==</ncrptddata>
+								<ncrptddata>oc75Taf5ZE8wJAOA5pURKWWZdALp9w4TVTRBQ1AW7W3AGzZ0etf2qeH3tLjoI0h+CqXj6MriaHbauphauuqPTbHLeeVlO7PvJOVebZ9uBCWCnNUpRD5j9fhfCPhugumq0y8wmnnRFZyDalPfb3gtQYtsIqdOF1+GyQu2J+WM+XixC32ioqlgdOWTSc7F1HGrcRPva1FG+toa39gZ4lRHBg==</ncrptddata>
 							</ncrptdcntt>
 						</envlpddata>
 					</prtctdcarddata>
 					<cardbrnd>TOUCHPOINTS</cardbrnd>
 				</card>
 				<crdhldr>
+					<nm>CVN TEST</nm>
 					<lang>en</lang>
 				</crdhldr>
 			</envt>
@@ -133,20 +134,20 @@
 					<fllbckind>NFLB</fllbckind>
 				</pmtcntxt>
 				<salecntxt>
-					<saleid>90bfaa2dcf294eed81852092ee6d1fcb</saleid>
+					<saleid>79276af86fc042759ad72a3d2ac6b7b7</saleid>
 				</salecntxt>
 			</cntxt>
 			<tx>
 				<txcaptr>false</txcaptr>
 				<txtp>BALC</txtp>
-				<mrchntctgycd>9223</mrchntctgycd>
+				<mrchntctgycd>5094</mrchntctgycd>
 				<txid>
-					<txdttm>2023-06-20T17:56:11.137+04:00</txdttm>
-					<txref>000037</txref>
+					<txdttm>2023-07-13T14:40:35.692+04:00</txdttm>
+					<txref>000195</txref>
 				</txid>
 				<txdtls>
 					<ccy>AED</ccy>
-					<ttlamt>6.98</ttlamt>
+					<ttlamt>0</ttlamt>
 					<amtqlfr>ESTM</amtqlfr>
 				</txdtls>
 			</tx>
@@ -164,7 +165,7 @@
 						<keyncrptnalgo>
 							<algo>DKP9</algo>
 						</keyncrptnalgo>
-						<ncrptdkey>TfAABmc=</ncrptdkey>
+						<ncrptdkey>TilgAKI=</ncrptdkey>
 					</kek>
 				</rcpt>
 				<macalgo>
@@ -173,11 +174,12 @@
 				<ncpsltdcntt>
 					<cntttp>DATA</cntttp>
 				</ncpsltdcntt>
-				<mac>xQe0vO1XhOc=</mac>
+				<mac>j7+d4Rbdwq4=</mac>
 			</authntcddata>
 		</sctytrlr>
 	</accptrauthstnreq>
 </document>
+
 
 <document
 	xmlns="urn:iso:std:iso:20022:tech:xsd:caaa.002.001.06">
@@ -186,45 +188,32 @@
 			<msgfctn>AUTP</msgfctn>
 			<prtcolvrsn>6.0</prtcolvrsn>
 			<xchgid>305</xchgid>
-			<credttm>2023-06-20T17:56:11.137+04:00</credttm>
+			<credttm>2023-07-13T12:40:40.079+02:00</credttm>
 			<initgpty>
-				<id>AD000069</id>
-				<tp>OPOI</tp>
-				<shrtnm>AD000069</shrtnm>
+				<id>AD000056</id>
 			</initgpty>
-			<rcptpty>
-				<id>FDI</id>
-			</rcptpty>
 		</hdr>
 		<authstnrspn>
 			<envt>
-				<card>
-					<prtctdcarddata>
-						<cntttp>EVLP</cntttp>
-						<envlpddata>
-							<ncrptdcntt>
-								<cntttp>DATA</cntttp>
-								<cnttncrptnalgo>
-									<algo>E3DC</algo>
-								</cnttncrptnalgo>
-								<ncrptddata>zTKb4J0W29uh+Q7PJ7HVLUnhVzFnCva4Q+Oj6DWCCc/rXRsEId0Fy383fr6LB5MzbO8NHObD5Mb/EhFj/2uRCA0IOgKWUoBKOb21ay2Z0LM/VB5KXYHB0qqS8ovzo5UhJHvrjV0ot2kEQKEBgM5YmAfsPCBDw60pv5EAYRPOMsm9Y54WrVTLdrZH5ZZyBM4LwO6/FOy3KVd7p5xdpvIiTQ==</ncrptddata>
-							</ncrptdcntt>
-						</envlpddata>
-					</prtctdcarddata>
-					<cardbrnd>TOUCHPOINTS</cardbrnd>
-				</card>
+				<acqrrid>
+					<id>AD000056</id>
+				</acqrrid>
+				<mrchntid>
+					<id>760076300072</id>
+				</mrchntid>
+				<poiid>
+					<id>AD000056</id>
+					<shrtnm>AD000056</shrtnm>
+				</poiid>
 			</envt>
 			<tx>
 				<txid>
-					<txdttm>2023-06-20T17:56:11.137+04:00</txdttm>
-					<txref>000037</txref>
+					<txdttm>2023-07-13T14:40:35.692+04:00</txdttm>
+					<txref>000195</txref>
 				</txid>
-				<rcpttxid>24026273138294</rcpttxid>
 				<txdtls>
 					<ccy>AED</ccy>
-					<ttlamt>6.98</ttlamt>
-					<vldtydt>2023-07-20</vldtydt>
-					<iccrltddata>aGVsbG8=</iccrltddata>
+					<ttlamt>0</ttlamt>
 				</txdtls>
 			</tx>
 			<txrspn>
@@ -234,15 +223,39 @@
 					</authstnntty>
 					<rspntoauthstn>
 						<rspn>APPR</rspn>
-						<rspnrsn>00:Function performed error-free</rspnrsn>
+						<addtlrspninf>TouchPoints=7910</addtlrspninf>
 					</rspntoauthstn>
-					<authstncd>706710</authstncd>
+					<cmpltnreqrd>false</cmpltnreqrd>
 				</authstnrslt>
 				<bal>
-					<amt ccy="AED">100.00</amt>
-					<sgn>true</sgn>
+					<amt ccy="AED">47.46</amt>
 				</bal>
 			</txrspn>
 		</authstnrspn>
+		<sctytrlr>
+			<cntttp>AUTH</cntttp>
+			<authntcddata>
+				<rcpt>
+					<kek>
+						<kekid>
+							<keyid>PayBy MAC KEY</keyid>
+							<keyvrsn>2016051911</keyvrsn>
+							<derivtnid>EAM7lcQ=</derivtnid>
+						</kekid>
+						<keyncrptnalgo>
+							<algo>DKP9</algo>
+						</keyncrptnalgo>
+						<ncrptdkey>TilgAKI=</ncrptdkey>
+					</kek>
+				</rcpt>
+				<macalgo>
+					<algo>MCCS</algo>
+				</macalgo>
+				<ncpsltdcntt>
+					<cntttp>DATA</cntttp>
+				</ncpsltdcntt>
+				<mac>AFCADOWLV1c=</mac>
+			</authntcddata>
+		</sctytrlr>
 	</accptrauthstnrspn>
 </document>
