@@ -7,7 +7,7 @@
             <MsgFctn>FAUQ</MsgFctn>
             <PrtcolVrsn>6.0</PrtcolVrsn>
             <XchgId>305</XchgId>
-            <CreDtTm>2023-07-28T17:39:09.479+04:00</CreDtTm>
+            <CreDtTm>2023-07-28T17:10:17.851+04:00</CreDtTm>
             <InitgPty>
                 <Id>AD000056</Id>
                 <Tp>OPOI</Tp>
@@ -103,7 +103,7 @@
                                     <KeyNcrptnAlgo>
                                         <Algo>DKP9</Algo>
                                     </KeyNcrptnAlgo>
-                                    <NcrptdKey>TfAAArs=</NcrptdKey>
+                                    <NcrptdKey>TfAAArQ=</NcrptdKey>
                                 </KEK>
                             </Rcpt>
                             <NcrptdCntt>
@@ -111,7 +111,7 @@
                                 <CnttNcrptnAlgo>
                                     <Algo>E3DC</Algo>
                                 </CnttNcrptnAlgo>
-                                <NcrptdData>qdCFTY6zlRfb9/86AmbLfvCRHrTmIsaW++b5Yz+sxnZcBlAAczapV6u28XNqdtu1H2/B6sTN43ds+i25IYLTyFzcwdO4HQ5h4c3KpUb0obYsAVG/24uOzM96lWfOqkFGWb7EFZhOs+z+lqVkJtPtA2xNKldtu9EivI7jYvgFm/n+vWagXNxJaD0bxYEwboreOpvmzjEp25GK052v27Xcfg==</NcrptdData>
+                                <NcrptdData>1kjJmp8BsUM3ovGChU3P4uzXebwbQ+D7kesBSDzhNWgTlKwU74REt+kxdACRPx3EAURmpX9uFp5KkAm+WmL/a7dF9KLMUjH4OA/S314coTUMnUoWHKLHE4KuAXbyB9McueUTcDZ5akNMZUHR4+qHIu+5N82bl4s3N+x5X4VwpMqMrCeRt5zd/oUXA84J3pqUClHkJTvM7NvkDR8cTIkVNQ==</NcrptdData>
                             </NcrptdCntt>
                         </EnvlpdData>
                     </PrtctdCardData>
@@ -122,37 +122,6 @@
                     <CardBrnd>V</CardBrnd>
                 </Card>
                 <Crdhldr>
-                    <Authntcn>
-                        <AuthntcnMtd>NPIN</AuthntcnMtd>
-                        <CrdhldrOnLinePIN>
-                            <NcrptdPINBlck>
-                                <CnttTp>EVLP</CnttTp>
-                                <EnvlpdData>
-                                    <Rcpt>
-                                        <KEK>
-                                            <KEKId>
-                                                <KeyId>PayBy PIN KEY</KeyId>
-                                                <KeyVrsn>2016051911</KeyVrsn>
-                                                <DerivtnId>EAM6lcQ=</DerivtnId>
-                                            </KEKId>
-                                            <KeyNcrptnAlgo>
-                                                <Algo>DKP9</Algo>
-                                            </KeyNcrptnAlgo>
-                                            <NcrptdKey>TfAAAGc=</NcrptdKey>
-                                        </KEK>
-                                    </Rcpt>
-                                    <NcrptdCntt>
-                                        <CnttTp>DATA</CnttTp>
-                                        <CnttNcrptnAlgo>
-                                            <Algo>E3DC</Algo>
-                                        </CnttNcrptnAlgo>
-                                        <NcrptdData>IbPJAwmPjg8=</NcrptdData>
-                                    </NcrptdCntt>
-                                </EnvlpdData>
-                            </NcrptdPINBlck>
-                            <PINFrmt>ISO0</PINFrmt>
-                        </CrdhldrOnLinePIN>
-                    </Authntcn>
                     <Lang>en</Lang>
                 </Crdhldr>
             </Envt>
@@ -165,7 +134,7 @@
                     <FllbckInd>NFLB</FllbckInd>
                 </PmtCntxt>
                 <SaleCntxt>
-                    <SaleId>bb1f64943d7c4701a82af0f49eb36dd9</SaleId>
+                    <SaleId>4755949c19a446018425e2bcd370fd43</SaleId>
                 </SaleCntxt>
             </Cntxt>
             <Tx>
@@ -175,25 +144,25 @@
                 <CstmrCnsnt>true</CstmrCnsnt>
                 <CardPrgrmmApld>V</CardPrgrmmApld>
                 <TxId>
-                    <TxDtTm>2023-07-28T17:39:09.479+04:00</TxDtTm>
-                    <TxRef>000119</TxRef>
+                    <TxDtTm>2023-07-28T17:10:17.851+04:00</TxDtTm>
+                    <TxRef>000112</TxRef>
                 </TxId>
                 <RcncltnId>20230728</RcncltnId>
-                <InitrTxId>202307280000041</InitrTxId>
+                <InitrTxId>202307280000034</InitrTxId>
                 <TxDtls>
                     <Ccy>AED</Ccy>
-                    <TtlAmt>789.00</TtlAmt>
+                    <TtlAmt>41.50</TtlAmt>
                     <DtldAmt>
-                        <Grtty>39.00</Grtty>
-                        <AmtGoodsAndSvcs>750.00</AmtGoodsAndSvcs>
+                        <Grtty>1.50</Grtty>
+                        <AmtGoodsAndSvcs>40.00</AmtGoodsAndSvcs>
                     </DtldAmt>
                     <AmtQlfr>ACTL</AmtQlfr>
                     <OnLineRsn>ICCF</OnLineRsn>
                     <SaleItm>
-                        <PdctCd>Purchase AED 789.00 at PayBy</PdctCd>
-                        <PdctAmt>789.00</PdctAmt>
+                        <PdctCd>Purchase AED 41.50 at PayBy</PdctCd>
+                        <PdctAmt>41.50</PdctAmt>
                     </SaleItm>
-                    <ICCRltdData>ggIAAIQHoAAAAAMQEJUFAAAAAACaAyMHKJwBAF8qAgeEXzQBAZ8CBgAAAAeJAJ8DBgAAAAAAAJ8JAgAwnxAHBgEKA6AAAJ8aAgeEnx4INzAwMDAwMDSfJggufbDeQCn0Np8nAYCfMwPg+MifNQEhnzYCAAGfNwRS2M4nn24EIHAAAA==</ICCRltdData>
+                    <ICCRltdData>ggIAAIQHoAAAAAMQEJUFAAAAAACaAyMHKJwBAF8qAgeEXzQBAZ8CBgAAAABBUJ8DBgAAAAAAAJ8JAgAwnxAHBgEKA6AAAJ8aAgeEnx4INzAwMDAwMDSfJghiZ+DDemL1RZ8nAYCfMwPg+MifNQEhnzYCAAGfNwQ/Aqs6n24EIHAAAA==</ICCRltdData>
                 </TxDtls>
                 <AddtlTxData>/Card/CardProductProfile/0023</AddtlTxData>
             </Tx>
@@ -211,7 +180,7 @@
                         <KeyNcrptnAlgo>
                             <Algo>DKP9</Algo>
                         </KeyNcrptnAlgo>
-                        <NcrptdKey>TfAAB4Y=</NcrptdKey>
+                        <NcrptdKey>TfAAB38=</NcrptdKey>
                     </KEK>
                 </Rcpt>
                 <MACAlgo>
@@ -220,30 +189,31 @@
                 <NcpsltdCntt>
                     <CnttTp>DATA</CnttTp>
                 </NcpsltdCntt>
-                <MAC>eb0t5yB7Di0=</MAC>
+                <MAC>u6VVKJ4ZvV4=</MAC>
             </AuthntcdData>
         </SctyTrlr>
     </AccptrAuthstnReq>
 </Document>
 
+
 <Document
-    xmlns=\"urn:iso:std:iso:20022:tech:xsd:caaa.002.001.06\">
+    xmlns="urn:iso:std:iso:20022:tech:xsd:caaa.002.001.06">
     <AccptrAuthstnRspn>
         <Hdr>
             <MsgFctn>FAUP</MsgFctn>
             <PrtcolVrsn>6.0</PrtcolVrsn>
             <XchgId>305</XchgId>
-            <CreDtTm>2023-07-28T15:39:12.742+02:00</CreDtTm>
+            <CreDtTm>2023-07-28T15:10:21.629+02:00</CreDtTm>
             <InitgPty>
                 <Id>AD000056</Id>
             </InitgPty>
             <Tracblt>
                 <RlayId>
-                    <Id>bf7732059d97444cbaf2fc52efd87dbc</Id>
+                    <Id>717176dd91344520983808ce0606d3f0</Id>
                     <Tp>ACCP</Tp>
                 </RlayId>
-                <TracDtTmIn>2023-07-28T15:39:12.386+02:00</TracDtTmIn>
-                <TracDtTmOut>2023-07-28T15:39:12.742+02:00</TracDtTmOut>
+                <TracDtTmIn>2023-07-28T15:10:21.239+02:00</TracDtTmIn>
+                <TracDtTmOut>2023-07-28T15:10:21.629+02:00</TracDtTmOut>
             </Tracblt>
         </Hdr>
         <AuthstnRspn>
@@ -264,20 +234,20 @@
             </Envt>
             <Tx>
                 <TxId>
-                    <TxDtTm>2023-07-28T17:39:09.479+04:00</TxDtTm>
-                    <TxRef>000119</TxRef>
+                    <TxDtTm>2023-07-28T17:10:17.851+04:00</TxDtTm>
+                    <TxRef>000112</TxRef>
                 </TxId>
-                <InitrTxId>202307280000041</InitrTxId>
-                <RcptTxId>1770297815462</RcptTxId>
+                <InitrTxId>202307280000034</InitrTxId>
+                <RcptTxId>1770297812230</RcptTxId>
                 <RcncltnId>20230728</RcncltnId>
                 <TxDtls>
                     <Ccy>AED</Ccy>
-                    <TtlAmt>789.00</TtlAmt>
+                    <TtlAmt>41.50</TtlAmt>
                     <DtldAmt>
-                        <AmtGoodsAndSvcs>750.00</AmtGoodsAndSvcs>
-                        <Grtty>39.00</Grtty>
+                        <AmtGoodsAndSvcs>40.00</AmtGoodsAndSvcs>
+                        <Grtty>1.50</Grtty>
                     </DtldAmt>
-                    <ICCRltdData>igIwMJEKeBjr8frP9YgwMA==</ICCRltdData>
+                    <ICCRltdData>igIwMJEKeJIbror+bMcwMA==</ICCRltdData>
                 </TxDtls>
             </Tx>
             <TxRspn>
@@ -289,7 +259,7 @@
                         <Rspn>APPR</Rspn>
                         <RspnRsn>00:Function performed error-free</RspnRsn>
                     </RspnToAuthstn>
-                    <AuthstnCd>016296</AuthstnCd>
+                    <AuthstnCd>097657</AuthstnCd>
                     <CmpltnReqrd>false</CmpltnReqrd>
                 </AuthstnRslt>
             </TxRspn>
@@ -307,7 +277,7 @@
                         <KeyNcrptnAlgo>
                             <Algo>DKP9</Algo>
                         </KeyNcrptnAlgo>
-                        <NcrptdKey>TfAAB4Y=</NcrptdKey>
+                        <NcrptdKey>TfAAB38=</NcrptdKey>
                     </KEK>
                 </Rcpt>
                 <MACAlgo>
@@ -316,7 +286,7 @@
                 <NcpsltdCntt>
                     <CnttTp>DATA</CnttTp>
                 </NcpsltdCntt>
-                <MAC>OS+glY1m5gI=</MAC>
+                <MAC>2NIdhK51JzA=</MAC>
             </AuthntcdData>
         </SctyTrlr>
     </AccptrAuthstnRspn>
