@@ -184,7 +184,6 @@
     </AccptrAuthstnReq>
 </Document>
 
-
 <Document
     xmlns="urn:iso:std:iso:20022:tech:xsd:caaa.002.001.06">
     <AccptrAuthstnRspn>
