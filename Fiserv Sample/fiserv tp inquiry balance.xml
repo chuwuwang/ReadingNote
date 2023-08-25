@@ -191,7 +191,7 @@
             <MsgFctn>AUTP</MsgFctn>
             <PrtcolVrsn>6.0</PrtcolVrsn>
             <XchgId>305</XchgId>
-            <CreDtTm>2023-07-20T13:41:05.546+02:00</CreDtTm>
+            <CreDtTm>2023-08-24T09:17:42.645+02:00</CreDtTm>
             <InitgPty>
                 <Id>AD000056</Id>
             </InitgPty>
@@ -211,8 +211,8 @@
             </Envt>
             <Tx>
                 <TxId>
-                    <TxDtTm>2023-07-20T15:41:02.749+04:00</TxDtTm>
-                    <TxRef>000062</TxRef>
+                    <TxDtTm>2023-08-24T11:17:38.102+04:00</TxDtTm>
+                    <TxRef>000347</TxRef>
                 </TxId>
                 <TxDtls>
                     <Ccy>AED</Ccy>
@@ -226,12 +226,12 @@
                     </AuthstnNtty>
                     <RspnToAuthstn>
                         <Rspn>APPR</Rspn>
-                        <AddtlRspnInf>TouchPoints=10001060</AddtlRspnInf>
+                        <AddtlRspnInf>Balance=8844088</AddtlRspnInf>
                     </RspnToAuthstn>
                     <CmpltnReqrd>false</CmpltnReqrd>
                 </AuthstnRslt>
                 <Bal>
-                    <Amt Ccy="AED">60006.36</Amt>
+                    <Amt Ccy="AED">53064.52</Amt>
                 </Bal>
             </TxRspn>
         </AuthstnRspn>
@@ -248,7 +248,7 @@
                         <KeyNcrptnAlgo>
                             <Algo>DKP9</Algo>
                         </KeyNcrptnAlgo>
-                        <NcrptdKey>TfAAADA=</NcrptdKey>
+                        <NcrptdKey>TfAAB+k=</NcrptdKey>
                     </KEK>
                 </Rcpt>
                 <MACAlgo>
@@ -257,7 +257,7 @@
                 <NcpsltdCntt>
                     <CnttTp>DATA</CnttTp>
                 </NcpsltdCntt>
-                <MAC>dqOYvLagunc=</MAC>
+                <MAC>GgBSMcB9rOA=</MAC>
             </AuthntcdData>
         </SctyTrlr>
     </AccptrAuthstnRspn>

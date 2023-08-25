@@ -196,7 +196,7 @@
             <MsgFctn>FAUP</MsgFctn>
             <PrtcolVrsn>6.0</PrtcolVrsn>
             <XchgId>305</XchgId>
-            <CreDtTm>2023-07-20T12:10:06.435+02:00</CreDtTm>
+            <CreDtTm>2023-08-24T09:37:59.854+02:00</CreDtTm>
             <InitgPty>
                 <Id>AD000056</Id>
             </InitgPty>
@@ -216,15 +216,15 @@
             </Envt>
             <Tx>
                 <TxId>
-                    <TxDtTm>2023-07-20T14:10:00.978+04:00</TxDtTm>
-                    <TxRef>000049</TxRef>
+                    <TxDtTm>2023-08-24T11:37:54.593+04:00</TxDtTm>
+                    <TxRef>000352</TxRef>
                 </TxId>
-                <InitrTxId>202307200000032</InitrTxId>
-                <RcptTxId>1770296954378</RcptTxId>
-                <RcncltnId>20230720</RcncltnId>
+                <InitrTxId>202308240000114</InitrTxId>
+                <RcptTxId>1770300178476</RcptTxId>
+                <RcncltnId>20230824</RcncltnId>
                 <TxDtls>
                     <Ccy>AED</Ccy>
-                    <TtlAmt>20.11</TtlAmt>
+                    <TtlAmt>35.00</TtlAmt>
                 </TxDtls>
             </Tx>
             <TxRspn>
@@ -235,13 +235,13 @@
                     <RspnToAuthstn>
                         <Rspn>APPR</Rspn>
                         <RspnRsn>200:SUCCESS</RspnRsn>
-                        <AddtlRspnInf>TouchPoints=9997708;TFV23887953</AddtlRspnInf>
+                        <AddtlRspnInf>Balance=8825922;ChargedPoints=5833;ApprovalCode=TFV23889005</AddtlRspnInf>
                     </RspnToAuthstn>
                     <AuthstnCd>000000</AuthstnCd>
                     <CmpltnReqrd>true</CmpltnReqrd>
                 </AuthstnRslt>
                 <Bal>
-                    <Amt Ccy="AED">59986.25</Amt>
+                    <Amt Ccy="AED">52955.53</Amt>
                 </Bal>
                 <Actn>
                     <ActnTp>RQDT</ActnTp>
@@ -261,7 +261,7 @@
                         <KeyNcrptnAlgo>
                             <Algo>DKP9</Algo>
                         </KeyNcrptnAlgo>
-                        <NcrptdKey>TfAAAB4=</NcrptdKey>
+                        <NcrptdKey>TfAAB+4=</NcrptdKey>
                     </KEK>
                 </Rcpt>
                 <MACAlgo>
@@ -270,7 +270,7 @@
                 <NcpsltdCntt>
                     <CnttTp>DATA</CnttTp>
                 </NcpsltdCntt>
-                <MAC>qVV6uWuUfqY=</MAC>
+                <MAC>/DBNG361Q5k=</MAC>
             </AuthntcdData>
         </SctyTrlr>
     </AccptrAuthstnRspn>
