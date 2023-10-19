@@ -1,0 +1,62 @@
+git push origin test:test       // 提交本地test分支作为远程的test分支
+git branch -d test              // 删除本地分支
+git push origin --delete test   // 删除远程分支
+git branch -a                   // 可以查看本地分支和远程分支情况
+git remote show origin          // 查看本地分支和追踪情况
+git remote prune origin         // 同步删除分支
+git push origin test
+git push origin --tags
+
+APK 签名
+v2SigningEnabled true
+enableV3Signing = true
+enableV4Signing = true
+
+APK 反编译
+java -jar apktool.jar d xxx.apk
+sh d2j-dex2jar.sh classes_FileZilla.dex
+
+ADB 命令
+adb shell pm list packages
+adb shell am start -n 包名/Activity类的类名
+
+Flutter 命令
+flutter pub cache clean             // 清除缓存
+flutter run -d chrome               // 运行在浏览器
+flutter build web 
+flutter build web --web-renderer html
+flutter build web --web-renderer canvaskit
+flutter build web --release
+flutter run -d chrome --web-renderer html --profile
+flutter build web --web-renderer canvaskit --release
+flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
+--web-renderer 可选参数值为 auto、html 或 canvaskit。
+auto（默认）- 自动选择渲染器。移动端浏览器选择 HTML，桌面端浏览器选择 CanvasKit。
+html - 强制使用 HTML 渲染器。
+canvaskit - 强制使用 CanvasKit 渲染器。
+
+Nginx 命令
+nginx        
+nginx -s quit
+
+Npm 命令
+npm install
+npm run dev
+
+Docker 命令
+http://localhost
+docker pull swaggerapi/swagger-editor
+docker run -d -p 80:8080 swaggerapi/swagger-editor
+
+Protobuf 命令
+protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
+
+EBT 电子收益转账
+EPP 分期付款方案 Easy Payment Scheme
+Binder开辟线程数过多导致主线程ANR异常
+
+🚀 🎉 🔮 🎂 🎈 🌞 🌍 🌠 🌟 🚀 🌜 📷 🔮 🍧 🍦 🔮 😀 🍰 📫 🔭 🌱 👯 🤔 💬 ✨ 👋 😄
+🍀 🌷 🌱 🍁 🌸 🌹 🍂 🍃 🌺 🌻 🌴 🌵 🌾 🌽 🍄 🌰 🌼 🌿
+🍒 🍌 🍎 🍊 🍓 🍅 🍆 🍈 🍍 🍑 🍇 🍏 🍉  
+🐌 🐍 🐎 🐔 🐗 🐫 🐘 🐨 🐒 🐑 🐛 🐜 🐝 🐞 🐤 🐦 🐭 🐯 🐱
+🐳 🐙 🐚 🐠 🐡 🐢 🐟 🐬 🐸 🐲
