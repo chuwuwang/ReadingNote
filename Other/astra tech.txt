@@ -3,6 +3,8 @@
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/ECR/2023/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/taxi-pos/2023/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/standard-pos/2023/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
 
 蓝牙模块
 whc-spp: 02:34:5D:50:30:1A
@@ -16,18 +18,54 @@ select distinct device_id from dw_payby.countly_taxipos_online_events where app_
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCONNECT:'), get_json_object(biz_tags,'$.MDT_SEND:'), t.biz_tags from dw_payby.countly_taxipos_online_events t where etl_dt>20230910 and etl_dt<20230920 and device_id='PN0421BK41129' order by t.time desc
 
 https://sim-web-merchant.test2pay.com/
-账号：585920614
-密码：132580
+账号: 585920614  132580
+账号: 18236902670  132580
 
-Fiserv UAT环境
-TID：AD000056
+Fiserv UAT
+TID: AD000056   
+
+Fiserv BStore
+AD500076 760076300070
+
+Database
+acquireii-user-sim
+10.90.15.130:3306
+reader reader_j0kqgaHxsI5O6j
+
+select * from device.t_hardware_info where sn_number = 'PB1620AD61407';
+
+select * from device.t_merchant_device where hardware_id='1241';
+
+select * from merchant.t_merchant where mid ='200000030906';
+
+select * from device.t_device_channel where device_id='1143';
+select * from device.t_device_channel where tid='23070701';
+
+select * from acquireii.t_payment_info where pay_channel='PSP';
+
+select * from acquireii.t_fiserv_sale_order;
 
 标准版POS数据库地址
 http://10.66.17.188:8080 
 
+Sim卡的APN
+M2m - m2m
+
+Cloud Mis 测试地址
+http://10.90.14.15:18083/#/connections
+default_username: admin
+default_password: admin@Qwer1234
+
+PayBy Sim
+585231690 - 147258\132580
+
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-1. UL tools 续费
-2. touch point 上线
-3. taxi pos alipay +
-4. standard pos alipay +
+
+斯巴鲁 - PB16208N60078
+SkyTower - PB1620AD61407
+P2mini - PN67226K40816
+
+A设备KSN: 10033A9D4BD4F2E00002
+B设备KSN: 10033A95C44DDFE00010
+B设备KSN: 10033A95C44DDFE00011

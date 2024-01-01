@@ -27,13 +27,3 @@ Url：vpn-jhb.flash.co.za
 Group: Flash Full Access
 Username: yuanyuan.yi@flash.co.za
 Password: #R4OgNbYG22h
-
-
-[DataCollector][Web] implement 
-1. view all app dimensions list screen
-2. add app dimensions
-3. delete app dimensions
-
-1. view all test credential list screen
-2. add test credential
-3. delete test credential
