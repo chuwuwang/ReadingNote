@@ -14,18 +14,14 @@ Wi-Fi: ehUkd18540
 Wi-Fi: 0509613871
 CTCS: Con$um3r2022
 
+Hue 命令
 select distinct device_id from dw_payby.countly_taxipos_online_events where app_version = '1.1.034'
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCONNECT:'), get_json_object(biz_tags,'$.MDT_SEND:'), t.biz_tags from dw_payby.countly_taxipos_online_events t where etl_dt>20230910 and etl_dt<20230920 and device_id='PN0421BK41129' order by t.time desc
 
-https://sim-web-merchant.test2pay.com/
-账号: 585920614  132580
-账号: 18236902670  132580
-
-Fiserv UAT
-TID: AD000056   
-
-Fiserv BStore
-AD500076 760076300070
+// Payby POS
+select * from dw_payby.countly_pos_acquirer_test_events
+select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_pos_acquirer_test_events t
+select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_pos_acquirer_test_events t where device_id='PBH7225A31118' order by t.time desc
 
 Database
 acquireii-user-sim
@@ -56,8 +52,18 @@ http://10.90.14.15:18083/#/connections
 default_username: admin
 default_password: admin@Qwer1234
 
+https://sim-web-merchant.test2pay.com/
+账号: 585920614  132580
+账号: 18236902670  132580
+
 PayBy Sim
-585231690 - 147258\132580
+585231690 - 147258132580
+
+Fiserv UAT
+TID: AD000056   
+
+Fiserv BStore
+AD500076 760076300070
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -69,3 +75,4 @@ P2mini - PN67226K40816
 A设备KSN: 10033A9D4BD4F2E00002
 B设备KSN: 10033A95C44DDFE00010
 B设备KSN: 10033A95C44DDFE00011
+

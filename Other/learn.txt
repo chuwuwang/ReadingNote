@@ -67,50 +67,14 @@ protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
 
 EBT 电子收益转账
 EPP 分期付款方案 Easy Payment Scheme
+
+/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
+
 Binder开辟线程数过多导致主线程ANR异常
 
-🚀 🎉 🔮 🎂 🎈 🌞 🌍 🌠 🌟 🚀 🌜 📷 🔮 🍧 🍦 🔮 😀 🍰 📫 🔭 🌱 👯 🤔 💬 ✨ 👋 😄
+🚀 🎉 🔮 🎂 🎈 🌞 🌍 🌠 🌟 🌜 📷 🔮 🍧 🍦 🔮 😀 🍰 📫 🔭 🌱 👯 🤔 💬 ✨ 👋 😄
 🍀 🌷 🌱 🍁 🌸 🌹 🍂 🍃 🌺 🌻 🌴 🌵 🌾 🌽 🍄 🌰 🌼 🌿
 🍒 🍌 🍎 🍊 🍓 🍅 🍆 🍈 🍍 🍑 🍇 🍏 🍉  
 🐌 🐍 🐎 🐔 🐗 🐫 🐘 🐨 🐒 🐑 🐛 🐜 🐝 🐞 🐤 🐦 🐭 🐯 🐱
 🐳 🐙 🐚 🐠 🐡 🐢 🐟 🐬 🐸 🐲
 
-/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
-
-#我承认我羡慕了 #双向奔赴的爱情 #甜甜的恋爱 #美好的爱情 #双向奔赴的爱才有意义 #不可辜负深爱你的人 #遇见你是我这辈子最幸运的事 #第一次带女友回家 #双向奔赴 #陪伴是最长情的告白
-#旅行大玩家 #旅行推荐官 #治愈系风景 #抖音看世界 #跟着抖音去旅行 #保持热爱奔赴山海 #身体和灵魂总有一个在路上 #一起享受大自然的美 #远离城市的喧嚣 #诗与远方 #城市风景一角 #天很蓝太阳很暖故事很短
-#sweetcouple #wonderwoman #sweetheart #lovestory #campuslife #girlfriend #firstlove #love
-#lol #funny #happy #smile #provocation #万万没想到 #意不意外 #爆笑合集 #日常搞笑 #爆笑集锦 #笑到肚子疼 #倒霉的人类 #每天一笑烦恼忘掉 
-
-porotta 1.5 x4
-
-Hot & Sour Soup 12 x1
-Paneer Mushroom  12 x1
-
-Egg Burji 12 x1
-Bhindi Fry 12 x1
-Paneer Chilli 17 x1
-Cauliflower Chilli 15 x1
-Assorted Veg. in Oysiter Sauce 15 x1
-
-Fish Fillet Fry 18 x1
-
-Chicken Kadai 16 x1
-Chicken Pepper Fry 17 x1
-Chicken Chilli Dry 17 x1
-
-Beef Masala 17 x1
-Beef Chilli Dry 19 x1
-Beef Kothu Poratta 15 x1
-Kappa Biriyani Beef 15 x1
-
-Mutton Pepper Fry 20 x1
-
-Kappa Biriyani Beef 15 x1
-Beef Kothu Poratta 15 x1
-Chicken Chilli Dry 17 x1
-Hot & Sour Soup 12 x1
-Bhindi Fry 12 x1
-Paneer Chilli 17 x1
-Beef Chilli Dry 19 x1
-rice 9 x3
