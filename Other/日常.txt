@@ -1,7 +1,59 @@
+Wi-Fi: ehUkd18540
+Wi-Fi: 0509613871
+Wi-Fi: 0505448065
+
 #我承认我羡慕了 #双向奔赴的爱情 #甜甜的恋爱 #美好的爱情 #双向奔赴的爱才有意义 #不可辜负深爱你的人 #遇见你是我这辈子最幸运的事 #第一次带女友回家 #双向奔赴 #陪伴是最长情的告白
 #旅行大玩家 #旅行推荐官 #治愈系风景 #抖音看世界 #跟着抖音去旅行 #保持热爱奔赴山海 #身体和灵魂总有一个在路上 #一起享受大自然的美 #远离城市的喧嚣 #诗与远方 #城市风景一角 #天很蓝太阳很暖故事很短
 #sweetcouple #wonderwoman #sweetheart #lovestory #campuslife #girlfriend #firstlove #love
 #lol #funny #happy #smile #provocation #万万没想到 #意不意外 #爆笑合集 #日常搞笑 #爆笑集锦 #笑到肚子疼 #倒霉的人类 #每天一笑烦恼忘掉 
+
+冲锋
+/targetenemy [noharm][dead]
+/startattack
+/castsequence reset=1 冲锋,横扫攻击,狂暴姿态,狂暴姿态
+
+压制
+/startattack
+/castsequence reset=3 压制,狂暴姿态,狂暴姿态
+
+旋风斩
+/targetenemy [noharm][dead]
+/startattack
+/cast 旋风斩
+
+输出
+/targetenemy [noharm][dead]
+/startattack
+/cast [mod:alt] 断筋
+/cast [mod:alt]
+/castsequence reset=5 旋风斩,猛击,英勇打击,英勇打击
+
+BUFF
+/castsequence reset=30 血性狂暴,战斗怒吼
+
+橫狂
+/startattack
+/castsequence reset=2 横扫攻击,狂暴姿态,狂暴姿态
+
+单手
+/equipslot 16 死亡之网
+/equipslot 17 邪恶复仇
+
+爆发
+#showtooltip
+/use 勇猛的骨镰护手
+/use 加速药水
+/startattack
+
+#showtooltip 刀扇
+/use [@player] 通用热力工程炸药
+/use [@player] 萨隆邪铁炸弹
+/startattack
+/cast 刀扇
+
+Tea 2
+Coffee 3
+Horliks 5
 
 porotta 1.5 x4
 Fried Rice 15 x1
@@ -49,17 +101,22 @@ Mongolian Stir Fry Beef 21 x1
 Manchurian Beef 23 x1
 Chicken Masala 15 x1
 Vegetable Kuruma 12 x1
-Egg Burji 12 x1
+
+
 Bhindi Fry 12 x1
+Mutton Masala 20 x1
 Beef Chilli Dry 19 x1
-Black Bean Sauce Beef 21 x1
-
-
-Egg Burji 12 x1
-King Fish Fry 12 x1
-Salt & Pepper Veg 16 x1
-Sweet & Sour 21 x1
-Black Bean Sauce Beef 21 x1
 rice 9 x1
-Fried Rice 15 x1
-porotta 1.5 x 8
+porotta 1.5 x4
+Tea 2 x3
+
+前提：设备开机后默认业务应用（A）为霸屏应用
+ 
+1、 开机获取指定应用（B：依赖底层固件程序）当前版本号，获取结果为X。
+2、 和业务应用配置文件中指定固件版本号（Y）做对比。
+3、 当B应用版本号X≥Y的情况下，不做任何处理；
+当B应用版本号X＜Y的情况下，终端主动向服务器发起更新请求，并告知服务器需要获取的B应用版本号（Y）。注：和服务器交互的过程中需要通过服务器证书验证方可建立链接。
+4、 服务器返回指定版本应用的下载地址。
+5、 终端设备接收到下载地址后，直接下载指定应用到本地。
+6、 下载完成后，自动安装B应用。
+7、 安装成功后提示用户重启设备。

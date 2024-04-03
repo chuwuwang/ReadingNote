@@ -1,0 +1,92 @@
+// Rupay
+AidV2 aid = EmvUtil.hexStr2Aid("9F0607A0000005241010DF0101009F09020002DF11050000000000DF12050000000000DF130500000000009F1B0400002710DF1504000001F4DF160100DF170101DF14039F0802DF180100DF2006000200000000DF21060002000000005F2A020356");
+aid.termClssLmt = ByteUtils.hexString2Bytes("000000100000");
+MyApplication.app.emvOptV2.addAid(aid);
+
+aid = EmvUtil.hexStr2Aid("9F0607A0000005241011DF0101009F09020002DF11050000000000DF12050000000000DF130500000000009F1B0400002710DF1504000001F4DF160100DF170101DF14039F0802DF180100DF2006000200000000DF21060002000000005F2A020356");
+aid.termClssLmt = ByteUtils.hexString2Bytes("000000100000");
+
+MyApplication.app.emvOptV2.addAid(aid);
+
+aid = EmvUtil.hexStr2Aid("9F0605A000000152DFC10A010CDF0101019F09020002DF11050000000000DF12050000000000DF130500000000009F1B0400002710DF1504000001F4DF160100DF170101DF14039F0802DF180100DF2006000200000000DF21060002000000005F2A020356");
+aid.kernelType = 10; //AidlConstantsV2.EMV.KernelType.RUPAY
+aid.termClssLmt = ByteUtils.hexString2Bytes("000000100000");
+MyApplication.app.emvOptV2.addAid(aid);
+
+Config cfg = new Config {
+    aid = "A0000001523010",
+    tac_den = "0000000000",
+    tac_online = "0000000000",
+    tac_def = "0000000000",
+    termCountryCode = "0840",
+    transCurrencyCode = "0840",
+    termAppVer = "0001",
+    readerClsTranLmt = "30000".PadLeft(12, '0'),
+    readerClsFloorLmt = "15000".PadLeft(12, '0'),
+    readerClsCvmLmt = "2000".PadLeft(12, '0'),
+    termFlootLmt9F1B = "15000".PadLeft(12, '0'),
+    statusCheckSupport = "1",
+    zeroAmtAllowed = "0",
+    zeroAmtAllowedOffline = "2",
+    excptListCons = "6011111111111125",
+    termCapa = "A0F808",
+    merchantName = "Test Merchant",
+    ttq = "3700C000"
+};
+
+{
+    "ddol": "9f3704",
+    "aid": "a0000001523010",
+    "appVerNum": "0001",
+    "asi": 0,
+    "contactlessCvmLimit": 10000,
+    "contactlessFloorLimit": 20000,
+    "contactlessTransLimit": 30000,
+    "floorLimit": 0,
+    "maxTargetPercent": 99,
+    "onlinePinCap": 1,
+    "tacDefault": "dc00002000",
+    "tacDenial": "0010000000",
+    "tacOnline": "fce09cf800",
+    "targetPercent": 99,
+    "threshold": 0,
+    "transLimit": 4000
+}
+
+{
+    "ddol": "9f3704",
+    "aid": "a0000001524010",
+    "appVerNum": "0001",
+    "asi": 0,
+    "contactlessCvmLimit": 10000,
+    "contactlessFloorLimit": 20000,
+    "contactlessTransLimit": 30000,
+    "floorLimit": 0,
+    "maxTargetPercent": 99,
+    "onlinePinCap": 1,
+    "tacDefault": "dc00002000",
+    "tacDenial": "0010000000",
+    "tacOnline": "fce09cf800",
+    "targetPercent": 99,
+    "threshold": 0,
+    "transLimit": 4000
+}
+
+{
+    "DDOL": "9f3704",
+    "aid": "A0000005241010",
+    "appVerNum": "0002",
+    "asi": 0,
+    "contactlessCvmLimit": 10000,
+    "contactlessFloorLimit": 0,
+    "contactlessTransLimit": 999999999,
+    "floorLimit": 0,
+    "maxTargetPercent": 0,
+    "onlinePinCap": 0,
+    "tacDefault": "A020000000",
+    "tacDenial": "1000000000",
+    "tacOnline": "A468FC9800",
+    "targetPercent": 0,
+    "threshold": 0,
+    "transLimit": 100001
+}

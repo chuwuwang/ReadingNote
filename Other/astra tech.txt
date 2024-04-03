@@ -6,12 +6,13 @@ scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/andr
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
 
+Botim VPN
+otpauth://totp/algento.shenzhou.ni.TOTP03337B1E?secret=QW2KD4W5QBC65NVK3EZRAPKRO57L6R4I&period=30&digits=6&issuer=AOTP.
+
 蓝牙模块
 whc-spp: 02:34:5D:50:30:1A
 whc-ble: 02:34:5D:51:30:1A
 PAYBY_497E83: C0:00:17:49:7E:83
-Wi-Fi: ehUkd18540
-Wi-Fi: 0509613871
 CTCS: Con$um3r2022
 
 Hue 命令
@@ -71,8 +72,3 @@ AD500076 760076300070
 斯巴鲁 - PB16208N60078
 SkyTower - PB1620AD61407
 P2mini - PN67226K40816
-
-A设备KSN: 10033A9D4BD4F2E00002
-B设备KSN: 10033A95C44DDFE00010
-B设备KSN: 10033A95C44DDFE00011
-
