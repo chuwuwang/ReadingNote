@@ -1,0 +1,15 @@
+在gradle.properties文件中添加：
+org.gradle.parallel=true    // 开启并行编译
+org.gradle.daemon=true      // 开启守护进程
+org.gradle.unsafe.configuration-cache=true          // 启用配置缓存
+org.gradle.caching=true                             // 启用构建缓存
+
+# 启用增量编译 build.gradle
+tasks.withType(JavaCompile).configureEach {
+    options.incremental = true
+}
+
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8  // 增加JVM堆大小
+org.gradle.jvmargs=-Xmx2g -Dfile.encoding=UTF-8
+
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8 -XX:+UseParallelGC   // 使用 JVM 并行垃圾回收器

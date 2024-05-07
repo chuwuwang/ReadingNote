@@ -72,3 +72,28 @@ AD500076 760076300070
 斯巴鲁 - PB16208N60078
 SkyTower - PB1620AD61407
 P2mini - PN67226K40816
+
+"received message"
+"311713182961007485" and "pfs快捷支付"
+"nipos --> nisocket" or "nipos <-- nisocket"
+"TID:691b8c8297034e5c8d812b81447b8df7.27343.17131829613210915" and "nipos"
+http://kibana.dc.test2pay.com/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now%2Fd,to:now%2Fd))&_a=(columns:!(app_id,message),filters:!(),index:c410e600-46a6-11ec-b715-afc8249e7340,interval:auto,query:(language:kuery,query:'%22TID:691b8c8297034e5c8d812b81447b8df7.27343.17131829613210915%22%20and%20%22nipos%22'),sort:!())
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+Place of Birth: Tongcheng City, Anhui Province, China
+Spouse Birthday: 1993-04-08
+Number of Depends: 5
+UAE Home Address: 1001, Millennium Supermarket Bulding, Al Zahiyah,E16 , Abu Dhabi
+Emergency Contact Details (Name, Phone Number and Relationship) name: Lei Zhang +8617621979391 spouse
+Work Permit Number / Labor Card (you can check on UAE Pass) : 98610355
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+MCD 55 Test 01 Scenario 01: Pan=5413330089700554, amount=5501, traceNo=000611, RRN=240506000611, responseCode=65
+
+
+
+
