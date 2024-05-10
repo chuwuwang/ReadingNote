@@ -1,8 +1,7 @@
 文件服务器
 文件服务器地址: http://10.90.15.171:8180/download/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/ECR/2023/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/taxi-pos/2023/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/standard-pos/2023/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/ECR/2024/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/taxi-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
 
@@ -92,8 +91,55 @@ Work Permit Number / Labor Card (you can check on UAE Pass) : 98610355
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-MCD 55 Test 01 Scenario 01: Pan=5413330089700554, amount=5501, traceNo=000611, RRN=240506000611, responseCode=65
+VISA.TC.0001: Pan=4761730000000011, amount=1000, traceNo=000679, RRN=240510000679, responseCode=30
+VISA.TC.0002: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0003: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0004: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0005: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0006: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0007: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0009: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0010: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0011: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0014: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0015: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0016: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0017: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0018: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0019: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0020: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0021: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0022: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0023: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0024: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0025: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0026: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0027: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0028: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0030: Pan=, amount=, traceNo=, RRN=
 
+VISA.TC.1002a: Pan=4761731000000027, amount=1000, traceNo=000682, RRN=240510000682, responseCode=30
+VISA.TC.1003a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1004a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1005a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1006a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1007a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1010a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1011a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1013a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1017a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1018a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1021a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1022a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1023a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1024a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1025a: Pan=, amount=, traceNo=, RRN=    
+VISA.TC.1026a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1027a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1028a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1043: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1044a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.1045a: Pan=, amount=, traceNo=, RRN=
 
 
 

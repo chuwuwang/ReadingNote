@@ -88,3 +88,4 @@ Android/AndroidRepository/local.properties
 Kotlin/kotlin-android/.idea/
 Android/android-library/.idea/
 Android/android-repository/.idea/
+/Other/jadx-gui-1.5.0-with-jre-win
