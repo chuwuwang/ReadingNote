@@ -66,7 +66,8 @@ Protobuf 命令
 protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
 
 EBT 电子收益转账
-EPP 分期付款方案 Easy Payment Scheme
+EPP 分期付款方案 Easy Payment Scheme / Installment Payment
+定期付款 Recurring Payment
 
 /Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
 
@@ -77,5 +78,4 @@ Binder开辟线程数过多导致主线程ANR异常
 🍒 🍌 🍎 🍊 🍓 🍅 🍆 🍈 🍍 🍑 🍇 🍏 🍉  
 🐌 🐍 🐎 🐔 🐗 🐫 🐘 🐨 🐒 🐑 🐛 🐜 🐝 🐞 🐤 🐦 🐭 🐯 🐱
 🐳 🐙 🐚 🐠 🐡 🐢 🐟 🐬 🐸 🐲
-
 
