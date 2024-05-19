@@ -12,55 +12,12 @@ brew install git-lfs
 git lfs install
 git lfs track "xxx" 
 
-APK 签名
-v2SigningEnabled true
-enableV3Signing = true
-enableV4Signing = true
-
-APK 反编译
-java -jar apktool.jar d xxx.apk
-sh d2j-dex2jar.sh classes_FileZilla.dex
-
-ADB 命令
-adb shell pm list packages
-adb shell am start -n 包名/Activity类的类名
-adb shell am start -n com.android.settings/.Settings        // 打开系统设置界面
-adb shell am start -n com.android.launcher3/.Launcher       // 回到桌面
-
 MacOS 命令
 sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
 iconutil -c icns icons.iconset -o icon.icns                 // 生成 icns 图标
 sudo spctl --master-disable                                 // 打开所有来源
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
 /Applications/WeChat.app/Contents/MacOS/WeChat              // 打开微信
-
-Flutter 命令
-flutter pub cache clean             // 清除缓存
-flutter run -d chrome               // 运行在浏览器
-flutter build web 
-flutter build web --web-renderer html
-flutter build web --web-renderer canvaskit
-flutter build web --release
-flutter run -d chrome --web-renderer html --profile
-flutter build web --web-renderer canvaskit --release
-flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
---web-renderer 可选参数值为 auto、html 或 canvaskit。
-auto（默认）- 自动选择渲染器。移动端浏览器选择 HTML，桌面端浏览器选择 CanvasKit。
-html - 强制使用 HTML 渲染器。
-canvaskit - 强制使用 CanvasKit 渲染器。
-
-Nginx 命令
-nginx        
-nginx -s quit
-
-Npm 命令
-npm install
-npm run dev
-
-Docker 命令
-http://localhost
-docker pull swaggerapi/swagger-editor
-docker run -d -p 80:8080 swaggerapi/swagger-editor
 
 Protobuf 命令
 protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
