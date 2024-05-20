@@ -19,14 +19,10 @@ sudo spctl --master-disable                                 // 打开所有来�
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
 /Applications/WeChat.app/Contents/MacOS/WeChat              // 打开微信
 
-Protobuf 命令
-protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
-
 EBT 电子收益转账
-EPP 分期付款方案 Easy Payment Scheme / Installment Payment
 定期付款 Recurring Payment
-
-/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
+EPP 分期付款方案 Easy Payment Scheme / Installment Payment
+无人值守/无人终端又名持卡人激活终端 / Unattended/Unmanned terminals aka Cardholder activated terminals (CATs)
 
 Binder开辟线程数过多导致主线程ANR异常
 

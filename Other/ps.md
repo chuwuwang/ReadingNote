@@ -27,3 +27,9 @@ adb shell am start -n com.android.settings/.Settings
 ### 回到桌面
 adb shell am start -n com.android.launcher3/.Launcher
 
+################################################################################################
+
+/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
+
+### Protobuf 命令
+protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
