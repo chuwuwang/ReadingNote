@@ -91,55 +91,176 @@ Work Permit Number / Labor Card (you can check on UAE Pass) : 98610355
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-VISA.TC.0001: Pan=4761730000000011, amount=1000, traceNo=000679, RRN=240510000679, responseCode=30
-VISA.TC.0002: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0003: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0004: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0005: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0006: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0007: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0009: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0010: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0011: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0014: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0015: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0016: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0017: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0018: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0019: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0020: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0021: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0022: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0023: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0024: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0025: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0026: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0027: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0028: Pan=, amount=, traceNo=, RRN=
-VISA.TC.0030: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0001: Pan=4761730000000011,     amount=100,     traceNo=001451, authCode=016871, RRN=240603001451, responseCode=00, responseTime=2024-06-03T09:58:29.307+0000, 95 : 8080008000
+VISA.TC.0002: Pan=4761730000000029,     amount=200,     traceNo=001452, authCode=056877, RRN=240603001452, responseCode=00, responseTime=2024-06-03T10:02:06.673+0000, 95 : 8080008000
+VISA.TC.0003: Pan=4427800000000034,     amount=300,     traceNo=001453, authCode=000306, RRN=240603001453, responseCode=00, responseTime=2024-06-03T10:04:10.299+0000, 95 : 8080008000
+VISA.TC.0004: Pan=4761730000000045,     amount=400,     traceNo=001454, authCode=090279, RRN=240603001454, responseCode=00, responseTime=2024-06-03T10:05:49.287+0000, 95 : 8080008000
+VISA.TC.0005: Pan=4427800000000059,     amount=400,     traceNo=001455, authCode=036877, RRN=240603001455, responseCode=00, responseTime=2024-06-03T10:07:35.293+0000, 95 : 8080008000
 
-VISA.TC.1002a: Pan=4761731000000027, amount=1000, traceNo=000682, RRN=240510000682, responseCode=30
-VISA.TC.1003a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1004a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1005a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1006a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1007a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1010a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1011a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1013a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1017a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1018a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1021a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1022a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1023a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1024a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1025a: Pan=, amount=, traceNo=, RRN=    
-VISA.TC.1026a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1027a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1028a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1043: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1044a: Pan=, amount=, traceNo=, RRN=
-VISA.TC.1045a: Pan=, amount=, traceNo=, RRN=
+VISA.TC.0006: Pan=4761730000000060,     amount=600,     traceNo=001456,                  RRN=240603001456, responseCode=05, responseTime=2024-06-03T10:10:41.347+0000, 95 : 8080008000  - host decline transaction
+VISA.TC.0007: Pan=4761739001010010,     amount=700,     traceNo=001457, authCode=010302, RRN=240603001457, responseCode=00, responseTime=2024-06-03T10:18:42.309+0000, 95 : 0080008000
+VISA.TC.0009: Pan=4761739001010010,     amount=900,     traceNo=001458, authCode=070164, RRN=240603001458, responseCode=00, responseTime=2024-06-03T10:20:52.338+0000, 95 : 0080008000
+VISA.TC.0010: Pan=4761730000000102,     amount=1000,    traceNo=001459, authCode=090006, RRN=240603001459, responseCode=00, responseTime=2024-06-03T10:23:32.424+0000, 95 : 8080048000
+VISA.TC.0011: Pan=4761730000000110,     amount=1100,    traceNo=001460, authCode=016279, RRN=240603001460, responseCode=00, responseTime=2024-06-03T10:25:08.356+0000, 95 : 8080408000
+
+VISA.TC.0014: Pan=4761730000000144,     amount=1400,    traceNo=001461, authCode=020231, RRN=240603001461, responseCode=00, responseTime=2024-06-03T10:27:03.299+0000, 95 : 8080008000
+VISA.TC.0015: Pan=4761730000000151,     amount=1500,    traceNo=001462,                  RRN=240603001462, responseCode=54, responseTime=2024-06-03T10:29:09.343+0000, 95 : 80C0008000  - expired card
+VISA.TC.0016: Pan=4761730000000169,     amount=1600,    traceNo=001463, authCode=036879, RRN=240603001463, responseCode=00, responseTime=2024-06-03T10:35:43.339+0000, 95 : 8080008000
+VISA.TC.0017: Pan=4761730000000177,     amount=1700,    traceNo=001464, authCode=063483, RRN=240603001464, responseCode=00, responseTime=2024-06-03T10:38:41.294+0000, 95 : 8080008000
+VISA.TC.0018: Pan=4761730000000185,     amount=1800,    traceNo=001465, authCode=002101, RRN=240603001465, responseCode=00, responseTime=2024-06-03T10:40:40.298+0000, 95 : 8080008000
+
+VISA.TC.0019: Pan=4761730000000000190,  amount=1900,    traceNo=001466, authCode=043481, RRN=240603001466, responseCode=00, responseTime=2024-06-03T10:51:09.288+0000, 95 : 8080008000
+VISA.TC.0020: Pan=4761730000000201,     amount=2000,    traceNo=,                        RRN=                                                                          95 : 8090008000  - pos decline transaction
+VISA.TC.0021: Pan=4761730000000219,     amount=2100,    traceNo=001467, authCode=056277, RRN=240603001467, responseCode=00, responseTime=2024-06-03T10:56:53.292+0000, 95 : 8080008000
+VISA.TC.0022: Pan=4761730000000227,     amount=2200,    traceNo=001469, authCode=068275, RRN=240603001469, responseCode=00, responseTime=2024-06-03T11:01:13.292+0000, 95 : 8080008000
+VISA.TC.0023: Pan=4761730000000235,     amount=2300,    traceNo=001470, authCode=032994, RRN=240603001470, responseCode=00, responseTime=2024-06-03T11:03:02.324+0000, 95 : 8080008000
+
+VISA.TC.0024: Pan=4761730000000243,     amount=2400,    traceNo=001471, authCode=052994, RRN=240603001471, responseCode=00, responseTime=2024-06-03T11:05:33.293+0000, 95 : 8080008000
+VISA.TC.0025: Pan=4761730000000250,     amount=2500,    traceNo=001472, authCode=062721, RRN=240603001472, responseCode=00, responseTime=2024-06-03T11:08:39.287+0000, 95 : 8080008000
+VISA.TC.0026: Pan=4761730000000268,     amount=2600,    traceNo=001473, authCode=088006, RRN=240603001473, responseCode=00, responseTime=2024-06-03T11:10:38.287+0000, 95 : 8080008000
+VISA.TC.0027: Pan=4761730000000276,     amount=2700,    traceNo=001474, authCode=067606, RRN=240603001474, responseCode=00, responseTime=2024-06-03T11:16:48.420+0000, 95 : 8080008000
+VISA.TC.0028: Pan=4761730000000284,     amount=2800,    traceNo=001476, authCode=032162, RRN=240603001476, responseCode=00, responseTime=2024-06-03T11:31:24.333+0000, 95 : 8080008000
+VISA.TC.0030: Pan=,                     amount=,        traceNo=,                        RRN=                                                                                           - pos decline transaction not aids
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+VISA.TC.1002a: Pan=4761731000000027,    amount=10200,   traceNo=001481, authCode=012741, RRN=240603001481, responseCode=00, responseTime=2024-06-03T11:51:20.475+0000
+VISA.TC.1003a: Pan=4176662220010018,    amount=10300,   traceNo=001482, authCode=079748, RRN=240603001482, responseCode=00, responseTime=2024-06-03T11:53:49.476+0000
+VISA.TC.1004a: Pan=4761731000000043,    amount=10400,   traceNo=001483, authCode=094506, RRN=240603001483, responseCode=00, responseTime=2024-06-03T11:55:17.484+0000
+VISA.TC.1005a: Pan=4761731000000050,    amount=10500,   traceNo=001484, authCode=082038, RRN=240603001484, responseCode=00, responseTime=2024-06-03T11:58:23.478+0000
+VISA.TC.1006a: Pan=4761731000000000066, amount=10600,   traceNo=001485, authCode=059279, RRN=240603001485, responseCode=00, responseTime=2024-06-03T12:00:13.478+0000
+
+VISA.TC.1007a: Pan=4761731000000027,    amount=10700,   traceNo=001486, authCode=026838, RRN=240603001486, responseCode=00, responseTime=2024-06-03T12:02:08.485+0000
+VISA.TC.1010a: Pan=4761731000000100,    amount=11000,   traceNo=001487, authCode=012306, RRN=240603001487, responseCode=00, responseTime=2024-06-03T12:04:13.463+0000
+VISA.TC.1011a: Pan=,                    amount=,        traceNo=,                        RRN=                                                                                           - pos show see phone
+VISA.TC.1013a: Pan=,                    amount=,        traceNo=,                        RRN=                                                                                           - pos offline decline transaction
+VISA.TC.1017a: Pan=4761731000000175,    amount=11700,   traceNo=001496,                  RRN=240603001496                                                                               - host decline transaction invalid field in de35
+
+VISA.TC.1018a: Pan=,                    amount=,        traceNo=,                        RRN=                                                                                           - pos decline transaction card not support
+VISA.TC.1021a: Pan=4761731000000027,    amount=12100,   traceNo=001492,                  RRN=240603001492, responseCode=05, responseTime=2024-06-03T12:54:27.355+0000                   - host decline transaction                  
+VISA.TC.1022a: Pan=4761731000000027,    amount=12200,   traceNo=001493, authCode=068275, RRN=240603001493, responseCode=00, responseTime=2024-06-03T12:57:21.652+0000
+VISA.TC.1023a: Pan=4761731000000027,    amount=12300,   traceNo=001494, authCode=006820, RRN=240603001494, responseCode=00, responseTime=2024-06-03T13:02:11.230+0000
+VISA.TC.1024a: Pan=4176662220010034,    amount=12400,   traceNo=001495, authCode=009764, RRN=240603001495, responseCode=00, responseTime=2024-06-03T13:04:05.186+0000  
+
+VISA.TC.1025a: Pan=4176662220010034,    amount=12500,   traceNo=001497,                  RRN=240603001497, responseCode=55, responseTime=2024-06-03T13:09:44.192+0000                   - host decline transaction PIN error
+VISA.TC.1026a: Pan=4761731000000027,    amount=12610,   traceNo=001498, authCode=036838, RRN=240603001498, responseCode=00, responseTime=2024-06-03T13:34:27.602+0000
+VISA.TC.1027a: Pan=4176662220010018,    amount=12700,   traceNo=001499, authCode=002970, RRN=240603001499, responseCode=00, responseTime=2024-06-03T13:36:59.383+0000
+VISA.TC.1028a: Pan=4761731000000027,    amount=12800,   traceNo=001500, authCode=042706, RRN=240603001500, responseCode=00, responseTime=2024-06-03T13:38:41.566+0000
+VISA.TC.1043:  Pan=,                    amount=,        traceNo=,                        RRN=                                                                                           - pos decline transaction not found application
+
+VISA.TC.1044a: Pan=4761732000010446,    amount=14400,   traceNo=001501, authCode=007654, RRN=240603001501, responseCode=00, responseTime=2024-06-03T13:41:48.498+0000
+VISA.TC.1045a: Pan=4761732000010453,    amount=14500,   traceNo=001502, authCode=027652, RRN=240603001502, responseCode=00, responseTime=2024-06-03T13:43:28.453+0000
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TAIS_POS_001 Pan=6210948000000029,          amount=10000,   traceNo=001206, RRN=240528001206, responseCode=00
+TAIS_POS_002 Pan=6210948000000011,          amount=20000,   traceNo=001207, RRN=240528001207, responseCode=00
+TAIS_POS_003 Pan=6210948000000037,          amount=30000,   traceNo=001208, RRN=240528001208, responseCode=00
+TAIS_POS_004 Pan=6210948000000045,          amount=40000,   traceNo=001209, RRN=240528001209, responseCode=00
+TAIS_POS_005 Pan=6210948000000052,          amount=50000,   traceNo=001210, RRN=240528001210, responseCode=00
+
+TAIS_POS_006 Pan=6210948000000060,          amount=60000,   traceNo=001211, RRN=240528001211, responseCode=00
+TAIS_POS_007 Pan=6210948000000078,          amount=70000,   traceNo=001213, RRN=240528001213, responseCode=00
+TAIS_POS_008 Pan=6210948000000086,          amount=80000,   traceNo=001214, RRN=240528001214, responseCode=00
+TAIS_POS_009 Pan=6210948000000094,          amount=90000,   traceNo=001215, RRN=240528001215, responseCode=00
+TAIS_POS_010 Pan=6210948000000102,          amount=100000,  traceNo=001217, RRN=240528001217, responseCode=00
+
+TAIS_POS_011 Pan=6210948000000110,          amount=130000,  traceNo=001218, RRN=240528001218, responseCode=00
+TAIS_POS_012 Pan=6210948000000128,          amount=120000,  traceNo=001219, RRN=240528001219, responseCode=00
+TAIS_POS_013 Pan=,                          amount=,        traceNo=,       RRN=  terminal decline transaction
+TAIS_POS_014 Pan=,                          amount=,        traceNo=,       RRN=  terminal decline transaction
+TAIS_POS_015 Pan=6210948000000000152,       amount=150000,  traceNo=001220, RRN=240528001220, responseCode=00
+
+TAIS_POS_016 Pan=6210948000000169,          amount=160000,  traceNo=001221, RRN=240528001221, responseCode=00
+TAIS_POS_017 Pan=6210948000000177,          amount=170000,  traceNo=001222, RRN=240528001222, responseCode=00
+TAIS_POS_018 Pan=6210948000000185,          amount=180000,  traceNo=001375, RRN=240531001375, responseCode=00
+TAIS_POS_019 Pan=6210948000000193,          amount=190000,  traceNo=001376, RRN=240531001376, responseCode=00
+TAIS_POS_020 Pan=6210948000000201,          amount=200000,  traceNo=001225, RRN=240528001225, responseCode=00
+
+TAIS_POS_022 Pan=6210948000000219,          amount=220000,  traceNo=001226, RRN=240528001226, responseCode=00
+TAIS_POS_023 Pan=6210948000000227,          amount=230000,  traceNo=001227, RRN=240528001227, responseCode=00
+TAIS_POS_024 Pan=6210948000000235,          amount=240000,  traceNo=001228, RRN=240528001228, responseCode=00
+TAIS_POS_025 Pan=6210948000000235,          amount=250000,  traceNo=001229, RRN=240528001229, responseCode=00
+TAIS_POS_026 Pan=6210948000000235,          amount=260000,  traceNo=001230, RRN=240528001230, responseCode=00
+
+TAIS_POS_027 Pan=6210948000000243,          amount=270000,  traceNo=001231, RRN=240528001231, responseCode=00
+TAIS_POS_028 Pan=6210948000010242,          amount=280000,  traceNo=001233, RRN=240528001233, responseCode=00
+TAIS_POS_029 Pan=6210948000000250,          amount=290000,  traceNo=001234, RRN=240528001234, responseCode=00
+TAIS_POS_031 Pan=6210948000000045,          amount=310000,  traceNo=001235, RRN=240528001235, responseCode=00
+TAIS_POS_032 Pan=6210948000000037,          amount=320000,  traceNo=001236, RRN=240528001236, responseCode=00
+
+TAIS_POS_034 Pan=8171999900000018,          amount=340000,  traceNo=001237, RRN=240528001237, responseCode=00
+TAIS_POS_035 Pan=8171999900000000021,       amount=350000,  traceNo=001238, RRN=240528001238, responseCode=00
+TAIS_POS_036 Pan=8163999900010,             amount=360000,  traceNo=001239, RRN=240528001239, responseCode=00
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TAIS_QPS_U_001 Pan=6210945888010005,        amount=100,     traceNo=001241, RRN=240529001241, responseCode=00
+TAIS_QPS_U_002 Pan=6210945888021,           amount=200,     traceNo=001242, RRN=240529001242, responseCode=00
+TAIS_QPS_U_003 Pan=6210945888040000007,     amount=400,     traceNo=001243, RRN=240529001243, responseCode=00
+TAIS_QPS_U_004 Pan=6210946888053,           amount=500,     traceNo=001244, RRN=240529001244, responseCode=00
+TAIS_QPS_U_005 Pan=6210946888060008,        amount=600,     traceNo=001245, RRN=240529001245, responseCode=00
+
+TAIS_QPS_U_006 Pan=6210946888070000009,     amount=700,     traceNo=001246, RRN=240529001246, responseCode=00
+TAIS_QPS_U_007 Pan=6210946888080006,        amount=800,     traceNo=001247, RRN=240529001247, responseCode=00
+TAIS_QPS_U_008 Pan=6210946888090005,        amount=900,     traceNo=001248, RRN=240529001248, responseCode=00
+TAIS_QPS_U_009 Pan=6210946888170005,        amount=1200,    traceNo=001249, RRN=240529001249, responseCode=00
+TAIS_QPS_U_010 Pan=6210945888100004,        amount=1300,    traceNo=001250, RRN=240529001250, responseCode=00
+
+TAIS_QPS_U_011 Pan=6210946888110001,        amount=1400,    traceNo=001251, RRN=240529001251, responseCode=00
+TAIS_QPS_U_012 Pan=6210945888120002,        amount=1500,    traceNo=001253, RRN=240529001253, responseCode=00
+TAIS_QPS_U_013 Pan=6210945888010005,        amount=30100,   traceNo=001254, RRN=240529001254, responseCode=00
+TAIS_QPS_U_014 Pan=6210945888021,           amount=30200,   traceNo=001257, RRN=240529001257, responseCode=00
+TAIS_QPS_U_015 Pan=6210945888040000007,     amount=30400,   traceNo=001258, RRN=240529001258, responseCode=00
+
+TAIS_QPS_U_016 Pan=6210946888053,           amount=30500,   traceNo=001259, RRN=240529001259, responseCode=00
+TAIS_QPS_U_017 Pan=6210946888060008,        amount=30600,   traceNo=001261, RRN=240529001261, responseCode=00
+TAIS_QPS_U_018 Pan=6210946888070000009,     amount=30700,   traceNo=001262, RRN=240529001262, responseCode=00
+TAIS_QPS_U_019 Pan=6210946888080006,        amount=30800,   traceNo=001263, RRN=240529001263, responseCode=00
+TAIS_QPS_U_020 Pan=6210946888090005,        amount=30900,   traceNo=001264, RRN=240529001264, responseCode=00
+
+TAIS_QPS_U_021 Pan=6210945888100004,        amount=31000,   traceNo=001265, RRN=240529001265, responseCode=00
+TAIS_QPS_U_022 Pan=6210946888110001,        amount=31100,   traceNo=001266, RRN=240529001266, responseCode=00
+TAIS_QPS_U_023 Pan=6210945888120002,        amount=31200,   traceNo=001267, RRN=240529001267, responseCode=00
+TAIS_QPS_U_024 Pan=6210946888170005,        amount=31500,   traceNo=001268, RRN=240529001268, responseCode=00
+TAIS_QPS_U_025 Pan=6210946888180004,        amount=31600,   traceNo=001269, RRN=240529001269, responseCode=00
+
+TAIS_QPS_U_026 Pan=6210946888180004,        amount=31700,   traceNo=001270, RRN=240529001270, responseCode=00
+TAIS_QPS_U_027 Pan=8171999900000000021,     amount=1600,    traceNo=001272, RRN=240529001272, responseCode=00
+TAIS_QPS_U_028 Pan=8163999900010,           amount=31800,   traceNo=001273, RRN=240529001273, responseCode=00
+TAIS_QPS_U_029 Pan=,                        amount=,        traceNo=,       RRN=
+TAIS_QPS_U_030 Pan=,                        amount=,        traceNo=,       RRN=
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TAIS_QPS_M_001 Pan=6210945888010005,        amount=100,     traceNo=001281, RRN=240529001281, responseCode=00
+TAIS_QPS_M_002 Pan=6210945888130001,        amount=20100,   traceNo=001282, RRN=240529001282, responseCode=00
+TAIS_QPS_M_003 Pan=6210945888030003,        amount=300,     traceNo=001283, RRN=240529001283, responseCode=00
+TAIS_QPS_M_004 Pan=6210946888053,           amount=500,     traceNo=001284, RRN=240529001284, responseCode=00
+TAIS_QPS_M_005 Pan=6210946888070000009,     amount=700,     traceNo=001285, RRN=240529001285, responseCode=00
+
+TAIS_QPS_M_006 Pan=6210946888140008,        amount=20200,   traceNo=001286, RRN=240529001286, responseCode=00
+TAIS_QPS_M_007 Pan=6210946888090005,        amount=900,     traceNo=001287, RRN=240529001287, responseCode=00
+TAIS_QPS_M_008 Pan=6210946888170005,        amount=1200,    traceNo=001288, RRN=240529001288, responseCode=00
+TAIS_QPS_M_009 Pan=6210945888010005,        amount=30100,   traceNo=001289, RRN=240529001289, responseCode=00
+TAIS_QPS_M_010 Pan=6210945888030003,        amount=30300,   traceNo=001290, RRN=240529001290, responseCode=00
+
+TAIS_QPS_M_011 Pan=6210946888053,           amount=30500,   traceNo=001291, RRN=240529001291, responseCode=00
+TAIS_QPS_M_012 Pan=6210946888070000009,     amount=30700,   traceNo=001292, RRN=240529001292, responseCode=00
+TAIS_QPS_M_013 Pan=6210946888090005,        amount=30900,   traceNo=001293, RRN=240529001293, responseCode=00
+TAIS_QPS_M_014 Pan=6210946888170005,        amount=31200,   traceNo=001294, RRN=240529001294, responseCode=00
+TAIS_QPS_M_015 Pan=,                        amount=,        traceNo=,       RRN=
+
+TAIS_QPS_M_016 Pan=,                        amount=,        traceNo=,       RRN=
+TAIS_QPS_M_017 Pan=6210946888180004,        amount=31300,   traceNo=001295, RRN=240529001295, responseCode=00
+TAIS_QPS_M_018 Pan=6210946888180004,        amount=31400,   traceNo=001296, RRN=240529001296, responseCode=00
+TAIS_QPS_M_019 Pan=8171999900000018,        amount=31600,   traceNo=001297, RRN=240529001297, responseCode=00
+TAIS_QPS_M_020 Pan=,                        amount=,        traceNo=,       RRN=
+TAIS_QPS_M_021 Pan=,                        amount=,        traceNo=,       RRN=
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
