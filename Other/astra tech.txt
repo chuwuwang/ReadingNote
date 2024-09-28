@@ -7,6 +7,7 @@ scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/andr
 
 Botim VPN
 otpauth://totp/algento.shenzhou.ni.TOTP03337B1E?secret=QW2KD4W5QBC65NVK3EZRAPKRO57L6R4I&period=30&digits=6&issuer=AOTP.
+VPN password: 746635 + 
 
 蓝牙模块
 whc-spp: 02:34:5D:50:30:1A
