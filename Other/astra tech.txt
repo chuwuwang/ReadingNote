@@ -4,6 +4,7 @@ scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/andr
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/taxi-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/app/
 
 Botim VPN
 otpauth://totp/algento.shenzhou.ni.TOTP03337B1E?secret=QW2KD4W5QBC65NVK3EZRAPKRO57L6R4I&period=30&digits=6&issuer=AOTP.
@@ -21,9 +22,10 @@ select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCO
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCONNECT:'), get_json_object(biz_tags,'$.MDT_SEND:'), t.biz_tags from dw_payby.countly_taxipos_online_events t where etl_dt>20240707 and etl_dt<20240710 and device_id='PN67226H40912' order by t.time desc
 
 // Payby POS
-select * from dw_payby.countly_pos_acquirer_test_events
-select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_pos_acquirer_test_events t
-select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_pos_acquirer_test_events t where device_id='PBH7225A31118' order by t.time desc
+// sim 数据库 countly_payby_pos_acquirer_test_events
+select * from dw_payby.countly_payby_pos_acquirer_events
+select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t
+select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PBH7225A31118' order by t.time desc
 
 Database
 acquireii-user-sim
@@ -272,6 +274,4 @@ TAIS_QPS_M_020 Pan=,                        amount=,        traceNo=,       RRN=
 TAIS_QPS_M_021 Pan=,                        amount=,        traceNo=,       RRN=
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
