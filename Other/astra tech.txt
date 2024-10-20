@@ -5,6 +5,7 @@ scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/andr
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/app/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/pos-related/2024/
 
 Botim VPN
 otpauth://totp/algento.shenzhou.ni.TOTP03337B1E?secret=QW2KD4W5QBC65NVK3EZRAPKRO57L6R4I&period=30&digits=6&issuer=AOTP.
