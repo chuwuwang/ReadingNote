@@ -32,3 +32,6 @@ Binder开辟线程数过多导致主线程ANR异常
 🐌 🐍 🐎 🐔 🐗 🐫 🐘 🐨 🐒 🐑 🐛 🐜 🐝 🐞 🐤 🐦 🐭 🐯 🐱
 🐳 🐙 🐚 🐠 🐡 🐢 🐟 🐬 🐸 🐲
 
+MFQ10 and MF919 develop Bank Muamalat app， 
+function include card payment and duitnow QR Payment, not include L3 certification 
+fee: 30k rmb
