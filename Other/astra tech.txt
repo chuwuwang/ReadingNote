@@ -24,7 +24,10 @@ select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCO
 // Payby POS
 // sim 数据库 countly_payby_pos_acquirer_test_events
 select * from dw_payby.countly_payby_pos_acquirer_events
+select * from dw_payby.countly_payby_pos_acquirer_events where etl_dt=20240904
+select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt=20240904
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t
+select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PB16208N60184' order by t.time desc
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PBH7225A31118' order by t.time desc
 
 Database
@@ -87,12 +90,6 @@ http://kibana.dc.test2pay.com/app/discover#/?_g=(filters:!(),refreshInterval:(pa
 
 Support EMV Kernel 100 Rom version:  3.1.3
 Pay POS SIM / UAT RKI account : bin.wang@payby.com
-
-
-PayBy POS 更新配置逻辑
-1. 首次激活会同步配置
-2. 在 Settings 里面手动点击同步配置
-3. 每隔 24 小时会同步配置， 每隔1 小时会检测一次（该 1 小时不是特别准确，由系统决定，大致时间在 1 小时左右）；每次打开 app 会检测（杀掉进程，重新打开也会）；如果手动点击了同步配置，那同步时间会刷新，自动重新计时。
 
 Place of Birth: Tongcheng City, Anhui Province, China
 Spouse Birthday: 1993-04-08

@@ -59,7 +59,11 @@ porotta 1.5 x4
 Fried Rice 15 x1
 Noodles 15 x1
 Pad Thai Noodles 15 x1
+hotdog poratta 6 x1
+beef poratta 6 x1
+tarteeb pora·tta 6 x1
 
+Mutton Soup 6 x1
 Hot & Sour Soup 12 x1
 Paneer Mushroom  12 x1
 
@@ -69,6 +73,7 @@ Paneer Chilli 17 x1
 Vegetable Kuruma 12 x1
 Cauliflower Chilli 15 x1
 Assorted Veg. in Oysiter Sauce 15 x1
+Egg With TomaTo 11 x1
 
 Natholi Fry 12 x1
 King Fish Fry 12 x1
@@ -80,6 +85,7 @@ Chicken Pepper Fry 17 x1
 Chicken Chilli Dry 17 x1
 Chicken Kothu Poratta 13 x1
 Kappa Biriyani Chicken 14 x1
+Sweet & Sour chicken 21 x1
 
 Beef Masala 17 x1
 Beef Chilli Dry 19 x1
@@ -91,24 +97,50 @@ Mongolian Stir Fry Beef 21 x1
 Kung Pau Beef 21 x1
 Black Bean Sauce Beef 21 x1
 
+Mutton Tikka 29 x1 
 Mutton Masala 20 x1
 Mutton Pepper Fry 20 x1
 
-Mutton Masala 20 x1
-Manchurian Beef 23 x1
-Mongolian Stir Fry Beef 21 x1
-Manchurian Beef 23 x1
-Chicken Masala 15 x1
-Vegetable Kuruma 12 x1
-Beef Masala 17 x1
-Vegetable Kuruma 12 x1
-Beef Chilli Dry 19 x1
-Manchurian Beef 23 x1
-
 Egg Burji 12 x1
 Bhindi Fry 12 x1
-King Fish Fry 12 x1
-Mutton Masala 20 x1
-Chicken Chilli Dry 17 x1
+Beef Chilli Dry 19 x1
 Assorted Veg. in Oysiter Sauce 15 x1
+Black Bean Sauce Beef 21 x1
+Salt & Pepper Chicken 22 x1
+
+Egg Burji 12 x1
+Mutton Tikka 29 x1 
+Egg With TomaTo 11 x1
+Beef Chilli Dry 19 x1
+
 rice 9 x2
+
+
+Beef Chilli Dry 19 x1
+Assorted Veg. in Oysiter Sauce 15 x1
+Dry Beef Wi. Garlic & Pepper 22 x1
+
+Mongolian Stir Fry Beef 21 x1
+Fish Fillet Fry 18 x1
+hotdog poratta 6 x1
+beef poratta 6 x1
+
+
+github-recovery-codes
+
+ba16c-c78a5
+da840-d847b
+75b69-d6706
+67fbe-27c64
+fb5d8-d2585
+8593a-27ec6
+a81c5-cf811
+fa819-e3a48
+31757-37359
+e12c5-2ebfd
+923b2-b349d
+d1173-b3db1
+0538c-60fb2
+d24c6-9e1b9
+b3132-39c1a
+e2a19-3dcde
