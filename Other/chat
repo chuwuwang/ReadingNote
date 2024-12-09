@@ -1,0 +1,15 @@
+CL_CV_01
+amount: 333.00
+rcptTxId: 1770329591568
+card bin: 66901099
+TID: AD000068
+MID: 760076300088
+Host response 05:Do not honour
+
+This test case requirement: transaction apprpoval
+issues: transaction failed
+
+
+
+
+

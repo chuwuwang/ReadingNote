@@ -59,13 +59,21 @@ porotta 1.5 x4
 Fried Rice 15 x1
 Noodles 15 x1
 Pad Thai Noodles 15 x1
-hotdog poratta 6 x1
-beef poratta 6 x1
-tarteeb pora·tta 6 x1
+Hotdog Poratta 6 x1
+Beef Poratta 6 x1
+Tarteeb Pora·tta 6 x1
 
 Mutton Soup 6 x1
 Hot & Sour Soup 12 x1
 Paneer Mushroom  12 x1
+Wonton Soup 15 x1
+Laksa Noodles Soup 15 x1
+Special Mix Seafood Soup 18 x1
+
+Nuggets Plate 12 x1
+Check Wings 28 x1
+Onion Rings 13 x1
+Mutton Tikka 29 x1
 
 Egg Burji 12 x1
 Bhindi Fry 12 x1
@@ -78,6 +86,7 @@ Egg With TomaTo 11 x1
 Natholi Fry 12 x1
 King Fish Fry 12 x1
 Fish Fillet Fry 18 x1
+⁠Sweet & Sour Fish 23 x1
 
 Chicken Kadai 16 x1
 Chicken Masala 15 x1
@@ -102,29 +111,10 @@ Mutton Masala 20 x1
 Mutton Pepper Fry 20 x1
 
 Egg Burji 12 x1
-Bhindi Fry 12 x1
 Beef Chilli Dry 19 x1
+Manchurian Beef 23 x1
 Assorted Veg. in Oysiter Sauce 15 x1
-Black Bean Sauce Beef 21 x1
-Salt & Pepper Chicken 22 x1
-
-Egg Burji 12 x1
-Mutton Tikka 29 x1 
-Egg With TomaTo 11 x1
-Beef Chilli Dry 19 x1
-
 rice 9 x2
-
-
-Beef Chilli Dry 19 x1
-Assorted Veg. in Oysiter Sauce 15 x1
-Dry Beef Wi. Garlic & Pepper 22 x1
-
-Mongolian Stir Fry Beef 21 x1
-Fish Fillet Fry 18 x1
-hotdog poratta 6 x1
-beef poratta 6 x1
-
 
 github-recovery-codes
 

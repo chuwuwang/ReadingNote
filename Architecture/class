@@ -1,0 +1,29 @@
+@startuml
+
+class ReceiptSetting {
+    bool autoPrintWithTrxSuccess
+    int receiptTypeWithTrxSuccess // 0: 商户联, 1: 用户联, 2: 商户 & 用户联  
+    bool autoPrintWithTrxFailed
+    int receiptTypeWithTrxFailed
+}
+
+@enduml
+
+class PlaceOrderReq {
+    string subject
+    string merchantOrderNo
+    Money totalAmount
+    string reserved
+    string payeeMid
+    string expiredTime
+    AccessoryContent accessoryContent
+    string operatorId
+}
+
+class PlaceAvoidReq {
+    OrderIndex acquireOrderIndex
+    string voidMerchantOrderNo
+    string reserved
+    string acquireOrderScope
+    string operatorId
+}
