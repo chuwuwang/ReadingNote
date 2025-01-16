@@ -55,25 +55,28 @@ Tea 2
 Coffee 3
 Horliks 5
 
-porotta 1.5 x4
-Fried Rice 15 x1
 Noodles 15 x1
+Fried Rice 15 x1
 Pad Thai Noodles 15 x1
+
+Porotta 1.5 x4
 Hotdog Poratta 6 x1
 Beef Poratta 6 x1
-Tarteeb Pora·tta 6 x1
+Tarteeb Poratta 6 x1
 
 Mutton Soup 6 x1
+Wonton Soup 15 x1
 Hot & Sour Soup 12 x1
 Paneer Mushroom  12 x1
-Wonton Soup 15 x1
 Laksa Noodles Soup 15 x1
 Special Mix Seafood Soup 18 x1
 
+Spring Roll 18 x1
 Nuggets Plate 12 x1
 Check Wings 28 x1
 Onion Rings 13 x1
 Mutton Tikka 29 x1
+Labanese Max Grill 75 x1
 
 Egg Burji 12 x1
 Bhindi Fry 12 x1
@@ -82,11 +85,16 @@ Vegetable Kuruma 12 x1
 Cauliflower Chilli 15 x1
 Assorted Veg. in Oysiter Sauce 15 x1
 Egg With TomaTo 11 x1
+Vegetable Manchurian 15 x1
 
 Natholi Fry 12 x1
 King Fish Fry 12 x1
 Fish Fillet Fry 18 x1
 ⁠Sweet & Sour Fish 23 x1
+Fish Chilli 23 x1
+
+Chilli Prawn 25 x1
+Golden Fry Crispy Prawn 30 x1
 
 Chicken Kadai 16 x1
 Chicken Masala 15 x1
@@ -94,7 +102,9 @@ Chicken Pepper Fry 17 x1
 Chicken Chilli Dry 17 x1
 Chicken Kothu Poratta 13 x1
 Kappa Biriyani Chicken 14 x1
-Sweet & Sour chicken 21 x1
+Sweet & Sour Chicken 21 x1
+Drums of Heaven 28 x1
+Dynamite Chicken 24 x1
 
 Beef Masala 17 x1
 Beef Chilli Dry 19 x1
@@ -110,14 +120,9 @@ Mutton Tikka 29 x1
 Mutton Masala 20 x1
 Mutton Pepper Fry 20 x1
 
-Egg Burji 12 x1
-Beef Chilli Dry 19 x1
-Manchurian Beef 23 x1
-Assorted Veg. in Oysiter Sauce 15 x1
-rice 9 x2
+
 
 github-recovery-codes
-
 ba16c-c78a5
 da840-d847b
 75b69-d6706

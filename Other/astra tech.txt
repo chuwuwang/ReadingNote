@@ -2,10 +2,10 @@
 文件服务器地址: http://10.90.15.171:8180/download/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/ECR/2024/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/taxi-pos/2024/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2024/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2024/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/adcb-standard-pos/2025/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/payby-standard-pos/2025/
 scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/app/
-scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/pos-related/2024/
+scp xxx.apk mobile_dev@10.90.15.171:/opt/soft/app-download/webapps/download/android/pos-related/2025/
 
 Botim VPN
 otpauth://totp/algento.shenzhou.ni.TOTP03337B1E?secret=QW2KD4W5QBC65NVK3EZRAPKRO57L6R4I&period=30&digits=6&issuer=AOTP.
@@ -29,10 +29,14 @@ select * from dw_payby.countly_payby_pos_acquirer_events
 select * from dw_payby.countly_payby_pos_acquirer_events where etl_dt=20240904
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt=20240904
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t
-select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PB16208N60184' order by t.time desc
+
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'), t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PBH7225A31118' order by t.time desc
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike '-105 -' order by t.time desc
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike 'transaction failure' order by t.time desc
+
+select t.event_time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PB1620AD61755' order by t.event_time desc
+
+NIPOS101','NIPOS102','NIPOS103','NIPOS104
 
 Database
 acquireii-user-sim
