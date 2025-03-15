@@ -7,6 +7,9 @@ java -jar apktool.jar b out_dir -o xxx.apk
 java -jar apksigner.jar sign -verbose --ks sunmi.keystore --v1-signing-enabled true --v2-signing-enabled true --ks-pass pass:sunmi388 --ks-key-alias Sunmi --out signed.apk xxx.apk
 java -jar apksigner.jar sign -verbose --ks payby.keystore --v1-signing-enabled true --v2-signing-enabled true --ks-pass pass:benxerbank --ks-key-alias bankpos --out signed.apk xxx.apk
 
+### 编译 apk 为 jar 文件
+sh d2j-dex2jar.sh -f xxx.apk
+.\d2j-dex2jar.bat -f xxx.apk
 
 ################################################################################################
 
