@@ -23,7 +23,6 @@ select distinct device_id from dw_payby.countly_taxipos_online_events where app_
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCONNECT:'), get_json_object(biz_tags,'$.MDT_SEND:'), t.biz_tags from dw_payby.countly_taxipos_online_events t where etl_dt>20230910 and etl_dt<20230920 and device_id='PN0421BK41129' order by t.time desc
 select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.MDT_DISCONNECT:'), get_json_object(biz_tags,'$.MDT_SEND:'), t.biz_tags from dw_payby.countly_taxipos_online_events t where etl_dt>20240707 and etl_dt<20240710 and device_id='PN67226H40912' order by t.time desc
 
-// Payby POS
 // sim 数据库 countly_payby_pos_acquirer_test_events
 select * from dw_payby.countly_payby_pos_acquirer_events
 select * from dw_payby.countly_payby_pos_acquirer_events where etl_dt=20240904
@@ -34,8 +33,26 @@ select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike '-105 -' order by t.time desc
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike 'transaction failure' order by t.time desc
 
-select t.event_time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='PB1620AD61755' order by t.event_time desc
+select t.event_time, t.app_version, t.device_id, t.network, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='P31724AJJ0508' order by t.event_time desc
 select t.event_time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20250110 and get_json_object(biz_tags,"$.message") rlike 'Card 2nd authorization failure' order by t.event_time desc
+
+SQL
+select * from acquireii.t_acquire_order where device_id='13425' order by created_time desc;
+select t.trade_request_no,
+       t.partner_id,
+       t.payer_id,
+       t.trade_amount,
+       t.trade_status,
+       t.create_time,
+       t.update_time,
+       tp.pay_voucher_no,
+       tp.pay_status,
+       tp.create_time as pay_time,
+       tp.pay_scene
+from tradeii.t_trade_order t
+        left join tradeii.t_pay_order tp on t.trade_voucher_no = tp.trade_voucher_no
+where t.trade_request_no in
+      (131742225454147075, 131742225453154276, 131742225413105156, 131742225413104989, 131742225412104528);
 
 NIPOS101','NIPOS102','NIPOS103','NIPOS104
 
@@ -93,6 +110,10 @@ P2mini - PN67226K40816
 "nipos --> nisocket" or "nipos <-- nisocket"
 "TID:691b8c8297034e5c8d812b81447b8df7.27343.17131829613210915" and "nipos"
 http://kibana.dc.test2pay.com/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now%2Fd,to:now%2Fd))&_a=(columns:!(app_id,message),filters:!(),index:c410e600-46a6-11ec-b715-afc8249e7340,interval:auto,query:(language:kuery,query:'%22TID:691b8c8297034e5c8d812b81447b8df7.27343.17131829613210915%22%20and%20%22nipos%22'),sort:!())
+
+
+kibana - 根据订单号查询交易 先查 token, 在根据 token 查交易
+https://kibana.corp.payby.com/goto/901359fead2c9d621fced1fbbf28e57f
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
