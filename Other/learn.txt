@@ -19,6 +19,11 @@ sudo spctl --master-disable                                 // 打开所有来�
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
 /Applications/WeChat.app/Contents/MacOS/WeChat              // 打开微信
 
+常用快捷键​ 
+查看类的继承关系: Ctrl + H
+查看类的结构: Cmd + 7
+查看类的结构: Cmd + F12
+
 EBT 电子收益转账
 定期付款 Recurring Payment
 EPP 分期付款方案 Easy Payment Scheme / Installment Payment
@@ -31,3 +36,4 @@ Binder开辟线程数过多导致主线程ANR异常
 🍒 🍌 🍎 🍊 🍓 🍅 🍆 🍈 🍍 🍑 🍇 🍏 🍉  
 🐌 🐍 🐎 🐔 🐗 🐫 🐘 🐨 🐒 🐑 🐛 🐜 🐝 🐞 🐤 🐦 🐭 🐯 🐱
 🐳 🐙 🐚 🐠 🐡 🐢 🐟 🐬 🐸 🐲
+
