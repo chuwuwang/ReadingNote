@@ -1,3 +1,12 @@
+### 查看当前 Flutter 版本
+flutter --version
+
+### 更新 Flutter 到最新版本
+flutter upgrade
+
+### 检查环境是否配置正确
+flutter doctor
+
 ### 同步库配置
 flutter pub get
 drat pub get
@@ -36,19 +45,3 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
 
 ################################################################################################
 
-### 查看版本
-rustc -V
-cargo --version
-
-### 更新 rust
-rustup update
-
-### 构建项目
-cargo build
-cargo build --release
-
-### 编译并运行
-cargo run
-
-### 打开文档
-cargo doc --open 
