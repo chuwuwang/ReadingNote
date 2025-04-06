@@ -1,0 +1,56 @@
+@startuml
+
+title POS & Spy Card timing diagram
+
+participant POS
+participant POSPhone #RED
+participant CardPhone #RED
+participant Card
+
+activate POSPhone
+autonumber 
+POSPhone -> CardPhone: connection successful
+POSPhone -> POSPhone: register listener, call registerListener()
+
+activate CardPhone
+CardPhone -> CardPhone: register listener, call registerListener()
+
+activate Card
+CardPhone -> CardPhone: enable reader mode, call enableReaderMode()
+
+Card -> CardPhone: card stuck to phone
+
+CardPhone -> CardPhone: trigger registerListener() callback, get card info
+
+loop
+    CardPhone -> CardPhone: check if the card is connected, call isNFCConnected()
+end
+
+POS -> POSPhone: start transaction
+activate POS
+
+loop
+    POSPhone -> POSPhone: trigger registerListener() callback, get POS command data
+
+    POSPhone -> CardPhone: send pos data via websocket
+
+    CardPhone -> Card: Send data to card, call sendCommand()
+    
+    Card --> CardPhone: get card response data
+
+    CardPhone -> CardPhone: check if the card is read success, call isReadCardSuccess()
+
+    CardPhone --> POSPhone: return card response data via websocket
+
+    POSPhone -> POSPhone: check if the card is read success, call isReadCardSuccess()
+
+    POSPhone --> POS: return card response data to POS, call sendResponse()
+end
+
+POSPhone -> CardPhone: connection disconnect
+POSPhone -> POSPhone: unregister listener, call unregisterListener()
+
+CardPhone -> CardPhone: unregister listener, call unregisterListener()
+CardPhone -> CardPhone: disable reader mode, call disableReaderMode()
+
+@enduml
