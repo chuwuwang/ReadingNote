@@ -29,6 +29,24 @@ auto（默认）- 自动选择渲染器。移动端浏览器选择 HTML，桌面
 html - 强制使用 HTML 渲染器。
 canvaskit - 强制使用 CanvasKit 渲染器。
 
+### 编译APK
+flutter build apk --debug
+flutter build apk --release
+生成的APK会在 build/app/outputs/flutter-apk/app-release.apk
+
+### 编译 profile 版本 APK（用于性能分析）
+flutter build apk --profile
+
+### 编译分离的多架构 APK（每个架构一个 apk）
+flutter build apk --split-per-abi
+
+###  编译指定架构（可减小包体积）
+flutter build apk --release --target-platform android-arm
+支持的架构参数：
+android-arm（32位）
+android-arm64（64位）
+android-x64（模拟器）
+
 
 ################################################################################################
 
