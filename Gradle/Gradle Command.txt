@@ -13,3 +13,6 @@ org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8  // 增加JVM堆大小
 org.gradle.jvmargs=-Xmx2g -Dfile.encoding=UTF-8
 
 org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8 -XX:+UseParallelGC   // 使用 JVM 并行垃圾回收器
+
+### 查看签名信息
+./gradlew signingReport

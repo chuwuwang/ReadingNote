@@ -30,6 +30,11 @@ adb shell am start -n com.android.settings/.Settings
 ### 回到桌面
 adb shell am start -n com.android.launcher3/.Launcher
 
+### 查看 App Links
+https://域名/.well-known/assetlinks.json
+adb shell dumpsys package domain-preferred-apps
+adb shell pm get-app-links xxxx
+
 ################################################################################################
 
 /Users/zhou/Library/Android/flutter/bin/cache/dart-sdk

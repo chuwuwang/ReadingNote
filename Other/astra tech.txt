@@ -33,6 +33,7 @@ select t.time, t.app_version, t.device_id, get_json_object(biz_tags,'$.logType:'
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike '-105 -' order by t.time desc
 select t.time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20241001 and get_json_object(biz_tags,"$.status") rlike 'transaction failure' order by t.time desc
 
+select distinct device_id from dw_payby.countly_payby_pos_acquirer_events where app_version = '1.3.83'
 select t.event_time, t.app_version, t.device_id, t.network, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where device_id='P31724AJJ0508' order by t.event_time desc
 select t.event_time, t.app_version, t.device_id, t.biz_tags from dw_payby.countly_payby_pos_acquirer_events t where etl_dt>20250110 and get_json_object(biz_tags,"$.message") rlike 'Card 2nd authorization failure' order by t.event_time desc
 
