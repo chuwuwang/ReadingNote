@@ -1,0 +1,71 @@
+@startuml
+
+title Processor offline transaction system
+
+actor Cashier
+
+participant POS
+
+participant Gateway #Green
+
+participant Transaction #Yellow
+
+participant RiskControl #RED
+
+participant Base24
+
+autonumber
+
+activate Cashier
+
+Cashier -> POS: Request Sale transaction
+
+activate POS
+
+POS -> POS: Save transaction
+
+POS -> Gateway: Request Sale transaction
+
+note over POS: If no response, need do Reversal
+
+activate Gateway
+
+Gateway -> Gateway: Check VPN/IP address, if no, no response
+
+Gateway -> Gateway: Check message format and parameters, if no, no response
+
+Gateway -> Transaction: Request Sale transaction
+
+activate Transaction
+
+Transaction -> Transaction: Save Sale transaction
+
+Transaction -> Transaction: Check MAC and get transaction parameters
+
+Transaction -> RiskControl: Send transaction info (if Reversal transaction, no need to send)
+
+activate RiskControl
+
+RiskControl -> RiskControl: Check merchant/card/transaction info
+
+RiskControl -> Transaction: Approve or Declined transaction
+
+deactivate RiskControl
+
+Transaction -> Transaction: Reassembled Sale transaction message
+
+Transaction -> Base24: Request Sale transaction
+
+note over Transaction: If no response, need do Reversal
+
+activate Base24
+
+Base24 -> Transaction: Approve or Declined transaction
+
+Transaction -> Transaction: Update transaction info
+
+Transaction -> Gateway: Approve or Declined transaction
+
+POS -> POS: Update transaction info
+
+POS -> POS: Print receipt

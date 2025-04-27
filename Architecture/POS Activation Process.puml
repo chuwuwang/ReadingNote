@@ -1,0 +1,69 @@
+@startuml
+
+title POS Activation Process
+
+actor Cashier
+
+participant POS
+
+participant Acquirer #RED
+
+autonumber
+
+activate Acquirer
+
+Acquirer -> Acquirer: Merchant Onboarding
+
+Acquirer -> Acquirer: Configure payment products, mcc, mid, etc.
+
+Acquirer -> Acquirer: POS SN Registration
+
+Acquirer -> Acquirer: Configure payment info/tid/mid/batchNo./traceNo. etc.
+
+activate POS
+
+POS -> Acquirer: Activation request with SN
+
+Acquirer -> POS: Response master key/mid/tid/batchNo./traceNo. etc.
+
+POS -> Acquirer: Sync TMS parameter
+
+Acquirer -> POS: Response payment info/tid/mid/batchNo./traceNo. etc.
+
+activate Cashier
+
+Cashier -> POS: POS power on and auto Logon with operatorNo. (check if cross-day)
+
+POS -> Acquirer: Logon request with tid/mid/batchNo./traceNo./operatorNo. etc.
+
+Acquirer -> Acquirer: Check batchNo. and traceNo.
+
+Acquirer -> Acquirer: Generate working key
+
+Acquirer -> POS: Response batchNo./traceNo./working key/time
+
+POS -> POS: Sync batchNo./traceNo. and save working key in POS HSM
+
+Cashier -> POS: Daily Settlement
+
+POS -> Acquirer: Settlement
+
+Acquirer -> Acquirer: BatchNo. auto-increment
+
+Acquirer -> Acquirer: Check if cut-off time/operatorNo./authorization
+
+Acquirer -> POS: if Settlement successful ?
+
+POS -> POS: Save Settlement data
+
+POS -> POS: Clear local records
+
+POS -> POS: BatchNo. auto-increment
+
+POS -> POS: Print Settlement receipt
+
+POS -> POS: Trigger auto Logoff
+
+Cashier -> POS: Logon with operatorNo. 
+
+@enduml

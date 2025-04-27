@@ -1,0 +1,128 @@
+@startuml
+
+title Payby online transaction system
+
+actor Cashier
+
+participant POS
+
+participant Gateway #Green
+
+participant 收银台 #Yellow
+
+participant RiskControl #RED
+
+participant Channel #A9DCDF
+
+participant NI
+
+autonumber
+
+activate Cashier
+
+Cashier -> POS: Request Sale transaction
+
+activate POS
+
+POS -> Gateway: Request create order
+
+activate Gateway
+
+Gateway -> Gateway: Check signature and transaction parameters
+
+Gateway -> 收银台: Request create order
+
+activate 收银台
+
+收银台 -> 收银台: Create cashier order and save cashier order
+
+收银台 --> Gateway: Response cashier order info
+
+deactivate 收银台
+
+Gateway --> POS: Response cashier order info
+
+POS -> Gateway: Request Sale transaction
+
+note over POS: If no response, need do Reversal
+
+Gateway -> 收银台: Request Sale transaction
+
+activate 收银台
+
+收银台 -> RiskControl: Send transaction info
+
+activate RiskControl
+
+RiskControl -> RiskControl: Check merchant/card/transaction info
+
+RiskControl --> 收银台: Approved or Declined transaction
+
+deactivate RiskControl
+
+
+autonumber
+
+收银台 --> Gateway: if declined, not create payment order and response to Gateway
+
+Gateway --> POS: Payment declined and finish transaction
+
+
+autonumber
+
+收银台 -> 收银台: Create payment order and Save payment order
+
+收银台 --> Gateway: Response payment order is processing
+
+Gateway --> POS: Response payment order is processing
+
+deactivate Gateway
+
+deactivate POS
+
+
+autonumber
+
+收银台 -> Channel: Request payment
+
+activate Channel
+
+Channel -> Channel: Create channel order and Save channel order
+
+Channel -> NI: Request transaction
+
+note over Channel: If no response, need do Reversal
+
+activate NI
+
+NI --> Channel: Approved or Declined transaction
+
+Channel -> Channel: Update channel order
+
+Channel -> 收银台: notify transaction result
+
+收银台 -> 收银台: Update payment order and cashier order status
+
+autonumber
+
+loop
+
+    activate POS
+
+    POS -> Gateway: Inquire payment order status 
+
+    activate Gateway
+
+    Gateway -> 收银台: Inquire payment order status
+
+    收银台 --> Gateway: Response payment order status
+
+    Gateway --> POS: Response payment order status
+
+    POS -> POS: If payment order is success or failed, finish transaction
+
+end
+
+    note over Channel: If payment order is processing, need do Reversal
+
+    POS -> POS: Print receipt
