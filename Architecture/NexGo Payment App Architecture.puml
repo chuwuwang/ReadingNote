@@ -1,0 +1,74 @@
+@startuml
+
+title Payment Process
+
+participant SaleEmvActivity
+
+participant BaseEmvActivity #A9DCDF
+
+participant SaleTask #Yellow
+
+participant TransactionTask #RED
+
+participant POSPAccess 
+
+autonumber
+
+activate SaleEmvActivity
+
+SaleEmvActivity -> BaseEmvActivity: startCheckCard()
+
+activate BaseEmvActivity
+
+BaseEmvActivity -> BaseEmvActivity: Configuring Emv parameters
+
+BaseEmvActivity -> BaseEmvActivity: Read card
+
+BaseEmvActivity -> BaseEmvActivity: Emv process
+
+BaseEmvActivity -> BaseEmvActivity: Input PIN
+
+BaseEmvActivity --> SaleEmvActivity: onStartOnline()
+
+deactivate BaseEmvActivity
+
+SaleEmvActivity -> SaleTask: execute(TradeData)
+
+activate SaleTask
+
+SaleTask -> SaleTask: Calculate MAC
+
+SaleTask -> SaleTask: Assembly iso8583 message
+
+SaleTask -> TransactionTask: doTransaction()
+
+activate TransactionTask
+
+TransactionTask -> TransactionTask: Chcek network connection
+
+TransactionTask -> TransactionTask: Save transaction data to local db
+
+TransactionTask -> POSPAccess: transaction()
+
+activate POSPAccess
+
+POSPAccess -> POSPAccess: Create socket and connect to server
+
+POSPAccess -> POSPAccess: Send iso8583 message request to server
+
+POSPAccess --> TransactionTask: Receive iso8583 message response from server
+
+deactivate POSPAccess
+
+TransactionTask -> TransactionTask: Parse iso8583 message response
+
+TransactionTask -> TransactionTask: Check transaction result
+
+TransactionTask -> TransactionTask: Update transaction data to local db
+
+TransactionTask --> SaleTask: onUnpacked(HashMap<String, MsgField>)
+
+SaleTask --> SaleEmvActivity: onPostExecuteImpl(TradeData)
+
+SaleEmvActivity -> SaleEmvActivity: Transaction finished and go to result page
+
