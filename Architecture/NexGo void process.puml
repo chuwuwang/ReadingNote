@@ -1,0 +1,72 @@
+@startuml
+
+title Void Process
+
+participant RevokeMainActivity
+
+participant RevokeAdminPwdActivity #A9DCDF
+
+participant VoidTask #Yellow
+
+participant TransactionTask #RED
+
+participant POSPAccess 
+
+autonumber
+
+activate RevokeMainActivity
+
+RevokeMainActivity -> RevokeMainActivity: Query POS local db for successful Sale transactions
+
+RevokeMainActivity -> RevokeAdminPwdActivity: Select a transaction to Void
+
+deactivate RevokeMainActivity
+
+activate RevokeAdminPwdActivity
+
+RevokeAdminPwdActivity -> RevokeAdminPwdActivity: Check if need to enter an administrator password
+
+RevokeAdminPwdActivity -> RevokeAdminPwdActivity: Create a Void transaction
+
+RevokeAdminPwdActivity -> VoidTask: execute(TradeData)
+
+activate VoidTask
+
+VoidTask -> VoidTask: Calculate MAC
+
+VoidTask -> VoidTask: Assembly iso8583 message
+
+VoidTask -> TransactionTask: doTransaction()
+
+activate TransactionTask
+
+TransactionTask -> TransactionTask: Chcek network connection
+
+TransactionTask -> TransactionTask: Save void transaction data to local db
+
+TransactionTask -> POSPAccess: transaction()
+
+activate POSPAccess
+
+POSPAccess -> POSPAccess: Create socket and connect to server
+
+POSPAccess -> POSPAccess: Send iso8583 message request to server
+
+POSPAccess --> TransactionTask: Receive iso8583 message response from server
+
+deactivate POSPAccess
+
+TransactionTask -> TransactionTask: Parse iso8583 message response
+
+TransactionTask -> TransactionTask: Check transaction result
+
+TransactionTask -> TransactionTask: Update void transaction data to local db
+
+TransactionTask --> VoidTask: onUnpacked(HashMap<String, MsgField>)
+
+VoidTask -> VoidTask: Update sale transaction status is voided
+
+VoidTask --> RevokeAdminPwdActivity: onPostExecuteImpl(TradeData)
+
+RevokeAdminPwdActivity -> RevokeAdminPwdActivity: Transaction finished and go to result page
+
