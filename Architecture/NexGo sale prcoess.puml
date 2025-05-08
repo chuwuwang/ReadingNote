@@ -1,6 +1,6 @@
 @startuml
 
-title Payment Process
+title Sale Process
 
 participant SaleEmvActivity
 
