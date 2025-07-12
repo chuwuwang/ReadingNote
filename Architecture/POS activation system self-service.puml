@@ -1,0 +1,47 @@
+@startuml
+
+title POS Activation Process Self-Service
+
+participant POS
+
+participant MerchantBasis #GREEN
+
+participant Acquirer #RED
+
+autonumber
+
+activate Acquirer
+
+Acquirer -> Acquirer: Merchant Onboarding
+
+Acquirer -> Acquirer: Configure payment products, mcc, mid, etc.
+
+activate MerchantBasis
+
+MerchantBasis -> MerchantBasis: Select store, business, etc.
+
+MerchantBasis -> MerchantBasis: Apply active code or QRcode
+
+deactivate MerchantBasis
+
+Acquirer -> Acquirer: Approval merchant apply
+
+activate POS
+
+POS -> POS: Input active code or scan QRcode
+
+POS -> Acquirer: Activation request with POS SN and active code
+
+Acquirer -> Acquirer: Generate DeviceId and POS SN association
+
+Acquirer -> POS: Response active successful
+
+Acquirer -> Acquirer: Configure payment info/tid/mid/batchNo./traceNo. etc.
+
+POS -> Acquirer: Sync TMS parameter
+
+Acquirer -> POS: Response payment info/tid/mid/batchNo./traceNo. etc.
+
+POS -> POS: Start transaction
+
+@enduml
