@@ -12,13 +12,6 @@ brew install git-lfs
 git lfs install
 git lfs track "xxx" 
 
-MacOS 命令
-sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
-iconutil -c icns icons.iconset -o icon.icns                 // 生成 icns 图标
-sudo spctl --master-disable                                 // 打开所有来源
-sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
-/Applications/WeChat.app/Contents/MacOS/WeChat              // 打开微信
-
 常用快捷键​ 
 查看类的继承关系: Ctrl + H
 查看类的结构: Cmd + 7
