@@ -3,3 +3,5 @@ PayerMax 上海地址
 
 PayerMax_IoT
 ITte@2025
+
+SUNMI POS 设置 App 的安全密码：SM9876@@

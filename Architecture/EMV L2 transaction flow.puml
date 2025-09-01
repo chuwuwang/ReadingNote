@@ -1,0 +1,40 @@
+@startuml
+
+: Start;
+
+: Application Selection;
+
+: Application Initialization;
+
+: Read Application Data;
+
+#PaleGreen: Offline Data Authentication;
+-[#Green]->
+
+#PaleGreen: Processing Restrictions;
+-[#Green]->
+
+#PaleGreen: Cardholder Verification;
+-[#Green]->
+
+#PaleGreen: Terminal Risk Management;
+
+: Terminal Behavior Analysis;
+
+: Card Behavior Analysis;
+
+if(Is Online?) then (yes)
+
+: Online Processing;
+
+: Issuer Authentication;
+
+: Issuer Script Execution;
+
+else (no)
+
+endif
+
+: Complete;
+
+@endtuml
