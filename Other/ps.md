@@ -35,6 +35,18 @@ https://域名/.well-known/assetlinks.json
 adb shell dumpsys package domain-preferred-apps
 adb shell pm get-app-links xxxx
 
+### 截图并保存到手机
+adb shell screencap /sdcard/screenshot.png
+
+### 截图并直接拉取到电脑
+adb exec-out screencap -p > screenshot.png
+
+### 录制屏幕并保存到手机
+adb shell screenrecord /sdcard/demo.mp4
+adb shell screenrecord --time-limit 10 /sdcard/demo_10s.mp4
+adb shell screenrecord --size 720x1280 /sdcard/demo_720p.mp4
+adb pull /sdcard/my_bug.mp4 .
+
 ################################################################################################
 
 /Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
