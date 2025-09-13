@@ -20,3 +20,5 @@ Reading notes, some records about writing and life.
 - Nexgo terminal sdk: https://github.com/chuwuwang/nexgo-sdk
 
 - MoreFun terminal sdk: https://github.com/chuwuwang/morefun-sdk
+
+- Dreamtek terminal sdk: https://github.com/chuwuwang/dreamtek-sdk
