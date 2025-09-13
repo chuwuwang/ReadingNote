@@ -21,3 +21,8 @@ Backend
 1. mydebit key inject and tms - Done
 2. gobiz key inject and tms - Done
 3. e-wallet key inject and tms - developing
+
+
+
+
+以上文章翻译成英文

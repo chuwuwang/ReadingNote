@@ -1,5 +1,6 @@
 ### 查看版本
 rustc -V
+rustc --version
 cargo --version
 
 ### 更新 rust
