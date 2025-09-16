@@ -23,10 +23,8 @@ adb shell pm list packages
 
 ### 包名/Activity类的类名
 adb shell am start -n 
-
 ### 打开系统设置界面
 adb shell am start -n com.android.settings/.Settings
-
 ### 回到桌面
 adb shell am start -n com.android.launcher3/.Launcher
 
@@ -46,6 +44,19 @@ adb shell screenrecord /sdcard/demo.mp4
 adb shell screenrecord --time-limit 10 /sdcard/demo_10s.mp4
 adb shell screenrecord --size 720x1280 /sdcard/demo_720p.mp4
 adb pull /sdcard/my_bug.mp4 .
+
+### 查看屏幕分辨率（宽x高, 单位: 像素）
+adb shell wm size
+### 查看屏幕密度（DPI）
+adb shell wm density
+### 将分辨率修改为指定值（例如: 宽度720像素, 高度1280像素）
+adb shell wm size 720x1280
+### 将屏幕密度修改为指定值（例如: 320 DPI）
+adb shell wm density 320
+### 将分辨率恢复为设备物理默认值
+adb shell wm size reset
+### 将屏幕密度恢复为设备物理默认值
+adb shell wm density reset
 
 ################################################################################################
 
