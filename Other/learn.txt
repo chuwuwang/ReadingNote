@@ -17,12 +17,13 @@ git lfs track "xxx"
 查看类的结构: Cmd + 7
 查看类的结构: Cmd + F12
 
-EBT 电子收益转账
-定期付款 Recurring Payment
-EPP 分期付款方案 Easy Payment Scheme / Installment Payment
-无人值守/无人终端又名持卡人激活终端 / Unattended/Unmanned terminals aka Cardholder activated terminals (CATs)
+EBT - 电子收益转账
+ISV - 技术服务商
+Recurring Payment - 定期付款
+EPP - 分期付款方案(Easy Payment Scheme / Installment Payment)
+CATs - 无人值守/无人终端又名持卡人激活终端 / Unattended/Unmanned terminals aka Cardholder activated terminals (CATs)
 
-Binder开辟线程数过多导致主线程ANR异常
+Binder 开辟线程数过多导致主线程 ANR 异常
 
 🚀 🎉 🔮 🎂 🎈 🌞 🌍 🌠 🌟 🌜 📷 🔮 🍧 🍦 🔮 😀 🍰 📫 🔭 🌱 👯 🤔 💬 ✨ 👋 😄
 🍀 🌷 🌱 🍁 🌸 🌹 🍂 🍃 🌺 🌻 🌴 🌵 🌾 🌽 🍄 🌰 🌼 🌿
