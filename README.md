@@ -6,7 +6,7 @@ Reading notes, some records about writing and life.
 - Android knowledge: https://github.com/chuwuwang/ReadingNote/issues/15
 - Android customize view: https://github.com/chuwuwang/open-android-view
 
-## Financial
+## Payment
 - Financial knowledge: https://github.com/chuwuwang/ReadingNote/issues/26
 - Web3/Blockchain knowledge: https://github.com/chuwuwang/ReadingNote/issues/33
 
