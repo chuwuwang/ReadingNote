@@ -9,7 +9,6 @@ Host response 05:Do not honour
 This test case requirement: transaction apprpoval
 issues: transaction failed
 
-
 App
 1. Build App - Done
 2. All features and configuration - Done
@@ -21,8 +20,3 @@ Backend
 1. mydebit key inject and tms - Done
 2. gobiz key inject and tms - Done
 3. e-wallet key inject and tms - developing
-
-
-
-
-以上文章翻译成英文
