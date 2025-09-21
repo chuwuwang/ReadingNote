@@ -17,6 +17,9 @@ git lfs track "xxx"
 查看类的结构: Cmd + 7
 查看类的结构: Cmd + F12
 
+Plant UML: Alt + D
+Markdown: Shift + Ctrl + V
+
 EBT 电子收益转账
 定期付款 Recurring Payment
 EPP 分期付款方案 Easy Payment Scheme / Installment Payment
