@@ -1,10 +1,17 @@
 sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
 iconutil -c icns icons.iconset -o icon.icns                 // 生成 icns 图标
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
-/Applications/WeChat.app/Contents/MacOS/WeChat              // 打开微信
+
+### 打开微信
+/Applications/WeChat.app/Contents/MacOS/WeChat
+nohup /Applications/WeChat2.app/Contents/MacOS/WeChat >/dev/null 2>&1 &
+
+### flutter 路径
+/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
 
 ### 打开所有来源
 sudo spctl --master-disable
 
 ### 列出安装目录中的 JDKs
 ls /Library/Java/JavaVirtualMachines
+
