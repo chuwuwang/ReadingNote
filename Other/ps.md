@@ -58,9 +58,36 @@ adb shell wm size reset
 ### 将屏幕密度恢复为设备物理默认值
 adb shell wm density reset
 
+### 查看所有可用的系统服务
+adb shell dumpsys -l
+### 查看特定系统服务的信息
+adb shell dumpsys <service_name>
+### 查看所有进程的内存信息（信息量大）
+adb shell dumpsys meminfo
+### 查看指定包名的应用的内存详情（最常用）
+adb shell dumpsys meminfo <PACKAGE_NAME>
+### 查看当前聚焦的 Activity（最常用）输出信息极多, 必须过滤
+adb shell dumpsys activity activities |grep -E "mCurrentFocus|mFocusedActivity"
+### 查看所有 Activity 的回退栈（Task）信息
+adb shell dumpsys activity activities |grep -A 10 -B 2"TaskRecord"
+### 重置电池统计信息
+adb shell dumpsys batterystats --reset
+### ...执行你的测试场景（例如，玩10分钟游戏）... 导出耗电统计信息
+adb shell dumpsys batterystats > batterystats.txt
+### 生成Bug报告, 包含详细的电源信息（操作较慢）
+adb bugreport
+### 或者使用新版本命令生成 HTML 格式的电池分析报告
+adb shell dumpsys batterystats --checkin
+### 查看指定应用的详细信息, 包含权限、组件等
+adb shell dumpsys package <PACKAGE_NAME>
+
 ################################################################################################
 
-/Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
+### 查看 node js 版本
+node -v
+node --version
+
+################################################################################################
 
 ### Protobuf 命令
 protoc --dart_out=. *.proto --plugin ~/.pub-cache/bin/protoc-gen-dart
