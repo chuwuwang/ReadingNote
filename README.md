@@ -7,7 +7,7 @@ Reading notes, some records about writing and life.
 - Android customize view: https://github.com/chuwuwang/open-android-view
 
 ## Payment
-- Financial knowledge: https://github.com/chuwuwang/ReadingNote/issues/26
+- Payment knowledge: https://github.com/chuwuwang/ReadingNote/issues/26
 - Web3/Blockchain knowledge: https://github.com/chuwuwang/ReadingNote/issues/33
 
 - Palm Pay: https://github.com/chuwuwang/deptrum-palm-sdk
