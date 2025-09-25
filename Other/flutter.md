@@ -1,4 +1,5 @@
 ### 查看当前 Flutter 版本
+dart --version
 flutter --version
 
 ### 更新 Flutter 到最新版本
@@ -47,11 +48,14 @@ android-arm（32位）
 android-arm64（64位）
 android-x64（模拟器）
 
-
 ################################################################################################
 
 ### Nginx 命令
 nginx -s quit
+
+### 查看 node js 版本
+node -v
+node --version
 
 ### Npm 命令
 npm install
@@ -62,4 +66,3 @@ docker pull swaggerapi/swagger-editor
 docker run -d -p 80:8080 swaggerapi/swagger-editor
 
 ################################################################################################
-
