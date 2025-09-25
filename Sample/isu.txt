@@ -1,0 +1,207 @@
+Sale Contactless without PIN
+Request Body: {"amount":"000000000368","authzTxnId":"qKEgbPTDDfAWxoVVBvYD","batchNo":"250923","currencyCode":"784","deviceData":"4F07A0000000031010500B5669736120437265646974810400000170820200208407A0000000031010950500000000009A032509239C01005F2A0207845F3401019F02060000000003689F03060000000000009F0607A00000000310109F090200309F100706011203A000009F120B56697361204372656469749F1A0207849F1E0837303030303030349F21031731279F26083B904CDA1977E9E19F2701809F3303E0F8C89F3501229F360202629F3704D71A85499F660436B0C0809F6C0206009F6E0440700700","ksn":"064E7913178FF3E0008D","merchantId":"123","posConditionCode":"00","posEntryMode":"072","reqTs":"2025-09-23T13:33:56","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"4DC80B8BC4F297F7D94D5B9567B24B71","transactionDate":"0923","transactionTime":"133356","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1642
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:990b8f77ff62f4e0831f467224ae9b70fa1e445a5549cc9e5d4f82e52a44ef94
+Traceid: solIdkjRYOlpBLIubFoQQsLAYtZdKK
+Timestamp: 1758620036915
+MerchantId: 123
+{"RequestData":"k3OCaRuS7GMVpBsZNz4j3SShhUKTJ/hYka0ClhG2EDE2kEJpWRfbZxisLhLdLOUMVsNRh5y+1pO9IpOyKE3wnMV4UeCSqRqSHyanzPknFlUteosMs0G1G6bFIzoqHWp6VTRRzPfo1ZcFAB5ATzlg2OvHMrFK26dkfbDGpwhiGsUrjlQzDO+WE9yFOdeIdbrn6kp9VmgvzoZwnkFBGIVZ4GW4uQhltmPhsTPoVWVbDNXhug2bAhqqAjrJ6u8pcvcmc0TX5XKNQv1VXVQdS65GXpY03m41mybJsAZ/u8aTZjircFXS66aQMKIreFj7J15DRf4xOev8JIVdQJXKABCQlyQjS/VcRTzM589s3y3pRQCfP0oo1Ar00wqZgeBMsyZfiGsu87UpLq5fRMnInCj6dNN1xWY+S0M0mLzNsqjf3qElgVDyk0Js7YbNr4g5T+J+w3CW4STE8e8U8IsAacOtICmIo5g/Xo3rAqcHpe9ybp4b89RdZxX/jMamfuBMJgIcgl8j/nVZPPRJtf/gupnwPCWEwLwlZqoszrJEfMWKLSOAbHwDKvhn/yTiqpy+Wp1RCIuNaOc5lTKQa4LC2A89iUkqfW9SlwSX0u8e0pLWiLNoN8gCs/+OP4zJWxmdZMTkJn2AeCW+DL5/0X5nmIGLhejYySKosUP7iLjA7wlJBwV0CEuhrg9ebkcW2IFgldqYiPC2jDKE0E7OHwuHnRMBJqi/0hGUIL22+TnZQn3QDcekodi+jFmmGRDfB+xwX9dIjHVliCChvg5OeUI7aC2T8u0MJ9G/jIpr0DnKO+hJHvi4RO6B+JlFh95YYLZMOZ9bxNa2gYtqKRN6+Gs4i7kxxnw14aJMVheS70i31GKtd6dFeAzQaf/ufqZ5hYUhLGe9HvDNFdFWcJ3f40iqt7RmzQ7Dw8CL28xfM+aLJTESTGuxgoHgp2sQqyLjPWHASPqbKoOe2eaWmA1XT44QvPIfR10HjWWHN2qT9qKK+rUMyFoUqiGquXZLsI0T/mGsEFVQBISh57h6KYohBOM99HMBgT5AM5KX7FZSFon18OZNo1bKKL3unFsAr5+87xkIDehlFVJrqSJ0Op0L0lW30QLmABl/2F/tICav1DSmkzvR7GxW4AhKdTsStgr11rwAizTw4X3qydxBtjlm0cxc+VGBsK3WaPW9jQSzr9TXioYIKoiLcOBe6ZspBqFdbDPbCrW9XVb1FmnuNSPGb/rqN/sMr1loqqSBxy8hKEq4JBDJmqRM/MEvrXqMbqfg3+KhQIvGRPOR72WnXKka7DUcd6MKmjiCsb9F28aiARf9q/yipUQA6H30yf9NA8IWKJEquudTWz9ao3CkGbWQ9715ncZRtMMAMOJNNEHvP/q6mgnqaitRFsse3H4D/Bc8qEfrmEqArceQGbaez3szRbYo+gUxbfquat5vi4SUv0y9Mno0FT+37yhm5LsCRjoKv6JgERX6GwEhez+gwS5my+AC6vv7mSytUGL8qFl23MLu1nls8+YaKGgxUnZ98jgpZT+aFlluhvq50wD9NAJR170EAlbmCZVF6qRyCzKTAQk+uqdtZikMcr/YDvkgtZgTA+mOhE72gv0kops4f0fGGYK7+NHzEg=="}
+--> END POST (1642-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (2020ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Tue, 23 Sep 2025 09:33:58 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:756b0dee66f7392311b10130b778f6c8270a8f97160619a7044a625b9069fafe
+traceid: solIdkjRYOlpBLIubFoQQsLAYtZdKK
+timestamp: 1758620036915
+x-request-id: a3a6839d-ce8f-4639-9565-db1fe383aef1
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"EkjcBedLQTCfEj17mrF8s8UdMmOdlaCTwC6oo4aOGD3fW7DEmbLzcppwMHgWpvxMvfPRm21QL+DBK8OHfJX7vG78+Oj4JbhHwdMr6SXd7gw6q5kxUTVVcC4GpiobW2Jnv+CdlxjiureVBF/qkSR7IllANp/UzgGQDcPdbgNHoueQ0KYQmKIYDS8XXwVXQy+INCJj8/Ag0aPrwXYs8rOpmf2qG3Ed9m5wa2wShfoXDSWYFyB4cZUZO5Tu/Bf0GJn/Sc9PCYiYekuEcR//ldWxvFHZute8XpEfHWXG2AgSwZJBTou1BkFSjOPhnGsmy/U2tXWZIhmlcHnfdMSYxaZO4QF1VnnFq+vEQtiWaEX4RaBbGwIbTeppNcuEewBKui8GChTiS0bwhjny4uTOQnXHtjGz7WmsgFJeF2LriazxaipKSzHfZCopvzFs1zE0Lz6vqFJTJTs0SJeVYMCba8CVQs7GH1bcE1D3oJa73M2qwPVind/IVtRwdDtFswWbcs24H/F/e9AsnoGzgRa/0wTVSN7Kaii4rpZpldy/Z0J12makc5GRtep+NY52D2kw1PFlaO0WZGRR/3+jQ2m9YGC+AaVoyjNml9mVBMdEMg0hnLCOyO+rfEkJLh82OHFYuSt8JbvLsiRM8SIrXaXMR0ybdqQKhzM8KR54HmWsNfZmitxnvn26x7C2DftOU9m4TFYSZYWCsYa0dogd5DzwEVIRN15bm3ePzCnXx1lfpZ1siv1eV2ei0iEUBgaPiCdkm/yMNFfk4pxRa447Dg/esOGEKZw3sX6pnYowIdQhUmakG/xwzcftNV3UPRRtK8zV4IJJcJzSVw6jNCWWL4PSl1/wcKsahmXQVWWEEykv8vw6oBABd8fcL5KdhWAr/8n6dP+0T6kTNbzNITG4sch6todrLQ/VmIOThIsb569VVtpOMW4BTxatw07YKACBPDFZJeU7RaTqlIvL2+nmLLUyXKeVeqBG+dvUWIquqax/FMgZ+TtiIrP/agy2Bgvg9jYuGbfUqSg28HufUl07N013nzSoo5lQ6ma1oeeuv6B1W+9k/9Y7YHi4N6DCz/pb6VOb7faJsqoSOd2WEyn1yHCoxU7RUBbexIglF+TLOghshd+oppEdHHSP+dpmKNv9A257+D6i5r24w6urTJXNJwJdmAikVw=="}
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"qKEgbPTDDfAWxoVVBvYD","amount":"000000000368","authCode":"683011","resTs":"2025-09-23T09:33:58Z","terminalId":"70000004","transactionTime":"133356","transactionDate":"0923","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-23T09:33:58Z\n\nMID:123 TID:70000004\nBATCH NO:250829    INV NR:qKEgbPTDDfAWxoVVBvYD\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526615053688  AUTH ID:711471\nTRAN AMOUNT : Rs. 368.0\n","resMTI":"0110","rrn":"526615053688","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"044569","posEntryMode":"072","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Contactless with PIN
+Request Body: {"amount":"000000065700","authzTxnId":"GZRrvWvtvCkvBVEyobYp","batchNo":"250923","currencyCode":"784","deviceData":"4F07A0000000031010500B56697361204372656469748104000100A4820200208407A0000000031010950500000000009A032509239C01005F2A0207845F3401019F02060000000657009F03060000000000009F0607A00000000310109F090200309F100706011203A000009F120B56697361204372656469749F1A0207849F1E0837303030303030349F21031736119F2608DDA8AFB15730A9EA9F2701809F3303E0F8C89F3501229F360202639F37046CDF27F09F660436F0C0809F6C0286009F6E0440700700","ksn":"064E7913178FF3E0008E","merchantId":"123","pinblock":"0A36FD7EEE603C02","posConditionCode":"00","posEntryMode":"071","reqTs":"2025-09-23T13:40:00","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"EDE5279534E8276B4F7700B79B4E2E64","transactionDate":"0923","transactionTime":"134000","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1682
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:35d61ea3e9e87c65c617075ab883b0b1726ac936fc962162ab374c9712e7b911
+Traceid: uGUkWBoDdndBRJfAtirwmTHKCnDAvZ
+Timestamp: 1758620400643
+MerchantId: 123
+{"RequestData":"sFHuyPbZT/IASCcGEyx0eViThichKUmLGYzE0XYSCL3ahzfjrfL7BS3FdNEonfx4/X7NDOf20lI3BFC5rUSe2qn6H9YniWvXUom0EvrN/mNTT312N+W0x+T27s8IfIt6fz4/MWPGYr6HXprMVbyiLJcc63J7Ez0APRSGKUwyXjSGYjMVlMU7+3+yK1mroleETkM61iZ5o+63DUL6ivgP3B5u9dLdBvrWYQFxLPrsm94GuwYq7i2ijNd9Mq+MlWDoOB41cPG0q+lRpyhGL2Bht4AZMZ90gu5GDpNOq9f3dyOW9lvI8ueRLob6QW6QseKADnzGGNRhi/FS2JfvOyvN8YdISNl8KgGyqF2vGzkvRN70FBs59esqYyBZf/Dyg7dlWKWKaGyTD1TIfRszKhE7rjEe7JqcgsxInYu9Zh5m/irnHNHQ67F2XRSjJVEx7MRmYhTB0RpxHfOYf/g2fq96ZKwXFi6GsBUsawi3JjLxMXP8E51WZe6rCV3apQrQX2IgNC1Vm3tM1IcPqZKeZ2bLjvDKibKIOVGe/2PmteCV0zWAU4lQcIm5vO0cqzqqjdkrQ+9JUcSHinIFvE5eMVZsvydOBy6L8lFQk9UHvtjaMlmerLtMfHT/TKDzFxLl9xweFkpxNyvjuRFENmSRKoAbwoXFaDh/UAo8WVJRELOmBQsy8c/He0XlwlEdOMgLlMZN7KytJo1YosIOVcF1CdIVoPoxKciSrJil4dK7OgNWwuhGIqUb9gCKluCeApuGQagUyC5iKDxjEejwBlLrHR3TUZ8QfctXEzJzy5D+DfKPD9NGeMV51V/ZNJ+fg33PUZ/WbFl/7QCjFJGWV9Q2zgssCS17CiOYZM4huI+g/DAJy6rM1l53gs+pIf7Pgto/B8Wup4B6dfKj6kPEtJNrLHo7aWaUxrVEOeNWlGdQdKPGWZ3IB6Xp/qUJzn7LHIUqQiAEn8nB/my6BtuUnZDKMEWHa0+I4HuuLr4zBE0T5hmo8xtjZL53YeFlElsbu2A8Z7qlH3Sqp0QcESLRkgAVBbMYsMZ4ZZ0WlTF/k3Nx5RafI9SjBOsfWrsXRnSZs8NP3DMVNGSb5uNH5hBQ57Tjgpjo4Lfg6mS2d83WcpUXuSvrWvtiO1EcUkdbQtZZHr0BtZ+MUV85nrWNDcx0vf5S55N5Kjb1DDYhx3UId1hrJL7XoTu+E1B4J5KgYStUdV0P52kI2F9xVDpK53DhpOb+ev5cDQACgjCAM6BjUx7KSDqVj1yLNCkIG+CVjRcU8+9eCyS8fkNTo+8HXkwdASxdH0U+9rI3nFUvpHsswnkoTFvfK4+KuXzsGcMHcU/B95RPxsgYiUg5Ckye41Z1aS7MpLIHK1LPtppcefTxDertHyRhuuR9FHO9BVpIcp4/yDPVZdkHCEWPoWqr/jU2fmLwMIZpxaY0bf2Uzvq5zhMZmgaJ6Hubpqxb9tkC0Wqh7d42sq8IIc3e04VLq8ThDgehdI7K55zUhGifCVlj9XNdQpXmgHpkwNuWgBPjK/wzo5xMyk6NEZMyOTr5dMdJXldRoJi6+jzamBqSW3co6Vt7MdvG03lF8txbaD03TQTp7UJ00Z+HyTv8ayO5o55yckDP09FdteAu5/ImSxKHRt2iGms9Rk+4XezFx5S601gehE0gO0NW"}
+--> END POST (1682-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (2525ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Tue, 23 Sep 2025 09:40:02 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:e372e60c2dfa503516635e1d2e66275dab6e8257c4cfa39e9fae8be5e125677e
+traceid: uGUkWBoDdndBRJfAtirwmTHKCnDAvZ
+timestamp: 1758620400643
+x-request-id: 0ab1cb13-199c-46c9-a735-02a7f69e32f7
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"+g1g8vt+thZf53s2RYdQLTFSb/qo95YiFuzoAbZmFQKmEIoBoF7mw0gK5QveDD/rHrDVvcQneO8XaWg/OvBMYqAbgd5MiPhNcCFjbKyuZW1x8vA5QKS0wOblva+zdjickz65rTk2B2KL1oOsh1keWVTJDu3dxpAFTPJ/YuwI9Kxnucm2jDmGaVdVmwClTtGVoWimx8d2U+d8V+9E7rfJ/KRw9182pbDp3tc/F7ubyVzwgHZgnZFL9Ji+9upOMyxUsJMcLwqxxNLPax4Lpebm0SKY6D+bEYw9/CJYYoNtkC5nkY2RIR64bNMv3SQM4znERhyQT+TuqlEvwjI3h9waI91WN5XOYeoPNy6oIzKnank42m/VpBDfc/Ll96wvsFsN5n0hg+rm8re5COINFga45OJXjDsdtehY0gtnF6bolcHuRP1LhNOr5m1Nwm+jlizyuz2ETSzSIN4L+ksg6sKDtNxbqyAtwi2vQZvOsArAE5ajnzBs7Ou2DoPdn+oWb+Bpn94DzpjoJcRQ+bquEu914uovQ97XKxPzmiMvEbYRR3Zu+smdDcBKypliCoGodIQa/KABI3tBkwau0qd11ooSEshLVWAZceHFg+OS8OvV0gAEYN8NOw1X0UsEmjLhZvA5xRxaX4khd1tJf+ZZL2atp28OBTQhjtcWHMxU8/hhb9NxhYLyTEXYgq5mZiTBiU/HNkUhrvh2jyLHUgV8EUndzbfGBtQQq8tVxDlRrlYEJc0/WpGa1KvkhDcCdrhoCLzDW4ba9n42akhWdzK/G3CcvjSGE1Rd9mkVdFm/WodhxYzgcGtb0htw1IpFYMX2Ou21Rq2GK0nvPVB0V95uXlNiy0Ugb0qhJRddmlsMWJKwzIxf/m4gQv74BiPBlAHM7yX7cvGbalt8bNOH4eE4PSPmo/AZytyXOJvxZP2O4e+G/u4ns0p1Kvxk5EKufP3fVYNPLi7yIhpYMQhD+y2yPdhv81jrdz6mmWiNqSL9cj/7B/zk0lZAHXJVAeHKJ2wj3Cd7ecA7i2ja+NFiRcr5ZoNNQ4y1bn7cuPCYdt6VbVGJXTZjH8zBxin41KuazXMrviaetcUK5IaZycvQsxr1KtNH/uxRop74dVFMMQGw+wpz7gC0ICkSBxaVBcagxj1mHxU7bN48B4gfpajIjucWZ9rp8g==" }
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"GZRrvWvtvCkvBVEyobYp","amount":"000000065700","authCode":"683011","resTs":"2025-09-23T09:40:02Z","terminalId":"70000004","transactionTime":"134000","transactionDate":"0923","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-23T09:40:02Z\n\nMID:123 TID:70000004\nBATCH NO:250829    INV NR:GZRrvWvtvCkvBVEyobYp\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526615618412  AUTH ID:711471\nTRAN AMOUNT : Rs. 65700.0\n","resMTI":"0110","rrn":"526615618412","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"045072","posEntryMode":"071","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Contact without PIN
+Request Body: {"amount":"000000000326","authzTxnId":"lHorqYOyhFKkfOuPlxJc","batchNo":"250924","currencyCode":"784","deviceData":"500A4D617374657263617264820239008407A0000000041010950504400080009A032509249C01005F2A0207845F3401019F01060000000000009F02060000000003269F03060000000000009F080200029F090200029F0D05BC509C88009F0E0500000000009F0F05BC709C98009F10120114A00201A40000000000000000000000FF9F120A4D6173746572636172649F1A0207849F1E0830303030303930359F21031441099F2608692D0132D2E228759F2701809F3303E0F8C89F34031E03009F3501229F360200639F37043B9ECCB4","ksn":"064E7913178FF3E00094","merchantId":"123","paramA":"00000905","posConditionCode":"00","posEntryMode":"052","reqTs":"2025-09-24T10:44:24","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"31048E59B3F48D8F402566969B213C26","transactionDate":"0924","transactionTime":"104424","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1706
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:c97f25b9459aa7b69a9f913487441d3013043d880ade88176f9be1ed3510eac1
+Traceid: LURVMCTBdruhNikUcuhrXWIpCmpGsz
+Timestamp: 1758696264616
+MerchantId: 123
+{"RequestData":"IdqiZSKpJNh9ylDhKR5srbWA0Cd3x66iLv0GJkHoNs6dilVM54gLL/aY465qPQA4PquOYolZh39pqEAaFKI/IY8UqpjGHlgCmSYBXxMx8avxQV5+86z4DV+F1SmTX1FvmEC/L9nbU5bV2M7eJhllWgtN05f3OJDQfJLTpU1OOSAxY+b5z6qbv160TWbs6g2IJ3IMhwJ8HvhhJJ9nekf6UTLMmZuUCzk42mm1yfV/zf0G81osq88xTQqIMFfZbgms2kkIUskZMx+nJAI+NIfx6NgAcfOXLFwXllF671RjWGdPp+dbWHcQy+cRCnq9AE1G93kyIP0sb8oGjLBwYs6yvTZWyAkLpKsNVCQdw1/eY4oEj4MV8u+CFG9s8JGHAVSLN1t0kbI5xp0PxBTH8bMyJjcjOIjCN6NUu65wRzdf4rI73TPJz7OusBqF4rpGcmWDb/m8/peVypQWkVxgrQlgdY6BnIySjuUfgCyAsjXoSM/rMs4d9HxUh0hQKAfLWBV4/aGXQIl57wJyR6+rnzSYGarpsgCS0unGSw+4jZLeV/3h9ZcrUrt4vyvvqWaNNfTWzjDSwfjTdVbS/svNwr1p4MjHT4+FyDZLmHpAQKrDHwtki9H+cdzYlLZPpBQP3jTEIDsqmtqCHBlFK1W/Fg/EhexZ6qdB+vnjO9Uwrj1v4W9k2ysGxTzZDmqOIWHvWzXNw2/RQpMT8dQ2Tp3flNz09voI4kH3BXoHjx+Pfio8ibKYyN+dH8oKN6vWrwcluDXckbitkPVjTDSaZAX1jhFCb/uIbrTKVoFZFPcGEXZMuYnRDMoLTa7DPUooN7JxknqPfwb8I2Tn8qjQYX2SYpvh19HKn92tDa+6J+J83XGizZH9Dz9mC0+XtZd6IJgawpBgokbN0ndMOhzHLFn7P8Pr9YnYQAOk2zlITGAA7+4heJqD3hR+VN3KgNoak9YcLNqR0rpZ/2bChyuHhWr9SnbUGQ7oB+45groNe65OV14yCj9YC5REi45vmvt9FKxE0kg7bh+jXCAKJq1jK70qDk9LSDPqN3NIgn9lpfSixlRp53U1l/Udobb9EJazw8TyLcUOQ8n81mXZPv79cfY2yExZC2tKuBsuCistirXlnNSqRauSSUb9ZEfMYKYBluFpLn8EQAgb98EsK8GT1oj36hZCslxQXDi4d4Op0KKwqWy8GApF8O4Ui1v9VXPaR2dJ4yAaGc1DiTYPcVxE63xKYRhB1u6Cg/nZqWx5C9gMITiVyEpv0WglrKMf8+CB196HNAm8EJxAQDwxklR7niWf9RpEs8mpQsJ0WH3yPR27dH5XBdCBfVWJQ2CSBqXbRHFQIdkK2GLr9/dQypv1kqto5l2SzqC4Yb0PAgLmpQXIyBkA41dxb+/WlLhFUoV/qKYi4/0YM3MPvg22Cb5SEnm14PT8VZeFImWskFzkRHKXnsVtIelwMItm39AGHg2JOjV65p34en7cw8zM1iiSTprd8pgCZrfyyOEhjC3PPN9vu3cZfXKvlUNdrtOcH7b7z4uLanLzUj162Gbxs+0CQArlYTKYhUyLjWc/nhyBvRtfshFGcQjIdayN0EvCFy5ZQlTKq/fgvhF4Lq1Lt+8rR7JTTyCVj7ma3NmjhiisVzfEp8ODy79lNU8OHl+oITCX6hyOOeEgg4eD9aGLKztlY5pFs8TkBw=="}
+--> END POST (1706-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (2226ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Wed, 24 Sep 2025 06:44:26 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:6f9353f583524bbe54bdf02767708cb4539f0d3ebcf7f7b13f5a8716540f0dc2
+traceid: LURVMCTBdruhNikUcuhrXWIpCmpGsz
+timestamp: 1758696264616
+x-request-id: f1e063d9-4707-4654-8648-d48cc6b801e8
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"VXAn/PdkF+woHFcQA0dj/EBYUx9WldqrLepK/34Dn/Rjy8oV4L14hQuQKb8aAk37k+sj0WcbtZoOoY8G/QWHhEwMKYC6G+rTvmkHdMDg5Ixha8+7WduW81VUZHOt1Pb3v6PDv3Emg5IiS4m3LzXfgxqNgeb9EkGOoeXhQIvmFqp0ENZtjmBgBx0v4r7iKh6fURXZrrnFHtdQh5KoLzxd0JohXAr3qzkBqSSZaFRfDBFPPDcG/NBQ8SWdR9ceVg/Ae/NLOvwi6RKoLCaprDMuCjA1rjlj8DCbak4Uis7ruIuEMOfbyDOw6D2MHQMaIF/TzzwgS0mkriGWz8MhHgJs2eUXTCkoRJYbqLLJ0R3Uyisnxb51Cp4tq7TIn46X6cq+CwlQSrc9wuNgq2Mtz1939+1q3rXU8riW+XvAOvZLMOP4zJPOkpFLKlusm173yeAzy5TY4SJv7QGyHewb8SfJoYYxyqMDCrmVsX0Fc99HxuSe4oeKcF75DAyjsyrSxsKto2oIOfn98CUWn2ZDJ+T2H/Gdyu7LeEFhRSYQkFagAQbMWj4X2hgXNW8nHTsE7KfUYFzdp/cveGLZxtDiwPxRdGITQxFKlf4O5NA4b070RnGOUzvq0b6yxjl7WQCwnnFBhMM6nD0itHG/ea+i76avjcFkT6N9x/u0zBr4BMLN7XJbKk9GmQU9k+ZRfzeB+1ULTHgpFADiteeDQoUlaF7wa9++KiTPoop+VkZbGBuozhiVWLDOp2KR2YerPR71LYZklYRijDqnlUsblWnChHGecAJ9/7PKgqebga3oxXTanQ4RDJFY6+9OYAhbdAYJa9rjWvHoQ/EVLsZcUeT8fon5hIDxhjxIWEsAJ3W7Z2HL/6DHOWXwoHjwP5bNz76rVc217orXvO+86M1NKMkK5Bg07OtViDBkhtHlCAQKxqEUenGE2gJqDI1GR39tKfXM9AXUkWlwBxYyZ7wlpeBoFZUbtwjNjoi1is6nzo00jGjvihLwyJUO+RoDCNaQmLISGhTE8T+6Hx2oDy4frB9ykJkklZB6KVwexMfvZ0iiQndwgKpQvpSclACoHmvRKUZXG/M7Ji1auRuUjsdrGx7FQ1qJtMyDNtk7pM1jSkAUjOBicpbbERt7O6L9wLTeOpzR50Jq1a4/OzYwbUAlzKzyLUvCMA==" }
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"lHorqYOyhFKkfOuPlxJc","amount":"000000000326","authCode":"683011","resTs":"2025-09-24T06:44:26Z","terminalId":"00000905","transactionTime":"104424","transactionDate":"0924","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-24T06:44:26Z\n\nMID:123 TID:00000905\nBATCH NO:250829    INV NR:lHorqYOyhFKkfOuPlxJc\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : MASTERCARD\nRRN:526712927276  AUTH ID:711471\nTRAN AMOUNT : Rs. 326.0\n","resMTI":"0110","rrn":"526712927276","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"021002","posEntryMode":"052","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Contact with PIN
+Request Body: {"amount":"000000000326","authzTxnId":"qZbWQKFyaNTwmENNcJMD","batchNo":"250923","currencyCode":"784","deviceData":"4F07A0000000031010500B5669736120437265646974810400000146820239008407A0000000031010950500000480009A032509239C01005F2A0207845F3401019F02060000000003269F03060000000000009F0607A00000000310109F090200309F100706011203A0A8029F120B56697361204372656469749F1A0207849F1E0837303030303030349F21031741319F2608516FB7DE7258A7329F2701809F3303E0F8C89F3501229F360202649F37046AEF39B79F660436F0C080","ksn":"064E7913178FF3E0008F","merchantId":"123","pinblock":"54E801BDA8026C0B","posConditionCode":"00","posEntryMode":"051","reqTs":"2025-09-23T13:44:02","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"F51126A4FE4CAC758E517095959F5782","transactionDate":"0923","transactionTime":"134402","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1662
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:1a12cc0c44079e03a05c34756ff95a046ecfb8f5a7668aa74233eeada1072374
+Traceid: XvtGInekxlvAiiTZLTodKpsyjLJwyT
+Timestamp: 1758620642797
+MerchantId: 123
+{"RequestData":"GZm50YEcpmJ8d0VSoQ4tspzu1wXwilykmMZq932mUMtsSW2KlU6ZNv8lfs4Cm3HD/C225GN5ltWipNl4PDQD3C+IVWH/dRyq4qUJuUHqxbAv6/tinBmVjx3G+g5OcUo4Wl5p4msnejKJ6IwHgok3oHknfsZv7VH7/rtVDZYyZhTqjwWjTzx4KGKgP0wzxrmB8CdAsDKe3WbFzHtLbBYaS3bJQJEX7BhaP2ut/ehEviBfAAKyqSNFBcVVkyPsVz9t8i7q2H5ITS4csh/jKmFM6O//wodz18+582qr2BjAgR387eVXVEl0Ms1942FgJCdDoRGKya24kQIlBIH5/ZmVTQGuOyJpn4a735ZbrQTfiBxIexvzWcpWlO91W92jUjoMt26i6KKxqvQTJ97Q2p838i41GMJgkTxOIzwnhyzedbvxJUgo2iMAWyOMPAJw3UmFJ3GfshSh2Tpp9HBl9ao/ra8xKM6kqNZPU5pUZRiqT/wmHb8hPVfmj2KcvcPbCCPZCVplfDtx+Y37pF1twc1rJ8fVzo6KlQPOyTKberI7mylYU9LL0XY2xMkpyiJwc5SMfkRPUUayr4hs7NjOJtVTkHUcAFDCfznU82uFwv8hUp/JOErIXDwYE3YO9dRmwEcHNTbbz+mrguZQlKDL5l3ENpYuW0GFrDmEVhQCEjzaA1JJX/7P+jpxISdzCmtPs65bLwB0Eu4SG8SJ2OzIN16fRNwUGj+I1p93RRNi4OVHy1dF/idEW/EMoSY0C9TQJyZxXSPcQnm/LEbpXCAA2xlLT5DeTOdmgmqAcOAKZ2LvGiAOkCXQCLK9ZAa0f/SouruZwfGdeMXDvud/ckJoLBqIYLw44tSfdmd+bd/qnk2Znp/t3VzWmALrwk+3Loa+6BtnKNLU/fB6kHpNSqSYCgo25jlrqURJ2jimkRmJpr8yrrRJKAno0oM9xcVTUWmTNICOB4nTzgfNKToRKbjLvjeG/XTmMfu+glxjoWeBaGWao5rcRqCUmb1p7pp/IRjNsBrZBVhF2m+8L73RgqOygXwijq8wS3QI3XbifNopjRRGrNc7HCwt33N21ZNX2+IBKjCuLKYCdfRPaZxIpEE9aiqFdczRlB7J1EgxzRAcB37mzWU8OeQgERExreXYxGkaZNx82a6E7VpNpx6K9mbaCV57ulY3StPMdYQtHkSxzmYHf1VcDOgUAtJ7k7/9hYapVKVpmJMMQABy1+KL6E6+qS5+53IoZF0pVjn6ujsn/9/W4QUnZNWmv2ztLhazKZAhO7O2rTW2vxP+ahv7bBq2tHrOs68wUzrvGMLqHRDcJw2ga6oPxLcHJyHedtOTpOw3E2fHPFKWzDa3ot7PwsjTXC2qSopfUh95oKrDc61qsLS+80UEqNfaCCWs9htenj46tuuG7rjTxKLxAkGMPeLaLP6PVP8O/tu9xSVhcJFrv6/cLzv48BZD6tKKJWPHM0cLS56I7sIBpvEo0/OMsrmmuPniuuk17wSyBDvgxCDVH0cE3qMG2ngjC6nU0PH4Kwta4iaEeRgvzHU1UKgMcNdath4a9Ro+Q3f6uHv75vtSubUaXEhzEFGYdIa1x7MEnFpDPlrlviqjIe6JzE9wUUrNARdlDA6ADmaMPZ5uUK8UXCPAk98="}
+--> END POST (1662-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (1669ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Tue, 23 Sep 2025 09:44:04 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:df9e3b8ab826ae7a6f2de56876874cf19df02de731c7b49b06d559b110e668b4
+traceid: XvtGInekxlvAiiTZLTodKpsyjLJwyT
+timestamp: 1758620642797
+x-request-id: 8827df27-dc0e-4bb5-aa00-bc049fd712a7
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"5S5hPZHKJ6Zqf7kWwGyEXc/r2uESOyL/mEnsPKmD2w4fkqd+t6A5aiR8acAFQK1TfsSk6TjNgw1Tsg8uMlfhDkbfef3v9U67pw+NhLCL6gOt1ymPGgkF0Pgr3UqIVFURymMMD4oYGn/EgvMwG7cJf0w+CU56YD3srcaKImQbFbYbqOAYnTRzK/zd2aeQBBAZqtLcIw+5fP0P6OUHXEzaQO46Uz4OTqvO+pt6oO42tHmbjtYKPqlJkoe6P1rH7zaXcXrrrlL9ebDWWMWicKt7bNBrdOyibGeypCEZRiAB51088KMSBHW1ND+l75w2RDoj67nlKK9nf9Fit2WLMqF55FptoRhesZ8F4i0P6Kbdi4r47CoOZskWJKPsg81lauSjVD3KXVHKh3CthHlrxYu+ALdNnfNhUhdkwWIU4xXAq195cWDMq39nu80WF5JF7thv49LZup9XCyWJwfcjMWXyGluTqk2J9uxAXIO7OOlo2ZctVklU/ypB/c1eL0c1kYb+/7hw7XQvXwge+dcwxZ2bvA7K9k+0XZ3wLz2osdVQftzqY559g23YZgvYWKCuyU4DiJhxSvPUDSv32mcc3zWwVSJmRNBL3+JijfOHMYAD9i/Z+uWF4n3Inha8ayEjuMK9TqiZpfjif7FEgArZw7NwzFkzHaS/m5QcWBeeyMGxCUYEKy4d78XXLsK+Wo76uNtAgMx00BScjSvxjTzoBniAE/262gSkNFZ44Z4sHC/E26M047fBPuC4o5hq/jed8xasm+g6QmfUeqL74ceWrjKUEYg2/2Qc4SmXgLXrkUeUw/yfxyp08hDgdt01efY/m8A24cYbfrJCK8wk7Sk037y8TQvxInQNEO9H26tG26pR+b0hSjWMLBKQgsxqFBLkCdhi5Ofpn4f8sgbnMHttA4eEFDMnyHCYIkdpwAYuJlM2wjjtv4u37sR7idOqc+hwfEnbsULE0yNA6XkCfc2qm3bvv7GV/NM8dIitLIhlYA/80+XBcVIv0JhehCKq5koT4C5ObslPK70PKtQvSmM51l2DCC2Awxxs/VXUt04uiuHavp5ZxlaE6tlIQhMZvJGQEebWfMbbxRafxj5I8O2s719XJ6fkZ97P412rsSm42d+sxiVY6DBcirI1yPtfulJurfos6kqHTJcEiz9ukqmioX0Wag==" }
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"qZbWQKFyaNTwmENNcJMD","amount":"000000000326","authCode":"683011","resTs":"2025-09-23T09:44:04Z","terminalId":"70000004","transactionTime":"134402","transactionDate":"0923","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-23T09:44:04Z\n\nMID:123 TID:70000004\nBATCH NO:250829    INV NR:qZbWQKFyaNTwmENNcJMD\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526615366107  AUTH ID:711471\nTRAN AMOUNT : Rs. 326.0\n","resMTI":"0110","rrn":"526615366107","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"045427","posEntryMode":"051","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Magnetic without PIN
+Request Body: {"amount":"000000000327","authzTxnId":"BxtqxqnlhLShtNUNvqyE","batchNo":"250924","currencyCode":"784","ksn":"064E7913178FF3E00095","merchantId":"123","paramA":"00000905","posConditionCode":"00","posEntryMode":"902","reqTs":"2025-09-24T10:51:07","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"C2B2EDF920CD896EAC30821F149ED05592B124E1F1190D66","transactionDate":"0924","transactionTime":"105107","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1130
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:1d8785876226bdead9e9a7dfd743e63f64f2bcc6aa481d94922bc0dc7a0f80e4
+Traceid: veAzRRYGxCmoKwVwPEAROQrSYOaJAN
+Timestamp: 1758696667696
+MerchantId: 123
+{"RequestData":"SYWIctAajP5vWIv75PhvgI8V0eMNCyfBbgUMoicjEjuGurL01/5gDJzqxQnmkdj+8k1HXa0RXdmO7rOsHRb7adr/ESNuQbxf+3VbqgXUmVBQYkvmuvYHDZnti+i44owbPmehjnYLibS+iBS3qD1tHRIYAewUugGNzJ9UqPSkTXsP1mk6DC0EnxHR8EcA9B/eKFx6yHVwyBGUmQZz3133RPPQrHeGEg10crM+QAdYb4PrIy/SEu2EEA+OnYG69vn/yU57sJ6KOP5+htNiB95LAVQV4w1TRBDN8QWNAfnmuF9M/lVSkj2tJAJqS85H7PeBF2+4WjKwDw9X+wJj3pAAAL3RgQCotgAU42Xy7ncKSxM2oc5paCez7SKDI22wBHf8Pff8uhWicl5jVKROYSQCqWJLye3RB4C0wXHxZRQT99kpeXxpBY8DafUQdjZrzK1vZnrSjGl8i3TiIyTOApMkbLUKgW1EWfdBH9ORNtUT6rO69xxUESgDOkQARuKRDw4OOiHhuqoFl4UrA2bYPJBVodd2E2DqzAeKl3OySkLbd+GGAyZ01+jtgnkuhC3WNtDC4CtJPGk9xwwUHoT0ntYnZvFXh104wQIJ4DzUhdldns/m234tGMlAiC4+ADc/shQrUBAHMtxmOJ9x+/7oNoi69FzqddnytXKF8Tf7zPuNsF8H/cii0UYU4JVxMCMgkADBtUqqtYS9HMfZSO+LihdrzPpJDqlBJCxsdsXqUy38dyTgpzWHo9VW07gV8x5OWAsCCqakIa5r7SX48IGofPiLN7tX2g14od86Gf9C/Ha4frKl1Wh3GfdKQuKasVc8l6QHFunEZ1dRh2d3Mw0rMX7a+f/OHd1VlZpI90GEbZYbR+RQKuB0wGHRoF1CvpRX04riIE08DxmxZlNBuz1kdkVAOT5hSlzx1+vAcxdM04aZd+F5VHsx3VJEjCW4nRNWjc893UrbGi7roL1w+6Ed8sFWBj1QY2BzOhAtbUDGWbsFi5wqxuXvgi1Yjg9vyMMc5M0V8ut9gMrkIEZwgAoJNl7tRp2kK+bX6XS2PGyPOraP82RrA7rVMYow9Yalt1DXLk+pvbYSXcd1SZ88B2rnFfJAqA=="}
+--> END POST (1130-byte body)
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (2047ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Wed, 24 Sep 2025 06:51:09 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:c535aabc44b730000fb205586344f9a98fc9a3693f1ee6d4cbeae4c46b91168d
+traceid: veAzRRYGxCmoKwVwPEAROQrSYOaJAN
+timestamp: 1758696667696
+x-request-id: fd769c23-a741-484f-9c76-a389729dd47c
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"CY6kcJ5axaoe6vCnvisu4o9TeUwP0HgUNQIUpIsIe0BZ2ivhXm+81tRioESPEb5GzF3YSA23LQnQKypRKpfClIbE0f1BQPOCR71p6TWLTW7Q77OHpYZb8oM9czilpkTSUHrKwGbcOjW3K9k0WxRAm6jmJnkhlwjYgp6kEmJgSvTGpDOPriHNvsGx4Hve5lx9lQO+1Z5QdbX5L198i8IdMEOCvfduqFD/IYgqRAugLVNTnEqL9D6W0RKVPH2DJA9co2w5I51k7ndAV24vCIC/eC7IJ/Eibh1DbA+2mD1fYzh5SHWt4GshtLeOGaYWScL/OEpFq5k3LEY+bTcxeuA4qmD6+ktdSSHCbP0FIyR4UYkNTAzoh2KBKYMHGTJM0GNx6cYWLa7oUbe5KZLxX8ni00ayhfyXPgOWJDz45gL7duNiR+1Ny4+lntOQBElCG3GR6Y8C+SbLGXP3rue5q/t6et0yWozZ7fGEc70Pzr+8SKZiEEKjr+P5Qa6doNZvLTm0Ra2nDQQBGo1vx0mJNjChi0XW9cGQAO9HtExmLv4BP1UgJYCfF9YTFNh0e6NC/AEcZbWEJ7QeyizF6T4n4wQWDSVkF1JwLU2kbl9TRMaQejnhS+PpbHisHLbVm68vQq4lGiy5nFXLZMr/TLoQm7d6UDn15ysOWwn6sTnNDeySeIW25IdvRw9zjiTolx4TCTyLlx65Od9d/9+a7GxtnxZF9INwMkNG6Rxs9ZEj9iuKKX5PCmIZka3/Jfw8ShJyiVZ1FvGKFn3IuLebjvP/EY8wzBeOXO3muEBjz/CBrMrYYTPt9SWvZBxuATPmIQyGrNWnMdpwaf2IUYNu1dQ7J1pF1JMZxg/LZOPoL218prBrxVZ1beNtHRNFwrdm/ok7ujRxaOPyCfvE9Rdx95aH5Gg9bKO2mmNzHIC0CdmV/MVRpsKrQfh4gJuoD5OdNTBzOQYl9tDgplHpnWCAeaXp+P2FSbRtWs7f5/QvPwUtvH5zwx8kYAAR6+d9ePWRoatQrEwCvMwN4kBeJXVUJQNFlfSJkctGk1gvhq97LmyqmR1lSEXmqMBSVFgGvISR80mTL0+GogTrnzr3H4P6Bz6MCmU9se9Zb7hRkEGBo2jTiVCHJW73o12jk1iqoxqaEHkD0Od+wFrpyb01stwRaTpgxXwHRA==" }
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"BxtqxqnlhLShtNUNvqyE","amount":"000000000327","authCode":"683011","resTs":"2025-09-24T06:51:09Z","terminalId":"00000905","transactionTime":"105107","transactionDate":"0924","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-24T06:51:09Z\n\nMID:123 TID:00000905\nBATCH NO:250829    INV NR:BxtqxqnlhLShtNUNvqyE\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526712539084  AUTH ID:711471\nTRAN AMOUNT : Rs. 327.0\n","resMTI":"0110","rrn":"526712539084","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"021813","posEntryMode":"902","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Magnetic with PIN
+Request Body: {"amount":"000000063784","authzTxnId":"VkGnZpyxSRdkkuhMrSXV","batchNo":"250924","currencyCode":"784","ksn":"064E7913178FF3E00097","merchantId":"123","paramA":"00000905","pinblock":"2128750252F5AC0F","posConditionCode":"00","posEntryMode":"901","reqTs":"2025-09-24T14:02:45","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"5DD7B1BB735FD7EE77D339413FEB758AAEB96E12F9F3DAA2","transactionDate":"0924","transactionTime":"140245","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1170
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:a0956bec6949ce549b97e303152ad9dcc3f25000cc42cbbebc216ffd33c3072d
+Traceid: HVvMSEYLwXLCAhcTWjQyhaCFQhXkwH
+Timestamp: 1758708165738
+MerchantId: 123
+{"RequestData":"4p/Ul/7JkDuiW441QL7iRlNAQLg/ML8brZbCWWGLx72bfN6pGvxjLuE1lwQmlJ0o1UqVb0C8syfu8YLF6sBsZdjCJMmr2CGODoQjdW3l8OkDhmDBl/Jhw7+DAgKYEG8Y4w7ogeLUYQL5vUJXSVE8rf/7XGlR4XwheNGNM/grKvw8RfPj01wxZxe7ceKWXZkWj+fEHxodLujfE8hlQifeYvUgUeQ4B0H7uQviu9PaUFtz3EvUxjAjuDyxNOUqhM8Klz7Mpvu7CU6J0dBWUsjjksQ86Ce7Ggb0uNyM7IBwfEhNKVNRFCLRB7cfP8uhvcgtEc/KGnJ28FtGP/VMHvLHsG1WElXbJ/I2rQ3aFl2pnGYxDvP3YcOPga5arpWcbluqujQ4vrTYb7X8kbkv6/VHdrLpb7LJYGxp/JSKb1Vb+CE962MFPLZ37dzuAvyJYOxsTcTY9R5y5gZ51K3iM+CzVpRmZBWt9Criqm4KFsQE0BegQ/40oLgRkg0srWsLMaxqAO1cadylK5rlLdXZPPX/d+wezRVE9+22Hwb7VC+4GnZyNrT6ij1FbFPrtWvFx+dMwyZpFVWmxUd4ODi5hLBARgMeRTJhEQpm5OBEpWnwu/P3Ywb7/0fplAyoUJq5YPJ8p0+4dO/RslY3uWoCIxqBKxbxJ2J/3oGXWpfYyRSjiI635TAyKdQRGv0mgeuPEj9WC5nKkMEgngxkMUVETtiY63RsZer7RXr2kD4PT4B6AMSweo8JJE2vfSkfH8A4h3J1WJdt/T92CItZkDiLeRNDKoQrbtCHKC4LBBxcLbsYLFA5poYHQi09py5JLrU6Ps+DfnQ6vxM6oPSmWxTxM0Bnna4U2imzA5C4hmy6Wu941M/F2PjSSmatZf/cYrn+TlE98TMytYnZ9GhYdJyjqpXXoN/8TL6ZSwPqFjZaBvzOC5+m3jFy0qMLd5pVyX6Y+l7LLCmuUnU4f84uodEXTQAYUk/DmDmqghxbIFVCtyMtILQoBrst/fQqGR5uvKWSvI/I47wHxF8erWXeZYIaSYg+0ZF//Bu9OzjgiGBNMy3Xbnjh8sIWl3x3U0ynLVQHbldNM//mOkZH2B1SZVtFjx4WPe/x84ujD8yY8a0RSQjJceqH0oOtMmalSw6xpT9FEHFK"}
+--> END POST (1170-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (1960ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Wed, 24 Sep 2025 10:02:47 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:171b88c9e0c9c8a5c035ad7821d57ec5a3ad212ea90d7c2ae938842c26d5b837
+traceid: HVvMSEYLwXLCAhcTWjQyhaCFQhXkwH
+timestamp: 1758708165738
+x-request-id: 0ab10d65-a1c6-4097-853b-32c1ae5497be
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"16Xa/WTYa8x/hZSglhF+3xpB4sbg8y4XOrrymr++dMuf6i8shdPph8BjAZctpZTapwtE3N9g0ltOJcTxnSnnkuQfI59R2KRzeE9J+vsCV4gHoGmK/PxiQ22CEBfw1skTdAueojOjsHVpggztmA+3rHvgSLlvOgdtvtBKyTiNlwxK0wHnh6MrnqyoLP7Lca79WWC6zU9hBOsJTkddxbCNAiBXTmYgRKziWwpiIg1jliFtyNT4nW7h4ytbTjXmsPPWaRqmCSS783u7i+P41Aeee7pb6Mi+rT0zUid7D2dUTn37wnwFthCUvDO6Vr2XuT13grADLq/yxxgXc4MfROsKfERumrZYMKaHPt+1c+WMkGBVDgRxJTE0RMOJAutB4CU6btU1AagKs1nrMfAhqEj+Zu6rLyBa6g/z0vyb71d7CRXz03zbCVSGmcD/2nvu8tJDh7Hb18fgTsNR6yyh9VqSmWQ3Enw6wsWFZpsJ9Uyz3vmxh85EOOyf5ZYVaMbhuCYfQPp9Y1LXB2wXwy9akqDzv2GbFFND7asZjfmHN8ki2WcNbz6jd7ZY1UBUKWYixC789RcvJmuYNOlNYofuNaxJVsb7IG9w8UNFwNNMydnxfeV9P1o16VfVcQ774qHKqPqJnatDSiDzC/jaW7XLN1FOOn3G4ndwMRwEg2Boz82NKyO1vDOpUA186MkTPSbtwVi+DZh3R00NekOKkbKBjEo2VW2utfC2Iww2yGNuhgtNg0GbV2GN+zti2bsXuBkW+RrABdWcfK9BndwAbHo1DSPyUmzcnWo6pWBRtoGKP0SB5/WtMmUiBVuABnSI8IUrKBCJDZTdka2rTpAiFi5VCwWvUh6XNBb/8l/AyFfnCs388Yda6AYLzAUQYgWWN0GT+TjCoRHhBpiQKYL7+gv/Il9rBgiy0t6vfsgAd2tzQcPLDzdT0Cehs8Oy+WrVTIllrpWnpXTtWTRkCf1fsKVeh2FWMzZFZNPD9WdhvjYbN3nJrfgAfEKbb3z2krW2EC9Q0pK6vn81AOZFwnDrDbaCasBRP7/foEGfAJcjguur93Sy1E/jqpiP9Mal2hvmikEwNvYFJt8rQs/kz5yl+uE+WTa/DU7gZxY4PKjgitZlK3HidpaiLykAfYHy3ufIsyVD+JCQIPezxMNiLMGobMuMDDzVbQ==" }
+<-- END HTTP (1221-byte body)
+{"authzTxnId":"VkGnZpyxSRdkkuhMrSXV","amount":"000000063784","authCode":"683011","resTs":"2025-09-24T10:02:47Z","terminalId":"00000905","transactionTime":"140245","transactionDate":"0924","receiptData":"ISUBANK\n       Ecom Holdings Online Inc\n         {\"zip\":\"41321\",\"city\":\"Metropolis\",\"countryCode\":\"US\",\"state\":\"MH\",\"line3\":\"Address line 3\",\"line2\":\"Address line 2\",\"line1\":\"100 Avenue Lane Street\"}\n Date/Time: 2025-09-24T10:02:47Z\n\nMID:123 TID:00000905\nBATCH NO:250829    INV NR:VkGnZpyxSRdkkuhMrSXV\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : MASTERCARD\nRRN:526715517959  AUTH ID:711471\nTRAN AMOUNT : Rs. 63784.0\n","resMTI":"0110","rrn":"526715517959","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"123","stan":"039745","posEntryMode":"901","currencyCode":"784","responseMsg":"Approved"}
+
+
+Sale Fallback without PIN
+
+
+Sale Fallback with PIN
