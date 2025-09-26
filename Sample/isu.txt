@@ -202,6 +202,68 @@ alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 
 
 Sale Fallback without PIN
+Request Body: {"amount":"000000000415","authzTxnId":"hVzJcIFPmFsmNGPpJyAc","batchNo":"250926","currencyCode":"784","ksn":"064E7913178FF3E000C8","merchantId":"2025092527807","paramA":"00000905","posConditionCode":"00","posEntryMode":"802","reqTs":"2025-09-26T10:43:07","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"E48FAE45D1BBEA7E01A9EE050374A7D8","transactionDate":"0926","transactionTime":"104307","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1130
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:5328eb7da6da5b2cdab7c9dab8706d6af14487c8eb1862188eebe78140d19160
+Traceid: JQqCrmFniYYHwuWryvbOnounXlwHHg
+Timestamp: 1758868987783
+MerchantId: 2025092527807
+{"RequestData":"tMmSs6OY/ZG/lCD+6CIiPQj2tNW7mb9g5cgFBKzUvb/Et1Ib2uFSGiYVgB/DSrT0NchCSvHigfNdtZiuE7HkGE90a/aJqZQegstiGsr4y1O/Mln+w7LesV+8UUfs99LfsCZ51d8qi8mM7SKDXjArf+ldPwsc4Li7ZFhLRWgisGA3ajl6JIr3mw7csrX8xd/VilWWH50MNwuCsok3jq8HH1HNX4OCK9G29W9A5ouk2c1AAFiuVkR7jXfVscSVSwnUxDtCrSW31TR/CTXQG5l63053vTZzRkoP8An8tHaazSReTxosasu7PlklMBmhGZldcF46BVTtA30/O8q9u/xDWHM6qRFBy/1iDNzTemLd952zZLq0covDP+DQ4pVMxnJf9a5zEI313n5ij1MPRSqgd4IVseOvP/GCeNiLpW1ObJgvXHQ4QDCPkVjUoGqKRzdWp8hZvo7vgsOdkiwN7SDzhYydkeDet1h5udhWpjH4E8GWlVLi3r0GZUi1Ak+2IcydpQc6nwj/sOYjKjscDOMAZEzG0sXdhmJv3hrMoAGdtEsCTfVeThhdpCEKFf836OFwCSe6KXB/Bae6MBlG9m1e8R8Xihbxmnhnz1VC4XOHHaqe4bwi+gwYHVE+qm2r7G8ce4jIVfvYZo7hT8F3TDkEaV24E42L0EjcqYzpo4Usa/YI7hvC3eCMPqIVD5B3Rao2Vnn3INGzr+IVgMbtvm9kBoEJrDlyD71R3jzmSxH9oCj0ghaRCwx6QfRxJZbdUNi0kFL5BEyMNXEmQV1y7QOFBXNAeoHsi0Bdy3K8Kbc76O+fEz0l1oDCDgi2BlzUzdoMD5cDNvnD8SR1AQQX6zHie2ZkkcMrHlKWxnGf09lWQBNuKiOAmgtod0gjs0YOqXldWl40LQBswwruI8GMxP1Bb/B7PTFlbrM2OjlgSY9K87voSg73ZgxP+5OW3L/3j9g7HKOAvU8cyUvSyOqJo2j8wYGO45Rmuuagts8BNKX621Q9kJ26ao9MDFmK0cPOqsRmHh5RmS6IkVt5756lehPXttcDg1LQ5Vugt7YRatEacfh+MAzQlxp3tU+83JrN11fm+VtJhzxkqZvMMJp8WyJwTg=="}
+--> END POST (1130-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (2989ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Fri, 26 Sep 2025 06:43:10 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:0a10df9e4df972372e33eabb4eb745ebca51ca9c183251f00c61eb8e678b9c6e
+traceid: JQqCrmFniYYHwuWryvbOnounXlwHHg
+timestamp: 1758868987783
+x-request-id: f41500f2-4a15-4448-949e-9499b8dd8e45
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"lRR/ZsZwLlm5HeeA2rI2mWGfGJ1L0rlStb14bycAErBQiHeMt+QKDYxB2iQJKZl/qWd3b0FVyC+APnFcwALBuZWmd4Vh/Uma54ZifJYMKzYHDw2jpeqjqCoj+3VfNQL7Qs6o4MIuAxQ4wAtb6I0Psbm7qqNAihjGp9CkoGW2h8qPLuRZ8YgEiVKyWJ+RkNo8mGLek4dDCg4zAqTu+x2Xzvy1WlvkL3rAY+1MlgHl4FRaMpXUt7rCni47jctD10ZVlAr2JkISrR8D3t5LkOjWBuWlIfMNCGARDUP16bXOp50QTivkpNKaJAwG8+YL9SfLU0JBfXuFpo63Bm4Ot3Cu2/F/Ec0YpWL2oV48zey4bMoRTIYrRTCCS4vQrlMI+ycjeLyvilEEEUAeVW0WJfCtI+mD8M46Udef30Y2LS20Rj0h/Yn9PuNm02pDVqejGFNNHy2Otn/byiMRYjIPMJkLwK9++iNaR2I39bpeuphJuobTTM0oOvbqUSlWlEhRtwcE2McpIGLVnNBIkeGmuqBYFPohxt/dQ6IHuptFrtsdtqjXZpvDECBf90tzg0NQ59oIdGNitlGtLIQAISuf8Z5EsRIF3+516jkjwdKGblqnGryuNqnpB/GrRANyoxZgZYKeFwvO9zeEkd1H2RuHaSJt629WwQYtmLGxQxO74ChxlURJGRrvqISpbxc+2kdoZJ2xvCPEXPwxrkRlizVvUJLu3R/XOz6SxubsvV9zOuFB4sl6sEKEwPYK4vSy1HyWU//i6J3+KRHtEcRdkt8Ab0Rzw7o4rMBGcVcwPMFZa4pxapwr+WJyRkSVImgOeyMpXVLjHUYeFQp0eUHgNkgeSMMLiGuU6XZNRi+k0mXktCsD1VCe5Scg2+6AHCo7tQrjNFZ/xsicjrvx53HMpETbB5X99jVV6aAjHNdA01Nn3FMYSd8s3jn4P176Hcji/TndLOkr4esDiAvu52To54YcFqx1gQ==" }
+<-- END HTTP (1029-byte body)
+{"authzTxnId":"hVzJcIFPmFsmNGPpJyAc","amount":"000000000415","authCode":"683011","resTs":"2025-09-26T06:43:10Z","terminalId":"00000905","transactionTime":"104307","transactionDate":"0926","receiptData":"ISUBANK\n       test huanjing shuyushouyintaimoshi simple name\n         null\n Date/Time: 2025-09-26T06:43:10Z\n\nMID:2025092527807 TID:00000905\nBATCH NO:250829    INV NR:hVzJcIFPmFsmNGPpJyAc\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526912223904  AUTH ID:711471\nTRAN AMOUNT : Rs. 415.0\n","resMTI":"0110","rrn":"526912223904","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"2025092527807","stan":null,"posEntryMode":"802","currencyCode":"784","responseMsg":"Approved"}
 
 
 Sale Fallback with PIN
+Request Body: {"amount":"000000154485","authzTxnId":"SYlNZcFMZYoDffXdvVlJ","batchNo":"250926","currencyCode":"784","ksn":"064E7913178FF3E000CC","merchantId":"2025092527807","paramA":"00000905","pinblock":"CE899EB641318849","posConditionCode":"00","posEntryMode":"801","reqTs":"2025-09-26T11:27:45","terminalInfo":"{\"deviceType\":\"SUNMI P3HD\",\"androidOsVersion\":\"14\",\"deviceVersion\":\"P3HD_user_4.0.2_24_20250617\",\"androidAgent\":\"Dalvik/2.1.0 (Linux; U; Android 11; P3 Build/20)\",\"platformType\":\"ANDROIDUSER\",\"deviceSerialNo\":\"P359256QJ0271\",\"mobileNo\":\"7008489827\",\"version\":\"1.0.5\",\"packageName\":\"com.payermax.pos.max.uat\",\"IP\":\"172.16.1.17\"}","trackData":"42D3FAA0A5E87A29DC156C341A3C642E","transactionDate":"0926","transactionTime":"112745","txnLatitude":"31.224677119359374","txnLongitude":"121.53952130200804"}
+--> POST https://apitest.isucloud.ae/hmacV2/isu/pos/doSale
+Content-Length: 1170
+Content-Type: application/json
+Accept: application/json
+Authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:d0e4ff09418dfe882de9ad17e628ac8e018218192ff5ba9808d2c03f61d1e640
+Traceid: wigSSDHlXnEXZSVswLLoxtRRxticxe
+Timestamp: 1758871665049
+MerchantId: 2025092527807
+{"RequestData":"ucL5+v2t3/+If4AboX1/SJeCX5xyGEh8XaR5nS2iu6THGpN6Ihmk7tEab5duBSUt7gQFCbuuBO2MnlvzwAMYErUT4CJJ3XAWQ5NLzqugXEmn/yvSDiWzCRlMfvGwBTIB+I30gsnakzeNjXA4emjjnW0Xo5u1/r41jjrKiMYSWYP90MBjNJML7wkMuddHwxaqo9P1dQWXaixRMjr9d63uIokVznvic9DNIdm/a8yILR7nh2+yEP1BvVzTNSUA+uKL2zhdMu9LT5G+ifSk+RB010MjtkGZcS+5fTfkQTsFjTsxzPys6xrlN/hAH2Vw5fYZWABggok/XcuA1p2iSsVsbP+W9GVzWkainXVrtvZiSASxSiEFKY87jBnWja0t1ooqbCPMGnBFHdZJkNAtZM2mebgAI8Hk/k7ml1VcXIvgN42+KsEZPapRanz3v0iipcxscMQYDYDJFk7R2hpDhUqcjj3biwdZeRt4kU0R8F1qdPBDVI3j1MNd4fPlZUJBYKO69pCDEpWRLiEcMtQncLL9bTtZeuY82WblsZBj5LvS87VvhdxR7hWZJDVeCtl5S+lrkt8CJWP58PQbp2t17pDYfOyKww+3TapyTbxHD8kZRpdkKmhYT2dI05H5ffJZGKi1Is1HUI6gLr7+blSFSypGBElrWrH9ctHSl/4MIq3o7fUCniGiXN8lfv/BQ2WtFo+ERstB2PiTeA/YgI/rSdFgT6AfE/BR+umK9NWUCRZPCnI3rD5XNqBIYZ5LbWcrivPPwhez3R0GeCHGwP2d0WfSvzlAwbMaedJ93WW6b1Wllt1zz9FP5MyEL+boio242OVVe6IlLSwGJB1fcxPmmFycsIXduivYKU9NyWxAfK5d5usAdG3m7TFgjV7BzThVEVkgigwG4CpwQhlvi/f+Qg3WOtIXC5JlDCD9XZ14TD7oEaxKJN4GtgfLFprdz0xPExDyd0QyqQVHmHJ+pkG4Mit3HZkrM+E+BqGgNNG5eAcjdzJKB1vk5j0L5WyusDuLdLjpbhU/N9f1SBpOxaMm+z9Pf6AWyFZTuzZfC/4YJoK11iUpYfjrYoxiNGj3Zz/geyByPSc4ld2vRhiNz2FbyoYh38xkS+NFMADlboAxejcRm3DE823iNoBhknUT0uCE0MYK"}
+--> END POST (1170-byte body)
+
+<-- 200 https://apitest.isucloud.ae/hmacV2/isu/pos/doSale (1719ms)
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+content-type: application/json
+date: Fri, 26 Sep 2025 07:27:47 GMT
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'none'; script-src 'self'; object-src 'none'; frame-ancestors 'none';
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+authorization: HMACSignature QC62FQKXT2DQTO43LMWH5A44UKVPQ7LK5Y6HVHRQ3XTIKLDTB6HA:c95bc09683ea2c5e169745699e16a2c6a2f3bb85384f8bb705c6e8de927fedb3
+traceid: wigSSDHlXnEXZSVswLLoxtRRxticxe
+timestamp: 1758871665049
+x-request-id: 1d83e022-9ca9-4b62-b395-5035a88d6983
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+{ "ResponseData":"jMh3HarbMCC58ZFXCxeptBVL1aWKiMr8NKyRcwhokfV5ZYuLC/iB2GXJr8x7399zu1ovsFu9rkpU9giukpeK5+Q/0/bMvguWpxnfJMOd6Opjrpzalr7X2dZTWEed6R4Bzqq6oTR50hR3S033mB7Y7jXtRln0C6mF6YLxbzidLdOgafvbd15wnNwoxeEHZaC8wOlfh/KNGi0NSEIn0xVjPa/JVxr51dOw8mLnKePVTsrZJx418BUkm6mX+h6WEoxB7w9LafW4O067uGxG+0v6AMHLmYeL7dnkvYS/YugozmM3i1guwcCAOnY22hOxr+ant/tAU8/SmMh2baRqcTmapo887Q6UzmsyAGJ1SlNp1MkpgGDuS+Gw0utxriFTsyT2r/3JmG9m8qJn3yrOF6W96LX3T+v8yD/ZpMlYMBAFlRY1CL/XnCrmjmkau7+1NNCvkmKrzJAPw76FPQzeGT9ty/ebNgaVCJpvaA7UI71r5R9Y88E7udIU4QBSvxEHlkPv8Djf8kuySqY4Cd1rWn1rKYRWxRzbEWY5TX6zFQ0Kz/8Sb9LGPNPa8lKzMifSKZm+a0UOKmPN44J2SGYVVLZY6YQbktR2AJchc1KYwPe84CEeyXWRpX9WLetA0cQd65l1CzYpUH4CP+7C3v+eGFXavzBLhju/60faLFo8iUFjuxmamOxDwYMxH57W5NH/pO0Ou+Kc9TtGaCjJZokJnSr+Ax/g+QmJavgkA9i1pzFTVeQGhOmMy6spjNqrx7KIJnul6G5HgT0jeJoOicCHKn3yqn1OGwM748kmOCuUZgyezDsJVEOZVUaGICE9gOlyfETogwAWLv6T1LbtH+U8LLH/FjNPqntlS9+OxQcPpqrgScYwNTG/Dcb2jukWjVX5y5dXIncgKRPY23NTGsvW5OoTnXRK/EdrsDiyT05X5BVyrxvsVMcepceV3K5v7EIUepZ686ySNL3jcGCMIebPn5eaM3fPWlajSC0Hzknp+dZxF7c=" }
+<-- END HTTP (1049-byte body)
+{"authzTxnId":"SYlNZcFMZYoDffXdvVlJ","amount":"000000154485","authCode":"683011","resTs":"2025-09-26T07:27:47Z","terminalId":"00000905","transactionTime":"112745","transactionDate":"0926","receiptData":"ISUBANK\n       test huanjing shuyushouyintaimoshi simple name\n         null\n Date/Time: 2025-09-26T07:27:47Z\n\nMID:2025092527807 TID:00000905\nBATCH NO:250829    INV NR:SYlNZcFMZYoDffXdvVlJ\n              SALE\nxxxx-xxxx-xxxx-0008\nCARD TYPE : VISA\nRRN:526912443333  AUTH ID:711471\nTRAN AMOUNT : Rs. 154485.0\n","resMTI":"0110","rrn":"526912443333","responseCode":"00","resTlv":"9F0206000000001000","merchantId":"2025092527807","stan":"033573","posEntryMode":"801","currencyCode":"784","responseMsg":"Approved"}
