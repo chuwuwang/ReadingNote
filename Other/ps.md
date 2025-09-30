@@ -81,6 +81,36 @@ adb shell dumpsys batterystats --checkin
 ### 查看指定应用的详细信息, 包含权限、组件等
 adb shell dumpsys package <PACKAGE_NAME>
 
+### 禁用移动数据
+adb shell svc data disable
+### 开启移动数据
+adb shell svc data enable
+### 禁用 Wi-Fi
+adb shell svc wifi disable
+### 开启 Wi-Fi
+adb shell svc wifi enable
+### 设置全局网络策略（限制应用在后台使用网络）
+adb shell cmd netpolicy set restrict-background true
+### 恢复正常
+adb shell cmd netpolicy set restrict-background false
+### 设置为 2G 网络模式
+adb shell settings put global settings_global_network_preference 1
+### 设置为 3G网络模式  
+adb shell settings put global settings_global_network_preference 2
+### 恢复为正常模式
+adb shell settings put global settings_global_network_preference 0
+### 为移动数据网络（rmnet0）添加200ms延迟
+adb shell tc qdisc add dev rmnet0 root netem delay 200ms
+### 为 Wi-Fi 网络（wlan0）添加500ms延迟
+adb shell tc qdisc add dev wlan0 root netem delay 500ms
+### 模拟 5% 的丢包率
+adb shell tc qdisc add dev wlan0 root netem loss 5%
+### 模拟 10% 的丢包率，同时有 30% 的相关性（连续丢包）
+adb shell tc qdisc add dev wlan0 root netem loss 10% 30%
+### 清除所有网络限制
+adb shell tc qdisc del dev wlan0 root
+adb shell tc qdisc del dev rmnet0 root
+
 ################################################################################################
 
 ### Protobuf 命令
