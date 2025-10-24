@@ -30,3 +30,4 @@ wCBDC - wholesale Central Bank Digital Currency 批发型央行数字货币
 
 ### Blockchain
 - Coinbase
+- Uniswap
