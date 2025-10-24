@@ -111,6 +111,14 @@ adb shell tc qdisc add dev wlan0 root netem loss 10% 30%
 adb shell tc qdisc del dev wlan0 root
 adb shell tc qdisc del dev rmnet0 root
 
+反向代理
+### 建立反向代理, 在您的手机App或浏览器里, 您只需要访问 http://localhost:8080, 就相当于访问了您电脑上运行的 http://localhost:3000 服务
+adb reverse tcp:8080 tcp:3000
+### 取消特定的映射
+adb reverse --remove tcp:8080
+### 取消所有映射
+adb reverse --remove-all
+
 ################################################################################################
 
 ### Protobuf 命令
