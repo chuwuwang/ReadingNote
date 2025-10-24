@@ -13,6 +13,7 @@ cargo check // 检查是否可以编译
 
 ### 编译并运行
 cargo run
+cargo test
 
 ### 打开文档
 cargo doc --open 
