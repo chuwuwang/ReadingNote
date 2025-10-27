@@ -112,12 +112,19 @@ adb shell tc qdisc del dev wlan0 root
 adb shell tc qdisc del dev rmnet0 root
 
 反向代理
-### 建立反向代理, 在您的手机App或浏览器里, 您只需要访问 http://localhost:8080, 就相当于访问了您电脑上运行的 http://localhost:3000 服务
+### 建立反向代理, 在您的手机 App 或浏览器里, 您只需要访问 http://localhost:8080, 就相当于访问了您电脑上运行的 http://localhost:3000 服务
 adb reverse tcp:8080 tcp:3000
 ### 取消特定的映射
 adb reverse --remove tcp:8080
 ### 取消所有映射
 adb reverse --remove-all
+
+### 提前在电脑上创建好 log 文件夹, 拉取应用私有日志文件
+adb pull /data/data/com.example.demoapp/files/log/ ./log/
+### 拉取 SD 卡上的公共日志
+adb pull /sdcard/Android/data/com.example.demoapp/files/log/ ./log/
+### 将测试 APK 包发送到手机的 Download 目录
+adb push app-debug.apk /sdcard/Download/
 
 ################################################################################################
 
