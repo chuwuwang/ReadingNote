@@ -126,6 +126,16 @@ adb pull /sdcard/Android/data/com.example.demoapp/files/log/ ./log/
 ### 将测试 APK 包发送到手机的 Download 目录
 adb push app-debug.apk /sdcard/Download/
 
+### 快速抓取当前 Activity
+adb shell dumpsys activity | grep "mResumedActivity"
+### 查看 Activity 任务栈
+adb shell dumpsys activity activities | grep "Run #"
+### 查看应用安装路径和版本
+adb shell pm path <package_name>
+adb shell dumpsys package <package_name>| grep "versionName"
+### 模糊搜索你关心的应用
+adb shell pm list packages | grep "t"
+
 ################################################################################################
 
 ### Protobuf 命令
