@@ -2,10 +2,6 @@ sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
 iconutil -c icns icons.iconset -o icon.icns                 // 生成 icns 图标
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
 
-### 打开微信
-/Applications/WeChat.app/Contents/MacOS/WeChat
-nohup /Applications/WeChat2.app/Contents/MacOS/WeChat >/dev/null 2>&1 &
-
 ### flutter 路径
 /Users/zhou/Library/Android/flutter/bin/cache/dart-sdk
 
@@ -16,6 +12,10 @@ sudo spctl --master-disable
 ls /Library/Java/JavaVirtualMachines
 
 ################################################################################################
+
+### 打开微信
+/Applications/WeChat.app/Contents/MacOS/WeChat
+nohup /Applications/WeChat2.app/Contents/MacOS/WeChat >/dev/null 2>&1 &
 
 Mac 版微信双开
 所有步骤之前，先退掉你已经登录的所有微信，并结束掉程序（快捷键cmd+q）。不会做的就直接在程序坞上找到已经登录的微信，右键--退出。
