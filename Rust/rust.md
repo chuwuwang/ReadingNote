@@ -28,3 +28,11 @@ debug = true   # 保留调试信息
 [profile.release]
 opt-level = 3  # 最高优化级别
 lto = true     # 链接时优化, 进一步减小二进制体积
+
+
+################################################################################################
+
+windows下运行rust报错error: linker 'link.exe' not found
+报错的原因大概就是说缺少 MSVC，解决办法是安装 rust 工具链。
+1. rustup toolchain install stable-x86_64-pc-windows-gnu
+2. rustup default stable-x86_64-pc-windows-gnu
