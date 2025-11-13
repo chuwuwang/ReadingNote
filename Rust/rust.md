@@ -5,6 +5,7 @@ cargo --version
 
 ### 更新 rust
 rustup update
+rustup update stable
 
 ### 构建项目
 cargo build
@@ -13,10 +14,13 @@ cargo check // 检查是否可以编译
 
 ### 编译并运行
 cargo run
-cargo test
+cargo test  // 并行运行所有测试
 
 ### 打开文档
 cargo doc --open 
+
+### 查看所有重复依赖
+cargo tree -d
 
 ################################################################################################
 
