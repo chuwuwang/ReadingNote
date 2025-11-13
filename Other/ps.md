@@ -136,6 +136,33 @@ adb shell dumpsys package <package_name>| grep "versionName"
 ### 模糊搜索你关心的应用
 adb shell pm list packages | grep "t"
 
+### 在 top 交互界面中（运行 top 命令后）
+按 q: 退出
+按 M: 按内存使用率（%MEM）排序
+按 P: 按CPU使用率（%CPU）排序, 这是最常用的
+按 R: 反转排序顺序
+adb shell top
+### 快速查看进程的CPU实时占用率
+-n 1 代表只刷新一次, 避免刷屏。去掉此参数可进行简单实时监控, 按 Ctrl+C 退出。
+adb shell top -n 1 | grep <package_name>
+
+################################################################################################
+
+### Mac 使用 Homebrew 安装
+brew install scrcpy
+
+### 如果在屏幕镜像的时候希望手机本身的屏幕是关闭的
+scrcpy --turn-screen-off
+
+### --new-display：为手机创建一个新的虚拟显示窗口。
+### --start-app：指定要在窗口中运行的应用包名。
+### --window-title：为窗口指定一个标题，方便识别。
+### --keyboard=uhid：启用物理键盘输入，避免在窗口中输入时被遮挡。
+### --display-ime-policy=local：将输入法设置为本地输入法，避免在窗口中输入时被遮挡。
+scrcpy --new-display --start-app=com.tencent.weread --window-title="微信读书" 
+scrcpy --new-display --keyboard=uhid  --display-ime-policy=local --start-app=com.tencent.mm --window-title="微信" 
+scrcpy --new-display=1080x2000 --start-app=com.dragon.read --window-title="短剧"
+
 ################################################################################################
 
 ### Protobuf 命令
