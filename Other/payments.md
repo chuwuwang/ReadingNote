@@ -31,3 +31,4 @@ wCBDC - wholesale Central Bank Digital Currency 批发型央行数字货币
 ### Blockchain
 - Coinbase
 - Uniswap
+- Cosmos: 公链，代币是 ATOM，Cosmos 要把所有孤立的区块链连接起来，让资产、数据自由流通。
