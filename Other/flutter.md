@@ -15,6 +15,12 @@ drat pub get
 ### 清除缓存
 flutter pub cache clean
 
+### 运行在设备
+flutter devices
+flutter run --device-id emulator-5554
+flutter run --device-id 35c2f612
+flutter run --device-id be6cb2e2
+
 ### 运行在浏览器
 flutter run -d chrome
 flutter run -d chrome --web-renderer html --profile
@@ -47,3 +53,12 @@ flutter build apk --release --target-platform android-arm
 android-arm（32位）
 android-arm64（64位）
 android-x64（模拟器）
+
+################################################################################################
+### issues: flutter.sdk not set in local.properties
+### 清理缓存（可选, 解决缓存冲突）
+flutter clean
+### 重新生成 Android 相关配置（自动补全 local.properties 中的 flutter.sdk）
+flutter pub get
+### 或直接构建 Android 项目, 触发配置生成
+flutter build apk --debug
