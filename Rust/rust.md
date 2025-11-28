@@ -3,6 +3,9 @@ rustc -V
 rustc --version
 cargo --version
 
+### 检查更新
+rustup check
+
 ### 更新 rust
 rustup update
 rustup update stable
