@@ -145,3 +145,37 @@ adb shell top
 ### 快速查看进程的CPU实时占用率
 -n 1 代表只刷新一次, 避免刷屏。去掉此参数可进行简单实时监控, 按 Ctrl+C 退出。
 adb shell top -n 1 | grep <package_name>
+
+### 向设备发送 500 个随机事件
+adb shell monkey -v 500
+### 只测试微信
+adb shell monkey -p com.tencent.mm 500
+### 测试微信和支付宝
+adb shell monkey -p com.tencent.mm -p com.eg.android.AlipayGphone 1000
+### 发送 1000 个事件，其中 80% 是触摸，20% 是启动应用。
+adb shell monkey -p com.example.myapp --pct-touch 80 --pct-appswitch 20 1000
+# 第一次运行, 记录下日志开头显示的种子值
+adb shell monkey -p com.example.myapp -s 12345500
+# 第二次运行, 使用相同的种子, 事件序列会完全一样
+adb shell monkey -p com.example.myapp -s 12345500
+### 如何停止 Monkey 测试
+adb shell ps|grep monkey
+adb shell kill <pid>
+adb shell killall com.android.commands.monkey
+
+### 普通重启
+adb reboot
+### 重启到 Recovery 模式
+adb reboot recovery
+### 重启到 Bootloader 模式
+adb reboot bootloader
+### 重启到 Download 模式
+adb reboot download
+### 重启到 Fastboot 模式
+adb reboot fastboot
+### 重启并进入 Safe Mode
+adb shell reboot -p
+### 使用 -f 选项（强制重启，跳过正常关闭流程） ⚠️ 危险：可能导致数据损坏
+adb reboot -f
+### 延迟重启（部分设备支持）30秒后重启
+adb shell reboot -d 30
