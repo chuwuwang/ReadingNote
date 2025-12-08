@@ -26,6 +26,7 @@ wCBDC - wholesale Central Bank Digital Currency 批发型央行数字货币
 - Western Union -> 西联
 - 移卡
 - 连连数字
+- PayU
 
 ### Blockchain
 - Coinbase
