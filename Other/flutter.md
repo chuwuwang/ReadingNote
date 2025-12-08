@@ -36,7 +36,7 @@ auto（默认）- 自动选择渲染器。移动端浏览器选择 HTML，桌面
 html - 强制使用 HTML 渲染器。
 canvaskit - 强制使用 CanvasKit 渲染器。
 
-### 编译APK
+### 编译 APK
 flutter build apk --debug
 flutter build apk --release
 生成的APK会在 build/app/outputs/flutter-apk/app-release.apk
