@@ -10,3 +10,6 @@ Feitian F310
 adb connect 192.168.47.162:5555
 adb connect 192.168.43.135:5555
 adb connect 192.168.23.154:5555
+
+1. PMX POS App sends all EMV tags, and ISU needs to adapt them for different card scheme.
+2. All failed transactions returned an Auth Code of 782.
