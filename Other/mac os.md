@@ -1,3 +1,15 @@
+### App
+- Pearcleaner
+https://github.com/alienator88/Pearcleaner
+
+- OpenScreen 录屏神器
+https://github.com/siddharthvaddem/openscreen
+
+- Motrix 下载器
+https://github.com/agalwood/Motrix
+
+################################################################################################
+
 sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
 iconutil -c icns icons.iconset -o icon.icns                 // 生成 icns 图标
 sudo codesign --force --deep --sign "Apple Development: bing feng (V35S97B862)" xxx.dmg
