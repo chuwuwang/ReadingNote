@@ -1,5 +1,6 @@
 ### 名词
 ISV - 技术服务商
+PSP - Payment Service Provider
 EBT - 电子收益转账
 Recurring Payment - 定期付款
 EPP - 分期付款方案(Easy Payment Scheme / Installment Payment)
