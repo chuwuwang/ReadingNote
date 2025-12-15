@@ -1,5 +1,7 @@
 PayerMax 上海地址
 上海市浦东新区峨山路91弄98号‌12号楼5层
+PMMAX 香港地址
+8th Floor, 168 Queen's Road Central, Central, Hong Kong
 
 PayerMax_IoT
 ITte@2025
