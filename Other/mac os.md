@@ -8,6 +8,10 @@ https://github.com/siddharthvaddem/openscreen
 - Motrix 下载器
 https://github.com/agalwood/Motrix
 
+- PC 红白机模拟器
+https://github.com/libretro/RetroArch
+https://github.com/TASEmulators/fceux
+
 ################################################################################################
 
 sips -z 512 512 icon.png -o icons.iconset/icon_512x512.png
