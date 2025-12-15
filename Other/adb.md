@@ -179,3 +179,43 @@ adb shell reboot -p
 adb reboot -f
 ### 延迟重启（部分设备支持）30秒后重启
 adb shell reboot -d 30
+
+### 使用getprop查看所有属性
+adb shell getprop
+### 设备所有信息存储到执行指令的目录下
+adb shell getprop > device_info.txt
+### 设备型号
+adb shell getprop ro.product.model
+### Android 版本
+adb shell getprop ro.build.version.release
+### 设备品牌
+adb shell getprop ro.product.brand
+### 制造商信息
+adb shell getprop ro.product.manufacturer
+### 查看设备序列号
+adb get-serialno
+### 查看设备名称
+adb shell getprop ro.product.name
+### 查看所有 build.prop 属性
+adb shell cat /system/build.prop
+### 查看 CPU 架构和核心数
+adb shell cat /proc/cpuinfo
+### 内存使用情况
+adb shell cat /proc/meminfo
+### 更直观的内存信息
+adb shell dumpsys meminfo
+### 电池详细信息
+adb shell dumpsys battery
+### 屏幕分辨率 输出：Physical size: 1080x2340
+adb shell wm size
+### 屏幕密度（DPI） 输出：Physical density: 440
+adb shell wm density
+### 实际显示区域（考虑状态栏、导航栏）
+adb shell dumpsys window displays
+### 查看 IP 地址和网络接口
+adb shell ifconfig
+adb shell ip addr
+### WiFi 详细信息
+adb shell dumpsys wifi
+### 网络连接状态
+adb shell netstat
