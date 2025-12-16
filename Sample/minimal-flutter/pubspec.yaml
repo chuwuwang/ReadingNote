@@ -1,0 +1,14 @@
+name: minimal_flutter
+description: Minimal Flutter package for CI demo
+version: 0.0.1
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  uses-material-design: false
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
