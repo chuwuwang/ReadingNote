@@ -45,4 +45,38 @@ If uncertain, ask these clarifying questions
 - Should new content be English-first or bilingual?  
 - Do you want me to add CI/workflows for any runnable modules?
 
-Thanks — tell me what to clarify or expand and I can iterate on this file. — GitHub Copilot (Raptor mini (Preview))
+---
+
+Per-subproject build & run (concise)
+- Android
+  - Open the Android subfolder (e.g., `Android/`) in **Android Studio**. If there is a Gradle wrapper (look for `gradlew`), use it: `./gradlew :<module>:assembleDebug` or `./gradlew signingReport` (see `Gradle/Gradle Command.txt`). Common problems: missing `local.properties` (set `sdk.dir`), mismatched Android SDK versions, or missing keystores.
+- Flutter
+  - Commands are documented in `Other/flutter.md`. Typical steps: `flutter --version`, `flutter pub get`, then `flutter run` or `flutter build apk`. Use `flutter doctor` to troubleshoot SDK/device issues.
+- Kotlin / JVM
+  - If a subproject has a `build.gradle`/`settings.gradle`, use the Gradle wrapper: `./gradlew build` or `./gradlew test` inside that submodule.
+- Python (runnable sample added)
+  - A small testable sample lives in `Sample/minimal-python/`. To run locally: `python -m venv .venv && source .venv/bin/activate && pip install -e .[test] && pytest`.
+
+CI, PR templates & runnable sample
+- This repo historically has no global CI. For this repo I added a minimal Python CI workflow that runs tests for `Sample/minimal-python/` and a `PULL_REQUEST_TEMPLATE.md` to standardize reviews.
+- If you want CI for Android/Flutter, we can add per-platform workflows (setup Java/Android SDK or Flutter SDK steps) and a small sample Android/Flutter module to verify builds in CI.
+
+How to use Copilot in this repo (short guide)
+- For humans using Copilot in the editor: give clear, small prompts and reference the relevant folder, e.g., "Add a README explaining how to run `Sample/minimal-python/` tests". Be explicit about language and PR requirements (English-first, include tests).
+- For automated agents: prefer task-focused prompts and include acceptance criteria. Example prompt an AI agent can follow:
+  - "Create a minimal Github Actions workflow that runs Python tests in `Sample/minimal-python/` and fails the CI if tests fail. Add a README describing how to run tests locally. Commit as two separate files with concise commit messages."
+- Safety & expectations: do not add secrets/keys. For changes to sample payment data, include a short note explaining why the sample was modified and link to a test case verifying the change.
+
+Files to inspect when working
+- `README.md` — repo index and high-level pointers
+- `Architecture/*.puml` — system diagrams and flow context
+- `Sample/` — canonical data samples and the new `Sample/minimal-python/` test sample
+- `Gradle/Gradle Command.txt` and `Other/flutter.md` — useful local commands and tips
+
+---
+
+If you'd like, I can now:
+- add CI workflows for Android or Flutter builds (requires choosing which submodule to make runnable),
+- or add a small Android/Flutter sample to demonstrate full build/test in CI.
+
+Tell me which you'd prefer and I will proceed. — GitHub Copilot (Raptor mini (Preview))
