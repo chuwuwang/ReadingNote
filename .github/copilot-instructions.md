@@ -63,8 +63,15 @@ CI, PR templates & runnable sample
 
 How to use Copilot in this repo (short guide)
 - For humans using Copilot in the editor: give clear, small prompts and reference the relevant folder, e.g., "Add a README explaining how to run `Sample/minimal-python/` tests". Be explicit about language and PR requirements (English-first, include tests).
-- For automated agents: prefer task-focused prompts and include acceptance criteria. Example prompt an AI agent can follow:
+- Examples of useful prompts (copy-paste friendly):
   - "Create a minimal Github Actions workflow that runs Python tests in `Sample/minimal-python/` and fails the CI if tests fail. Add a README describing how to run tests locally. Commit as two separate files with concise commit messages."
+  - "Add a minimal Flutter package in `Sample/minimal-flutter/` with a single unit test and a GitHub Actions workflow using `subosito/flutter-action`."
+  - "Add a minimal Android or Kotlin JVM sample under `Sample/minimal-android/` that builds with `./gradlew build` in CI and include a short README explaining local setup."
+- For automated agents: prefer task-focused prompts and include acceptance criteria and file locations. Example agent SOP:
+  1. Read `README.md` and `Architecture/*.puml` (context).  
+  2. Create a small, self-contained change (sample or doc) with tests.  
+  3. Add/modify a GitHub Actions workflow that runs only the new sample's tests.  
+  4. Open a PR with a short description, link to relevant docs, and update `.github/copilot-instructions.md` if you add new runnable samples or workflows.
 - Safety & expectations: do not add secrets/keys. For changes to sample payment data, include a short note explaining why the sample was modified and link to a test case verifying the change.
 
 Files to inspect when working
@@ -79,4 +86,10 @@ If you'd like, I can now:
 - add CI workflows for Android or Flutter builds (requires choosing which submodule to make runnable),
 - or add a small Android/Flutter sample to demonstrate full build/test in CI.
 
-Tell me which you'd prefer and I will proceed. — GitHub Copilot (Raptor mini (Preview))
+---
+
+Recent changes
+- Added a minimal Python sample at `Sample/minimal-python/` with tests and a GitHub Actions workflow to run them (see PR: https://github.com/chuwuwang/ReadingNote/pull/40).
+- How to run the sample locally: see `Sample/minimal-python/README.md` — create a virtualenv, install `requirements-dev.txt`, then run `pytest`.
+
+Tell me which platform sample (Android or Flutter) you'd like next and I will proceed. — GitHub Copilot (Raptor mini (Preview))

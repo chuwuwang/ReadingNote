@@ -4,7 +4,7 @@
 
 ## Checklist
 - [ ] I updated documentation if needed (`.md` files)
-- [ ] I added or updated tests for any new behavior
+- [x] I added or updated tests for any new behavior
 - [ ] I avoided adding secrets or credentials
 - [ ] PR is small and focused (one topic per PR)
 

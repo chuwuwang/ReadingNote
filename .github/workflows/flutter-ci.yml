@@ -1,0 +1,23 @@
+name: Flutter CI (minimal sample)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'
+      - name: Install dependencies
+        run: |
+          flutter pub get
+      - name: Run tests
+        run: |
+          flutter test --coverage
