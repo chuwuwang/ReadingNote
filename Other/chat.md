@@ -24,9 +24,9 @@ Backend
 flutter run --device-id 35c2f612
 flutter run --device-id be6cb2e2
 
+https://niumao.hashnode.dev/
+
+https://redwolf.hashnode.dev/
+
 https://studio.buymeacoffee.com/dashboard
 If you enjoy my articles, consider buying me a coffee to support my work!
-
-
-
-以上文章翻译成英文
