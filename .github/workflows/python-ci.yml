@@ -1,0 +1,24 @@
+name: Python CI (minimal sample)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Sample/minimal-python/requirements-dev.txt
+      - name: Run tests
+        run: |
+          pytest -q --maxfail=1 Sample/minimal-python/tests
